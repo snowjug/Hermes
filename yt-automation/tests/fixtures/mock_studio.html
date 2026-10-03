@@ -1,0 +1,137 @@
+<!doctype html>
+<!--
+  A stand-in for YouTube Studio's upload dialog. It reuses Studio's element names and ids so the
+  uploader's selectors and step order can be exercised offline. It is not a copy of Studio.
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mock Studio upload</title>
+<style>
+  body { font-family: sans-serif; margin: 24px; }
+  [hidden] { display: none !important; }
+  [contenteditable] { border: 1px solid #999; min-height: 1.5em; padding: 4px; white-space: pre-wrap; }
+  tp-yt-paper-radio-button, #toggle-button, #next-button, #done-button, #close-button,
+  #second-container-expand-button, #datepicker-trigger { display: inline-block; border: 1px solid #555;
+    padding: 4px 8px; margin: 4px; cursor: pointer; }
+  tp-yt-paper-radio-button[aria-checked="true"] { background: #cde; }
+</style>
+</head>
+<body>
+<input type="file" id="picker" style="display:none">
+
+<!-- First-visit popup that covers the page, like Studio's welcome dialog. -->
+<div id="welcome" role="dialog" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:10">
+  <div style="background:#fff;margin:80px auto;width:320px;padding:16px">
+    Welcome to YouTube Studio
+    <button onclick="document.getElementById('welcome').remove()">Continue</button>
+  </div>
+</div>
+
+<ytcp-uploads-dialog id="dialog" hidden>
+  <section id="step-0">
+    <ytcp-social-suggestions-textbox id="title-textarea"><div id="textbox" contenteditable="true"></div></ytcp-social-suggestions-textbox>
+    <ytcp-social-suggestions-textbox id="description-textarea"><div id="textbox" contenteditable="true"></div></ytcp-social-suggestions-textbox>
+    <tp-yt-paper-radio-button name="VIDEO_MADE_FOR_KIDS_MFK" role="radio">Yes, made for kids</tp-yt-paper-radio-button>
+    <tp-yt-paper-radio-button name="VIDEO_MADE_FOR_KIDS_NOT_MFK" role="radio">No, not made for kids</tp-yt-paper-radio-button>
+    <ytcp-thumbnails-compact-editor-uploader>
+      <div id="select-button" onclick="document.getElementById('thumb-file').click()">Upload file</div>
+      <input type="file" id="thumb-file" accept="image/*" style="display:none">
+    </ytcp-thumbnails-compact-editor-uploader>
+    <div id="toggle-button">Show more</div>
+    <div id="more" hidden>
+      <div id="tags-container"><input id="text-input" aria-label="Tags"></div>
+      <div id="altered">
+        <span>Altered content</span>
+        <tp-yt-paper-radio-button name="VIDEO_HAS_ALTERED_CONTENT_YES" role="radio">Yes</tp-yt-paper-radio-button>
+        <tp-yt-paper-radio-button name="VIDEO_HAS_ALTERED_CONTENT_NO" role="radio">No</tp-yt-paper-radio-button>
+      </div>
+    </div>
+  </section>
+  <section id="step-1" hidden>Video elements</section>
+  <section id="step-2" hidden>Checks</section>
+  <section id="step-3" hidden>
+    <div id="privacy-radios">
+      <tp-yt-paper-radio-button name="PRIVATE" role="radio">Private</tp-yt-paper-radio-button>
+      <tp-yt-paper-radio-button name="UNLISTED" role="radio">Unlisted</tp-yt-paper-radio-button>
+      <tp-yt-paper-radio-button name="PUBLIC" role="radio">Public</tp-yt-paper-radio-button>
+    </div>
+    <div id="second-container-expand-button">Schedule</div>
+    <div id="schedule" hidden>
+      <div id="datepicker-trigger">pick date</div>
+      <ytcp-date-picker hidden><tp-yt-paper-input><input id="date"></tp-yt-paper-input></ytcp-date-picker>
+      <div id="time-of-day-container"><tp-yt-paper-input><input id="time"></tp-yt-paper-input></div>
+    </div>
+  </section>
+  <ytcp-video-info><span class="video-url-fadeable"><a href="https://youtu.be/MOCK123">https://youtu.be/MOCK123</a></span></ytcp-video-info>
+  <ytcp-video-upload-progress><span class="progress-label"></span></ytcp-video-upload-progress>
+  <div id="next-button">Next</div>
+  <div id="done-button">Save</div>
+</ytcp-uploads-dialog>
+
+<ytcp-uploads-still-processing-dialog hidden><div id="close-button">Close</div></ytcp-uploads-still-processing-dialog>
+
+<script>
+  const $ = (s) => document.querySelector(s);
+  const state = { step: 0, kids: null, visibility: null, scheduled: false };
+  const radios = (group) => document.querySelectorAll(group);
+
+  $('#picker').addEventListener('change', (e) => {
+    const name = e.target.files[0].name;
+    $('#dialog').hidden = false;
+    // Studio pre-fills the title with the file name a moment later.
+    setTimeout(() => { $('#title-textarea #textbox').textContent = name.replace(/\.[^.]+$/, ''); }, 300);
+    const label = $('.progress-label');
+    label.textContent = 'Uploading 0% ...';
+    setTimeout(() => label.textContent = 'Uploading 57% ... 1 minute left', 1500);
+    setTimeout(() => label.textContent = 'Upload complete ... Processing will begin shortly', 4000);
+  });
+
+  document.querySelectorAll('tp-yt-paper-radio-button').forEach((r) => r.addEventListener('click', () => {
+    const name = r.getAttribute('name');
+    if (name.startsWith('VIDEO_HAS_ALTERED')) { state.altered = name.endsWith('YES'); return; }
+    const group = name.startsWith('VIDEO_MADE_FOR_KIDS') ? '[name^="VIDEO_MADE_FOR_KIDS"]' : '#privacy-radios tp-yt-paper-radio-button';
+    radios(group).forEach((o) => o.setAttribute('aria-checked', 'false'));
+    r.setAttribute('aria-checked', 'true');
+    if (group.startsWith('[name')) state.kids = name; else { state.visibility = name; state.scheduled = false; }
+  }));
+
+  $('#thumb-file').addEventListener('change', (e) => state.thumbnail = e.target.files[0].name);
+  $('#toggle-button').addEventListener('click', () => $('#more').hidden = false);
+  $('#next-button').addEventListener('click', () => {
+    if (state.step === 0) {
+      // innerText only keeps line breaks while the box is rendered, so read it before hiding the step.
+      state.title = $('#title-textarea #textbox').innerText;
+      state.description = $('#description-textarea #textbox').innerText;
+    }
+    $('#step-' + state.step).hidden = true;
+    state.step = Math.min(state.step + 1, 3);
+    $('#step-' + state.step).hidden = false;
+  });
+  $('#second-container-expand-button').addEventListener('click', () => {
+    $('#schedule').hidden = false; state.scheduled = true; state.visibility = null;
+  });
+  $('#datepicker-trigger').addEventListener('click', () => $('ytcp-date-picker').hidden = false);
+
+  $('#done-button').addEventListener('click', () => {
+    if (!state.kids) { alert('audience not set'); return; }
+    const result = {
+      title: state.title,
+      description: state.description,
+      tags: $('#text-input').value,
+      kids: state.kids,
+      visibility: state.visibility,
+      scheduled: state.scheduled,
+      date: $('#date').value,
+      time: $('#time').value,
+      thumbnail: state.thumbnail || null,
+      altered: state.altered || false,
+    };
+    localStorage.setItem('mockStudioResult', JSON.stringify(result));
+    $('#dialog').hidden = true;
+    $('ytcp-uploads-still-processing-dialog').hidden = false;
+  });
+  $('#close-button').addEventListener('click', () => $('ytcp-uploads-still-processing-dialog').hidden = true);
+</script>
+</body>
+</html>

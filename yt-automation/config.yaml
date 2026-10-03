@@ -1,0 +1,58 @@
+# ytauto configuration. Paths are relative to this file.
+
+paths:
+  inbox: inbox                     # drop videos (and optional sidecar .yaml) here
+  work: work                       # one folder per job: video, transcript, captions, metadata, screenshots
+  logs: logs
+  browser_profile: browser-profile # dedicated Chrome profile; you sign in once with `ytauto login`
+
+timezone: Asia/Kolkata
+
+publish:
+  # youtube_schedule: upload ahead of time and let YouTube publish at the slot.
+  #                   Your PC does not need to be on at the publish time.
+  # at_slot:          upload when the slot arrives and publish immediately.
+  mode: youtube_schedule
+  slots: ["18:00"]                 # local publish times, checked every day listed below
+  days: [mon, tue, wed, thu, fri, sat, sun]
+  min_lead_minutes: 60             # a new video never gets a slot sooner than this
+  upload_ahead_hours: 48           # youtube_schedule: start uploading at most this long before the slot
+  visibility: public               # public | unlisted | private (what the video becomes at publish time)
+  made_for_kids: false
+  require_approval: false          # true: wait for `ytauto approve <id>` before uploading
+
+transcription:
+  enabled: true                    # needs the `transcribe` extra (faster-whisper)
+  model: small                     # tiny | base | small | medium | large-v3
+  language: null                   # null = auto-detect, or e.g. "en", "hi"
+  device: cpu
+  compute_type: int8
+
+metadata:
+  claude_path: null                # null = find `claude` on PATH
+  model: sonnet
+  max_budget_usd: 0.50             # per video
+  language: English                # language to write title/description in
+  channel: >
+    Describe your channel here: topic, audience, tone. The writer uses this for every video.
+  style: >
+    Titles: specific and curiosity-driven, no clickbait lies, no ALL CAPS, under 70 characters.
+    Descriptions: open with a two-sentence hook that says what the viewer gets, then a short
+    summary. Keep it plain and skimmable.
+  default_tags: []
+  footer: ""                       # appended to every description (links, socials, disclaimers)
+
+uploader:
+  studio_url: https://www.youtube.com/upload
+  browser_channel: chrome          # use installed Google Chrome ("msedge" also works)
+  headless: false
+  slow_mo_ms: 120
+  step_timeout_seconds: 90
+  upload_timeout_minutes: 90
+
+retry:
+  max_attempts: 3
+  backoff_minutes: [10, 60, 240]
+
+notify:
+  hermes_target: null              # e.g. "telegram" — sent with `hermes send`; null = off

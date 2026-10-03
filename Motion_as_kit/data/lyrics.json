@@ -1,0 +1,1492 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "The biggest coding agents come married to one AI company.",
+   "start": 0.32,
+   "end": 2.94,
+   "words": [
+    {
+     "w": "The",
+     "start": 0.32,
+     "end": 0.42
+    },
+    {
+     "w": "biggest",
+     "start": 0.42,
+     "end": 0.7
+    },
+    {
+     "w": "coding",
+     "start": 0.7,
+     "end": 1.02
+    },
+    {
+     "w": "agents",
+     "start": 1.02,
+     "end": 1.38
+    },
+    {
+     "w": "come",
+     "start": 1.38,
+     "end": 1.56
+    },
+    {
+     "w": "married",
+     "start": 1.56,
+     "end": 1.84
+    },
+    {
+     "w": "to",
+     "start": 1.84,
+     "end": 2.06
+    },
+    {
+     "w": "one",
+     "start": 2.06,
+     "end": 2.26
+    },
+    {
+     "w": "AI",
+     "start": 2.26,
+     "end": 2.52,
+     "syl": [
+      [
+       2.26,
+       2.42
+      ],
+      [
+       2.42,
+       2.52
+      ]
+     ]
+    },
+    {
+     "w": "company.",
+     "start": 2.52,
+     "end": 2.94
+    }
+   ]
+  },
+  {
+   "text": "Codex talks to OpenAI. Claude Code talks to Anthropic.",
+   "start": 3.52,
+   "end": 7.08,
+   "words": [
+    {
+     "w": "Codex",
+     "start": 3.52,
+     "end": 4.08
+    },
+    {
+     "w": "talks",
+     "start": 4.08,
+     "end": 4.31
+    },
+    {
+     "w": "to",
+     "start": 4.31,
+     "end": 4.46
+    },
+    {
+     "w": "OpenAI.",
+     "start": 4.46,
+     "end": 5.13,
+     "syl": [
+      [
+       4.46,
+       4.72
+      ],
+      [
+       4.72,
+       4.96
+      ],
+      [
+       4.96,
+       5.13
+      ]
+     ]
+    },
+    {
+     "w": "Claude",
+     "start": 5.48,
+     "end": 5.76
+    },
+    {
+     "w": "Code",
+     "start": 5.76,
+     "end": 6.2
+    },
+    {
+     "w": "talks",
+     "start": 6.2,
+     "end": 6.48
+    },
+    {
+     "w": "to",
+     "start": 6.48,
+     "end": 6.64
+    },
+    {
+     "w": "Anthropic.",
+     "start": 6.64,
+     "end": 7.08
+    }
+   ]
+  },
+  {
+   "text": "Want a different model? Get ready to dig through config files.",
+   "start": 7.75,
+   "end": 10.97,
+   "words": [
+    {
+     "w": "Want",
+     "start": 7.75,
+     "end": 7.98
+    },
+    {
+     "w": "a",
+     "start": 7.98,
+     "end": 8.04
+    },
+    {
+     "w": "different",
+     "start": 8.04,
+     "end": 8.36
+    },
+    {
+     "w": "model?",
+     "start": 8.36,
+     "end": 8.79
+    },
+    {
+     "w": "Get",
+     "start": 9.16,
+     "end": 9.34
+    },
+    {
+     "w": "ready",
+     "start": 9.34,
+     "end": 9.54
+    },
+    {
+     "w": "to",
+     "start": 9.54,
+     "end": 9.64
+    },
+    {
+     "w": "dig",
+     "start": 9.64,
+     "end": 9.82
+    },
+    {
+     "w": "through",
+     "start": 9.82,
+     "end": 10.02
+    },
+    {
+     "w": "config",
+     "start": 10.02,
+     "end": 10.4
+    },
+    {
+     "w": "files.",
+     "start": 10.4,
+     "end": 10.97
+    }
+   ]
+  },
+  {
+   "text": "So how does an app under fifteen megabytes put Codex on DeepSeek, and Claude Code on Kimi?",
+   "start": 11.55,
+   "end": 16.58,
+   "words": [
+    {
+     "w": "So",
+     "start": 11.55,
+     "end": 12.01
+    },
+    {
+     "w": "how",
+     "start": 12.17,
+     "end": 12.42
+    },
+    {
+     "w": "does",
+     "start": 12.42,
+     "end": 12.56
+    },
+    {
+     "w": "an",
+     "start": 12.56,
+     "end": 12.74
+    },
+    {
+     "w": "app",
+     "start": 12.74,
+     "end": 12.95
+    },
+    {
+     "w": "under",
+     "start": 12.95,
+     "end": 13.16
+    },
+    {
+     "w": "fifteen",
+     "start": 13.16,
+     "end": 13.5
+    },
+    {
+     "w": "megabytes",
+     "start": 13.5,
+     "end": 13.98
+    },
+    {
+     "w": "put",
+     "start": 13.98,
+     "end": 14.16
+    },
+    {
+     "w": "Codex",
+     "start": 14.16,
+     "end": 14.56
+    },
+    {
+     "w": "on",
+     "start": 14.56,
+     "end": 14.66
+    },
+    {
+     "w": "DeepSeek,",
+     "start": 14.66,
+     "end": 15.07,
+     "syl": [
+      [
+       14.66,
+       14.88
+      ],
+      [
+       14.88,
+       15.07
+      ]
+     ]
+    },
+    {
+     "w": "and",
+     "start": 15.28,
+     "end": 15.44
+    },
+    {
+     "w": "Claude",
+     "start": 15.44,
+     "end": 15.74
+    },
+    {
+     "w": "Code",
+     "start": 15.74,
+     "end": 16.06
+    },
+    {
+     "w": "on",
+     "start": 16.06,
+     "end": 16.24
+    },
+    {
+     "w": "Kimi?",
+     "start": 16.24,
+     "end": 16.58
+    }
+   ]
+  },
+  {
+   "text": "It's called magpie. It's free, open source, and already past four thousand GitHub stars.",
+   "start": 17.17,
+   "end": 22.34,
+   "words": [
+    {
+     "w": "It's",
+     "start": 17.17,
+     "end": 17.37
+    },
+    {
+     "w": "called",
+     "start": 17.37,
+     "end": 17.76
+    },
+    {
+     "w": "magpie.",
+     "start": 17.76,
+     "end": 18.26
+    },
+    {
+     "w": "It's",
+     "start": 18.65,
+     "end": 18.86
+    },
+    {
+     "w": "free,",
+     "start": 18.86,
+     "end": 19.21
+    },
+    {
+     "w": "open",
+     "start": 19.32,
+     "end": 19.6
+    },
+    {
+     "w": "source,",
+     "start": 19.6,
+     "end": 20.12
+    },
+    {
+     "w": "and",
+     "start": 20.12,
+     "end": 20.34
+    },
+    {
+     "w": "already",
+     "start": 20.34,
+     "end": 20.64
+    },
+    {
+     "w": "past",
+     "start": 20.64,
+     "end": 20.96
+    },
+    {
+     "w": "four",
+     "start": 20.96,
+     "end": 21.16
+    },
+    {
+     "w": "thousand",
+     "start": 21.16,
+     "end": 21.54
+    },
+    {
+     "w": "GitHub",
+     "start": 21.54,
+     "end": 21.88,
+     "syl": [
+      [
+       21.54,
+       21.7
+      ],
+      [
+       21.7,
+       21.88
+      ]
+     ]
+    },
+    {
+     "w": "stars.",
+     "start": 21.88,
+     "end": 22.34
+    }
+   ]
+  },
+  {
+   "text": "Click its menu bar icon and you get one list: every agent on your machine, and the model it's set to.",
+   "start": 22.93,
+   "end": 28.01,
+   "words": [
+    {
+     "w": "Click",
+     "start": 22.93,
+     "end": 23.1
+    },
+    {
+     "w": "its",
+     "start": 23.1,
+     "end": 23.26
+    },
+    {
+     "w": "menu",
+     "start": 23.26,
+     "end": 23.5
+    },
+    {
+     "w": "bar",
+     "start": 23.5,
+     "end": 23.76
+    },
+    {
+     "w": "icon",
+     "start": 23.76,
+     "end": 24.2
+    },
+    {
+     "w": "and",
+     "start": 24.2,
+     "end": 24.3
+    },
+    {
+     "w": "you",
+     "start": 24.3,
+     "end": 24.42
+    },
+    {
+     "w": "get",
+     "start": 24.42,
+     "end": 24.66
+    },
+    {
+     "w": "one",
+     "start": 24.66,
+     "end": 24.8
+    },
+    {
+     "w": "list:",
+     "start": 24.8,
+     "end": 25.1
+    },
+    {
+     "w": "every",
+     "start": 25.39,
+     "end": 25.63
+    },
+    {
+     "w": "agent",
+     "start": 25.63,
+     "end": 25.96
+    },
+    {
+     "w": "on",
+     "start": 25.96,
+     "end": 26.04
+    },
+    {
+     "w": "your",
+     "start": 26.04,
+     "end": 26.16
+    },
+    {
+     "w": "machine,",
+     "start": 26.16,
+     "end": 26.6
+    },
+    {
+     "w": "and",
+     "start": 26.96,
+     "end": 27.06
+    },
+    {
+     "w": "the",
+     "start": 27.06,
+     "end": 27.18
+    },
+    {
+     "w": "model",
+     "start": 27.18,
+     "end": 27.44
+    },
+    {
+     "w": "it's",
+     "start": 27.44,
+     "end": 27.56
+    },
+    {
+     "w": "set",
+     "start": 27.56,
+     "end": 27.75
+    },
+    {
+     "w": "to.",
+     "start": 27.75,
+     "end": 28.01
+    }
+   ]
+  },
+  {
+   "text": "Click a model, pick a new one. That's the whole app.",
+   "start": 28.58,
+   "end": 31.43,
+   "words": [
+    {
+     "w": "Click",
+     "start": 28.58,
+     "end": 28.82
+    },
+    {
+     "w": "a",
+     "start": 28.82,
+     "end": 28.9
+    },
+    {
+     "w": "model,",
+     "start": 28.9,
+     "end": 29.32
+    },
+    {
+     "w": "pick",
+     "start": 29.52,
+     "end": 29.74
+    },
+    {
+     "w": "a",
+     "start": 29.74,
+     "end": 29.82
+    },
+    {
+     "w": "new",
+     "start": 29.82,
+     "end": 30.04
+    },
+    {
+     "w": "one.",
+     "start": 30.04,
+     "end": 30.26
+    },
+    {
+     "w": "That's",
+     "start": 30.66,
+     "end": 30.96
+    },
+    {
+     "w": "the",
+     "start": 30.96,
+     "end": 31.06
+    },
+    {
+     "w": "whole",
+     "start": 31.06,
+     "end": 31.34
+    },
+    {
+     "w": "app.",
+     "start": 31.34,
+     "end": 31.43
+    }
+   ]
+  },
+  {
+   "text": "The clever part is underneath.",
+   "start": 32.17,
+   "end": 33.7,
+   "words": [
+    {
+     "w": "The",
+     "start": 32.17,
+     "end": 32.32
+    },
+    {
+     "w": "clever",
+     "start": 32.32,
+     "end": 32.62
+    },
+    {
+     "w": "part",
+     "start": 32.62,
+     "end": 32.96
+    },
+    {
+     "w": "is",
+     "start": 32.96,
+     "end": 33.12
+    },
+    {
+     "w": "underneath.",
+     "start": 33.12,
+     "end": 33.7
+    }
+   ]
+  },
+  {
+   "text": "Codex only speaks OpenAI's Responses format. Claude Code only speaks Anthropic's Messages format.",
+   "start": 34.35,
+   "end": 40.16,
+   "words": [
+    {
+     "w": "Codex",
+     "start": 34.35,
+     "end": 34.87
+    },
+    {
+     "w": "only",
+     "start": 34.87,
+     "end": 35.16
+    },
+    {
+     "w": "speaks",
+     "start": 35.16,
+     "end": 35.58
+    },
+    {
+     "w": "OpenAI's",
+     "start": 35.58,
+     "end": 36.2,
+     "syl": [
+      [
+       35.58,
+       35.84
+      ],
+      [
+       35.84,
+       36.02
+      ],
+      [
+       36.02,
+       36.2
+      ]
+     ]
+    },
+    {
+     "w": "Responses",
+     "start": 36.2,
+     "end": 36.78
+    },
+    {
+     "w": "format.",
+     "start": 36.78,
+     "end": 37.15
+    },
+    {
+     "w": "Claude",
+     "start": 37.66,
+     "end": 37.94
+    },
+    {
+     "w": "Code",
+     "start": 37.94,
+     "end": 38.32
+    },
+    {
+     "w": "only",
+     "start": 38.32,
+     "end": 38.56
+    },
+    {
+     "w": "speaks",
+     "start": 38.56,
+     "end": 38.89
+    },
+    {
+     "w": "Anthropic's",
+     "start": 38.89,
+     "end": 39.44
+    },
+    {
+     "w": "Messages",
+     "start": 39.44,
+     "end": 39.84
+    },
+    {
+     "w": "format.",
+     "start": 39.84,
+     "end": 40.16
+    }
+   ]
+  },
+  {
+   "text": "So magpie runs a gateway on your own computer that speaks all of them, and translates in both directions, streaming and tool calls included.",
+   "start": 40.91,
+   "end": 47.23,
+   "words": [
+    {
+     "w": "So",
+     "start": 40.91,
+     "end": 41.12
+    },
+    {
+     "w": "magpie",
+     "start": 41.12,
+     "end": 41.52
+    },
+    {
+     "w": "runs",
+     "start": 41.52,
+     "end": 41.72
+    },
+    {
+     "w": "a",
+     "start": 41.72,
+     "end": 41.78
+    },
+    {
+     "w": "gateway",
+     "start": 41.78,
+     "end": 42.18
+    },
+    {
+     "w": "on",
+     "start": 42.18,
+     "end": 42.26
+    },
+    {
+     "w": "your",
+     "start": 42.26,
+     "end": 42.44
+    },
+    {
+     "w": "own",
+     "start": 42.44,
+     "end": 42.58
+    },
+    {
+     "w": "computer",
+     "start": 42.58,
+     "end": 43.0
+    },
+    {
+     "w": "that",
+     "start": 43.0,
+     "end": 43.14
+    },
+    {
+     "w": "speaks",
+     "start": 43.14,
+     "end": 43.41
+    },
+    {
+     "w": "all",
+     "start": 43.41,
+     "end": 43.62
+    },
+    {
+     "w": "of",
+     "start": 43.62,
+     "end": 43.72
+    },
+    {
+     "w": "them,",
+     "start": 43.72,
+     "end": 43.94
+    },
+    {
+     "w": "and",
+     "start": 44.22,
+     "end": 44.36
+    },
+    {
+     "w": "translates",
+     "start": 44.36,
+     "end": 44.84
+    },
+    {
+     "w": "in",
+     "start": 44.84,
+     "end": 44.94
+    },
+    {
+     "w": "both",
+     "start": 44.94,
+     "end": 45.13
+    },
+    {
+     "w": "directions,",
+     "start": 45.13,
+     "end": 45.72
+    },
+    {
+     "w": "streaming",
+     "start": 45.72,
+     "end": 46.16
+    },
+    {
+     "w": "and",
+     "start": 46.16,
+     "end": 46.3
+    },
+    {
+     "w": "tool",
+     "start": 46.3,
+     "end": 46.52
+    },
+    {
+     "w": "calls",
+     "start": 46.52,
+     "end": 46.76
+    },
+    {
+     "w": "included.",
+     "start": 46.76,
+     "end": 47.23
+    }
+   ]
+  },
+  {
+   "text": "Think of it as a travel adapter. The plug stays the same. The socket can be anywhere.",
+   "start": 47.82,
+   "end": 52.58,
+   "words": [
+    {
+     "w": "Think",
+     "start": 47.82,
+     "end": 48.02
+    },
+    {
+     "w": "of",
+     "start": 48.02,
+     "end": 48.14
+    },
+    {
+     "w": "it",
+     "start": 48.14,
+     "end": 48.3
+    },
+    {
+     "w": "as",
+     "start": 48.3,
+     "end": 48.44
+    },
+    {
+     "w": "a",
+     "start": 48.44,
+     "end": 48.52
+    },
+    {
+     "w": "travel",
+     "start": 48.52,
+     "end": 48.86
+    },
+    {
+     "w": "adapter.",
+     "start": 48.86,
+     "end": 49.34
+    },
+    {
+     "w": "The",
+     "start": 49.72,
+     "end": 49.86
+    },
+    {
+     "w": "plug",
+     "start": 49.86,
+     "end": 50.12
+    },
+    {
+     "w": "stays",
+     "start": 50.12,
+     "end": 50.37
+    },
+    {
+     "w": "the",
+     "start": 50.37,
+     "end": 50.5
+    },
+    {
+     "w": "same.",
+     "start": 50.5,
+     "end": 50.87
+    },
+    {
+     "w": "The",
+     "start": 51.24,
+     "end": 51.36
+    },
+    {
+     "w": "socket",
+     "start": 51.36,
+     "end": 51.75
+    },
+    {
+     "w": "can",
+     "start": 51.75,
+     "end": 51.94
+    },
+    {
+     "w": "be",
+     "start": 51.94,
+     "end": 52.12
+    },
+    {
+     "w": "anywhere.",
+     "start": 52.12,
+     "end": 52.58
+    }
+   ]
+  },
+  {
+   "text": "Even the plans you already pay for become providers. Your Claude Code sign-in can power other agents, with no key to paste.",
+   "start": 53.17,
+   "end": 59.74,
+   "words": [
+    {
+     "w": "Even",
+     "start": 53.17,
+     "end": 53.42
+    },
+    {
+     "w": "the",
+     "start": 53.42,
+     "end": 53.54
+    },
+    {
+     "w": "plans",
+     "start": 53.54,
+     "end": 53.9
+    },
+    {
+     "w": "you",
+     "start": 53.9,
+     "end": 54.08
+    },
+    {
+     "w": "already",
+     "start": 54.08,
+     "end": 54.4
+    },
+    {
+     "w": "pay",
+     "start": 54.4,
+     "end": 54.68
+    },
+    {
+     "w": "for",
+     "start": 54.68,
+     "end": 54.82
+    },
+    {
+     "w": "become",
+     "start": 54.82,
+     "end": 55.14
+    },
+    {
+     "w": "providers.",
+     "start": 55.14,
+     "end": 55.81
+    },
+    {
+     "w": "Your",
+     "start": 56.19,
+     "end": 56.48
+    },
+    {
+     "w": "Claude",
+     "start": 56.48,
+     "end": 56.8
+    },
+    {
+     "w": "Code",
+     "start": 56.8,
+     "end": 57.06
+    },
+    {
+     "w": "sign-in",
+     "start": 57.06,
+     "end": 57.52,
+     "syl": [
+      [
+       57.06,
+       57.36
+      ],
+      [
+       57.36,
+       57.52
+      ]
+     ]
+    },
+    {
+     "w": "can",
+     "start": 57.52,
+     "end": 57.72
+    },
+    {
+     "w": "power",
+     "start": 57.72,
+     "end": 58.0
+    },
+    {
+     "w": "other",
+     "start": 58.0,
+     "end": 58.22
+    },
+    {
+     "w": "agents,",
+     "start": 58.22,
+     "end": 58.74
+    },
+    {
+     "w": "with",
+     "start": 58.74,
+     "end": 58.96
+    },
+    {
+     "w": "no",
+     "start": 58.96,
+     "end": 59.14
+    },
+    {
+     "w": "key",
+     "start": 59.14,
+     "end": 59.32
+    },
+    {
+     "w": "to",
+     "start": 59.32,
+     "end": 59.44
+    },
+    {
+     "w": "paste.",
+     "start": 59.44,
+     "end": 59.74
+    }
+   ]
+  },
+  {
+   "text": "Add several keys, and when one runs out of credit, it sits out half an hour while another one answers.",
+   "start": 60.44,
+   "end": 65.25,
+   "words": [
+    {
+     "w": "Add",
+     "start": 60.44,
+     "end": 60.68
+    },
+    {
+     "w": "several",
+     "start": 60.68,
+     "end": 61.0
+    },
+    {
+     "w": "keys,",
+     "start": 61.0,
+     "end": 61.39
+    },
+    {
+     "w": "and",
+     "start": 61.68,
+     "end": 61.84
+    },
+    {
+     "w": "when",
+     "start": 61.84,
+     "end": 62.08
+    },
+    {
+     "w": "one",
+     "start": 62.08,
+     "end": 62.18
+    },
+    {
+     "w": "runs",
+     "start": 62.18,
+     "end": 62.4
+    },
+    {
+     "w": "out",
+     "start": 62.4,
+     "end": 62.52
+    },
+    {
+     "w": "of",
+     "start": 62.52,
+     "end": 62.6
+    },
+    {
+     "w": "credit,",
+     "start": 62.6,
+     "end": 63.0
+    },
+    {
+     "w": "it",
+     "start": 63.0,
+     "end": 63.14
+    },
+    {
+     "w": "sits",
+     "start": 63.14,
+     "end": 63.38
+    },
+    {
+     "w": "out",
+     "start": 63.38,
+     "end": 63.58
+    },
+    {
+     "w": "half",
+     "start": 63.58,
+     "end": 63.78
+    },
+    {
+     "w": "an",
+     "start": 63.78,
+     "end": 63.86
+    },
+    {
+     "w": "hour",
+     "start": 63.86,
+     "end": 64.12
+    },
+    {
+     "w": "while",
+     "start": 64.12,
+     "end": 64.34
+    },
+    {
+     "w": "another",
+     "start": 64.34,
+     "end": 64.64
+    },
+    {
+     "w": "one",
+     "start": 64.64,
+     "end": 64.8
+    },
+    {
+     "w": "answers.",
+     "start": 64.8,
+     "end": 65.25
+    }
+   ]
+  },
+  {
+   "text": "And when it edits a config file, it changes only the one setting you picked. Your comments survive.",
+   "start": 65.83,
+   "end": 70.79,
+   "words": [
+    {
+     "w": "And",
+     "start": 65.83,
+     "end": 66.1
+    },
+    {
+     "w": "when",
+     "start": 66.1,
+     "end": 66.28
+    },
+    {
+     "w": "it",
+     "start": 66.28,
+     "end": 66.42
+    },
+    {
+     "w": "edits",
+     "start": 66.42,
+     "end": 66.66
+    },
+    {
+     "w": "a",
+     "start": 66.66,
+     "end": 66.72
+    },
+    {
+     "w": "config",
+     "start": 66.72,
+     "end": 67.1
+    },
+    {
+     "w": "file,",
+     "start": 67.1,
+     "end": 67.51
+    },
+    {
+     "w": "it",
+     "start": 67.51,
+     "end": 67.64
+    },
+    {
+     "w": "changes",
+     "start": 67.64,
+     "end": 68.06
+    },
+    {
+     "w": "only",
+     "start": 68.06,
+     "end": 68.34
+    },
+    {
+     "w": "the",
+     "start": 68.34,
+     "end": 68.56
+    },
+    {
+     "w": "one",
+     "start": 68.56,
+     "end": 68.76
+    },
+    {
+     "w": "setting",
+     "start": 68.76,
+     "end": 69.02
+    },
+    {
+     "w": "you",
+     "start": 69.02,
+     "end": 69.16
+    },
+    {
+     "w": "picked.",
+     "start": 69.16,
+     "end": 69.42
+    },
+    {
+     "w": "Your",
+     "start": 69.88,
+     "end": 70.04
+    },
+    {
+     "w": "comments",
+     "start": 70.04,
+     "end": 70.38
+    },
+    {
+     "w": "survive.",
+     "start": 70.38,
+     "end": 70.79
+    }
+   ]
+  },
+  {
+   "text": "The catch? magpie can swap the model. It can't make a cheaper model as good as the one your agent was built around.",
+   "start": 71.38,
+   "end": 77.12,
+   "words": [
+    {
+     "w": "The",
+     "start": 71.38,
+     "end": 71.48
+    },
+    {
+     "w": "catch?",
+     "start": 71.48,
+     "end": 71.92
+    },
+    {
+     "w": "magpie",
+     "start": 72.3,
+     "end": 72.88
+    },
+    {
+     "w": "can",
+     "start": 72.88,
+     "end": 73.08
+    },
+    {
+     "w": "swap",
+     "start": 73.08,
+     "end": 73.37
+    },
+    {
+     "w": "the",
+     "start": 73.37,
+     "end": 73.5
+    },
+    {
+     "w": "model.",
+     "start": 73.5,
+     "end": 73.82
+    },
+    {
+     "w": "It",
+     "start": 74.22,
+     "end": 74.34
+    },
+    {
+     "w": "can't",
+     "start": 74.34,
+     "end": 74.56
+    },
+    {
+     "w": "make",
+     "start": 74.56,
+     "end": 74.72
+    },
+    {
+     "w": "a",
+     "start": 74.72,
+     "end": 74.78
+    },
+    {
+     "w": "cheaper",
+     "start": 74.78,
+     "end": 75.08
+    },
+    {
+     "w": "model",
+     "start": 75.08,
+     "end": 75.42
+    },
+    {
+     "w": "as",
+     "start": 75.42,
+     "end": 75.52
+    },
+    {
+     "w": "good",
+     "start": 75.52,
+     "end": 75.66
+    },
+    {
+     "w": "as",
+     "start": 75.66,
+     "end": 75.74
+    },
+    {
+     "w": "the",
+     "start": 75.74,
+     "end": 75.88
+    },
+    {
+     "w": "one",
+     "start": 75.88,
+     "end": 75.98
+    },
+    {
+     "w": "your",
+     "start": 75.98,
+     "end": 76.16
+    },
+    {
+     "w": "agent",
+     "start": 76.16,
+     "end": 76.4
+    },
+    {
+     "w": "was",
+     "start": 76.4,
+     "end": 76.52
+    },
+    {
+     "w": "built",
+     "start": 76.52,
+     "end": 76.76
+    },
+    {
+     "w": "around.",
+     "start": 76.76,
+     "end": 77.12
+    }
+   ]
+  },
+  {
+   "text": "But if you juggle more than one agent, this might be the switchboard you've been missing.",
+   "start": 77.7,
+   "end": 81.3,
+   "words": [
+    {
+     "w": "But",
+     "start": 77.7,
+     "end": 77.93
+    },
+    {
+     "w": "if",
+     "start": 77.93,
+     "end": 78.08
+    },
+    {
+     "w": "you",
+     "start": 78.08,
+     "end": 78.22
+    },
+    {
+     "w": "juggle",
+     "start": 78.22,
+     "end": 78.54
+    },
+    {
+     "w": "more",
+     "start": 78.54,
+     "end": 78.7
+    },
+    {
+     "w": "than",
+     "start": 78.7,
+     "end": 78.92
+    },
+    {
+     "w": "one",
+     "start": 78.92,
+     "end": 79.12
+    },
+    {
+     "w": "agent,",
+     "start": 79.12,
+     "end": 79.48
+    },
+    {
+     "w": "this",
+     "start": 79.48,
+     "end": 79.68
+    },
+    {
+     "w": "might",
+     "start": 79.68,
+     "end": 79.88
+    },
+    {
+     "w": "be",
+     "start": 79.88,
+     "end": 80.0
+    },
+    {
+     "w": "the",
+     "start": 80.0,
+     "end": 80.12
+    },
+    {
+     "w": "switchboard",
+     "start": 80.12,
+     "end": 80.54
+    },
+    {
+     "w": "you've",
+     "start": 80.54,
+     "end": 80.72
+    },
+    {
+     "w": "been",
+     "start": 80.72,
+     "end": 80.86
+    },
+    {
+     "w": "missing.",
+     "start": 80.86,
+     "end": 81.3
+    }
+   ]
+  },
+  {
+   "text": "That's today's tool. There's a new one every day.",
+   "start": 81.87,
+   "end": 84.62,
+   "words": [
+    {
+     "w": "That's",
+     "start": 81.87,
+     "end": 82.16
+    },
+    {
+     "w": "today's",
+     "start": 82.16,
+     "end": 82.54
+    },
+    {
+     "w": "tool.",
+     "start": 82.54,
+     "end": 82.86
+    },
+    {
+     "w": "There's",
+     "start": 83.22,
+     "end": 83.46
+    },
+    {
+     "w": "a",
+     "start": 83.46,
+     "end": 83.54
+    },
+    {
+     "w": "new",
+     "start": 83.54,
+     "end": 83.76
+    },
+    {
+     "w": "one",
+     "start": 83.76,
+     "end": 84.0
+    },
+    {
+     "w": "every",
+     "start": 84.0,
+     "end": 84.24
+    },
+    {
+     "w": "day.",
+     "start": 84.24,
+     "end": 84.62
+    }
+   ]
+  }
+ ]
+}

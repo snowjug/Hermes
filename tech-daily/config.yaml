@@ -1,0 +1,68 @@
+# tech-daily: one new tech tool explained every day. Paths are relative to this file.
+
+channel:
+  name: Eudardo Jones
+  promise: One new AI or developer tool every day, explained in about four minutes.
+  audience: developers, makers and tech-curious professionals who want to know what is worth trying
+  language: English
+
+timezone: Asia/Kolkata
+
+video:
+  min_seconds: 150
+  max_seconds: 300
+  format: landscape               # landscape 1920x1080
+  voices: [af_heart, af_nova, af_sky, am_adam, am_michael, bf_emma, bf_isabella, bm_george]
+  music_volume_db: -22            # music bed level under narration (ducked further while speaking)
+  publish_times: {short: "13:00", main: "18:00"}   # same-day publish times (local); late builds go out that evening
+
+claude:
+  pick_model: sonnet              # choosing the topic and direction
+  build_model: sonnet             # the HyperFrames build (agentic, the expensive step)
+  build_budget_usd: 20
+  build_timeout_minutes: 150
+  metadata_model: sonnet
+  max_revisions: 2                # automatic fix-and-re-render rounds when fact or visual QA fails
+
+review:
+  hold_for_approval: true         # until the new style is approved; false = publish automatically
+
+ytauto:
+  exe: ../yt-automation/.venv/Scripts/ytauto.exe
+  altered_content: true           # tick YouTube's "altered or synthetic content" box (AI voice)
+
+tools:
+  ffmpeg_dir: C:\Users\HP\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0-full_build\bin
+
+# Only official APIs and public RSS/Atom feeds. No HTML scraping.
+sources:
+  hn_show_min_points: 40
+  github_min_stars: 150
+  rss:
+    - {name: Product Hunt, url: "https://www.producthunt.com/feed"}
+    - {name: TLDR Tech, url: "https://tldr.tech/api/rss/tech"}
+    - {name: TLDR AI, url: "https://tldr.tech/api/rss/ai"}
+    - {name: TechCrunch, url: "https://techcrunch.com/feed/"}
+    - {name: The Verge, url: "https://www.theverge.com/rss/index.xml"}
+    - {name: Ars Technica, url: "https://feeds.arstechnica.com/arstechnica/technology-lab"}
+    # One combined request: Reddit rate-limits several feed requests in a row.
+    - {name: Reddit (AI, LocalLLaMA, SideProject, technology), url: "https://www.reddit.com/r/artificial+LocalLLaMA+SideProject+technology/top/.rss?t=day&limit=40"}
+    - {name: Google Trends US, url: "https://trends.google.com/trending/rss?geo=US"}
+    - {name: Google Trends IN, url: "https://trends.google.com/trending/rss?geo=IN"}
+  youtube_channels:               # public channel feeds; titles only, to see what tech creators cover
+    - {name: Fireship, id: UCsBjURrPoezykLs9EqgamOA}
+    - {name: Two Minute Papers, id: UCbfYPyITQ-7l4upoX8nvctg}
+    - {name: Matt Wolfe, id: UChpleBmo18P08aKCIgti38g}
+
+notify:
+  hermes_target: null             # e.g. telegram, once `hermes gateway setup` has connected it
+
+style: doc                        # doc = documentary style (ElevenLabs voice, footage, no mascot/SFX)
+
+elevenlabs:
+  model: eleven_multilingual_v2
+  voices: {short: cjVigY5qzO86Huf0OWal, main: nPczCjzI2devNBz1zQrb}   # Eric / Brian, re-picked once the key works
+  stability: 0.42
+  similarity: 0.8
+  style: 0.28
+  speed: {short: 1.04, main: 1.0}

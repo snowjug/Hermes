@@ -1,0 +1,39 @@
+# secrets and personal state
+.env
+*.env
+**/browser-profile/
+**/state.db
+*.db
+*.sqlite
+
+# machine-specific and third-party
+.mcp.json
+.agents/
+.claude/
+**/.venv/
+**/.venv-tts/
+**/node_modules/
+**/__pycache__/
+*.egg-info/
+*.pdf
+
+# media and working files
+**/out/
+**/work/
+**/logs/
+**/inbox/
+**/scratch/
+tech-daily/episodes/
+tech-daily/history.json
+tech-daily/kit/sfx/
+
+# Motion as Code: kit originals and large assets (they come with the starter kit)
+Motion_as_kit/_original/
+Motion_as_kit/audio/sfx/
+Motion_as_kit/audio/*.wav
+Motion_as_kit/analysis/models/*.onnx
+Motion_as_kit/analysis/.cache/
+Motion_as_kit/analysis/stems/
+Motion_as_kit/analysis/qa/
+Motion_as_kit/data/voiceover.words.json
+tech-daily/.techdaily.lock

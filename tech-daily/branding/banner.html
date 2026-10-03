@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Channel banner</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* 2560x1440 banner. Everything that must be readable sits in YouTube's 1546x423 safe area (centre). */
+  html, body { margin: 0; width: 2560px; height: 1440px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(900px 520px at 72% 46%, rgba(255, 122, 69, 0.22), transparent 70%),
+      radial-gradient(800px 480px at 28% 58%, rgba(64, 128, 255, 0.20), transparent 70%),
+      #0e0f13;
+    font-family: "Space Grotesk", sans-serif;
+    color: #f4f1ea;
+    position: relative;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(1300px 700px at 50% 50%, black 30%, transparent 80%);
+  }
+  .safe {
+    position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+  }
+  .kicker {
+    font-family: "JetBrains Mono", monospace; font-size: 30px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: #ff7a45; margin-bottom: 26px;
+  }
+  h1 { margin: 0; font-size: 118px; line-height: 1.02; font-weight: 700; letter-spacing: -0.02em; }
+  h1 em { font-style: normal; color: #ff7a45; }
+  .sub { margin-top: 30px; font-size: 36px; color: rgba(244,241,234,0.72); font-weight: 500; }
+  .chips { position: absolute; top: 380px; left: 0; right: 0; display: flex; justify-content: center; gap: 22px; }
+  .chip {
+    font-family: "JetBrains Mono", monospace; font-size: 24px; padding: 12px 22px; border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.16); color: rgba(244,241,234,0.55); background: rgba(255,255,255,0.03);
+  }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="chips">
+    <span class="chip">AI models</span><span class="chip">dev tools</span><span class="chip">open source</span>
+    <span class="chip">apps</span><span class="chip">launches</span>
+  </div>
+  <div class="safe">
+    <div class="kicker">✱ New video daily · 6 PM IST</div>
+    <h1>One new tech tool.<br><em>Every day.</em></h1>
+    <div class="sub">What it does, who it's for, and whether it's worth your time.</div>
+  </div>
+</body>
+</html>
