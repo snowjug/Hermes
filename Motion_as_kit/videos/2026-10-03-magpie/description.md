@@ -2,6 +2,7 @@
 
 Tool Man, 3 October 2026. 1:26, 1920×1080, 30 fps.
 YouTube: https://youtu.be/TuOnUlJSWho
+Short (vertical cut, `analysis/make_short.py`, metadata in `short.json`): https://youtube.com/shorts/Y63pJ4viW14
 
 Codex talks to OpenAI. Claude Code talks to Anthropic. magpie is a free, open-source (MIT) app that lets you pick any model for any of your coding agents from one menu-bar list: Codex on DeepSeek, Claude Code on Kimi, Gemini CLI on GLM.
 

@@ -11,7 +11,8 @@ Published on the Tool Man channel on 3 October 2026. Title, description and tags
 3. **Word timings**: `analysis/align_vo.py` force-aligns the script against the audio (wav2vec2 CTC, quantised ONNX) and writes `data/lyrics.json`. `analysis/audio_vo.py` writes the loudness envelopes to `data/audio.json`.
 4. **Plates**: `app/src/scenes/*.ts` holds 13 plates: married, config, question, title, menubar, formats, gateway, adapter, plans, keys, surgical, catch and switchboard. `app/src/timeline.ts` cuts in the pause before each line, found by its text. `_mp.ts` is the shared toolkit: plate pipeline, nodes, links, packets, windows and stamps. The thumbnail is the `thumb` plate, rendered as a still after the end.
 5. **Render**: `node app/scripts/render-node.mjs video --fps 30 --samples 4 --noaudio`. It drives headless Chrome with Playwright, averages 4 motion-blur sub-frames per frame and streams the frames to ffmpeg over HTTP. (The kit's Bun renderer, `render.ts`, can't drive Chrome on Windows.)
-6. **Sound**: `analysis/sfx_mix.py` places about 225 effects on visual events (pen strokes, clicks, stamps, camera whips), ducks them under the voice and normalises the mix to −14 LUFS.
+6. **Short**: `analysis/make_short.py` turns the finished video into a 1080×1920 Short: a hook headline, the video edge to edge, chapter labels and big word-by-word captions from the same word timings.
+7. **Sound**: `analysis/sfx_mix.py` places about 225 effects on visual events (pen strokes, clicks, stamps, camera whips), ducks them under the voice and normalises the mix to −14 LUFS.
 
 ```sh
 cd app && bun install            # or npm install
