@@ -1,0 +1,24 @@
+{
+  "title": "This Free ElevenLabs Alternative Runs on Your Laptop",
+  "description": "VoiceStudio is a free, open-source (AGPL-3.0) desktop app that does on your own computer what cloud voice services charge for: voice cloning, voice design, video dubbing, dictation, transcription and audiobooks, in 646 languages. It passed 52,915 GitHub stars in under six months, 16,775 of them in the last week.\n\nWhat's in it\n• A shell over 16 speech engines: the app is the tape deck, the models are the tapes. The default is OmniVoice from k2-fsa: 0.6B parameters, trained on 581,489 hours of speech.\n• Cloning from a 3–10 second reference clip, and voice design from a description (gender, age, pitch, accent, whisper…). OmniVoice's voice design was trained on Chinese and English.\n• Video dubbing: transcribe, translate, re-voice each speaker, fit the timing.\n• A local server (127.0.0.1:3900) with an MCP endpoint, so coding agents such as Claude Code or Cursor can generate speech, clone or design voices and transcribe.\n• NVIDIA (CUDA), Apple Silicon (Metal) or CPU only: slower without a graphics card, about 5 GB of disk for the CPU build.\n\nThe 646 languages, honestly: English has 206,061 hours of training speech and Chinese 111,343, while half of the languages have 10.2 hours or less each.\n\nThe catch\nThe app is free, but the default OmniVoice weights are licensed CC BY-NC (non-commercial). If your videos make money, use an engine whose licence allows it (CosyVoice 3, VoxCPM2 and KittenTTS are Apache-2.0) and check each model's licence yourself. And clone only voices you have permission to use.\n\nFor comparison: ElevenLabs' Pro plan is $99 a month for 600,000 credits (one character is one credit on Multilingual v2), about 10 hours of speech.\n\nChapters\n0:00 $99 a month, or a free app\n0:22 How it works: a tape deck of 16 engines\n0:36 646 languages, cloning and voice design\n0:54 Dubbing, agents and hardware\n1:09 The catch (and one more thing)\n\nSources\nhttps://github.com/debpalash/VoiceStudio\nhttps://huggingface.co/k2-fsa/OmniVoice\nhttps://github.com/k2-fsa/OmniVoice/blob/master/docs/languages.md\nhttps://elevenlabs.io/pricing\nApp screenshots are from the project's README. Figures as of 4 October 2026; the weekly star count is GitHub's trending figure. The agent session on screen is an illustration.\nThis video's narration is an AI voice (Chatterbox by Resemble AI, MIT licence) generated offline on a laptop CPU, not with VoiceStudio. Animated in code.\n\nA new tool every day.\n\n#VoiceStudio #ElevenLabs #VoiceCloning #opensource #AIvoice",
+  "tags": [
+    "VoiceStudio",
+    "ElevenLabs alternative",
+    "free ElevenLabs alternative",
+    "elevenlabs alternative free",
+    "AI voice generator",
+    "free AI voice generator",
+    "voice cloning",
+    "AI voice cloning",
+    "text to speech",
+    "text to speech AI free",
+    "offline text to speech",
+    "open source TTS",
+    "OmniVoice",
+    "AI dubbing",
+    "local AI",
+    "MCP"
+  ],
+  "youtube_url": "https://youtu.be/2CW_zb6y_ps",
+  "published": "2026-10-04T20:55:00+05:30"
+}

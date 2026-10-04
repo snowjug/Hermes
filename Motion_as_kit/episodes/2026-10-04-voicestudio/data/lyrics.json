@@ -1,0 +1,1655 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "Ten hours of AI voice a month? On ElevenLabs, that's the $99 plan.",
+   "start": 0.32,
+   "end": 5.02,
+   "words": [
+    {
+     "w": "Ten",
+     "start": 0.32,
+     "end": 0.64
+    },
+    {
+     "w": "hours",
+     "start": 0.64,
+     "end": 1.02
+    },
+    {
+     "w": "of",
+     "start": 1.02,
+     "end": 1.18
+    },
+    {
+     "w": "AI",
+     "start": 1.18,
+     "end": 1.52,
+     "syl": [
+      [
+       1.18,
+       1.4
+      ],
+      [
+       1.4,
+       1.52
+      ]
+     ]
+    },
+    {
+     "w": "voice",
+     "start": 1.52,
+     "end": 1.84
+    },
+    {
+     "w": "a",
+     "start": 1.84,
+     "end": 1.9
+    },
+    {
+     "w": "month?",
+     "start": 1.9,
+     "end": 2.21
+    },
+    {
+     "w": "On",
+     "start": 2.55,
+     "end": 2.84
+    },
+    {
+     "w": "ElevenLabs,",
+     "start": 2.84,
+     "end": 3.57,
+     "syl": [
+      [
+       2.84,
+       3.18
+      ],
+      [
+       3.18,
+       3.57
+      ]
+     ]
+    },
+    {
+     "w": "that's",
+     "start": 3.7,
+     "end": 3.92
+    },
+    {
+     "w": "the",
+     "start": 3.92,
+     "end": 4.04
+    },
+    {
+     "w": "$99",
+     "start": 4.04,
+     "end": 4.63,
+     "syl": [
+      [
+       4.04,
+       4.26
+      ],
+      [
+       4.26,
+       4.4
+      ],
+      [
+       4.4,
+       4.63
+      ]
+     ]
+    },
+    {
+     "w": "plan.",
+     "start": 4.63,
+     "end": 5.02
+    }
+   ]
+  },
+  {
+   "text": "This app does it on your own computer. No meter, no subscription.",
+   "start": 5.53,
+   "end": 9.11,
+   "words": [
+    {
+     "w": "This",
+     "start": 5.53,
+     "end": 5.82
+    },
+    {
+     "w": "app",
+     "start": 5.82,
+     "end": 6.02
+    },
+    {
+     "w": "does",
+     "start": 6.02,
+     "end": 6.24
+    },
+    {
+     "w": "it",
+     "start": 6.24,
+     "end": 6.4
+    },
+    {
+     "w": "on",
+     "start": 6.4,
+     "end": 6.48
+    },
+    {
+     "w": "your",
+     "start": 6.48,
+     "end": 6.66
+    },
+    {
+     "w": "own",
+     "start": 6.66,
+     "end": 6.8
+    },
+    {
+     "w": "computer.",
+     "start": 6.8,
+     "end": 7.26
+    },
+    {
+     "w": "No",
+     "start": 7.53,
+     "end": 7.78
+    },
+    {
+     "w": "meter,",
+     "start": 7.78,
+     "end": 8.14
+    },
+    {
+     "w": "no",
+     "start": 8.3,
+     "end": 8.54
+    },
+    {
+     "w": "subscription.",
+     "start": 8.54,
+     "end": 9.11
+    }
+   ]
+  },
+  {
+   "text": "It's called VoiceStudio. It clones voices, designs new ones, and dubs videos into other languages.",
+   "start": 9.63,
+   "end": 14.97,
+   "words": [
+    {
+     "w": "It's",
+     "start": 9.63,
+     "end": 9.76
+    },
+    {
+     "w": "called",
+     "start": 9.76,
+     "end": 9.96
+    },
+    {
+     "w": "VoiceStudio.",
+     "start": 9.96,
+     "end": 10.64,
+     "syl": [
+      [
+       9.96,
+       10.18
+      ],
+      [
+       10.18,
+       10.64
+      ]
+     ]
+    },
+    {
+     "w": "It",
+     "start": 10.97,
+     "end": 11.14
+    },
+    {
+     "w": "clones",
+     "start": 11.14,
+     "end": 11.52
+    },
+    {
+     "w": "voices,",
+     "start": 11.52,
+     "end": 12.04
+    },
+    {
+     "w": "designs",
+     "start": 12.15,
+     "end": 12.56
+    },
+    {
+     "w": "new",
+     "start": 12.56,
+     "end": 12.78
+    },
+    {
+     "w": "ones,",
+     "start": 12.78,
+     "end": 13.08
+    },
+    {
+     "w": "and",
+     "start": 13.08,
+     "end": 13.22
+    },
+    {
+     "w": "dubs",
+     "start": 13.22,
+     "end": 13.52
+    },
+    {
+     "w": "videos",
+     "start": 13.52,
+     "end": 14.0
+    },
+    {
+     "w": "into",
+     "start": 14.0,
+     "end": 14.2
+    },
+    {
+     "w": "other",
+     "start": 14.2,
+     "end": 14.38
+    },
+    {
+     "w": "languages.",
+     "start": 14.38,
+     "end": 14.97
+    }
+   ]
+  },
+  {
+   "text": "It's open source, not even six months old, and just passed 52,000 GitHub stars.",
+   "start": 15.48,
+   "end": 19.92,
+   "words": [
+    {
+     "w": "It's",
+     "start": 15.48,
+     "end": 15.7
+    },
+    {
+     "w": "open",
+     "start": 15.7,
+     "end": 15.94
+    },
+    {
+     "w": "source,",
+     "start": 15.94,
+     "end": 16.34
+    },
+    {
+     "w": "not",
+     "start": 16.46,
+     "end": 16.66
+    },
+    {
+     "w": "even",
+     "start": 16.66,
+     "end": 16.88
+    },
+    {
+     "w": "six",
+     "start": 16.88,
+     "end": 17.1
+    },
+    {
+     "w": "months",
+     "start": 17.1,
+     "end": 17.34
+    },
+    {
+     "w": "old,",
+     "start": 17.34,
+     "end": 17.67
+    },
+    {
+     "w": "and",
+     "start": 17.67,
+     "end": 17.8
+    },
+    {
+     "w": "just",
+     "start": 17.8,
+     "end": 18.03
+    },
+    {
+     "w": "passed",
+     "start": 18.03,
+     "end": 18.36
+    },
+    {
+     "w": "52,000",
+     "start": 18.36,
+     "end": 19.14,
+     "syl": [
+      [
+       18.36,
+       18.62
+      ],
+      [
+       18.62,
+       18.78
+      ],
+      [
+       18.78,
+       19.14
+      ]
+     ]
+    },
+    {
+     "w": "GitHub",
+     "start": 19.14,
+     "end": 19.48,
+     "syl": [
+      [
+       19.14,
+       19.28
+      ],
+      [
+       19.28,
+       19.48
+      ]
+     ]
+    },
+    {
+     "w": "stars.",
+     "start": 19.48,
+     "end": 19.92
+    }
+   ]
+  },
+  {
+   "text": "Nearly a third of them arrived in the last seven days.",
+   "start": 20.43,
+   "end": 22.64,
+   "words": [
+    {
+     "w": "Nearly",
+     "start": 20.43,
+     "end": 20.74
+    },
+    {
+     "w": "a",
+     "start": 20.74,
+     "end": 20.82
+    },
+    {
+     "w": "third",
+     "start": 20.82,
+     "end": 21.02
+    },
+    {
+     "w": "of",
+     "start": 21.02,
+     "end": 21.1
+    },
+    {
+     "w": "them",
+     "start": 21.1,
+     "end": 21.24
+    },
+    {
+     "w": "arrived",
+     "start": 21.24,
+     "end": 21.6
+    },
+    {
+     "w": "in",
+     "start": 21.6,
+     "end": 21.68
+    },
+    {
+     "w": "the",
+     "start": 21.68,
+     "end": 21.78
+    },
+    {
+     "w": "last",
+     "start": 21.78,
+     "end": 21.98
+    },
+    {
+     "w": "seven",
+     "start": 21.98,
+     "end": 22.24
+    },
+    {
+     "w": "days.",
+     "start": 22.24,
+     "end": 22.64
+    }
+   ]
+  },
+  {
+   "text": "So how does one free app replace a voice studio?",
+   "start": 23.14,
+   "end": 25.62,
+   "words": [
+    {
+     "w": "So",
+     "start": 23.14,
+     "end": 23.48
+    },
+    {
+     "w": "how",
+     "start": 23.48,
+     "end": 23.64
+    },
+    {
+     "w": "does",
+     "start": 23.64,
+     "end": 23.9
+    },
+    {
+     "w": "one",
+     "start": 23.9,
+     "end": 24.04
+    },
+    {
+     "w": "free",
+     "start": 24.04,
+     "end": 24.32
+    },
+    {
+     "w": "app",
+     "start": 24.32,
+     "end": 24.5
+    },
+    {
+     "w": "replace",
+     "start": 24.5,
+     "end": 24.92
+    },
+    {
+     "w": "a",
+     "start": 24.92,
+     "end": 25.02
+    },
+    {
+     "w": "voice",
+     "start": 25.02,
+     "end": 25.18
+    },
+    {
+     "w": "studio?",
+     "start": 25.18,
+     "end": 25.62
+    }
+   ]
+  },
+  {
+   "text": "Think of it as a tape deck. The app is the deck. The voice models are the tapes.",
+   "start": 26.12,
+   "end": 30.44,
+   "words": [
+    {
+     "w": "Think",
+     "start": 26.12,
+     "end": 26.32
+    },
+    {
+     "w": "of",
+     "start": 26.32,
+     "end": 26.44
+    },
+    {
+     "w": "it",
+     "start": 26.44,
+     "end": 26.6
+    },
+    {
+     "w": "as",
+     "start": 26.6,
+     "end": 26.78
+    },
+    {
+     "w": "a",
+     "start": 26.78,
+     "end": 26.84
+    },
+    {
+     "w": "tape",
+     "start": 26.84,
+     "end": 27.08
+    },
+    {
+     "w": "deck.",
+     "start": 27.08,
+     "end": 27.28
+    },
+    {
+     "w": "The",
+     "start": 27.73,
+     "end": 27.94
+    },
+    {
+     "w": "app",
+     "start": 27.94,
+     "end": 28.07
+    },
+    {
+     "w": "is",
+     "start": 28.07,
+     "end": 28.27
+    },
+    {
+     "w": "the",
+     "start": 28.27,
+     "end": 28.38
+    },
+    {
+     "w": "deck.",
+     "start": 28.38,
+     "end": 28.52
+    },
+    {
+     "w": "The",
+     "start": 29.08,
+     "end": 29.22
+    },
+    {
+     "w": "voice",
+     "start": 29.22,
+     "end": 29.48
+    },
+    {
+     "w": "models",
+     "start": 29.48,
+     "end": 29.82
+    },
+    {
+     "w": "are",
+     "start": 29.82,
+     "end": 29.94
+    },
+    {
+     "w": "the",
+     "start": 29.94,
+     "end": 30.04
+    },
+    {
+     "w": "tapes.",
+     "start": 30.04,
+     "end": 30.44
+    }
+   ]
+  },
+  {
+   "text": "There are more than a dozen. The default tape, OmniVoice, learned from 581,000 hours of speech.",
+   "start": 30.92,
+   "end": 36.27,
+   "words": [
+    {
+     "w": "There",
+     "start": 30.92,
+     "end": 31.12
+    },
+    {
+     "w": "are",
+     "start": 31.12,
+     "end": 31.34
+    },
+    {
+     "w": "more",
+     "start": 31.34,
+     "end": 31.6
+    },
+    {
+     "w": "than",
+     "start": 31.6,
+     "end": 31.76
+    },
+    {
+     "w": "a",
+     "start": 31.76,
+     "end": 31.86
+    },
+    {
+     "w": "dozen.",
+     "start": 31.86,
+     "end": 32.26
+    },
+    {
+     "w": "The",
+     "start": 32.58,
+     "end": 32.68
+    },
+    {
+     "w": "default",
+     "start": 32.68,
+     "end": 32.97
+    },
+    {
+     "w": "tape,",
+     "start": 32.97,
+     "end": 33.23
+    },
+    {
+     "w": "OmniVoice,",
+     "start": 33.41,
+     "end": 34.03,
+     "syl": [
+      [
+       33.41,
+       33.68
+      ],
+      [
+       33.68,
+       34.03
+      ]
+     ]
+    },
+    {
+     "w": "learned",
+     "start": 34.14,
+     "end": 34.34
+    },
+    {
+     "w": "from",
+     "start": 34.34,
+     "end": 34.51
+    },
+    {
+     "w": "581,000",
+     "start": 34.51,
+     "end": 35.6,
+     "syl": [
+      [
+       34.51,
+       34.76
+      ],
+      [
+       34.76,
+       35.02
+      ],
+      [
+       35.02,
+       35.22
+      ],
+      [
+       35.22,
+       35.34
+      ],
+      [
+       35.34,
+       35.6
+      ]
+     ]
+    },
+    {
+     "w": "hours",
+     "start": 35.6,
+     "end": 35.82
+    },
+    {
+     "w": "of",
+     "start": 35.82,
+     "end": 35.9
+    },
+    {
+     "w": "speech.",
+     "start": 35.9,
+     "end": 36.27
+    }
+   ]
+  },
+  {
+   "text": "That's how it speaks 646 languages. But look at the split.",
+   "start": 36.78,
+   "end": 40.39,
+   "words": [
+    {
+     "w": "That's",
+     "start": 36.78,
+     "end": 37.04
+    },
+    {
+     "w": "how",
+     "start": 37.04,
+     "end": 37.2
+    },
+    {
+     "w": "it",
+     "start": 37.2,
+     "end": 37.28
+    },
+    {
+     "w": "speaks",
+     "start": 37.28,
+     "end": 37.66
+    },
+    {
+     "w": "646",
+     "start": 37.76,
+     "end": 38.74,
+     "syl": [
+      [
+       37.76,
+       38.06
+      ],
+      [
+       38.06,
+       38.28
+      ],
+      [
+       38.28,
+       38.52
+      ],
+      [
+       38.52,
+       38.74
+      ]
+     ]
+    },
+    {
+     "w": "languages.",
+     "start": 38.74,
+     "end": 39.33
+    },
+    {
+     "w": "But",
+     "start": 39.68,
+     "end": 39.84
+    },
+    {
+     "w": "look",
+     "start": 39.84,
+     "end": 39.98
+    },
+    {
+     "w": "at",
+     "start": 39.98,
+     "end": 40.06
+    },
+    {
+     "w": "the",
+     "start": 40.06,
+     "end": 40.14
+    },
+    {
+     "w": "split.",
+     "start": 40.14,
+     "end": 40.39
+    }
+   ]
+  },
+  {
+   "text": "English got over 200,000 hours. Half the languages got about ten each.",
+   "start": 40.91,
+   "end": 44.96,
+   "words": [
+    {
+     "w": "English",
+     "start": 40.91,
+     "end": 41.26
+    },
+    {
+     "w": "got",
+     "start": 41.26,
+     "end": 41.4
+    },
+    {
+     "w": "over",
+     "start": 41.4,
+     "end": 41.57
+    },
+    {
+     "w": "200,000",
+     "start": 41.57,
+     "end": 42.22,
+     "syl": [
+      [
+       41.57,
+       41.74
+      ],
+      [
+       41.74,
+       41.94
+      ],
+      [
+       41.94,
+       42.22
+      ]
+     ]
+    },
+    {
+     "w": "hours.",
+     "start": 42.22,
+     "end": 42.59
+    },
+    {
+     "w": "Half",
+     "start": 42.92,
+     "end": 43.16
+    },
+    {
+     "w": "the",
+     "start": 43.16,
+     "end": 43.3
+    },
+    {
+     "w": "languages",
+     "start": 43.3,
+     "end": 43.8
+    },
+    {
+     "w": "got",
+     "start": 43.8,
+     "end": 43.98
+    },
+    {
+     "w": "about",
+     "start": 43.98,
+     "end": 44.23
+    },
+    {
+     "w": "ten",
+     "start": 44.23,
+     "end": 44.57
+    },
+    {
+     "w": "each.",
+     "start": 44.57,
+     "end": 44.96
+    }
+   ]
+  },
+  {
+   "text": "To copy a voice, it needs a clip of just three to ten seconds.",
+   "start": 45.46,
+   "end": 48.26,
+   "words": [
+    {
+     "w": "To",
+     "start": 45.46,
+     "end": 45.58
+    },
+    {
+     "w": "copy",
+     "start": 45.58,
+     "end": 45.86
+    },
+    {
+     "w": "a",
+     "start": 45.86,
+     "end": 45.94
+    },
+    {
+     "w": "voice,",
+     "start": 45.94,
+     "end": 46.27
+    },
+    {
+     "w": "it",
+     "start": 46.27,
+     "end": 46.38
+    },
+    {
+     "w": "needs",
+     "start": 46.38,
+     "end": 46.6
+    },
+    {
+     "w": "a",
+     "start": 46.6,
+     "end": 46.66
+    },
+    {
+     "w": "clip",
+     "start": 46.66,
+     "end": 46.9
+    },
+    {
+     "w": "of",
+     "start": 46.9,
+     "end": 46.98
+    },
+    {
+     "w": "just",
+     "start": 46.98,
+     "end": 47.2
+    },
+    {
+     "w": "three",
+     "start": 47.2,
+     "end": 47.44
+    },
+    {
+     "w": "to",
+     "start": 47.44,
+     "end": 47.56
+    },
+    {
+     "w": "ten",
+     "start": 47.56,
+     "end": 47.76
+    },
+    {
+     "w": "seconds.",
+     "start": 47.76,
+     "end": 48.26
+    }
+   ]
+  },
+  {
+   "text": "No clip? Describe one: age, pitch, accent, even a whisper, and it designs the voice.",
+   "start": 48.77,
+   "end": 54.33,
+   "words": [
+    {
+     "w": "No",
+     "start": 48.77,
+     "end": 48.98
+    },
+    {
+     "w": "clip?",
+     "start": 48.98,
+     "end": 49.2
+    },
+    {
+     "w": "Describe",
+     "start": 49.62,
+     "end": 50.12
+    },
+    {
+     "w": "one:",
+     "start": 50.12,
+     "end": 50.35
+    },
+    {
+     "w": "age,",
+     "start": 50.49,
+     "end": 50.99
+    },
+    {
+     "w": "pitch,",
+     "start": 50.99,
+     "end": 51.41
+    },
+    {
+     "w": "accent,",
+     "start": 51.52,
+     "end": 52.08
+    },
+    {
+     "w": "even",
+     "start": 52.08,
+     "end": 52.3
+    },
+    {
+     "w": "a",
+     "start": 52.3,
+     "end": 52.38
+    },
+    {
+     "w": "whisper,",
+     "start": 52.38,
+     "end": 53.05
+    },
+    {
+     "w": "and",
+     "start": 53.05,
+     "end": 53.22
+    },
+    {
+     "w": "it",
+     "start": 53.22,
+     "end": 53.32
+    },
+    {
+     "w": "designs",
+     "start": 53.32,
+     "end": 53.8
+    },
+    {
+     "w": "the",
+     "start": 53.8,
+     "end": 53.9
+    },
+    {
+     "w": "voice.",
+     "start": 53.9,
+     "end": 54.33
+    }
+   ]
+  },
+  {
+   "text": "Dubbing chains it all: transcribe the video, translate it, re-voice each speaker in time.",
+   "start": 54.84,
+   "end": 59.05,
+   "words": [
+    {
+     "w": "Dubbing",
+     "start": 54.84,
+     "end": 55.12
+    },
+    {
+     "w": "chains",
+     "start": 55.12,
+     "end": 55.4
+    },
+    {
+     "w": "it",
+     "start": 55.4,
+     "end": 55.56
+    },
+    {
+     "w": "all:",
+     "start": 55.56,
+     "end": 55.83
+    },
+    {
+     "w": "transcribe",
+     "start": 55.83,
+     "end": 56.34
+    },
+    {
+     "w": "the",
+     "start": 56.34,
+     "end": 56.44
+    },
+    {
+     "w": "video,",
+     "start": 56.44,
+     "end": 56.89
+    },
+    {
+     "w": "translate",
+     "start": 56.89,
+     "end": 57.36
+    },
+    {
+     "w": "it,",
+     "start": 57.36,
+     "end": 57.58
+    },
+    {
+     "w": "re-voice",
+     "start": 57.58,
+     "end": 58.04,
+     "syl": [
+      [
+       57.58,
+       57.76
+      ],
+      [
+       57.76,
+       58.04
+      ]
+     ]
+    },
+    {
+     "w": "each",
+     "start": 58.04,
+     "end": 58.24
+    },
+    {
+     "w": "speaker",
+     "start": 58.24,
+     "end": 58.56
+    },
+    {
+     "w": "in",
+     "start": 58.56,
+     "end": 58.68
+    },
+    {
+     "w": "time.",
+     "start": 58.68,
+     "end": 59.05
+    }
+   ]
+  },
+  {
+   "text": "It even runs a local server, so your AI agents can speak too.",
+   "start": 59.47,
+   "end": 62.36,
+   "words": [
+    {
+     "w": "It",
+     "start": 59.47,
+     "end": 59.6
+    },
+    {
+     "w": "even",
+     "start": 59.6,
+     "end": 59.8
+    },
+    {
+     "w": "runs",
+     "start": 59.8,
+     "end": 60.0
+    },
+    {
+     "w": "a",
+     "start": 60.0,
+     "end": 60.04
+    },
+    {
+     "w": "local",
+     "start": 60.04,
+     "end": 60.32
+    },
+    {
+     "w": "server,",
+     "start": 60.32,
+     "end": 60.74
+    },
+    {
+     "w": "so",
+     "start": 60.74,
+     "end": 60.84
+    },
+    {
+     "w": "your",
+     "start": 60.84,
+     "end": 61.04
+    },
+    {
+     "w": "AI",
+     "start": 61.04,
+     "end": 61.34,
+     "syl": [
+      [
+       61.04,
+       61.18
+      ],
+      [
+       61.18,
+       61.34
+      ]
+     ]
+    },
+    {
+     "w": "agents",
+     "start": 61.34,
+     "end": 61.64
+    },
+    {
+     "w": "can",
+     "start": 61.64,
+     "end": 61.78
+    },
+    {
+     "w": "speak",
+     "start": 61.78,
+     "end": 61.92
+    },
+    {
+     "w": "too.",
+     "start": 62.02,
+     "end": 62.36
+    }
+   ]
+  },
+  {
+   "text": "Nvidia, Apple Silicon, or a plain laptop: it runs on all three, just slower without a graphics card.",
+   "start": 62.87,
+   "end": 68.48,
+   "words": [
+    {
+     "w": "Nvidia,",
+     "start": 62.87,
+     "end": 63.46
+    },
+    {
+     "w": "Apple",
+     "start": 63.46,
+     "end": 63.74
+    },
+    {
+     "w": "Silicon,",
+     "start": 63.74,
+     "end": 64.27
+    },
+    {
+     "w": "or",
+     "start": 64.27,
+     "end": 64.44
+    },
+    {
+     "w": "a",
+     "start": 64.44,
+     "end": 64.49
+    },
+    {
+     "w": "plain",
+     "start": 64.49,
+     "end": 64.74
+    },
+    {
+     "w": "laptop:",
+     "start": 64.74,
+     "end": 65.18
+    },
+    {
+     "w": "it",
+     "start": 65.49,
+     "end": 65.66
+    },
+    {
+     "w": "runs",
+     "start": 65.66,
+     "end": 66.02
+    },
+    {
+     "w": "on",
+     "start": 66.02,
+     "end": 66.2
+    },
+    {
+     "w": "all",
+     "start": 66.2,
+     "end": 66.39
+    },
+    {
+     "w": "three,",
+     "start": 66.39,
+     "end": 66.76
+    },
+    {
+     "w": "just",
+     "start": 66.88,
+     "end": 67.1
+    },
+    {
+     "w": "slower",
+     "start": 67.1,
+     "end": 67.58
+    },
+    {
+     "w": "without",
+     "start": 67.58,
+     "end": 67.84
+    },
+    {
+     "w": "a",
+     "start": 67.84,
+     "end": 67.88
+    },
+    {
+     "w": "graphics",
+     "start": 67.88,
+     "end": 68.24
+    },
+    {
+     "w": "card.",
+     "start": 68.24,
+     "end": 68.48
+    }
+   ]
+  },
+  {
+   "text": "Now the catch. The app is free, but the default voice model's licence is non-commercial.",
+   "start": 69.39,
+   "end": 73.63,
+   "words": [
+    {
+     "w": "Now",
+     "start": 69.39,
+     "end": 69.58
+    },
+    {
+     "w": "the",
+     "start": 69.58,
+     "end": 69.66
+    },
+    {
+     "w": "catch.",
+     "start": 69.66,
+     "end": 70.02
+    },
+    {
+     "w": "The",
+     "start": 70.38,
+     "end": 70.54
+    },
+    {
+     "w": "app",
+     "start": 70.54,
+     "end": 70.72
+    },
+    {
+     "w": "is",
+     "start": 70.72,
+     "end": 70.84
+    },
+    {
+     "w": "free,",
+     "start": 70.84,
+     "end": 71.21
+    },
+    {
+     "w": "but",
+     "start": 71.4,
+     "end": 71.54
+    },
+    {
+     "w": "the",
+     "start": 71.54,
+     "end": 71.62
+    },
+    {
+     "w": "default",
+     "start": 71.62,
+     "end": 71.92
+    },
+    {
+     "w": "voice",
+     "start": 71.92,
+     "end": 72.18
+    },
+    {
+     "w": "model's",
+     "start": 72.18,
+     "end": 72.44
+    },
+    {
+     "w": "licence",
+     "start": 72.44,
+     "end": 72.84
+    },
+    {
+     "w": "is",
+     "start": 72.84,
+     "end": 72.96
+    },
+    {
+     "w": "non-commercial.",
+     "start": 72.96,
+     "end": 73.63,
+     "syl": [
+      [
+       72.96,
+       73.16
+      ],
+      [
+       73.16,
+       73.63
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Making money? Swap in an Apache-licensed tape, like CosyVoice. And only clone voices you have permission to use.",
+   "start": 74.14,
+   "end": 80.58,
+   "words": [
+    {
+     "w": "Making",
+     "start": 74.14,
+     "end": 74.5
+    },
+    {
+     "w": "money?",
+     "start": 74.5,
+     "end": 74.83
+    },
+    {
+     "w": "Swap",
+     "start": 75.18,
+     "end": 75.5
+    },
+    {
+     "w": "in",
+     "start": 75.64,
+     "end": 75.8
+    },
+    {
+     "w": "an",
+     "start": 75.8,
+     "end": 75.9
+    },
+    {
+     "w": "Apache-licensed",
+     "start": 75.9,
+     "end": 76.61,
+     "syl": [
+      [
+       75.9,
+       76.26
+      ],
+      [
+       76.26,
+       76.61
+      ]
+     ]
+    },
+    {
+     "w": "tape,",
+     "start": 76.61,
+     "end": 76.84
+    },
+    {
+     "w": "like",
+     "start": 77.04,
+     "end": 77.21
+    },
+    {
+     "w": "CosyVoice.",
+     "start": 77.21,
+     "end": 77.89,
+     "syl": [
+      [
+       77.21,
+       77.5
+      ],
+      [
+       77.5,
+       77.89
+      ]
+     ]
+    },
+    {
+     "w": "And",
+     "start": 78.23,
+     "end": 78.5
+    },
+    {
+     "w": "only",
+     "start": 78.5,
+     "end": 78.74
+    },
+    {
+     "w": "clone",
+     "start": 78.74,
+     "end": 79.04
+    },
+    {
+     "w": "voices",
+     "start": 79.04,
+     "end": 79.4
+    },
+    {
+     "w": "you",
+     "start": 79.4,
+     "end": 79.54
+    },
+    {
+     "w": "have",
+     "start": 79.54,
+     "end": 79.68
+    },
+    {
+     "w": "permission",
+     "start": 79.68,
+     "end": 80.04
+    },
+    {
+     "w": "to",
+     "start": 80.04,
+     "end": 80.2
+    },
+    {
+     "w": "use.",
+     "start": 80.2,
+     "end": 80.58
+    }
+   ]
+  },
+  {
+   "text": "One more thing. This narration is AI too, made free on a laptop with no graphics card.",
+   "start": 81.11,
+   "end": 85.97,
+   "words": [
+    {
+     "w": "One",
+     "start": 81.11,
+     "end": 81.3
+    },
+    {
+     "w": "more",
+     "start": 81.3,
+     "end": 81.48
+    },
+    {
+     "w": "thing.",
+     "start": 81.48,
+     "end": 81.81
+    },
+    {
+     "w": "This",
+     "start": 82.14,
+     "end": 82.34
+    },
+    {
+     "w": "narration",
+     "start": 82.34,
+     "end": 82.84
+    },
+    {
+     "w": "is",
+     "start": 82.84,
+     "end": 82.97
+    },
+    {
+     "w": "AI",
+     "start": 82.97,
+     "end": 83.38,
+     "syl": [
+      [
+       82.97,
+       83.24
+      ],
+      [
+       83.24,
+       83.38
+      ]
+     ]
+    },
+    {
+     "w": "too,",
+     "start": 83.38,
+     "end": 83.7
+    },
+    {
+     "w": "made",
+     "start": 83.81,
+     "end": 84.12
+    },
+    {
+     "w": "free",
+     "start": 84.12,
+     "end": 84.4
+    },
+    {
+     "w": "on",
+     "start": 84.4,
+     "end": 84.5
+    },
+    {
+     "w": "a",
+     "start": 84.5,
+     "end": 84.58
+    },
+    {
+     "w": "laptop",
+     "start": 84.58,
+     "end": 85.0
+    },
+    {
+     "w": "with",
+     "start": 85.0,
+     "end": 85.18
+    },
+    {
+     "w": "no",
+     "start": 85.18,
+     "end": 85.3
+    },
+    {
+     "w": "graphics",
+     "start": 85.3,
+     "end": 85.69
+    },
+    {
+     "w": "card.",
+     "start": 85.69,
+     "end": 85.97
+    }
+   ]
+  },
+  {
+   "text": "That's today's tool. There's a new one every day.",
+   "start": 86.5,
+   "end": 89.21,
+   "words": [
+    {
+     "w": "That's",
+     "start": 86.5,
+     "end": 86.74
+    },
+    {
+     "w": "today's",
+     "start": 86.74,
+     "end": 87.1
+    },
+    {
+     "w": "tool.",
+     "start": 87.1,
+     "end": 87.43
+    },
+    {
+     "w": "There's",
+     "start": 87.8,
+     "end": 88.04
+    },
+    {
+     "w": "a",
+     "start": 88.04,
+     "end": 88.12
+    },
+    {
+     "w": "new",
+     "start": 88.12,
+     "end": 88.4
+    },
+    {
+     "w": "one",
+     "start": 88.4,
+     "end": 88.6
+    },
+    {
+     "w": "every",
+     "start": 88.6,
+     "end": 88.84
+    },
+    {
+     "w": "day.",
+     "start": 88.84,
+     "end": 89.21
+    }
+   ]
+  }
+ ]
+}

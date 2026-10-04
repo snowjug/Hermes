@@ -1,0 +1,14 @@
+{
+ "fmt": "main",
+ "theme": "scope",
+ "title": "VoiceStudio: the free ElevenLabs alternative",
+ "voice": {
+  "exaggeration": 0.5,
+  "cfg": 0.5,
+  "line_gap": 0.4,
+  "sentence_gap": 0.22,
+  "lead": 0.3,
+  "tail": 0.85,
+  "tempo": 1.04
+ }
+}

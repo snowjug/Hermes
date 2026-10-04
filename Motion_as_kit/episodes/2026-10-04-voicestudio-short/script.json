@@ -1,0 +1,23 @@
+{
+  "title": "VoiceStudio Short",
+  "notes": "Facts from github.com/debpalash/VoiceStudio and k2-fsa/OmniVoice, checked 2026-10-04 (see the main episode's script.json). The last line loops back to the first.",
+  "lines": [
+    {"text": "Stop paying for AI voices.", "say": ["Stop paying for AI voices."]},
+    {"text": "This free app copies a voice from a ten-second clip.", "say": ["This free app copies a voice from a ten-second clip."]},
+    {"text": "Describe a voice that doesn't exist, and it builds one.", "say": ["Describe a voice that doesn't exist, and it builds one."]},
+    {"text": "It even dubs your videos into other languages.", "say": ["It even dubs your videos into other languages."]},
+    {"text": "And it all runs on your own computer. No subscription.", "say": ["And it all runs on your own computer.", "No subscription."]},
+    {"text": "It's called VoiceStudio. 52,000 GitHub stars, nearly a third from this week.", "say": ["It's called Voice Studio.", "Fifty-two thousand GitHub stars, nearly a third from this week."]},
+    {"text": "One catch: the default model is non-commercial. Monetizing? Switch engines.", "say": ["One catch: the default model is non-commercial.", "Monetizing?", "Switch engines."]},
+    {"text": "Oh, and this voice? Also AI. Made for free, on a laptop.", "say": ["Oh, and this voice?", "Also AI.", "Made for free, on a laptop."]}
+  ],
+  "spoken": {
+    "AI": ["A", "I"],
+    "AI.": ["A", "I"],
+    "ten-second": ["TEN", "SECOND"],
+    "VoiceStudio.": ["VOICE", "STUDIO"],
+    "52,000": ["FIFTY", "TWO", "THOUSAND"],
+    "GitHub": ["GIT", "HUB"],
+    "non-commercial.": ["NON", "COMMERCIAL"]
+  }
+}

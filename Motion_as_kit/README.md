@@ -9,6 +9,8 @@ Each video is an **episode**: one folder under [`episodes/`](episodes/) with its
 | [`2026-10-03-magpie`](episodes/2026-10-03-magpie/) | 1920×1080, 85 s | `signal` (ink, bone, hazard orange) | [video](https://youtu.be/TuOnUlJSWho) · [Short (reframed)](https://youtube.com/shorts/Y63pJ4viW14) |
 | [`2026-10-04-disktree`](episodes/2026-10-04-disktree/) | 1920×1080, 90 s | `blueprint` (navy, cyan, amber) | [video](https://youtu.be/4MmSMJ2c2aQ) |
 | [`2026-10-04-disktree-short`](episodes/2026-10-04-disktree-short/) | 1080×1920, 30 s | `pop` (yellow paper, black, hot pink) | [Short](https://youtube.com/shorts/vZ9y7XhO3pc) |
+| [`2026-10-04-voicestudio`](episodes/2026-10-04-voicestudio/) | 1920×1080, 90 s | `scope` (oscilloscope green on black, VU amber) | [video](https://youtu.be/2CW_zb6y_ps) |
+| [`2026-10-04-voicestudio-short`](episodes/2026-10-04-voicestudio-short/) | 1080×1920, 30 s | `riso` (risograph: cream stock, fluoro pink, riso blue) | [Short](https://youtube.com/shorts/rlxaVkBudiM) |
 
 ## An episode
 
@@ -25,7 +27,7 @@ episodes/<date>-<tool>/
   work/ out/        takes, logs, renders                                        (not in git)
 ```
 
-Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts). Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
+Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope` and `riso`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
 
 ## Make one
 
@@ -41,7 +43,7 @@ cd app && npm install && npx vite                                  # live previe
 node scripts/render-node.mjs sheet --times 2,10,20 --cols 3        # contact sheet → episodes/$EPISODE/out/sheet.png
 node scripts/render-node.mjs parts --fps 30 --part-sec 10 --samples 4 --noaudio   # resumable render → out/picture.mp4
 cd .. && uv run --no-project --with numpy python analysis/sfx_mix.py               # → out/mix.wav, −14 LUFS
-ffmpeg -i episodes/$EPISODE/out/picture.mp4 -i episodes/$EPISODE/out/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest episodes/$EPISODE/out/final.mp4
+ffmpeg -i episodes/$EPISODE/out/picture.mp4 -i episodes/$EPISODE/out/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k episodes/$EPISODE/out/final.mp4
 uv run --no-project --with numpy python analysis/check_video.py episodes/$EPISODE/out/final.mp4
 node app/scripts/render-node.mjs stills --only thumb --t <duration + 2>             # the thumbnail plate
 ```

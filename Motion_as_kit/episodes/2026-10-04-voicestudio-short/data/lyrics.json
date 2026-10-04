@@ -1,0 +1,520 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "Stop paying for AI voices.",
+   "start": 0.28,
+   "end": 1.87,
+   "words": [
+    {
+     "w": "Stop",
+     "start": 0.28,
+     "end": 0.6
+    },
+    {
+     "w": "paying",
+     "start": 0.6,
+     "end": 0.86
+    },
+    {
+     "w": "for",
+     "start": 0.86,
+     "end": 1.06
+    },
+    {
+     "w": "AI",
+     "start": 1.06,
+     "end": 1.32,
+     "syl": [
+      [
+       1.06,
+       1.2
+      ],
+      [
+       1.2,
+       1.32
+      ]
+     ]
+    },
+    {
+     "w": "voices.",
+     "start": 1.32,
+     "end": 1.87
+    }
+   ]
+  },
+  {
+   "text": "This free app copies a voice from a ten-second clip.",
+   "start": 2.46,
+   "end": 4.78,
+   "words": [
+    {
+     "w": "This",
+     "start": 2.46,
+     "end": 2.66
+    },
+    {
+     "w": "free",
+     "start": 2.66,
+     "end": 2.92
+    },
+    {
+     "w": "app",
+     "start": 2.92,
+     "end": 3.09
+    },
+    {
+     "w": "copies",
+     "start": 3.09,
+     "end": 3.44
+    },
+    {
+     "w": "a",
+     "start": 3.44,
+     "end": 3.5
+    },
+    {
+     "w": "voice",
+     "start": 3.5,
+     "end": 3.8
+    },
+    {
+     "w": "from",
+     "start": 3.8,
+     "end": 3.98
+    },
+    {
+     "w": "a",
+     "start": 3.98,
+     "end": 4.04
+    },
+    {
+     "w": "ten-second",
+     "start": 4.04,
+     "end": 4.58,
+     "syl": [
+      [
+       4.04,
+       4.26
+      ],
+      [
+       4.26,
+       4.58
+      ]
+     ]
+    },
+    {
+     "w": "clip.",
+     "start": 4.58,
+     "end": 4.78
+    }
+   ]
+  },
+  {
+   "text": "Describe a voice that doesn't exist, and it builds one.",
+   "start": 5.48,
+   "end": 8.41,
+   "words": [
+    {
+     "w": "Describe",
+     "start": 5.48,
+     "end": 5.96
+    },
+    {
+     "w": "a",
+     "start": 5.96,
+     "end": 6.04
+    },
+    {
+     "w": "voice",
+     "start": 6.04,
+     "end": 6.34
+    },
+    {
+     "w": "that",
+     "start": 6.34,
+     "end": 6.52
+    },
+    {
+     "w": "doesn't",
+     "start": 6.52,
+     "end": 6.86
+    },
+    {
+     "w": "exist,",
+     "start": 6.86,
+     "end": 7.3
+    },
+    {
+     "w": "and",
+     "start": 7.51,
+     "end": 7.7
+    },
+    {
+     "w": "it",
+     "start": 7.7,
+     "end": 7.8
+    },
+    {
+     "w": "builds",
+     "start": 7.8,
+     "end": 8.2
+    },
+    {
+     "w": "one.",
+     "start": 8.2,
+     "end": 8.41
+    }
+   ]
+  },
+  {
+   "text": "It even dubs your videos into other languages.",
+   "start": 9.01,
+   "end": 11.12,
+   "words": [
+    {
+     "w": "It",
+     "start": 9.01,
+     "end": 9.14
+    },
+    {
+     "w": "even",
+     "start": 9.14,
+     "end": 9.36
+    },
+    {
+     "w": "dubs",
+     "start": 9.36,
+     "end": 9.54
+    },
+    {
+     "w": "your",
+     "start": 9.54,
+     "end": 9.64
+    },
+    {
+     "w": "videos",
+     "start": 9.64,
+     "end": 9.99
+    },
+    {
+     "w": "into",
+     "start": 9.99,
+     "end": 10.22
+    },
+    {
+     "w": "other",
+     "start": 10.22,
+     "end": 10.48
+    },
+    {
+     "w": "languages.",
+     "start": 10.48,
+     "end": 11.12
+    }
+   ]
+  },
+  {
+   "text": "And it all runs on your own computer. No subscription.",
+   "start": 11.72,
+   "end": 14.28,
+   "words": [
+    {
+     "w": "And",
+     "start": 11.72,
+     "end": 11.84
+    },
+    {
+     "w": "it",
+     "start": 11.84,
+     "end": 11.96
+    },
+    {
+     "w": "all",
+     "start": 11.96,
+     "end": 12.12
+    },
+    {
+     "w": "runs",
+     "start": 12.12,
+     "end": 12.38
+    },
+    {
+     "w": "on",
+     "start": 12.38,
+     "end": 12.46
+    },
+    {
+     "w": "your",
+     "start": 12.46,
+     "end": 12.6
+    },
+    {
+     "w": "own",
+     "start": 12.6,
+     "end": 12.82
+    },
+    {
+     "w": "computer.",
+     "start": 12.82,
+     "end": 13.28
+    },
+    {
+     "w": "No",
+     "start": 13.61,
+     "end": 13.8
+    },
+    {
+     "w": "subscription.",
+     "start": 13.8,
+     "end": 14.28
+    }
+   ]
+  },
+  {
+   "text": "It's called VoiceStudio. 52,000 GitHub stars, nearly a third from this week.",
+   "start": 14.89,
+   "end": 18.92,
+   "words": [
+    {
+     "w": "It's",
+     "start": 14.89,
+     "end": 15.02
+    },
+    {
+     "w": "called",
+     "start": 15.02,
+     "end": 15.32
+    },
+    {
+     "w": "VoiceStudio.",
+     "start": 15.32,
+     "end": 16.07,
+     "syl": [
+      [
+       15.32,
+       15.6
+      ],
+      [
+       15.6,
+       16.07
+      ]
+     ]
+    },
+    {
+     "w": "52,000",
+     "start": 16.38,
+     "end": 17.12,
+     "syl": [
+      [
+       16.38,
+       16.66
+      ],
+      [
+       16.66,
+       16.82
+      ],
+      [
+       16.82,
+       17.12
+      ]
+     ]
+    },
+    {
+     "w": "GitHub",
+     "start": 17.12,
+     "end": 17.42,
+     "syl": [
+      [
+       17.12,
+       17.28
+      ],
+      [
+       17.28,
+       17.42
+      ]
+     ]
+    },
+    {
+     "w": "stars,",
+     "start": 17.42,
+     "end": 17.86
+    },
+    {
+     "w": "nearly",
+     "start": 17.86,
+     "end": 18.16
+    },
+    {
+     "w": "a",
+     "start": 18.16,
+     "end": 18.24
+    },
+    {
+     "w": "third",
+     "start": 18.24,
+     "end": 18.46
+    },
+    {
+     "w": "from",
+     "start": 18.46,
+     "end": 18.6
+    },
+    {
+     "w": "this",
+     "start": 18.6,
+     "end": 18.74
+    },
+    {
+     "w": "week.",
+     "start": 18.74,
+     "end": 18.92
+    }
+   ]
+  },
+  {
+   "text": "One catch: the default model is non-commercial. Monetizing? Switch engines.",
+   "start": 19.72,
+   "end": 24.19,
+   "words": [
+    {
+     "w": "One",
+     "start": 19.72,
+     "end": 19.88
+    },
+    {
+     "w": "catch:",
+     "start": 19.88,
+     "end": 20.26
+    },
+    {
+     "w": "the",
+     "start": 20.5,
+     "end": 20.6
+    },
+    {
+     "w": "default",
+     "start": 20.6,
+     "end": 20.94
+    },
+    {
+     "w": "model",
+     "start": 20.94,
+     "end": 21.26
+    },
+    {
+     "w": "is",
+     "start": 21.26,
+     "end": 21.38
+    },
+    {
+     "w": "non-commercial.",
+     "start": 21.38,
+     "end": 22.08,
+     "syl": [
+      [
+       21.38,
+       21.6
+      ],
+      [
+       21.6,
+       22.08
+      ]
+     ]
+    },
+    {
+     "w": "Monetizing?",
+     "start": 22.4,
+     "end": 23.29
+    },
+    {
+     "w": "Switch",
+     "start": 23.62,
+     "end": 23.92
+    },
+    {
+     "w": "engines.",
+     "start": 23.92,
+     "end": 24.19
+    }
+   ]
+  },
+  {
+   "text": "Oh, and this voice? Also AI. Made for free, on a laptop.",
+   "start": 24.91,
+   "end": 28.94,
+   "words": [
+    {
+     "w": "Oh,",
+     "start": 24.91,
+     "end": 25.24
+    },
+    {
+     "w": "and",
+     "start": 25.24,
+     "end": 25.45
+    },
+    {
+     "w": "this",
+     "start": 25.45,
+     "end": 25.68
+    },
+    {
+     "w": "voice?",
+     "start": 25.68,
+     "end": 26.06
+    },
+    {
+     "w": "Also",
+     "start": 26.38,
+     "end": 26.78
+    },
+    {
+     "w": "AI.",
+     "start": 26.78,
+     "end": 27.11,
+     "syl": [
+      [
+       26.78,
+       26.96
+      ],
+      [
+       26.96,
+       27.11
+      ]
+     ]
+    },
+    {
+     "w": "Made",
+     "start": 27.44,
+     "end": 27.7
+    },
+    {
+     "w": "for",
+     "start": 27.7,
+     "end": 27.86
+    },
+    {
+     "w": "free,",
+     "start": 27.86,
+     "end": 28.21
+    },
+    {
+     "w": "on",
+     "start": 28.32,
+     "end": 28.5
+    },
+    {
+     "w": "a",
+     "start": 28.5,
+     "end": 28.56
+    },
+    {
+     "w": "laptop.",
+     "start": 28.56,
+     "end": 28.94
+    }
+   ]
+  }
+ ]
+}

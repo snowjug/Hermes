@@ -4,9 +4,9 @@
 
 Channel: **[Tool Man (@tooladay)](https://www.youtube.com/@tooladay)**, one new tool every day.
 
-[![Shopify's Founder Built a Free Disk Cleaner: 4 Million Files in 3.4 Seconds](Motion_as_kit/episodes/2026-10-04-disktree/publish/thumbnail.jpg)](https://youtu.be/4MmSMJ2c2aQ)
+[![This Free ElevenLabs Alternative Runs on Your Laptop](Motion_as_kit/episodes/2026-10-04-voicestudio/publish/thumbnail.jpg)](https://youtu.be/2CW_zb6y_ps)
 
-**Latest:** [Shopify's Founder Built a Free Disk Cleaner: 4 Million Files in 3.4 Seconds](https://youtu.be/4MmSMJ2c2aQ) (1:30) · [the Short](https://youtube.com/shorts/vZ9y7XhO3pc) (0:30) · about [disktree](https://github.com/tobi/disktree)
+**Latest:** [This Free ElevenLabs Alternative Runs on Your Laptop](https://youtu.be/2CW_zb6y_ps) (1:30) · [the Short](https://youtube.com/shorts/rlxaVkBudiM) (0:30) · about [VoiceStudio](https://github.com/debpalash/VoiceStudio)
 
 Each video has its own look. The 90-second videos and the 30-second vertical Shorts are written, voiced, animated and rendered separately; a Short is not a reformat of the video.
 
@@ -72,7 +72,7 @@ cd app && npx vite
 node scripts/render-node.mjs parts --fps 30 --part-sec 10 --samples 4 --noaudio
 cd .. && uv run --no-project --with numpy python analysis/sfx_mix.py
 E=episodes/$EPISODE/out
-ffmpeg -i $E/picture.mp4 -i $E/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest $E/final.mp4
+ffmpeg -i $E/picture.mp4 -i $E/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k $E/final.mp4
 uv run --no-project --with numpy python analysis/check_video.py $E/final.mp4
 
 # 5. upload
@@ -85,6 +85,7 @@ The alignment model (`analysis/models/w2v2_base_960h_q.onnx`) and the sound-effe
 
 | Date | Video | Short | Tool |
 |---|---|---|---|
+| 4 Oct 2026 | [This Free ElevenLabs Alternative Runs on Your Laptop](https://youtu.be/2CW_zb6y_ps) | [This Free App Copies a Voice From a 10-Second Clip](https://youtube.com/shorts/rlxaVkBudiM) | [VoiceStudio](https://github.com/debpalash/VoiceStudio) · [video episode](Motion_as_kit/episodes/2026-10-04-voicestudio/) · [Short episode](Motion_as_kit/episodes/2026-10-04-voicestudio-short/) |
 | 4 Oct 2026 | [Shopify's Founder Built a Free Disk Cleaner: 4 Million Files in 3.4 Seconds](https://youtu.be/4MmSMJ2c2aQ) | [Your Disk Is Full. But Full of What?](https://youtube.com/shorts/vZ9y7XhO3pc) | [disktree](https://github.com/tobi/disktree) · [video episode](Motion_as_kit/episodes/2026-10-04-disktree/) · [Short episode](Motion_as_kit/episodes/2026-10-04-disktree-short/) |
 | 3 Oct 2026 | [Codex on DeepSeek, Claude Code on Kimi: How This Free 15 MB App Does It](https://youtu.be/TuOnUlJSWho) | [Short (reframed)](https://youtube.com/shorts/Y63pJ4viW14) | [magpie](https://github.com/yetone/magpie) · [episode](Motion_as_kit/episodes/2026-10-03-magpie/) |
 
@@ -94,6 +95,7 @@ The alignment model (`analysis/models/w2v2_base_960h_q.onnx`) and the sound-effe
 - **Laptops sleep in the middle of renders.** On battery, an idle Windows laptop drops into Modern Standby, which kills headless Chrome. Keep the machine awake while rendering. Renders are split into 10-second parts so an interrupted run resumes where it stopped.
 - **Rendering is slow on a laptop GPU, and twice as slow on battery.** On an Intel Iris Xe, 4-sample motion blur renders at about 1.2 frames per second on power, so a 90-second video takes roughly 40 minutes. The voice takes 25–45 minutes on the CPU. Keep the laptop plugged in.
 - **Background jobs stop after 30 minutes.** Long steps are resumable: voice takes are cached, and renders resume at the next unfinished part.
+- **Don't mux with `-shortest`.** With a WAV mix that ends a few milliseconds before the picture, ffmpeg cut the last four frames of a Short. The voice and the picture are the same length by construction, so the plain mux is right.
 - **Chatterbox needs `setuptools<80`.** Its audio watermarker still imports `pkg_resources`.
 - **Whisper mishears tech names.** It hears "Claude" as "cloud", "Codex" as "codecs" and numbers as digits. The voice check compares letters through a fix-up table, so good takes aren't thrown away.
 

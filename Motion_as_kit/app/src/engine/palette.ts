@@ -21,6 +21,16 @@ const THEMES = {
     ink: '#111111', ink2: '#1C1C1C', graphite: '#3B3B3B', ash: '#5E5A4E', bone: '#FFD83D',
     signal: '#FF2E63', ember: '#FF8FB0', blood: '#D1124A', acid: '#00B3FF', halation: [1.0, 0.1, 0.35],
   },
+  // scope: an oscilloscope in a dark studio: green-black glass, phosphor-mint trace, VU amber for warnings
+  scope: {
+    ink: '#050907', ink2: '#0C1611', graphite: '#33503F', ash: '#87A596', bone: '#E9F3EC',
+    signal: '#38F59A', ember: '#C4FFE2', blood: '#0B8A55', acid: '#FFB43C', halation: [0.2, 1.0, 0.55],
+  },
+  // riso: risograph print: cream stock, soft black, fluorescent pink and riso blue (plates set `paper`)
+  riso: {
+    ink: '#16130F', ink2: '#24201B', graphite: '#4A433B', ash: '#7D746A', bone: '#F4ECDC',
+    signal: '#FF3EA5', ember: '#FF9ED0', blood: '#D2177C', acid: '#2A4BFF', halation: [1.0, 0.3, 0.7],
+  },
 } as const;
 
 export type ThemeName = keyof typeof THEMES;

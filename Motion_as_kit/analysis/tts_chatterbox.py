@@ -33,7 +33,10 @@ def words(s: str) -> list[str]:
 
 # whisper's usual mishearings of the names in this script
 FIX = (("cloud", "claude"), ("clawed", "claude"), ("clod", "claude"), ("a.i.", "ai"), ("mag pie", "magpie"), ("git hub", "github"),
-       ("wiztree", "wiz tree"), ("disktree", "disk tree"), ("disc", "disk"), ("3.4", "three point four"), ("4 million", "four million"), ("11", "eleven"))
+       ("wiztree", "wiz tree"), ("disktree", "disk tree"), ("disc", "disk"), ("3.4", "three point four"), ("4 million", "four million"), ("11", "eleven"),
+       ("$99", "ninety nine dollar"), ("99", "ninety nine"), ("581,000", "five hundred eighty one thousand"), ("646", "six hundred forty six"),
+       ("52,000", "fifty two thousand"), ("200,000", "two hundred thousand"), ("3 to 10", "three to ten"), ("10-second", "ten second"),
+       ("10 hours", "ten hours"), ("10 each", "ten each"), ("7 days", "seven days"), ("cosy", "cozy"))
 
 
 def letters(s: str) -> str:
