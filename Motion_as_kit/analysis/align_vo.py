@@ -17,7 +17,9 @@ import numpy as np
 import onnxruntime as ort
 
 ROOT = Path(__file__).resolve().parent.parent
-AUDIO = ROOT / "audio" / "voiceover.mp3"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ep import EP  # noqa: E402
+AUDIO = EP / "audio" / "voiceover.mp3"
 MODEL = ROOT / "analysis" / "models" / "w2v2_base_960h_q.onnx"
 VOCAB = ROOT / "analysis" / "models" / "vocab.json"
 SR, HOP = 16000, 320  # 20 ms frames
@@ -25,7 +27,7 @@ FRAME = HOP / SR
 
 # The script, one entry per display line, and the spoken form of words the letters don't spell
 # (numbers, acronyms): both live in analysis/vo_script.json, shared with the voice generator.
-_VO = json.loads((ROOT / "analysis" / "vo_script.json").read_text(encoding="utf-8"))
+_VO = json.loads((EP / "script.json").read_text(encoding="utf-8"))
 SCRIPT = [l["text"] for l in _VO["lines"]]
 SPOKEN = {**_VO.get("spoken", {}), "—": [], "→": ["TO"]}
 
@@ -191,7 +193,7 @@ def main():
                 wd["start"] = prev["end"] if prev else (nxt["start"] if nxt else 0)
                 wd["end"] = nxt["start"] if nxt else wd["start"]
         out_lines.append({"text": " ".join(words), "start": ow[0]["start"], "end": ow[-1]["end"], "words": ow})
-    (ROOT / "data" / "lyrics.json").write_text(json.dumps({"source": "align_vo.py (wav2vec2-base-960h CTC)", "lines": out_lines}, indent=1, ensure_ascii=False), encoding="utf-8")
+    (EP / "data" / "lyrics.json").write_text(json.dumps({"source": "align_vo.py (wav2vec2-base-960h CTC)", "lines": out_lines}, indent=1, ensure_ascii=False), encoding="utf-8")
     for l in out_lines:
         print(f"{l['start']:6.2f}-{l['end']:6.2f}  " + " ".join(f"{w['w']}[{w['start']:.2f}]" for w in l["words"]))
 

@@ -1,0 +1,14 @@
+{
+ "fmt": "main",
+ "theme": "blueprint",
+ "title": "Shopify's Founder Built a Disk Cleaner That Beats WizTree",
+ "voice": {
+  "exaggeration": 0.5,
+  "cfg": 0.5,
+  "line_gap": 0.77,
+  "tempo": 0.95,
+  "sentence_gap": 0.35,
+  "lead": 0.3,
+  "tail": 1.0
+ }
+}

@@ -103,7 +103,9 @@ def chunks(lines):
 
 def main():
     src, dst = Path(sys.argv[1]), Path(sys.argv[2])
-    lines = json.loads((ROOT / "data" / "lyrics.json").read_text(encoding="utf-8"))["lines"]
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from ep import EP
+    lines = json.loads((EP / "data" / "lyrics.json").read_text(encoding="utf-8"))["lines"]
     fold = lambda s: s.lower().replace("’", "'")
     secs = []
     for q, lab in SECTIONS:

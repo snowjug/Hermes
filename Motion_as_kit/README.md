@@ -1,33 +1,58 @@
-# Motion as code: the magpie video
+# Motion as code
 
-An 85-second, 1920×1080 explainer about [magpie](https://github.com/yetone/magpie) (one menu-bar list to pick every coding agent's model), made without a video editor. Every frame is a deterministic function of time, drawn by TypeScript plates in WebGL and locked to the voiceover's word timings.
+Explainer videos and Shorts made without a video editor. Every frame is a deterministic function of time: TypeScript **plates** draw it in WebGL, locked to the voiceover's word timings, and headless Chrome renders it with motion blur.
 
-Published on the Tool Man channel on 3 October 2026. Title, description and tags: [`videos/2026-10-03-magpie/`](videos/2026-10-03-magpie/).
+Each video is an **episode**: one folder under [`episodes/`](episodes/) with its script, voice, timings, plates, sound cues and publishing data. The engine, the shared toolkit and the analysis scripts are the same for all of them.
 
-## How it was made
+| Episode | Format | Theme | Published |
+|---|---|---|---|
+| [`2026-10-03-magpie`](episodes/2026-10-03-magpie/) | 1920×1080, 85 s | `signal` (ink, bone, hazard orange) | [video](https://youtu.be/TuOnUlJSWho) · [Short (reframed)](https://youtube.com/shorts/Y63pJ4viW14) |
+| [`2026-10-04-disktree`](episodes/2026-10-04-disktree/) | 1920×1080, 90 s | `blueprint` (navy, cyan, amber) | [video](https://youtu.be/4MmSMJ2c2aQ) |
+| [`2026-10-04-disktree-short`](episodes/2026-10-04-disktree-short/) | 1080×1920, 30 s | `pop` (yellow paper, black, hot pink) | [Short](https://youtube.com/shorts/vZ9y7XhO3pc) |
 
-1. **Script**: `analysis/vo_script.json` holds 17 lines. `text` is what the plates show; `say` is what the voice reads, one take per sentence. Every claim comes from magpie's README and website.
-2. **Voice**: `analysis/tts_chatterbox.py` runs [Chatterbox](https://github.com/resemble-ai/chatterbox) (MIT) locally on the CPU. faster-whisper checks each take; a take that doesn't match its sentence is made again. The takes are joined with fixed pauses into `audio/voiceover.mp3`.
-3. **Word timings**: `analysis/align_vo.py` force-aligns the script against the audio (wav2vec2 CTC, quantised ONNX) and writes `data/lyrics.json`. `analysis/audio_vo.py` writes the loudness envelopes to `data/audio.json`.
-4. **Plates**: `app/src/scenes/*.ts` holds 13 plates: married, config, question, title, menubar, formats, gateway, adapter, plans, keys, surgical, catch and switchboard. `app/src/timeline.ts` cuts in the pause before each line, found by its text. `_mp.ts` is the shared toolkit: plate pipeline, nodes, links, packets, windows and stamps. The thumbnail is the `thumb` plate, rendered as a still after the end.
-5. **Render**: `node app/scripts/render-node.mjs video --fps 30 --samples 4 --noaudio`. It drives headless Chrome with Playwright, averages 4 motion-blur sub-frames per frame and streams the frames to ffmpeg over HTTP. (The kit's Bun renderer, `render.ts`, can't drive Chrome on Windows.)
-6. **Sound**: `analysis/sfx_mix.py` places about 225 effects on visual events (pen strokes, clicks, stamps, camera whips), ducks them under the voice and normalises the mix to −14 LUFS.
-7. **Short**: `analysis/make_short.py` turns the finished video into a 1080×1920 Short: a hook headline, the video edge to edge, chapter labels and big word-by-word captions from the same word timings.
+## An episode
 
-```sh
-cd app && bun install            # or npm install
-npx vite                          # live preview at http://localhost:5173 (space = play)
-node scripts/render-node.mjs stills --t 12.5,40 --samples 4 --out ../out/wip
-node scripts/render-node.mjs video --fps 30 --samples 4 --shutter 0.5 --noaudio --out ../out/picture.mp4
-python -m uv run --no-project --with numpy python analysis/sfx_mix.py
-ffmpeg -i out/picture.mp4 -i out/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest out/final.mp4
+```text
+episodes/<date>-<tool>/
+  episode.json      format (main 1920×1080 | short 1080×1920), theme, voice settings, title
+  script.json       the lines: `text` (shown and aligned) and `say` (read, one take per sentence)
+  timeline.ts       which plate plays when (cuts in the pause before a line, found by its text)
+  scenes/*.ts       the plates
+  *.ts              data the plates share (e.g. home.ts: the example folder tree)
+  sfx_cues.py       the sound cue sheet, keyed to words
+  publish/          title, description, tags, thumbnail, links
+  audio/ data/      voiceover.mp3; lyrics.json (word timings) and audio.json   (made by the steps below)
+  work/ out/        takes, logs, renders                                        (not in git)
 ```
 
-Not in this repository: the alignment model (`analysis/models/w2v2_base_960h_q.onnx`, 95 MB), the sound-effect library (`audio/sfx/`) and the starter kit's original plates. They come with the Motion as Code starter kit.
+Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts). Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
+
+## Make one
+
+Pick the episode with `EPISODE=<folder>`. Without it, the newest episode is used.
+
+```sh
+export EPISODE=2026-10-04-disktree
+python analysis/approx_data.py                                     # placeholder timings: preview before the voice exists
+<py3.11 with chatterbox-tts + faster-whisper> analysis/tts_chatterbox.py   # the voice, checked take by take
+uv run --no-project --with onnxruntime --with numpy python analysis/align_vo.py   # word timings
+uv run --no-project --with numpy python analysis/audio_vo.py
+cd app && npm install && npx vite                                  # live preview (space = play, [ ] = plates)
+node scripts/render-node.mjs sheet --times 2,10,20 --cols 3        # contact sheet → episodes/$EPISODE/out/sheet.png
+node scripts/render-node.mjs parts --fps 30 --part-sec 10 --samples 4 --noaudio   # resumable render → out/picture.mp4
+cd .. && uv run --no-project --with numpy python analysis/sfx_mix.py               # → out/mix.wav, −14 LUFS
+ffmpeg -i episodes/$EPISODE/out/picture.mp4 -i episodes/$EPISODE/out/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest episodes/$EPISODE/out/final.mp4
+uv run --no-project --with numpy python analysis/check_video.py episodes/$EPISODE/out/final.mp4
+node app/scripts/render-node.mjs stills --only thumb --t <duration + 2>             # the thumbnail plate
+```
+
+`analysis/make_short.py` turns a finished 16:9 video into a 1080×1920 reframe with captions. That is how the magpie Short was made; native Shorts are their own episodes now.
+
+Not in this repository: the alignment model (`analysis/models/w2v2_base_960h_q.onnx`, 95 MB) and the sound-effect library (`audio/sfx/`). Both come with the Motion as Code starter kit.
 
 ## Credits
 
-- Engine and visual language: [pdoom-video](https://github.com/mexicat/pdoom-video) by mexicat (Giacomo Magnanini), MIT. See `LICENSE.pdoom-engine`. That covers the palette, fonts, spark motif, graph-paper sheets and post-processing.
-- Workflow: the "Motion as Code" starter kit (voiceover → alignment → plates → render → sound).
-- Voice: Chatterbox by Resemble AI (MIT), generated locally.
+- Engine and visual language: [pdoom-video](https://github.com/mexicat/pdoom-video) by mexicat (Giacomo Magnanini), MIT. See `LICENSE.pdoom-engine`.
+- Workflow: the "Motion as Code" starter kit (voiceover → alignment → plates → render → sound). Files that came with the kit keep their authors' terms.
+- Voice: [Chatterbox](https://github.com/resemble-ai/chatterbox) by Resemble AI (MIT), generated locally.
 - Fonts: Archivo, IBM Plex Mono and Cormorant Garamond (SIL OFL), plus the EMS and Hershey single-stroke fonts.

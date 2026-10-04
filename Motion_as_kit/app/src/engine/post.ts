@@ -2,6 +2,7 @@
 // film grain, vignette, fades/flash. Operates on the composited HDR (linear) frame.
 import * as THREE from 'three';
 import { FSPass, makeRT, W, H, SCALE } from './gl';
+import { HALATION } from './palette';
 
 /** The tone shoulder (linear HDR -> 0..1 linear), shared with the engine's sampling error estimate. */
 export const SHOULDER_GLSL = /* glsl */ `
@@ -138,7 +139,7 @@ ${SCALE === 1 ? `        c += texture(src, vUv + texel * vec2(-1, -1)).rgb; c +=
         vec3 bl = texture(bloomTex, uv).rgb;
         vec3 ha = texture(haloTex, uv).rgb;
         col += bl * bloom;
-        col += vec3(1.0, 0.18, 0.04) * luma(ha) * halation;
+        col += vec3(${HALATION.map((x) => x.toFixed(3)).join(', ')}) * luma(ha) * halation;
         col *= exposure;
         // HUD is composited in linear space before the shoulder so it gets grain & vignette too
         vec4 h = texture(hudTex, vUv);

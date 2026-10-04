@@ -3,11 +3,12 @@
 import * as THREE from 'three';
 import { GLSL_COMMON } from './glsl/common';
 import { SCALE } from './scale';
+import { EPISODE } from './episode';
 
 export { SCALE };
-/** Logical canvas: scenes lay out in these px at every output scale. */
-export const W = 1920;
-export const H = 1080;
+/** Logical canvas: scenes lay out in these px at every output scale (a Short is 1080x1920). */
+export const W = EPISODE.fmt === 'short' ? 1080 : 1920;
+export const H = EPISODE.fmt === 'short' ? 1920 : 1080;
 /** Physical (output) size: the logical canvas times SCALE (`?scale=2` → 3840x2160). */
 export const PW = W * SCALE;
 export const PH = H * SCALE;

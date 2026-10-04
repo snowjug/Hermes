@@ -1,0 +1,1418 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "Shopify founder Tobi Lütke just shipped a disk cleaner.",
+   "start": 0.33,
+   "end": 3.21,
+   "words": [
+    {
+     "w": "Shopify",
+     "start": 0.33,
+     "end": 0.88
+    },
+    {
+     "w": "founder",
+     "start": 0.88,
+     "end": 1.22
+    },
+    {
+     "w": "Tobi",
+     "start": 1.22,
+     "end": 1.52
+    },
+    {
+     "w": "Lütke",
+     "start": 1.52,
+     "end": 2.02
+    },
+    {
+     "w": "just",
+     "start": 2.02,
+     "end": 2.24
+    },
+    {
+     "w": "shipped",
+     "start": 2.24,
+     "end": 2.48
+    },
+    {
+     "w": "a",
+     "start": 2.48,
+     "end": 2.54
+    },
+    {
+     "w": "disk",
+     "start": 2.54,
+     "end": 2.78
+    },
+    {
+     "w": "cleaner.",
+     "start": 2.78,
+     "end": 3.21
+    }
+   ]
+  },
+  {
+   "text": "Run it as administrator on Windows, and it reads a four-million-file drive in about three point four seconds.",
+   "start": 4.12,
+   "end": 9.37,
+   "words": [
+    {
+     "w": "Run",
+     "start": 4.12,
+     "end": 4.36
+    },
+    {
+     "w": "it",
+     "start": 4.36,
+     "end": 4.49
+    },
+    {
+     "w": "as",
+     "start": 4.49,
+     "end": 4.66
+    },
+    {
+     "w": "administrator",
+     "start": 4.66,
+     "end": 5.36
+    },
+    {
+     "w": "on",
+     "start": 5.36,
+     "end": 5.48
+    },
+    {
+     "w": "Windows,",
+     "start": 5.48,
+     "end": 6.05
+    },
+    {
+     "w": "and",
+     "start": 6.05,
+     "end": 6.2
+    },
+    {
+     "w": "it",
+     "start": 6.2,
+     "end": 6.3
+    },
+    {
+     "w": "reads",
+     "start": 6.3,
+     "end": 6.56
+    },
+    {
+     "w": "a",
+     "start": 6.56,
+     "end": 6.7
+    },
+    {
+     "w": "four-million-file",
+     "start": 6.7,
+     "end": 7.6,
+     "syl": [
+      [
+       6.7,
+       6.96
+      ],
+      [
+       6.96,
+       7.3
+      ],
+      [
+       7.3,
+       7.6
+      ]
+     ]
+    },
+    {
+     "w": "drive",
+     "start": 7.6,
+     "end": 8.0
+    },
+    {
+     "w": "in",
+     "start": 8.0,
+     "end": 8.12
+    },
+    {
+     "w": "about",
+     "start": 8.12,
+     "end": 8.36
+    },
+    {
+     "w": "three",
+     "start": 8.36,
+     "end": 8.58
+    },
+    {
+     "w": "point",
+     "start": 8.58,
+     "end": 8.82
+    },
+    {
+     "w": "four",
+     "start": 8.82,
+     "end": 9.02
+    },
+    {
+     "w": "seconds.",
+     "start": 9.02,
+     "end": 9.37
+    }
+   ]
+  },
+  {
+   "text": "In his test, WizTree took eleven.",
+   "start": 10.43,
+   "end": 12.64,
+   "words": [
+    {
+     "w": "In",
+     "start": 10.43,
+     "end": 10.56
+    },
+    {
+     "w": "his",
+     "start": 10.56,
+     "end": 10.73
+    },
+    {
+     "w": "test,",
+     "start": 10.73,
+     "end": 11.04
+    },
+    {
+     "w": "WizTree",
+     "start": 11.26,
+     "end": 11.78,
+     "syl": [
+      [
+       11.26,
+       11.53
+      ],
+      [
+       11.53,
+       11.78
+      ]
+     ]
+    },
+    {
+     "w": "took",
+     "start": 11.78,
+     "end": 11.96
+    },
+    {
+     "w": "eleven.",
+     "start": 12.12,
+     "end": 12.64
+    }
+   ]
+  },
+  {
+   "text": "It's called disktree. It's free, open source, and runs on Linux, Mac and Windows.",
+   "start": 13.54,
+   "end": 18.91,
+   "words": [
+    {
+     "w": "It's",
+     "start": 13.54,
+     "end": 13.68
+    },
+    {
+     "w": "called",
+     "start": 13.68,
+     "end": 14.0
+    },
+    {
+     "w": "disktree.",
+     "start": 14.0,
+     "end": 14.7,
+     "syl": [
+      [
+       14.0,
+       14.26
+      ],
+      [
+       14.38,
+       14.7
+      ]
+     ]
+    },
+    {
+     "w": "It's",
+     "start": 15.34,
+     "end": 15.56
+    },
+    {
+     "w": "free,",
+     "start": 15.56,
+     "end": 15.93
+    },
+    {
+     "w": "open",
+     "start": 16.1,
+     "end": 16.44
+    },
+    {
+     "w": "source,",
+     "start": 16.44,
+     "end": 16.95
+    },
+    {
+     "w": "and",
+     "start": 16.95,
+     "end": 17.1
+    },
+    {
+     "w": "runs",
+     "start": 17.1,
+     "end": 17.38
+    },
+    {
+     "w": "on",
+     "start": 17.38,
+     "end": 17.52
+    },
+    {
+     "w": "Linux,",
+     "start": 17.52,
+     "end": 17.74
+    },
+    {
+     "w": "Mac",
+     "start": 17.96,
+     "end": 18.12
+    },
+    {
+     "w": "and",
+     "start": 18.26,
+     "end": 18.4
+    },
+    {
+     "w": "Windows.",
+     "start": 18.4,
+     "end": 18.91
+    }
+   ]
+  },
+  {
+   "text": "The idea is simple. Every folder becomes a box, sized by what it really costs on disk, with boxes inside boxes all the way down.",
+   "start": 19.8,
+   "end": 26.57,
+   "words": [
+    {
+     "w": "The",
+     "start": 19.8,
+     "end": 19.98
+    },
+    {
+     "w": "idea",
+     "start": 19.98,
+     "end": 20.25
+    },
+    {
+     "w": "is",
+     "start": 20.25,
+     "end": 20.4
+    },
+    {
+     "w": "simple.",
+     "start": 20.4,
+     "end": 20.78
+    },
+    {
+     "w": "Every",
+     "start": 21.25,
+     "end": 21.54
+    },
+    {
+     "w": "folder",
+     "start": 21.54,
+     "end": 21.86
+    },
+    {
+     "w": "becomes",
+     "start": 21.86,
+     "end": 22.18
+    },
+    {
+     "w": "a",
+     "start": 22.18,
+     "end": 22.24
+    },
+    {
+     "w": "box,",
+     "start": 22.24,
+     "end": 22.44
+    },
+    {
+     "w": "sized",
+     "start": 22.71,
+     "end": 23.06
+    },
+    {
+     "w": "by",
+     "start": 23.06,
+     "end": 23.18
+    },
+    {
+     "w": "what",
+     "start": 23.18,
+     "end": 23.32
+    },
+    {
+     "w": "it",
+     "start": 23.32,
+     "end": 23.4
+    },
+    {
+     "w": "really",
+     "start": 23.4,
+     "end": 23.62
+    },
+    {
+     "w": "costs",
+     "start": 23.62,
+     "end": 23.92
+    },
+    {
+     "w": "on",
+     "start": 23.92,
+     "end": 24.04
+    },
+    {
+     "w": "disk,",
+     "start": 24.04,
+     "end": 24.32
+    },
+    {
+     "w": "with",
+     "start": 24.47,
+     "end": 24.68
+    },
+    {
+     "w": "boxes",
+     "start": 24.68,
+     "end": 25.06
+    },
+    {
+     "w": "inside",
+     "start": 25.06,
+     "end": 25.41
+    },
+    {
+     "w": "boxes",
+     "start": 25.41,
+     "end": 25.88
+    },
+    {
+     "w": "all",
+     "start": 25.88,
+     "end": 26.02
+    },
+    {
+     "w": "the",
+     "start": 26.02,
+     "end": 26.12
+    },
+    {
+     "w": "way",
+     "start": 26.12,
+     "end": 26.26
+    },
+    {
+     "w": "down.",
+     "start": 26.26,
+     "end": 26.57
+    }
+   ]
+  },
+  {
+   "text": "Scroll, and you zoom into a folder until it fills the screen, then drop straight inside.",
+   "start": 27.48,
+   "end": 31.97,
+   "words": [
+    {
+     "w": "Scroll,",
+     "start": 27.48,
+     "end": 28.05
+    },
+    {
+     "w": "and",
+     "start": 28.27,
+     "end": 28.38
+    },
+    {
+     "w": "you",
+     "start": 28.38,
+     "end": 28.52
+    },
+    {
+     "w": "zoom",
+     "start": 28.52,
+     "end": 28.72
+    },
+    {
+     "w": "into",
+     "start": 28.72,
+     "end": 28.94
+    },
+    {
+     "w": "a",
+     "start": 28.94,
+     "end": 29.02
+    },
+    {
+     "w": "folder",
+     "start": 29.02,
+     "end": 29.38
+    },
+    {
+     "w": "until",
+     "start": 29.38,
+     "end": 29.62
+    },
+    {
+     "w": "it",
+     "start": 29.62,
+     "end": 29.7
+    },
+    {
+     "w": "fills",
+     "start": 29.7,
+     "end": 29.96
+    },
+    {
+     "w": "the",
+     "start": 29.96,
+     "end": 30.1
+    },
+    {
+     "w": "screen,",
+     "start": 30.1,
+     "end": 30.61
+    },
+    {
+     "w": "then",
+     "start": 30.61,
+     "end": 31.0
+    },
+    {
+     "w": "drop",
+     "start": 31.0,
+     "end": 31.22
+    },
+    {
+     "w": "straight",
+     "start": 31.22,
+     "end": 31.58
+    },
+    {
+     "w": "inside.",
+     "start": 31.58,
+     "end": 31.97
+    }
+   ]
+  },
+  {
+   "text": "Color tells you what kind of data it is: code, toolchains, media, documents, caches.",
+   "start": 32.92,
+   "end": 38.36,
+   "words": [
+    {
+     "w": "Color",
+     "start": 32.92,
+     "end": 33.21
+    },
+    {
+     "w": "tells",
+     "start": 33.21,
+     "end": 33.48
+    },
+    {
+     "w": "you",
+     "start": 33.48,
+     "end": 33.62
+    },
+    {
+     "w": "what",
+     "start": 33.62,
+     "end": 33.76
+    },
+    {
+     "w": "kind",
+     "start": 33.76,
+     "end": 33.96
+    },
+    {
+     "w": "of",
+     "start": 33.96,
+     "end": 34.04
+    },
+    {
+     "w": "data",
+     "start": 34.04,
+     "end": 34.4
+    },
+    {
+     "w": "it",
+     "start": 34.4,
+     "end": 34.58
+    },
+    {
+     "w": "is:",
+     "start": 34.58,
+     "end": 34.92
+    },
+    {
+     "w": "code,",
+     "start": 35.05,
+     "end": 35.51
+    },
+    {
+     "w": "toolchains,",
+     "start": 35.61,
+     "end": 36.43
+    },
+    {
+     "w": "media,",
+     "start": 36.52,
+     "end": 37.01
+    },
+    {
+     "w": "documents,",
+     "start": 37.14,
+     "end": 37.67
+    },
+    {
+     "w": "caches.",
+     "start": 37.92,
+     "end": 38.36
+    }
+   ]
+  },
+  {
+   "text": "And diagonal stripes mark space you can get back, like caches and build output.",
+   "start": 39.45,
+   "end": 43.37,
+   "words": [
+    {
+     "w": "And",
+     "start": 39.45,
+     "end": 39.58
+    },
+    {
+     "w": "diagonal",
+     "start": 39.58,
+     "end": 40.06
+    },
+    {
+     "w": "stripes",
+     "start": 40.06,
+     "end": 40.4
+    },
+    {
+     "w": "mark",
+     "start": 40.4,
+     "end": 40.62
+    },
+    {
+     "w": "space",
+     "start": 40.62,
+     "end": 40.9
+    },
+    {
+     "w": "you",
+     "start": 40.9,
+     "end": 41.0
+    },
+    {
+     "w": "can",
+     "start": 41.0,
+     "end": 41.12
+    },
+    {
+     "w": "get",
+     "start": 41.12,
+     "end": 41.28
+    },
+    {
+     "w": "back,",
+     "start": 41.28,
+     "end": 41.55
+    },
+    {
+     "w": "like",
+     "start": 41.84,
+     "end": 42.0
+    },
+    {
+     "w": "caches",
+     "start": 42.0,
+     "end": 42.64
+    },
+    {
+     "w": "and",
+     "start": 42.64,
+     "end": 42.76
+    },
+    {
+     "w": "build",
+     "start": 42.76,
+     "end": 43.02
+    },
+    {
+     "w": "output.",
+     "start": 43.02,
+     "end": 43.37
+    }
+   ]
+  },
+  {
+   "text": "It even counts hidden folders, because a hidden cache is often the biggest thing in your home folder.",
+   "start": 44.18,
+   "end": 48.44,
+   "words": [
+    {
+     "w": "It",
+     "start": 44.18,
+     "end": 44.34
+    },
+    {
+     "w": "even",
+     "start": 44.34,
+     "end": 44.56
+    },
+    {
+     "w": "counts",
+     "start": 44.56,
+     "end": 44.84
+    },
+    {
+     "w": "hidden",
+     "start": 44.84,
+     "end": 45.1
+    },
+    {
+     "w": "folders,",
+     "start": 45.1,
+     "end": 45.68
+    },
+    {
+     "w": "because",
+     "start": 45.68,
+     "end": 45.96
+    },
+    {
+     "w": "a",
+     "start": 45.96,
+     "end": 46.04
+    },
+    {
+     "w": "hidden",
+     "start": 46.04,
+     "end": 46.28
+    },
+    {
+     "w": "cache",
+     "start": 46.28,
+     "end": 46.58
+    },
+    {
+     "w": "is",
+     "start": 46.58,
+     "end": 46.73
+    },
+    {
+     "w": "often",
+     "start": 46.73,
+     "end": 47.04
+    },
+    {
+     "w": "the",
+     "start": 47.04,
+     "end": 47.14
+    },
+    {
+     "w": "biggest",
+     "start": 47.14,
+     "end": 47.4
+    },
+    {
+     "w": "thing",
+     "start": 47.4,
+     "end": 47.58
+    },
+    {
+     "w": "in",
+     "start": 47.58,
+     "end": 47.66
+    },
+    {
+     "w": "your",
+     "start": 47.66,
+     "end": 47.8
+    },
+    {
+     "w": "home",
+     "start": 47.8,
+     "end": 47.98
+    },
+    {
+     "w": "folder.",
+     "start": 47.98,
+     "end": 48.44
+    }
+   ]
+  },
+  {
+   "text": "Found the culprit? Mark it, and it takes the danger color, along with everything inside it.",
+   "start": 49.33,
+   "end": 54.06,
+   "words": [
+    {
+     "w": "Found",
+     "start": 49.33,
+     "end": 49.64
+    },
+    {
+     "w": "the",
+     "start": 49.64,
+     "end": 49.74
+    },
+    {
+     "w": "culprit?",
+     "start": 49.74,
+     "end": 50.14
+    },
+    {
+     "w": "Mark",
+     "start": 50.69,
+     "end": 50.94
+    },
+    {
+     "w": "it,",
+     "start": 50.94,
+     "end": 51.29
+    },
+    {
+     "w": "and",
+     "start": 51.29,
+     "end": 51.6
+    },
+    {
+     "w": "it",
+     "start": 51.6,
+     "end": 51.68
+    },
+    {
+     "w": "takes",
+     "start": 51.68,
+     "end": 51.92
+    },
+    {
+     "w": "the",
+     "start": 51.92,
+     "end": 52.04
+    },
+    {
+     "w": "danger",
+     "start": 52.04,
+     "end": 52.34
+    },
+    {
+     "w": "color,",
+     "start": 52.34,
+     "end": 52.77
+    },
+    {
+     "w": "along",
+     "start": 52.77,
+     "end": 53.08
+    },
+    {
+     "w": "with",
+     "start": 53.08,
+     "end": 53.24
+    },
+    {
+     "w": "everything",
+     "start": 53.24,
+     "end": 53.6
+    },
+    {
+     "w": "inside",
+     "start": 53.6,
+     "end": 53.96
+    },
+    {
+     "w": "it.",
+     "start": 53.96,
+     "end": 54.06
+    }
+   ]
+  },
+  {
+   "text": "Nothing is deleted yet. You review the list first.",
+   "start": 55.13,
+   "end": 57.88,
+   "words": [
+    {
+     "w": "Nothing",
+     "start": 55.13,
+     "end": 55.52
+    },
+    {
+     "w": "is",
+     "start": 55.52,
+     "end": 55.62
+    },
+    {
+     "w": "deleted",
+     "start": 55.62,
+     "end": 56.02
+    },
+    {
+     "w": "yet.",
+     "start": 56.02,
+     "end": 56.27
+    },
+    {
+     "w": "You",
+     "start": 56.76,
+     "end": 56.9
+    },
+    {
+     "w": "review",
+     "start": 56.9,
+     "end": 57.18
+    },
+    {
+     "w": "the",
+     "start": 57.18,
+     "end": 57.28
+    },
+    {
+     "w": "list",
+     "start": 57.28,
+     "end": 57.45
+    },
+    {
+     "w": "first.",
+     "start": 57.45,
+     "end": 57.88
+    }
+   ]
+  },
+  {
+   "text": "Then pick the trash, which you can undo, or delete permanently, which always asks first.",
+   "start": 58.91,
+   "end": 63.06,
+   "words": [
+    {
+     "w": "Then",
+     "start": 58.91,
+     "end": 59.16
+    },
+    {
+     "w": "pick",
+     "start": 59.16,
+     "end": 59.32
+    },
+    {
+     "w": "the",
+     "start": 59.32,
+     "end": 59.46
+    },
+    {
+     "w": "trash,",
+     "start": 59.46,
+     "end": 59.92
+    },
+    {
+     "w": "which",
+     "start": 59.92,
+     "end": 60.08
+    },
+    {
+     "w": "you",
+     "start": 60.08,
+     "end": 60.2
+    },
+    {
+     "w": "can",
+     "start": 60.2,
+     "end": 60.4
+    },
+    {
+     "w": "undo,",
+     "start": 60.4,
+     "end": 60.88
+    },
+    {
+     "w": "or",
+     "start": 60.88,
+     "end": 61.0
+    },
+    {
+     "w": "delete",
+     "start": 61.0,
+     "end": 61.28
+    },
+    {
+     "w": "permanently,",
+     "start": 61.28,
+     "end": 61.88
+    },
+    {
+     "w": "which",
+     "start": 61.88,
+     "end": 62.1
+    },
+    {
+     "w": "always",
+     "start": 62.1,
+     "end": 62.42
+    },
+    {
+     "w": "asks",
+     "start": 62.42,
+     "end": 62.76
+    },
+    {
+     "w": "first.",
+     "start": 62.76,
+     "end": 63.06
+    }
+   ]
+  },
+  {
+   "text": "When it's done, it scans again and shows how much space you really got back.",
+   "start": 64.04,
+   "end": 67.46,
+   "words": [
+    {
+     "w": "When",
+     "start": 64.04,
+     "end": 64.16
+    },
+    {
+     "w": "it's",
+     "start": 64.16,
+     "end": 64.34
+    },
+    {
+     "w": "done,",
+     "start": 64.34,
+     "end": 64.76
+    },
+    {
+     "w": "it",
+     "start": 64.76,
+     "end": 64.94
+    },
+    {
+     "w": "scans",
+     "start": 64.94,
+     "end": 65.26
+    },
+    {
+     "w": "again",
+     "start": 65.26,
+     "end": 65.71
+    },
+    {
+     "w": "and",
+     "start": 65.71,
+     "end": 65.86
+    },
+    {
+     "w": "shows",
+     "start": 65.86,
+     "end": 66.08
+    },
+    {
+     "w": "how",
+     "start": 66.08,
+     "end": 66.22
+    },
+    {
+     "w": "much",
+     "start": 66.22,
+     "end": 66.44
+    },
+    {
+     "w": "space",
+     "start": 66.44,
+     "end": 66.68
+    },
+    {
+     "w": "you",
+     "start": 66.68,
+     "end": 66.8
+    },
+    {
+     "w": "really",
+     "start": 66.8,
+     "end": 67.04
+    },
+    {
+     "w": "got",
+     "start": 67.04,
+     "end": 67.22
+    },
+    {
+     "w": "back.",
+     "start": 67.22,
+     "end": 67.46
+    }
+   ]
+  },
+  {
+   "text": "One key even copies the list as a prompt for your coding agent, to check each path before removing it.",
+   "start": 68.62,
+   "end": 73.87,
+   "words": [
+    {
+     "w": "One",
+     "start": 68.62,
+     "end": 68.82
+    },
+    {
+     "w": "key",
+     "start": 68.82,
+     "end": 69.14
+    },
+    {
+     "w": "even",
+     "start": 69.14,
+     "end": 69.34
+    },
+    {
+     "w": "copies",
+     "start": 69.34,
+     "end": 69.66
+    },
+    {
+     "w": "the",
+     "start": 69.66,
+     "end": 69.78
+    },
+    {
+     "w": "list",
+     "start": 69.78,
+     "end": 69.96
+    },
+    {
+     "w": "as",
+     "start": 69.96,
+     "end": 70.16
+    },
+    {
+     "w": "a",
+     "start": 70.16,
+     "end": 70.25
+    },
+    {
+     "w": "prompt",
+     "start": 70.25,
+     "end": 70.73
+    },
+    {
+     "w": "for",
+     "start": 70.73,
+     "end": 70.84
+    },
+    {
+     "w": "your",
+     "start": 70.84,
+     "end": 71.02
+    },
+    {
+     "w": "coding",
+     "start": 71.02,
+     "end": 71.38
+    },
+    {
+     "w": "agent,",
+     "start": 71.38,
+     "end": 71.7
+    },
+    {
+     "w": "to",
+     "start": 72.07,
+     "end": 72.2
+    },
+    {
+     "w": "check",
+     "start": 72.2,
+     "end": 72.36
+    },
+    {
+     "w": "each",
+     "start": 72.45,
+     "end": 72.71
+    },
+    {
+     "w": "path",
+     "start": 72.71,
+     "end": 73.04
+    },
+    {
+     "w": "before",
+     "start": 73.04,
+     "end": 73.36
+    },
+    {
+     "w": "removing",
+     "start": 73.36,
+     "end": 73.78
+    },
+    {
+     "w": "it.",
+     "start": 73.78,
+     "end": 73.87
+    }
+   ]
+  },
+  {
+   "text": "The catch? It guesses what a folder is from its name, so some colors can be wrong on your machine.",
+   "start": 74.9,
+   "end": 79.75,
+   "words": [
+    {
+     "w": "The",
+     "start": 74.9,
+     "end": 75.0
+    },
+    {
+     "w": "catch?",
+     "start": 75.0,
+     "end": 75.46
+    },
+    {
+     "w": "It",
+     "start": 75.93,
+     "end": 76.06
+    },
+    {
+     "w": "guesses",
+     "start": 76.06,
+     "end": 76.42
+    },
+    {
+     "w": "what",
+     "start": 76.42,
+     "end": 76.56
+    },
+    {
+     "w": "a",
+     "start": 76.56,
+     "end": 76.62
+    },
+    {
+     "w": "folder",
+     "start": 76.62,
+     "end": 76.98
+    },
+    {
+     "w": "is",
+     "start": 76.98,
+     "end": 77.12
+    },
+    {
+     "w": "from",
+     "start": 77.12,
+     "end": 77.3
+    },
+    {
+     "w": "its",
+     "start": 77.3,
+     "end": 77.46
+    },
+    {
+     "w": "name,",
+     "start": 77.46,
+     "end": 77.83
+    },
+    {
+     "w": "so",
+     "start": 77.93,
+     "end": 78.12
+    },
+    {
+     "w": "some",
+     "start": 78.12,
+     "end": 78.32
+    },
+    {
+     "w": "colors",
+     "start": 78.32,
+     "end": 78.62
+    },
+    {
+     "w": "can",
+     "start": 78.62,
+     "end": 78.76
+    },
+    {
+     "w": "be",
+     "start": 78.76,
+     "end": 78.88
+    },
+    {
+     "w": "wrong",
+     "start": 78.88,
+     "end": 79.12
+    },
+    {
+     "w": "on",
+     "start": 79.12,
+     "end": 79.2
+    },
+    {
+     "w": "your",
+     "start": 79.2,
+     "end": 79.34
+    },
+    {
+     "w": "machine.",
+     "start": 79.34,
+     "end": 79.75
+    }
+   ]
+  },
+  {
+   "text": "Still, seeing exactly where your space went, before deleting anything, is worth a lot.",
+   "start": 80.65,
+   "end": 84.8,
+   "words": [
+    {
+     "w": "Still,",
+     "start": 80.65,
+     "end": 81.1
+    },
+    {
+     "w": "seeing",
+     "start": 81.23,
+     "end": 81.62
+    },
+    {
+     "w": "exactly",
+     "start": 81.62,
+     "end": 82.06
+    },
+    {
+     "w": "where",
+     "start": 82.06,
+     "end": 82.22
+    },
+    {
+     "w": "your",
+     "start": 82.22,
+     "end": 82.38
+    },
+    {
+     "w": "space",
+     "start": 82.38,
+     "end": 82.67
+    },
+    {
+     "w": "went,",
+     "start": 82.67,
+     "end": 82.92
+    },
+    {
+     "w": "before",
+     "start": 83.08,
+     "end": 83.36
+    },
+    {
+     "w": "deleting",
+     "start": 83.36,
+     "end": 83.74
+    },
+    {
+     "w": "anything,",
+     "start": 83.74,
+     "end": 84.22
+    },
+    {
+     "w": "is",
+     "start": 84.22,
+     "end": 84.32
+    },
+    {
+     "w": "worth",
+     "start": 84.32,
+     "end": 84.52
+    },
+    {
+     "w": "a",
+     "start": 84.52,
+     "end": 84.6
+    },
+    {
+     "w": "lot.",
+     "start": 84.6,
+     "end": 84.8
+    }
+   ]
+  },
+  {
+   "text": "That's today's tool. There's a new one every day.",
+   "start": 85.8,
+   "end": 88.76,
+   "words": [
+    {
+     "w": "That's",
+     "start": 85.8,
+     "end": 86.12
+    },
+    {
+     "w": "today's",
+     "start": 86.12,
+     "end": 86.5
+    },
+    {
+     "w": "tool.",
+     "start": 86.5,
+     "end": 86.81
+    },
+    {
+     "w": "There's",
+     "start": 87.28,
+     "end": 87.54
+    },
+    {
+     "w": "a",
+     "start": 87.54,
+     "end": 87.62
+    },
+    {
+     "w": "new",
+     "start": 87.62,
+     "end": 87.86
+    },
+    {
+     "w": "one",
+     "start": 87.86,
+     "end": 88.12
+    },
+    {
+     "w": "every",
+     "start": 88.12,
+     "end": 88.36
+    },
+    {
+     "w": "day.",
+     "start": 88.36,
+     "end": 88.76
+    }
+   ]
+  }
+ ]
+}

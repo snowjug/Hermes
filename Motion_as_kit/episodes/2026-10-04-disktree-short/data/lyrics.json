@@ -1,0 +1,488 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "Your disk is full.",
+   "start": 0.28,
+   "end": 1.18,
+   "words": [
+    {
+     "w": "Your",
+     "start": 0.28,
+     "end": 0.44
+    },
+    {
+     "w": "disk",
+     "start": 0.44,
+     "end": 0.7
+    },
+    {
+     "w": "is",
+     "start": 0.7,
+     "end": 0.9
+    },
+    {
+     "w": "full.",
+     "start": 0.9,
+     "end": 1.18
+    }
+   ]
+  },
+  {
+   "text": "But full of what?",
+   "start": 1.97,
+   "end": 3.0,
+   "words": [
+    {
+     "w": "But",
+     "start": 1.97,
+     "end": 2.18
+    },
+    {
+     "w": "full",
+     "start": 2.52,
+     "end": 2.74
+    },
+    {
+     "w": "of",
+     "start": 2.74,
+     "end": 2.84
+    },
+    {
+     "w": "what?",
+     "start": 2.84,
+     "end": 3.0
+    }
+   ]
+  },
+  {
+   "text": "This free app turns every folder into a box, sized by what it really takes up on disk.",
+   "start": 3.78,
+   "end": 7.43,
+   "words": [
+    {
+     "w": "This",
+     "start": 3.78,
+     "end": 3.96
+    },
+    {
+     "w": "free",
+     "start": 3.96,
+     "end": 4.2
+    },
+    {
+     "w": "app",
+     "start": 4.2,
+     "end": 4.32
+    },
+    {
+     "w": "turns",
+     "start": 4.32,
+     "end": 4.59
+    },
+    {
+     "w": "every",
+     "start": 4.59,
+     "end": 4.84
+    },
+    {
+     "w": "folder",
+     "start": 4.84,
+     "end": 5.14
+    },
+    {
+     "w": "into",
+     "start": 5.14,
+     "end": 5.34
+    },
+    {
+     "w": "a",
+     "start": 5.34,
+     "end": 5.42
+    },
+    {
+     "w": "box,",
+     "start": 5.42,
+     "end": 5.56
+    },
+    {
+     "w": "sized",
+     "start": 5.8,
+     "end": 6.14
+    },
+    {
+     "w": "by",
+     "start": 6.14,
+     "end": 6.26
+    },
+    {
+     "w": "what",
+     "start": 6.26,
+     "end": 6.38
+    },
+    {
+     "w": "it",
+     "start": 6.38,
+     "end": 6.5
+    },
+    {
+     "w": "really",
+     "start": 6.5,
+     "end": 6.74
+    },
+    {
+     "w": "takes",
+     "start": 6.74,
+     "end": 6.98
+    },
+    {
+     "w": "up",
+     "start": 6.98,
+     "end": 7.12
+    },
+    {
+     "w": "on",
+     "start": 7.12,
+     "end": 7.2
+    },
+    {
+     "w": "disk.",
+     "start": 7.2,
+     "end": 7.43
+    }
+   ]
+  },
+  {
+   "text": "Folders inside folders, all the way down.",
+   "start": 8.24,
+   "end": 10.31,
+   "words": [
+    {
+     "w": "Folders",
+     "start": 8.24,
+     "end": 8.62
+    },
+    {
+     "w": "inside",
+     "start": 8.62,
+     "end": 9.12
+    },
+    {
+     "w": "folders,",
+     "start": 9.12,
+     "end": 9.58
+    },
+    {
+     "w": "all",
+     "start": 9.58,
+     "end": 9.78
+    },
+    {
+     "w": "the",
+     "start": 9.78,
+     "end": 9.9
+    },
+    {
+     "w": "way",
+     "start": 9.9,
+     "end": 10.04
+    },
+    {
+     "w": "down.",
+     "start": 10.04,
+     "end": 10.31
+    }
+   ]
+  },
+  {
+   "text": "The biggest box is often a hidden cache.",
+   "start": 11.02,
+   "end": 12.89,
+   "words": [
+    {
+     "w": "The",
+     "start": 11.02,
+     "end": 11.16
+    },
+    {
+     "w": "biggest",
+     "start": 11.16,
+     "end": 11.42
+    },
+    {
+     "w": "box",
+     "start": 11.42,
+     "end": 11.72
+    },
+    {
+     "w": "is",
+     "start": 11.72,
+     "end": 11.9
+    },
+    {
+     "w": "often",
+     "start": 11.9,
+     "end": 12.14
+    },
+    {
+     "w": "a",
+     "start": 12.14,
+     "end": 12.22
+    },
+    {
+     "w": "hidden",
+     "start": 12.22,
+     "end": 12.5
+    },
+    {
+     "w": "cache.",
+     "start": 12.5,
+     "end": 12.89
+    }
+   ]
+  },
+  {
+   "text": "Striped boxes are space you can win back, like caches and build output.",
+   "start": 13.6,
+   "end": 17.55,
+   "words": [
+    {
+     "w": "Striped",
+     "start": 13.6,
+     "end": 14.04
+    },
+    {
+     "w": "boxes",
+     "start": 14.04,
+     "end": 14.44
+    },
+    {
+     "w": "are",
+     "start": 14.44,
+     "end": 14.58
+    },
+    {
+     "w": "space",
+     "start": 14.58,
+     "end": 14.88
+    },
+    {
+     "w": "you",
+     "start": 14.88,
+     "end": 15.0
+    },
+    {
+     "w": "can",
+     "start": 15.0,
+     "end": 15.16
+    },
+    {
+     "w": "win",
+     "start": 15.16,
+     "end": 15.38
+    },
+    {
+     "w": "back,",
+     "start": 15.38,
+     "end": 15.61
+    },
+    {
+     "w": "like",
+     "start": 15.93,
+     "end": 16.12
+    },
+    {
+     "w": "caches",
+     "start": 16.12,
+     "end": 16.7
+    },
+    {
+     "w": "and",
+     "start": 16.7,
+     "end": 16.86
+    },
+    {
+     "w": "build",
+     "start": 16.86,
+     "end": 17.17
+    },
+    {
+     "w": "output.",
+     "start": 17.17,
+     "end": 17.55
+    }
+   ]
+  },
+  {
+   "text": "Mark them, review the list, and only then delete.",
+   "start": 18.38,
+   "end": 20.98,
+   "words": [
+    {
+     "w": "Mark",
+     "start": 18.38,
+     "end": 18.72
+    },
+    {
+     "w": "them,",
+     "start": 18.72,
+     "end": 19.02
+    },
+    {
+     "w": "review",
+     "start": 19.15,
+     "end": 19.46
+    },
+    {
+     "w": "the",
+     "start": 19.46,
+     "end": 19.56
+    },
+    {
+     "w": "list,",
+     "start": 19.56,
+     "end": 19.81
+    },
+    {
+     "w": "and",
+     "start": 19.95,
+     "end": 20.12
+    },
+    {
+     "w": "only",
+     "start": 20.12,
+     "end": 20.42
+    },
+    {
+     "w": "then",
+     "start": 20.42,
+     "end": 20.64
+    },
+    {
+     "w": "delete.",
+     "start": 20.64,
+     "end": 20.98
+    }
+   ]
+  },
+  {
+   "text": "It's called disktree, from Shopify founder Tobi Lütke. Free on Linux, Mac and Windows.",
+   "start": 21.87,
+   "end": 26.68,
+   "words": [
+    {
+     "w": "It's",
+     "start": 21.87,
+     "end": 22.02
+    },
+    {
+     "w": "called",
+     "start": 22.02,
+     "end": 22.32
+    },
+    {
+     "w": "disktree,",
+     "start": 22.32,
+     "end": 22.94,
+     "syl": [
+      [
+       22.32,
+       22.61
+      ],
+      [
+       22.61,
+       22.94
+      ]
+     ]
+    },
+    {
+     "w": "from",
+     "start": 22.94,
+     "end": 23.12
+    },
+    {
+     "w": "Shopify",
+     "start": 23.12,
+     "end": 23.56
+    },
+    {
+     "w": "founder",
+     "start": 23.56,
+     "end": 23.95
+    },
+    {
+     "w": "Tobi",
+     "start": 23.95,
+     "end": 24.26
+    },
+    {
+     "w": "Lütke.",
+     "start": 24.26,
+     "end": 24.69
+    },
+    {
+     "w": "Free",
+     "start": 25.06,
+     "end": 25.4
+    },
+    {
+     "w": "on",
+     "start": 25.4,
+     "end": 25.52
+    },
+    {
+     "w": "Linux,",
+     "start": 25.52,
+     "end": 25.82
+    },
+    {
+     "w": "Mac",
+     "start": 25.82,
+     "end": 26.06
+    },
+    {
+     "w": "and",
+     "start": 26.06,
+     "end": 26.2
+    },
+    {
+     "w": "Windows.",
+     "start": 26.2,
+     "end": 26.68
+    }
+   ]
+  },
+  {
+   "text": "Full breakdown on the channel.",
+   "start": 27.4,
+   "end": 28.64,
+   "words": [
+    {
+     "w": "Full",
+     "start": 27.4,
+     "end": 27.6
+    },
+    {
+     "w": "breakdown",
+     "start": 27.6,
+     "end": 28.06
+    },
+    {
+     "w": "on",
+     "start": 28.06,
+     "end": 28.12
+    },
+    {
+     "w": "the",
+     "start": 28.12,
+     "end": 28.22
+    },
+    {
+     "w": "channel.",
+     "start": 28.22,
+     "end": 28.64
+    }
+   ]
+  }
+ ]
+}

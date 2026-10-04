@@ -5,13 +5,15 @@ scenes time everything from the words, the grid only feeds generic helpers).
 
     python -m uv run --no-project --with numpy python analysis/audio_vo.py
 """
-import json, subprocess
+import json, subprocess, sys
 from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ep import EP  # noqa: E402
 SR, FPS = 16000, 100
-raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(ROOT / "audio" / "voiceover.mp3"), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(EP / "audio" / "voiceover.mp3"), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
 y = np.frombuffer(raw, dtype=np.float32)
 dur = len(y) / SR
 hop = SR // FPS
@@ -30,7 +32,7 @@ def norm(x):
 
 rms = norm(np.sqrt((spec ** 2).mean(1)))
 bands = {k: norm(spec[:, (freqs >= a) & (freqs < b)].mean(1)) for k, (a, b) in {"low": (60, 300), "mid": (300, 2000), "high": (2000, 8000)}.items()}
-lyr = json.loads((ROOT / "data" / "lyrics.json").read_text(encoding="utf-8"))
+lyr = json.loads((EP / "data" / "lyrics.json").read_text(encoding="utf-8"))
 words = [w for l in lyr["lines"] for w in l["words"] if w["end"] > w["start"]]
 vocal_on = [[round(w["start"], 3), round(float(rms[min(n - 1, int(w["start"] * FPS) + 3)]), 3)] for w in words]
 line_on = [[round(l["start"], 3), 1.0] for l in lyr["lines"]]
@@ -47,5 +49,5 @@ out = {
     "onsets": {"vocal": vocal_on, "kick": line_on, "snare": [], "hat": []},
     "notes": "Voiceover only (no music). 'kick' onsets are line starts; 'vocal' onsets are word starts; the beat grid is nominal.",
 }
-(ROOT / "data" / "audio.json").write_text(json.dumps(out), encoding="utf-8")
+(EP / "data" / "audio.json").write_text(json.dumps(out), encoding="utf-8")
 print(f"duration {dur:.2f}s, {n} frames, {len(vocal_on)} word onsets, {len(beats)} beats")

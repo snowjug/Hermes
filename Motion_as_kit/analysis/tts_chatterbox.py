@@ -16,10 +16,13 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 
-ROOT = Path(__file__).resolve().parent.parent
-SCRIPT = ROOT / "analysis" / "vo_script.json"
-WORK = ROOT / "analysis" / "work" / "vo"
-LEAD, SENT_GAP, LINE_GAP, TAIL = 0.30, 0.26, 0.46, 0.8  # seconds
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ep import EP, CONFIG  # noqa: E402
+
+SCRIPT = EP / "script.json"
+WORK = EP / "work" / "vo"
+VOICE = CONFIG.get("voice", {})
+LEAD, SENT_GAP, LINE_GAP, TAIL = (VOICE.get(k, d) for k, d in (("lead", 0.30), ("sentence_gap", 0.26), ("line_gap", 0.46), ("tail", 0.8)))  # seconds
 WPS = 2.55  # expected words per second, for the length check
 
 
@@ -29,7 +32,8 @@ def words(s: str) -> list[str]:
 
 
 # whisper's usual mishearings of the names in this script
-FIX = (("cloud", "claude"), ("clawed", "claude"), ("clod", "claude"), ("a.i.", "ai"), ("mag pie", "magpie"), ("git hub", "github"))
+FIX = (("cloud", "claude"), ("clawed", "claude"), ("clod", "claude"), ("a.i.", "ai"), ("mag pie", "magpie"), ("git hub", "github"),
+       ("wiztree", "wiz tree"), ("disktree", "disk tree"), ("disc", "disk"), ("3.4", "three point four"), ("4 million", "four million"), ("11", "eleven"))
 
 
 def letters(s: str) -> str:
@@ -57,9 +61,9 @@ def trim(a: np.ndarray, sr: int) -> np.ndarray:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--exaggeration", type=float, default=0.5)
-    ap.add_argument("--cfg", type=float, default=0.5)
-    ap.add_argument("--temperature", type=float, default=0.8)
+    ap.add_argument("--exaggeration", type=float, default=VOICE.get("exaggeration", 0.5))
+    ap.add_argument("--cfg", type=float, default=VOICE.get("cfg", 0.5))
+    ap.add_argument("--temperature", type=float, default=VOICE.get("temperature", 0.8))
     ap.add_argument("--tries", type=int, default=3)
     ap.add_argument("--only", default="", help="comma-separated line numbers (1-based) to re-make")
     args = ap.parse_args()
@@ -114,7 +118,13 @@ def main() -> int:
 
     # join: lead-in, takes, pauses, tail
     chunks, sr, manifest, t = [], None, [], LEAD
+    tempo = float(VOICE.get("tempo", 1.0))  # < 1 slows the read (pitch kept), for a more measured pace
     for idx, (li, si, text, f) in enumerate(jobs):
+        if abs(tempo - 1.0) > 1e-3:
+            slow = f.with_name(f.stem + f"_t{tempo:.3f}.wav")
+            if not slow.exists():
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(f), "-af", f"rubberband=tempo={tempo}:pitchq=quality", str(slow)], check=True)
+            f = slow
         a, sr = sf.read(str(f), dtype="float32")
         if not chunks:
             chunks.append(np.zeros(int(LEAD * sr), np.float32))
@@ -127,9 +137,9 @@ def main() -> int:
         t += gap
     audio = np.concatenate(chunks)
     audio = audio / (np.abs(audio).max() + 1e-9) * 0.89
-    out = ROOT / "audio" / "voiceover.wav"
+    out = EP / "audio" / "voiceover.wav"
     sf.write(str(out), audio, sr)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(out), "-ar", "44100", "-ac", "1", "-b:a", "192k", str(ROOT / "audio" / "voiceover.mp3")], check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(out), "-ar", "44100", "-ac", "1", "-b:a", "192k", str(EP / "audio" / "voiceover.mp3")], check=True)
     (WORK / "manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     print(f"wrote {out} ({len(audio) / sr:.2f}s)", flush=True)
     return 0

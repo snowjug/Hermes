@@ -37,3 +37,6 @@ Motion_as_kit/analysis/stems/
 Motion_as_kit/analysis/qa/
 Motion_as_kit/data/voiceover.words.json
 tech-daily/.techdaily.lock
+Motion_as_kit/episodes/*/audio/*.wav
+# third-party images used in a video (fetched from the tool's own repo)
+Motion_as_kit/episodes/*/data/screenshot.png

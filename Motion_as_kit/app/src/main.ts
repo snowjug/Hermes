@@ -1,7 +1,8 @@
 // Entry: preview player (default) or export mode (?export=1, driven by scripts/render.ts).
 import { Engine, type AdaptiveSampling } from './engine/engine';
 import { PW, PH, SCALE } from './engine/gl';
-import { makeTimeline } from './timeline';
+import { makeTimeline } from '@ep/timeline';
+import { W, H } from './engine/gl';
 
 const params = new URLSearchParams(location.search);
 const EXPORT = params.has('export');
@@ -12,6 +13,7 @@ const canvas = document.getElementById('c') as HTMLCanvasElement;
 // physical size: 1920x1080 times ?scale= (the page CSS keeps showing it at 1920x1080)
 canvas.width = PW;
 canvas.height = PH;
+canvas.style.aspectRatio = `${W} / ${H}`;
 
 const engine = new Engine(canvas, makeTimeline);
 
@@ -32,6 +34,8 @@ async function boot() {
 // ------------------------------------------------------------------ export API
 function setupExport() {
   document.body.classList.add('export');
+  canvas.style.width = `${W}px`;
+  canvas.style.height = `${H}px`;
   window.__pdoom = {
     engine,
     duration: engine.duration,

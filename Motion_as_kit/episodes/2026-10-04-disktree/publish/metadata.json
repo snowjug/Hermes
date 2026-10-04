@@ -1,0 +1,24 @@
+{
+  "title": "Shopify's Founder Built a Free Disk Cleaner: 4 Million Files in 3.4 Seconds",
+  "description": "Shopify founder Tobi Lütke just released disktree, a free, open-source (MIT) app for Linux, macOS and Windows that shows what is filling your disk, lets you mark what should go, and only removes it after you review the list.\n\nWhat it does\n• Every folder becomes a box sized by what it really costs on disk, with boxes inside boxes: a treemap. Scroll to zoom into a folder and drop straight inside.\n• Colour shows the kind of data (code, toolchains, media, documents, caches…). Diagonal hatching marks space you can get back: caches, build output, package stores, sync history.\n• Hidden folders are counted by default, because ~/.cache is often the biggest thing in a home folder.\n• Marking is reversible. The review screen moves things to the trash (recoverable) or deletes them permanently, which always asks first. Afterwards it rescans and shows the space you actually got back.\n• One key copies the list as a prompt for a coding agent, asking it to check each path before removing anything.\n• Run as administrator on Windows, it reads a whole NTFS drive from the master file table: in the author's test, a 4-million-file C:\\ took about 3.4 s, against 11.2 s for WizTree.\n\nThe catch: it decides what a folder is from its name, so some colours can be wrong on your machine.\n\nChapters\n0:00 Shopify's founder made a disk cleaner\n0:19 Boxes inside boxes\n0:32 Colors, stripes and hidden caches\n0:49 Mark, review, then delete\n1:14 The catch\n\nSources\nhttps://github.com/tobi/disktree\nThe app screenshot is from the project's README (MIT). The home folder in the animation is an illustrative example, not a real scan. Star count (2,274) as of 4 October 2026.\nNarrated with an AI voice. Animated in code.\n\nA new tool every day.\n\n#disktree #opensource #devtools",
+  "tags": [
+    "disktree",
+    "disk space",
+    "disk cleaner",
+    "free disk space",
+    "treemap",
+    "WizTree",
+    "WinDirStat alternative",
+    "Tobi Lutke",
+    "Shopify",
+    "Rust",
+    "GPUI",
+    "Omarchy",
+    "open source tools",
+    "developer tools",
+    "clean up disk",
+    "cache folder"
+  ],
+  "youtube_url": "https://youtu.be/4MmSMJ2c2aQ",
+  "published": "2026-10-04T12:45:00+05:30"
+}

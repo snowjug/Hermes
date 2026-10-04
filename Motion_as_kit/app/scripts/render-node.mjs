@@ -8,12 +8,17 @@
 import { chromium } from 'playwright-core';
 import { spawn } from 'node:child_process';
 import { createServer } from 'node:http';
-import { mkdirSync, existsSync, writeFileSync, renameSync } from 'node:fs';
+import { mkdirSync, existsSync, writeFileSync, renameSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const APP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ROOT = path.resolve(APP, '..');
+// the episode (same rule as vite.config.ts): EPISODE, or the newest folder in episodes/ with an episode.json
+const EPISODE = process.env.EPISODE ?? readdirSync(path.join(ROOT, 'episodes')).filter((d) => existsSync(path.join(ROOT, 'episodes', d, 'episode.json'))).sort().pop();
+process.env.EPISODE = EPISODE;
+const EP = path.join(ROOT, 'episodes', EPISODE);
+let OW = 1920, OH = 1080; // set from the page once it boots
 const argv = process.argv.slice(2);
 const mode = argv[0] ?? 'stills';
 const opt = (k, d) => { const i = argv.indexOf(`--${k}`); return i >= 0 ? argv[i + 1] : d; };
@@ -42,7 +47,7 @@ async function openPage(url) {
     channel: process.env.BROWSER_CHANNEL ?? 'chrome', headless: !flag('headed'),
     args: ['--use-angle=d3d11', '--enable-gpu-rasterization', '--ignore-gpu-blocklist', '--disable-background-timer-throttling', '--disable-renderer-backgrounding', '--disable-backgrounding-occluded-windows'],
   });
-  const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
+  const page = await browser.newPage({ viewport: { width: 1920, height: 1920 }, deviceScaleFactor: 1 });
   const logs = [];
   page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') logs.push(`[${m.type()}] ${m.text()}`); });
   page.on('pageerror', (e) => logs.push(`[pageerror] ${e.message}`));
@@ -51,6 +56,8 @@ async function openPage(url) {
   await page.waitForFunction(() => window.__pdoom?.ready || window.__pdoom?.error, null, { timeout: 180000 });
   const err = await page.evaluate(() => window.__pdoom.error);
   if (err) throw new Error(`app failed to boot:\n${err}\n${logs.join('\n')}`);
+  [OW, OH] = await page.evaluate(() => [window.__pdoom.width, window.__pdoom.height]);
+  console.log(`episode ${EPISODE}: ${OW}x${OH}`);
   const sceneErrors = await page.evaluate(() => window.__pdoom.errors);
   if (sceneErrors.length) console.error('SCENE ERRORS:\n' + sceneErrors.join('\n'));
   return { browser, page, logs };
@@ -62,7 +69,7 @@ async function stills(page, times, outDir) {
   for (const t of times) {
     await page.evaluate(([t, s, sh]) => window.__pdoom.still(t, s, sh), [t, SAMPLES, SHUTTER]);
     const f = path.join(outDir, `f_${t.toFixed(2).padStart(7, '0')}.png`);
-    await page.screenshot({ path: f, clip: { x: 0, y: 0, width: 1920, height: 1080 } });
+    await page.screenshot({ path: f, clip: { x: 0, y: 0, width: OW, height: OH } });
     files.push(f);
   }
   return files;
@@ -71,7 +78,8 @@ async function stills(page, times, outDir) {
 async function sheet(page, times, cols, out) {
   const dataUrl = await page.evaluate(async ({ times, cols }) => {
     const P = window.__pdoom;
-    const cw = 640, ch = 360, pad = 4, lab = 18;
+    const src0 = document.getElementById('c');
+    const cw = src0.width > src0.height ? 640 : 270, ch = Math.round((cw * src0.height) / src0.width), pad = 4, lab = 18;
     const rows = Math.ceil(times.length / cols);
     const cv = document.createElement('canvas');
     cv.width = cols * (cw + pad) + pad; cv.height = rows * (ch + lab + pad) + pad;
@@ -92,8 +100,8 @@ async function sheet(page, times, cols, out) {
 
 async function video(page, from, to, fps, out) {
   ensureDir(path.dirname(out));
-  const args = ['-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', '1920x1080', '-r', String(fps), '-i', 'pipe:0'];
-  const audio = path.join(ROOT, 'audio/voiceover.mp3');
+  const args = ['-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', `${OW}x${OH}`, '-r', String(fps), '-i', 'pipe:0'];
+  const audio = path.join(EP, 'audio/voiceover.mp3');
   if (!flag('noaudio')) args.push('-ss', String(from), '-t', String(to - from), '-i', audio);
   args.push('-vf', 'vflip,scale=out_color_matrix=bt709,setparams=color_primaries=bt709:color_trc=bt709', '-c:v', 'libx264', '-preset', opt('preset', 'medium'), '-crf', opt('crf', '17'), '-pix_fmt', 'yuv420p', '-tune', 'grain', '-x264-params', opt('x264', 'aq-mode=3'));
   if (!flag('noaudio')) args.push('-c:a', 'aac', '-b:a', '256k', '-shortest');
@@ -147,22 +155,22 @@ const { url, stop } = await startVite();
 const { browser, page, logs } = await openPage(url);
 try {
   if (mode === 'stills') {
-    const files = await stills(page, (opt('t') ?? '0').split(',').map(Number), path.resolve(opt('out', path.join(ROOT, 'out/stills'))));
+    const files = await stills(page, (opt('t') ?? '0').split(',').map(Number), path.resolve(opt('out', path.join(EP, 'out/stills'))));
     console.log(files.join('\n'));
   } else if (mode === 'sheet') {
-    const out = path.resolve(opt('out', path.join(ROOT, 'out/sheets/sheet.png')));
+    const out = path.resolve(opt('out', path.join(EP, 'out/sheet.png')));
     await sheet(page, opt('times').split(',').map(Number), +opt('cols', '4'), out);
     console.log(out);
   } else if (mode === 'video') {
     const dur = await page.evaluate(() => window.__pdoom.duration);
-    await video(page, +opt('from', '0'), +opt('to', String(dur)), +opt('fps', '60'), path.resolve(opt('out', path.join(ROOT, 'out/video.mp4'))));
+    await video(page, +opt('from', '0'), +opt('to', String(dur)), +opt('fps', '60'), path.resolve(opt('out', path.join(EP, 'out/picture.mp4'))));
   } else if (mode === 'parts') {
     // Resumable: the video in parts of --part-sec seconds, each a finished file (parts already on disk
     // are skipped), then joined without re-encoding. A run that gets cut off loses one part at most.
     const dur = await page.evaluate(() => window.__pdoom.duration);
     const fps = +opt('fps', '30'), per = Math.round(+opt('part-sec', '10') * fps);
     const total = Math.round(dur * fps);
-    const out = path.resolve(opt('out', path.join(ROOT, 'out/video.mp4')));
+    const out = path.resolve(opt('out', path.join(EP, 'out/picture.mp4')));
     const dir = out.replace(/\.mp4$/, '_parts');
     ensureDir(dir);
     const files = [];

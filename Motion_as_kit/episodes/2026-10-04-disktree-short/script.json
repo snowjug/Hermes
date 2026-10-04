@@ -1,0 +1,20 @@
+{
+  "title": "disktree Short",
+  "notes": "Facts from github.com/tobi/disktree (README, 2026-10-04).",
+  "lines": [
+    {"text": "Your disk is full.", "say": ["Your disk is full."]},
+    {"text": "But full of what?", "say": ["But full of what?"]},
+    {"text": "This free app turns every folder into a box, sized by what it really takes up on disk.", "say": ["This free app turns every folder into a box, sized by what it really takes up on disk."]},
+    {"text": "Folders inside folders, all the way down.", "say": ["Folders inside folders, all the way down."]},
+    {"text": "The biggest box is often a hidden cache.", "say": ["The biggest box is often a hidden cache."]},
+    {"text": "Striped boxes are space you can win back, like caches and build output.", "say": ["Striped boxes are space you can win back, like caches and build output."]},
+    {"text": "Mark them, review the list, and only then delete.", "say": ["Mark them, review the list, and only then delete."]},
+    {"text": "It's called disktree, from Shopify founder Tobi Lütke. Free on Linux, Mac and Windows.", "say": ["It's called disk tree, from Shopify founder Toby Lootkee.", "Free on Linux, Mac and Windows."]},
+    {"text": "Full breakdown on the channel.", "say": ["Full breakdown on the channel."]}
+  ],
+  "spoken": {
+    "Tobi": ["TOBY"],
+    "Lütke.": ["LOOTKEE"],
+    "disktree,": ["DISK", "TREE"]
+  }
+}

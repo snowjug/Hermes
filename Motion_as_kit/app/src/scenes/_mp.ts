@@ -8,12 +8,12 @@ import type * as THREE from 'three';
 import { Scene, type Frame, type PostOverrides } from '../engine/scene';
 import { FSPass, Layer2D, W, H } from '../engine/gl';
 import { LineBatch } from '../engine/lines';
-import { LIN, rgba } from '../engine/palette';
+import { HEX, LIN, rgba } from '../engine/palette';
 import { F, font, measure } from '../engine/type';
 import type { Line, Word } from '../engine/lyrics';
 import { clamp, ease, hash, lerp, mulberry32, noise1, prog, pulse, TAU } from '../engine/util';
 import {
-  Plot, Cam2D, gridPass, setGrid, drawKaraoke, drawPen, w2s, setWorld, label, mixCss, lineOf, wordOf, pt,
+  Plot, Cam2D, gridPass, setGrid, drawKaraoke, drawPen, w2s, setWorld, label, mixCss, lineOf, wordOf, pt, placeRow,
   lengths, at, type P, type KWord, type Cam, type RGB,
 } from './_vo';
 
@@ -36,12 +36,35 @@ void main() {
 }`;
 
 export const ARCH = (wd: number, wt: number) => F.archivo(wd, wt);
+/** The identity camera: world = screen, centred. */
+export const SCREEN: Cam = { cx: 0, cy: 0, z: 1, roll: 0 };
+
+/**
+ * A spoken line as one or two left-aligned karaoke rows (wrapped at maxW) with their top-left row's
+ * baseline at (x, y). `group` names them for Plate.alpha. Returns the words and the rows used.
+ */
+export function lineRows(words: Word[], x: number, y: number, size: number, fam: string, group: string, maxW: number, o: { ant?: number; lead?: number; hot?: string; done?: string } = {}) {
+  const rows: Word[][] = [[]];
+  let wsum = 0;
+  const sp = (measure(' ', fam, 100) / 100) * size;
+  for (const wd of words) {
+    const ww = (measure(wd.w, fam, 100) / 100) * size;
+    if (rows[rows.length - 1]!.length && wsum + sp + ww > maxW) { rows.push([]); wsum = 0; }
+    wsum += (rows[rows.length - 1]!.length ? sp : 0) + ww;
+    rows[rows.length - 1]!.push(wd);
+  }
+  const out: KWord[] = [];
+  rows.forEach((r, i) => out.push(...placeRow(r, x, y + i * size * (o.lead ?? 1.18), size, fam, group, { ant: o.ant ?? 0.2, hot: o.hot, done: o.done }).words));
+  return { words: out, rows: rows.length };
+}
 export const keyOf = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
 
 export abstract class Plate extends Scene {
   plot = new Plot();
   cam = new Cam2D();
   kw: KWord[] = [];
+  /** Karaoke drawn in screen space (centre = 0,0, 1 px = 1 px): captions that stay put while the camera moves. */
+  screenKw: KWord[] = [];
   ui = new Layer2D();
   glowLines = new LineBatch(60000);
   inkLines = new LineBatch(40000, { blend: 'normal' });
@@ -128,6 +151,7 @@ export abstract class Plate extends Scene {
     this.plot.drawNotes(t, c, ctx);
     drawKaraoke(ctx, c, t, this.kw, { alpha: (g, tt) => this.alpha(g, tt), paper: this.paper });
     this.drawTop(ctx, t, c);
+    if (this.screenKw.length) drawKaraoke(ctx, SCREEN, t, this.screenKw, { alpha: (g, tt) => this.alpha(g, tt), paper: this.paper });
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     comp.draw(renderer, U.upload(), out);
     // the pen and other light
@@ -266,7 +290,7 @@ export function typed(ctx: CanvasRenderingContext2D, c: Cam, text: string, x: nu
 }
 
 /** A rubber stamp as a canvas (knocked-out ink), drawn later with drawStamp. */
-export function makeStamp(text: string, top: string, bottom: string, col = '#FF4D12', seed = 7) {
+export function makeStamp(text: string, top: string, bottom: string, col: string = HEX.signal, seed = 7) {
   const cv = document.createElement('canvas');
   const SW = 1400, SH = 340;
   cv.width = SW; cv.height = SH;

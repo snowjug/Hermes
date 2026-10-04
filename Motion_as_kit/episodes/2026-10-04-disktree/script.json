@@ -1,0 +1,30 @@
+{
+  "title": "disktree: see what fills your disk, then free it",
+  "notes": "Facts from github.com/tobi/disktree (README, 2026-10-04). `text` is shown and aligned; `say` is read.",
+  "lines": [
+    {"text": "Shopify founder Tobi Lütke just shipped a disk cleaner.", "say": ["Shopify founder Toby Lootkee just shipped a disk cleaner."]},
+    {"text": "Run it as administrator on Windows, and it reads a four-million-file drive in about three point four seconds.", "say": ["Run it as administrator on Windows, and it reads a four million file drive in about three point four seconds."]},
+    {"text": "In his test, WizTree took eleven.", "say": ["In his test, Wiz Tree took eleven."]},
+    {"text": "It's called disktree. It's free, open source, and runs on Linux, Mac and Windows.", "say": ["It's called disk tree.", "It's free, open source, and runs on Linux, Mac and Windows."]},
+    {"text": "The idea is simple. Every folder becomes a box, sized by what it really costs on disk, with boxes inside boxes all the way down.", "say": ["The idea is simple.", "Every folder becomes a box, sized by what it really costs on disk, with boxes inside boxes all the way down."]},
+    {"text": "Scroll, and you zoom into a folder until it fills the screen, then drop straight inside.", "say": ["Scroll, and you zoom into a folder until it fills the screen, then drop straight inside."]},
+    {"text": "Color tells you what kind of data it is: code, toolchains, media, documents, caches.", "say": ["Color tells you what kind of data it is: code, toolchains, media, documents, caches."]},
+    {"text": "And diagonal stripes mark space you can get back, like caches and build output.", "say": ["And diagonal stripes mark space you can get back, like caches and build output."]},
+    {"text": "It even counts hidden folders, because a hidden cache is often the biggest thing in your home folder.", "say": ["It even counts hidden folders, because a hidden cache is often the biggest thing in your home folder."]},
+    {"text": "Found the culprit? Mark it, and it takes the danger color, along with everything inside it.", "say": ["Found the culprit?", "Mark it, and it takes the danger color, along with everything inside it."]},
+    {"text": "Nothing is deleted yet. You review the list first.", "say": ["Nothing is deleted yet.", "You review the list first."]},
+    {"text": "Then pick the trash, which you can undo, or delete permanently, which always asks first.", "say": ["Then pick the trash, which you can undo, or delete permanently, which always asks first."]},
+    {"text": "When it's done, it scans again and shows how much space you really got back.", "say": ["When it's done, it scans again and shows how much space you really got back."]},
+    {"text": "One key even copies the list as a prompt for your coding agent, to check each path before removing it.", "say": ["One key even copies the list as a prompt for your coding agent, to check each path before removing it."]},
+    {"text": "The catch? It guesses what a folder is from its name, so some colors can be wrong on your machine.", "say": ["The catch?", "It guesses what a folder is from its name, so some colors can be wrong on your machine."]},
+    {"text": "Still, seeing exactly where your space went, before deleting anything, is worth a lot.", "say": ["Still, seeing exactly where your space went, before deleting anything, is worth a lot."]},
+    {"text": "That's today's tool. There's a new one every day.", "say": ["That's today's tool.", "There's a new one every day."]}
+  ],
+  "spoken": {
+    "Tobi": ["TOBY"],
+    "Lütke": ["LOOTKEE"],
+    "four-million-file": ["FOUR", "MILLION", "FILE"],
+    "WizTree": ["WIZ", "TREE"],
+    "disktree.": ["DISK", "TREE"]
+  }
+}

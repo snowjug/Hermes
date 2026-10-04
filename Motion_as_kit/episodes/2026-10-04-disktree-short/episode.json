@@ -1,0 +1,13 @@
+{
+ "fmt": "short",
+ "theme": "pop",
+ "title": "Your disk is full. But full of what?",
+ "voice": {
+  "exaggeration": 0.65,
+  "cfg": 0.4,
+  "line_gap": 0.6,
+  "sentence_gap": 0.22,
+  "lead": 0.25,
+  "tail": 1.0
+ }
+}
