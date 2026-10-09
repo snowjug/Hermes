@@ -1,0 +1,31 @@
+{
+ "fmt": "main",
+ "theme": "collage",
+ "title": "AnyPS5",
+ "voice": {
+  "engine": "elevenlabs via vidIQ",
+  "voice": "Brian (nPczCjzI2devNBz1zQrb)"
+ },
+ "edit": {
+  "drop": [
+   9
+  ],
+  "from_word": {
+   "15": "That's"
+  },
+  "line_gap": 0.38,
+  "inner_max": 0.26,
+  "lead": 0.3,
+  "tail": 0.7,
+  "target": 90.0,
+  "max_tempo": 1.065
+ },
+ "music": {
+  "file": "music_raw.wav",
+  "db": -16,
+  "duck": 9,
+  "fade_in": 0.5,
+  "fade_out": 2.0,
+  "source": "vidIQ AI music (royalty-free), prompt: documentary tech explainer, 100 BPM"
+ }
+}

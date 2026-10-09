@@ -1,0 +1,141 @@
+{
+  "title": "AnyPS5: PS5 games as native PC programs",
+  "notes": "Facts checked 2026-10-09: github.com/boykopovar/AnyPS5 (README, docs/user/COMPATIBILITY.md, docs/user/USAGE.md, docs/dev/ARCHITECTURE.md, releases v0.1.0/v0.1.1 of 2026-09-28; created 2026-08-03; 16,380 stars, +10,243 in GitHub's weekly trending; GPL-2.0) and its progress page boykopovar.github.io/AnyPS5 (system libraries 2,575 of 3,038 known functions = 84.76%; GPU shader instructions 1,166 of 1,166). Compatibility: Dreaming Sarah (PPSA02929), Windows in game/playable, Linux '?', 60 FPS on GTX 1050 Ti / i5-7500, 36 FPS on Intel HD Graphics 620 / i5-7200. The PS5's CPU is AMD Zen 2 (x86-64); --to-intel lowers AMD-only instructions. Narration: ElevenLabs voice 'Brian' via vidIQ. `say` is what the voice reads; `text` is shown and aligned. Edit: the read was cut to 90 s (line 'Of the three thousand functions...' and 'One is a small number. But it's the first.' removed; pauses tightened; tempo 1.054).",
+  "lines": [
+    {
+      "text": "This tool has one PlayStation 5 game running on a PC. Exactly one.",
+      "say": "This tool has one PlayStation 5 game running on a PC. Exactly one."
+    },
+    {
+      "text": "And in two months, 16,000 people starred it on GitHub.",
+      "say": "And in two months, sixteen thousand people starred it on GitHub."
+    },
+    {
+      "text": "Here's why that's a big deal.",
+      "say": "Here's why that's a big deal."
+    },
+    {
+      "text": "Normally, that takes emulation: software pretending to be the whole console, translating every instruction while you play.",
+      "say": "Normally, that takes emulation: software pretending to be the whole console, translating every instruction while you play."
+    },
+    {
+      "text": "AnyPS5 doesn't pretend.",
+      "say": "Any PS5 doesn't pretend."
+    },
+    {
+      "text": "Inside a PS5 is an AMD processor that speaks your PC's language, so the game's code can run as it is.",
+      "say": "Inside a PS5 is an AMD processor that speaks your PC's language, so the game's code can run as it is."
+    },
+    {
+      "text": "What's missing is Sony's system software: the libraries every game calls for graphics, sound and controllers.",
+      "say": "What's missing is Sony's system software: the libraries every game calls for graphics, sound and controllers."
+    },
+    {
+      "text": "So AnyPS5 rewrites the game into an ordinary Windows or Linux program, and reconnects those calls to its own versions of Sony's libraries.",
+      "say": "So Any PS5 rewrites the game into an ordinary Windows or Linux program, and reconnects those calls to its own versions of Sony's libraries."
+    },
+    {
+      "text": "Graphics too: shaders written for the PS5's AMD chip are recompiled for Vulkan, so ordinary PC graphics cards can draw them.",
+      "say": "Graphics too: shaders written for the PS5's AMD chip are recompiled for Vulkan, so ordinary PC graphics cards can draw them."
+    },
+    {
+      "text": "Emulation is an interpreter whispering every line. This is translating the book once.",
+      "say": "Emulation is an interpreter whispering every line. This is translating the book once."
+    },
+    {
+      "text": "The only game on its list so far is Dreaming Sarah, a 2D platformer: 60 frames per second on a GTX 1050 Ti, 36 on a laptop's Intel graphics.",
+      "say": "The only game on its list so far is Dreaming Sarah, a 2D platformer: sixty frames per second on a G.T.X. ten-fifty T.I., thirty-six on a laptop's Intel graphics."
+    },
+    {
+      "text": "The catch: it's one game, on Windows. Linux is still a question mark.",
+      "say": "The catch: it's one game, on Windows. Linux is still a question mark."
+    },
+    {
+      "text": "It ships no games, keys or firmware, so you need your own. And only download it from GitHub: fake PS5 emulators are a classic malware trap.",
+      "say": "It ships no games, keys or firmware, so you need your own. And only download it from GitHub: fake PS5 emulators are a classic malware trap."
+    },
+    {
+      "text": "That's today's tool. There's a new one every day.",
+      "say": "That's today's tool. There's a new one every day."
+    }
+  ],
+  "spoken": {
+    "PC.": [
+      "P",
+      "C"
+    ],
+    "PC's": [
+      "P",
+      "C'S"
+    ],
+    "PS5": [
+      "P",
+      "S",
+      "FIVE"
+    ],
+    "PS5's": [
+      "P",
+      "S",
+      "FIVE'S"
+    ],
+    "AnyPS5": [
+      "ANY",
+      "P",
+      "S",
+      "FIVE"
+    ],
+    "AMD": [
+      "A",
+      "M",
+      "D"
+    ],
+    "16,000": [
+      "SIXTEEN",
+      "THOUSAND"
+    ],
+    "GitHub.": [
+      "GIT",
+      "HUB"
+    ],
+    "GitHub:": [
+      "GIT",
+      "HUB"
+    ],
+    "3,000": [
+      "THREE",
+      "THOUSAND"
+    ],
+    "85%.": [
+      "EIGHTY",
+      "FIVE",
+      "PERCENT"
+    ],
+    "2D": [
+      "TWO",
+      "D"
+    ],
+    "60": [
+      "SIXTY"
+    ],
+    "36": [
+      "THIRTY",
+      "SIX"
+    ],
+    "GTX": [
+      "G",
+      "T",
+      "X"
+    ],
+    "1050": [
+      "TEN",
+      "FIFTY"
+    ],
+    "Ti,": [
+      "T",
+      "I"
+    ],
+    "5": [
+      "FIVE"
+    ]
+  }
+}

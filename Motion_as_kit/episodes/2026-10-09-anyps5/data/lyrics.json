@@ -1,0 +1,1413 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "This tool has one PlayStation 5 game running on a PC. Exactly one.",
+   "start": 0.33,
+   "end": 4.66,
+   "words": [
+    {
+     "w": "This",
+     "start": 0.33,
+     "end": 0.54
+    },
+    {
+     "w": "tool",
+     "start": 0.54,
+     "end": 0.82
+    },
+    {
+     "w": "has",
+     "start": 0.82,
+     "end": 1.22
+    },
+    {
+     "w": "one",
+     "start": 1.22,
+     "end": 1.42
+    },
+    {
+     "w": "PlayStation",
+     "start": 1.42,
+     "end": 2.06
+    },
+    {
+     "w": "5",
+     "start": 2.06,
+     "end": 2.34
+    },
+    {
+     "w": "game",
+     "start": 2.34,
+     "end": 2.6
+    },
+    {
+     "w": "running",
+     "start": 2.6,
+     "end": 2.86
+    },
+    {
+     "w": "on",
+     "start": 2.86,
+     "end": 2.96
+    },
+    {
+     "w": "a",
+     "start": 2.96,
+     "end": 3.03
+    },
+    {
+     "w": "PC.",
+     "start": 3.03,
+     "end": 3.6,
+     "syl": [
+      [
+       3.03,
+       3.26
+      ],
+      [
+       3.26,
+       3.6
+      ]
+     ]
+    },
+    {
+     "w": "Exactly",
+     "start": 3.73,
+     "end": 4.44
+    },
+    {
+     "w": "one.",
+     "start": 4.44,
+     "end": 4.66
+    }
+   ]
+  },
+  {
+   "text": "And in two months, 16,000 people starred it on GitHub.",
+   "start": 5.11,
+   "end": 8.7,
+   "words": [
+    {
+     "w": "And",
+     "start": 5.11,
+     "end": 5.32
+    },
+    {
+     "w": "in",
+     "start": 5.32,
+     "end": 5.46
+    },
+    {
+     "w": "two",
+     "start": 5.46,
+     "end": 5.68
+    },
+    {
+     "w": "months,",
+     "start": 5.68,
+     "end": 6.06
+    },
+    {
+     "w": "16,000",
+     "start": 6.15,
+     "end": 7.14,
+     "syl": [
+      [
+       6.15,
+       6.74
+      ],
+      [
+       6.74,
+       7.14
+      ]
+     ]
+    },
+    {
+     "w": "people",
+     "start": 7.14,
+     "end": 7.6
+    },
+    {
+     "w": "starred",
+     "start": 7.6,
+     "end": 8.02
+    },
+    {
+     "w": "it",
+     "start": 8.02,
+     "end": 8.08
+    },
+    {
+     "w": "on",
+     "start": 8.08,
+     "end": 8.2
+    },
+    {
+     "w": "GitHub.",
+     "start": 8.2,
+     "end": 8.7,
+     "syl": [
+      [
+       8.2,
+       8.4
+      ],
+      [
+       8.4,
+       8.7
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Here's why that's a big deal.",
+   "start": 9.17,
+   "end": 10.52,
+   "words": [
+    {
+     "w": "Here's",
+     "start": 9.17,
+     "end": 9.44
+    },
+    {
+     "w": "why",
+     "start": 9.44,
+     "end": 9.62
+    },
+    {
+     "w": "that's",
+     "start": 9.62,
+     "end": 9.88
+    },
+    {
+     "w": "a",
+     "start": 9.88,
+     "end": 9.94
+    },
+    {
+     "w": "big",
+     "start": 9.94,
+     "end": 10.16
+    },
+    {
+     "w": "deal.",
+     "start": 10.16,
+     "end": 10.52
+    }
+   ]
+  },
+  {
+   "text": "Normally, that takes emulation: software pretending to be the whole console, translating every instruction while you play.",
+   "start": 10.99,
+   "end": 17.92,
+   "words": [
+    {
+     "w": "Normally,",
+     "start": 10.99,
+     "end": 11.46
+    },
+    {
+     "w": "that",
+     "start": 11.46,
+     "end": 11.64
+    },
+    {
+     "w": "takes",
+     "start": 11.64,
+     "end": 11.94
+    },
+    {
+     "w": "emulation:",
+     "start": 11.94,
+     "end": 12.63
+    },
+    {
+     "w": "software",
+     "start": 12.86,
+     "end": 13.5
+    },
+    {
+     "w": "pretending",
+     "start": 13.5,
+     "end": 13.96
+    },
+    {
+     "w": "to",
+     "start": 13.96,
+     "end": 14.04
+    },
+    {
+     "w": "be",
+     "start": 14.04,
+     "end": 14.2
+    },
+    {
+     "w": "the",
+     "start": 14.2,
+     "end": 14.32
+    },
+    {
+     "w": "whole",
+     "start": 14.32,
+     "end": 14.58
+    },
+    {
+     "w": "console,",
+     "start": 14.58,
+     "end": 15.19
+    },
+    {
+     "w": "translating",
+     "start": 15.57,
+     "end": 16.33
+    },
+    {
+     "w": "every",
+     "start": 16.33,
+     "end": 16.7
+    },
+    {
+     "w": "instruction",
+     "start": 16.7,
+     "end": 17.24
+    },
+    {
+     "w": "while",
+     "start": 17.24,
+     "end": 17.42
+    },
+    {
+     "w": "you",
+     "start": 17.42,
+     "end": 17.56
+    },
+    {
+     "w": "play.",
+     "start": 17.56,
+     "end": 17.92
+    }
+   ]
+  },
+  {
+   "text": "AnyPS5 doesn't pretend.",
+   "start": 18.39,
+   "end": 20.52,
+   "words": [
+    {
+     "w": "AnyPS5",
+     "start": 18.39,
+     "end": 19.62,
+     "syl": [
+      [
+       18.39,
+       18.76
+      ],
+      [
+       18.76,
+       19.04
+      ],
+      [
+       19.04,
+       19.16
+      ],
+      [
+       19.16,
+       19.62
+      ]
+     ]
+    },
+    {
+     "w": "doesn't",
+     "start": 19.62,
+     "end": 19.96
+    },
+    {
+     "w": "pretend.",
+     "start": 19.96,
+     "end": 20.52
+    }
+   ]
+  },
+  {
+   "text": "Inside a PS5 is an AMD processor that speaks your PC's language, so the game's code can run as it is.",
+   "start": 20.98,
+   "end": 27.78,
+   "words": [
+    {
+     "w": "Inside",
+     "start": 20.98,
+     "end": 21.46
+    },
+    {
+     "w": "a",
+     "start": 21.46,
+     "end": 21.52
+    },
+    {
+     "w": "PS5",
+     "start": 21.52,
+     "end": 22.29,
+     "syl": [
+      [
+       21.52,
+       21.76
+      ],
+      [
+       21.76,
+       21.86
+      ],
+      [
+       21.86,
+       22.29
+      ]
+     ]
+    },
+    {
+     "w": "is",
+     "start": 22.29,
+     "end": 22.48
+    },
+    {
+     "w": "an",
+     "start": 22.48,
+     "end": 22.68
+    },
+    {
+     "w": "AMD",
+     "start": 22.68,
+     "end": 23.08,
+     "syl": [
+      [
+       22.68,
+       22.8
+      ],
+      [
+       22.8,
+       22.88
+      ],
+      [
+       22.88,
+       23.08
+      ]
+     ]
+    },
+    {
+     "w": "processor",
+     "start": 23.08,
+     "end": 23.72
+    },
+    {
+     "w": "that",
+     "start": 23.72,
+     "end": 23.88
+    },
+    {
+     "w": "speaks",
+     "start": 23.88,
+     "end": 24.18
+    },
+    {
+     "w": "your",
+     "start": 24.18,
+     "end": 24.35
+    },
+    {
+     "w": "PC's",
+     "start": 24.35,
+     "end": 24.84,
+     "syl": [
+      [
+       24.35,
+       24.54
+      ],
+      [
+       24.54,
+       24.84
+      ]
+     ]
+    },
+    {
+     "w": "language,",
+     "start": 24.84,
+     "end": 25.29
+    },
+    {
+     "w": "so",
+     "start": 25.66,
+     "end": 25.88
+    },
+    {
+     "w": "the",
+     "start": 25.88,
+     "end": 25.98
+    },
+    {
+     "w": "game's",
+     "start": 25.98,
+     "end": 26.34
+    },
+    {
+     "w": "code",
+     "start": 26.34,
+     "end": 26.83
+    },
+    {
+     "w": "can",
+     "start": 26.83,
+     "end": 27.04
+    },
+    {
+     "w": "run",
+     "start": 27.04,
+     "end": 27.22
+    },
+    {
+     "w": "as",
+     "start": 27.22,
+     "end": 27.36
+    },
+    {
+     "w": "it",
+     "start": 27.36,
+     "end": 27.52
+    },
+    {
+     "w": "is.",
+     "start": 27.52,
+     "end": 27.78
+    }
+   ]
+  },
+  {
+   "text": "What's missing is Sony's system software: the libraries every game calls for graphics, sound and controllers.",
+   "start": 28.24,
+   "end": 34.97,
+   "words": [
+    {
+     "w": "What's",
+     "start": 28.24,
+     "end": 28.47
+    },
+    {
+     "w": "missing",
+     "start": 28.47,
+     "end": 29.0
+    },
+    {
+     "w": "is",
+     "start": 29.0,
+     "end": 29.18
+    },
+    {
+     "w": "Sony's",
+     "start": 29.18,
+     "end": 29.56
+    },
+    {
+     "w": "system",
+     "start": 29.56,
+     "end": 29.94
+    },
+    {
+     "w": "software:",
+     "start": 29.94,
+     "end": 30.49
+    },
+    {
+     "w": "the",
+     "start": 30.74,
+     "end": 30.9
+    },
+    {
+     "w": "libraries",
+     "start": 30.9,
+     "end": 31.58
+    },
+    {
+     "w": "every",
+     "start": 31.58,
+     "end": 31.86
+    },
+    {
+     "w": "game",
+     "start": 31.86,
+     "end": 32.12
+    },
+    {
+     "w": "calls",
+     "start": 32.12,
+     "end": 32.42
+    },
+    {
+     "w": "for",
+     "start": 32.42,
+     "end": 32.58
+    },
+    {
+     "w": "graphics,",
+     "start": 32.58,
+     "end": 33.18
+    },
+    {
+     "w": "sound",
+     "start": 33.4,
+     "end": 34.0
+    },
+    {
+     "w": "and",
+     "start": 34.15,
+     "end": 34.34
+    },
+    {
+     "w": "controllers.",
+     "start": 34.34,
+     "end": 34.97
+    }
+   ]
+  },
+  {
+   "text": "So AnyPS5 rewrites the game into an ordinary Windows or Linux program, and reconnects those calls to its own versions of Sony's libraries.",
+   "start": 35.43,
+   "end": 44.52,
+   "words": [
+    {
+     "w": "So",
+     "start": 35.43,
+     "end": 35.82
+    },
+    {
+     "w": "AnyPS5",
+     "start": 35.82,
+     "end": 36.88,
+     "syl": [
+      [
+       35.82,
+       36.08
+      ],
+      [
+       36.08,
+       36.36
+      ],
+      [
+       36.36,
+       36.48
+      ],
+      [
+       36.48,
+       36.88
+      ]
+     ]
+    },
+    {
+     "w": "rewrites",
+     "start": 36.88,
+     "end": 37.32
+    },
+    {
+     "w": "the",
+     "start": 37.32,
+     "end": 37.44
+    },
+    {
+     "w": "game",
+     "start": 37.44,
+     "end": 37.88
+    },
+    {
+     "w": "into",
+     "start": 37.88,
+     "end": 38.2
+    },
+    {
+     "w": "an",
+     "start": 38.2,
+     "end": 38.42
+    },
+    {
+     "w": "ordinary",
+     "start": 38.42,
+     "end": 38.9
+    },
+    {
+     "w": "Windows",
+     "start": 38.9,
+     "end": 39.32
+    },
+    {
+     "w": "or",
+     "start": 39.32,
+     "end": 39.44
+    },
+    {
+     "w": "Linux",
+     "start": 39.44,
+     "end": 39.76
+    },
+    {
+     "w": "program,",
+     "start": 39.76,
+     "end": 40.31
+    },
+    {
+     "w": "and",
+     "start": 40.65,
+     "end": 40.84
+    },
+    {
+     "w": "reconnects",
+     "start": 40.84,
+     "end": 41.38
+    },
+    {
+     "w": "those",
+     "start": 41.38,
+     "end": 41.62
+    },
+    {
+     "w": "calls",
+     "start": 41.62,
+     "end": 42.18
+    },
+    {
+     "w": "to",
+     "start": 42.18,
+     "end": 42.36
+    },
+    {
+     "w": "its",
+     "start": 42.36,
+     "end": 42.53
+    },
+    {
+     "w": "own",
+     "start": 42.53,
+     "end": 42.82
+    },
+    {
+     "w": "versions",
+     "start": 42.82,
+     "end": 43.4
+    },
+    {
+     "w": "of",
+     "start": 43.4,
+     "end": 43.58
+    },
+    {
+     "w": "Sony's",
+     "start": 43.58,
+     "end": 43.92
+    },
+    {
+     "w": "libraries.",
+     "start": 43.92,
+     "end": 44.52
+    }
+   ]
+  },
+  {
+   "text": "Graphics too: shaders written for the PS5's AMD chip are recompiled for Vulkan, so ordinary PC graphics cards can draw them.",
+   "start": 44.98,
+   "end": 53.44,
+   "words": [
+    {
+     "w": "Graphics",
+     "start": 44.98,
+     "end": 45.44
+    },
+    {
+     "w": "too:",
+     "start": 45.44,
+     "end": 45.81
+    },
+    {
+     "w": "shaders",
+     "start": 46.22,
+     "end": 46.66
+    },
+    {
+     "w": "written",
+     "start": 46.66,
+     "end": 46.94
+    },
+    {
+     "w": "for",
+     "start": 46.94,
+     "end": 47.08
+    },
+    {
+     "w": "the",
+     "start": 47.08,
+     "end": 47.19
+    },
+    {
+     "w": "PS5's",
+     "start": 47.19,
+     "end": 48.02,
+     "syl": [
+      [
+       47.19,
+       47.46
+      ],
+      [
+       47.46,
+       47.56
+      ],
+      [
+       47.56,
+       48.02
+      ]
+     ]
+    },
+    {
+     "w": "AMD",
+     "start": 48.02,
+     "end": 48.48,
+     "syl": [
+      [
+       48.02,
+       48.18
+      ],
+      [
+       48.18,
+       48.26
+      ],
+      [
+       48.26,
+       48.48
+      ]
+     ]
+    },
+    {
+     "w": "chip",
+     "start": 48.48,
+     "end": 48.71
+    },
+    {
+     "w": "are",
+     "start": 49.01,
+     "end": 49.22
+    },
+    {
+     "w": "recompiled",
+     "start": 49.22,
+     "end": 49.9
+    },
+    {
+     "w": "for",
+     "start": 49.9,
+     "end": 50.06
+    },
+    {
+     "w": "Vulkan,",
+     "start": 50.06,
+     "end": 50.54
+    },
+    {
+     "w": "so",
+     "start": 50.81,
+     "end": 51.14
+    },
+    {
+     "w": "ordinary",
+     "start": 51.14,
+     "end": 51.6
+    },
+    {
+     "w": "PC",
+     "start": 51.6,
+     "end": 52.0
+    },
+    {
+     "w": "graphics",
+     "start": 52.0,
+     "end": 52.44
+    },
+    {
+     "w": "cards",
+     "start": 52.44,
+     "end": 52.76
+    },
+    {
+     "w": "can",
+     "start": 52.76,
+     "end": 52.94
+    },
+    {
+     "w": "draw",
+     "start": 52.94,
+     "end": 53.2
+    },
+    {
+     "w": "them.",
+     "start": 53.2,
+     "end": 53.44
+    }
+   ]
+  },
+  {
+   "text": "Emulation is an interpreter whispering every line. This is translating the book once.",
+   "start": 53.9,
+   "end": 59.28,
+   "words": [
+    {
+     "w": "Emulation",
+     "start": 53.9,
+     "end": 54.81
+    },
+    {
+     "w": "is",
+     "start": 54.81,
+     "end": 55.0
+    },
+    {
+     "w": "an",
+     "start": 55.0,
+     "end": 55.12
+    },
+    {
+     "w": "interpreter",
+     "start": 55.12,
+     "end": 55.77
+    },
+    {
+     "w": "whispering",
+     "start": 55.77,
+     "end": 56.51
+    },
+    {
+     "w": "every",
+     "start": 56.51,
+     "end": 56.82
+    },
+    {
+     "w": "line.",
+     "start": 56.82,
+     "end": 57.23
+    },
+    {
+     "w": "This",
+     "start": 57.46,
+     "end": 57.66
+    },
+    {
+     "w": "is",
+     "start": 57.66,
+     "end": 57.78
+    },
+    {
+     "w": "translating",
+     "start": 57.78,
+     "end": 58.34
+    },
+    {
+     "w": "the",
+     "start": 58.34,
+     "end": 58.46
+    },
+    {
+     "w": "book",
+     "start": 58.46,
+     "end": 58.71
+    },
+    {
+     "w": "once.",
+     "start": 58.94,
+     "end": 59.28
+    }
+   ]
+  },
+  {
+   "text": "The only game on its list so far is Dreaming Sarah, a 2D platformer: 60 frames per second on a GTX 1050 Ti, 36 on a laptop's Intel graphics.",
+   "start": 59.74,
+   "end": 70.95,
+   "words": [
+    {
+     "w": "The",
+     "start": 59.74,
+     "end": 59.9
+    },
+    {
+     "w": "only",
+     "start": 59.9,
+     "end": 60.16
+    },
+    {
+     "w": "game",
+     "start": 60.16,
+     "end": 60.44
+    },
+    {
+     "w": "on",
+     "start": 60.44,
+     "end": 60.54
+    },
+    {
+     "w": "its",
+     "start": 60.54,
+     "end": 60.72
+    },
+    {
+     "w": "list",
+     "start": 60.72,
+     "end": 60.96
+    },
+    {
+     "w": "so",
+     "start": 60.96,
+     "end": 61.14
+    },
+    {
+     "w": "far",
+     "start": 61.14,
+     "end": 61.48
+    },
+    {
+     "w": "is",
+     "start": 61.48,
+     "end": 61.65
+    },
+    {
+     "w": "Dreaming",
+     "start": 61.86,
+     "end": 62.48
+    },
+    {
+     "w": "Sarah,",
+     "start": 62.48,
+     "end": 62.94
+    },
+    {
+     "w": "a",
+     "start": 63.18,
+     "end": 63.34
+    },
+    {
+     "w": "2D",
+     "start": 63.34,
+     "end": 63.74,
+     "syl": [
+      [
+       63.34,
+       63.52
+      ],
+      [
+       63.52,
+       63.74
+      ]
+     ]
+    },
+    {
+     "w": "platformer:",
+     "start": 63.74,
+     "end": 64.4
+    },
+    {
+     "w": "60",
+     "start": 64.78,
+     "end": 65.22
+    },
+    {
+     "w": "frames",
+     "start": 65.22,
+     "end": 65.58
+    },
+    {
+     "w": "per",
+     "start": 65.58,
+     "end": 65.78
+    },
+    {
+     "w": "second",
+     "start": 65.78,
+     "end": 66.2
+    },
+    {
+     "w": "on",
+     "start": 66.2,
+     "end": 66.3
+    },
+    {
+     "w": "a",
+     "start": 66.3,
+     "end": 66.4
+    },
+    {
+     "w": "GTX",
+     "start": 66.4,
+     "end": 67.14,
+     "syl": [
+      [
+       66.4,
+       66.62
+      ],
+      [
+       66.62,
+       66.94
+      ],
+      [
+       66.94,
+       67.14
+      ]
+     ]
+    },
+    {
+     "w": "1050",
+     "start": 67.14,
+     "end": 67.78,
+     "syl": [
+      [
+       67.14,
+       67.4
+      ],
+      [
+       67.4,
+       67.78
+      ]
+     ]
+    },
+    {
+     "w": "Ti,",
+     "start": 67.78,
+     "end": 68.3,
+     "syl": [
+      [
+       67.78,
+       68.1
+      ],
+      [
+       68.1,
+       68.3
+      ]
+     ]
+    },
+    {
+     "w": "36",
+     "start": 68.54,
+     "end": 69.22,
+     "syl": [
+      [
+       68.54,
+       68.92
+      ],
+      [
+       68.92,
+       69.22
+      ]
+     ]
+    },
+    {
+     "w": "on",
+     "start": 69.22,
+     "end": 69.34
+    },
+    {
+     "w": "a",
+     "start": 69.34,
+     "end": 69.42
+    },
+    {
+     "w": "laptop's",
+     "start": 69.42,
+     "end": 69.99
+    },
+    {
+     "w": "Intel",
+     "start": 69.99,
+     "end": 70.4
+    },
+    {
+     "w": "graphics.",
+     "start": 70.4,
+     "end": 70.95
+    }
+   ]
+  },
+  {
+   "text": "The catch: it's one game, on Windows. Linux is still a question mark.",
+   "start": 71.42,
+   "end": 75.77,
+   "words": [
+    {
+     "w": "The",
+     "start": 71.42,
+     "end": 71.56
+    },
+    {
+     "w": "catch:",
+     "start": 71.56,
+     "end": 71.97
+    },
+    {
+     "w": "it's",
+     "start": 72.21,
+     "end": 72.52
+    },
+    {
+     "w": "one",
+     "start": 72.52,
+     "end": 72.68
+    },
+    {
+     "w": "game,",
+     "start": 72.68,
+     "end": 73.07
+    },
+    {
+     "w": "on",
+     "start": 73.31,
+     "end": 73.54
+    },
+    {
+     "w": "Windows.",
+     "start": 73.54,
+     "end": 74.03
+    },
+    {
+     "w": "Linux",
+     "start": 74.26,
+     "end": 74.74
+    },
+    {
+     "w": "is",
+     "start": 74.74,
+     "end": 74.82
+    },
+    {
+     "w": "still",
+     "start": 74.82,
+     "end": 75.08
+    },
+    {
+     "w": "a",
+     "start": 75.08,
+     "end": 75.14
+    },
+    {
+     "w": "question",
+     "start": 75.14,
+     "end": 75.54
+    },
+    {
+     "w": "mark.",
+     "start": 75.54,
+     "end": 75.77
+    }
+   ]
+  },
+  {
+   "text": "It ships no games, keys or firmware, so you need your own. And only download it from GitHub: fake PS5 emulators are a classic malware trap.",
+   "start": 76.23,
+   "end": 86.36,
+   "words": [
+    {
+     "w": "It",
+     "start": 76.23,
+     "end": 76.42
+    },
+    {
+     "w": "ships",
+     "start": 76.42,
+     "end": 76.74
+    },
+    {
+     "w": "no",
+     "start": 76.74,
+     "end": 76.96
+    },
+    {
+     "w": "games,",
+     "start": 76.96,
+     "end": 77.49
+    },
+    {
+     "w": "keys",
+     "start": 77.72,
+     "end": 78.29
+    },
+    {
+     "w": "or",
+     "start": 78.29,
+     "end": 78.48
+    },
+    {
+     "w": "firmware,",
+     "start": 78.48,
+     "end": 79.06
+    },
+    {
+     "w": "so",
+     "start": 79.31,
+     "end": 79.52
+    },
+    {
+     "w": "you",
+     "start": 79.52,
+     "end": 79.66
+    },
+    {
+     "w": "need",
+     "start": 79.66,
+     "end": 79.84
+    },
+    {
+     "w": "your",
+     "start": 79.84,
+     "end": 80.04
+    },
+    {
+     "w": "own.",
+     "start": 80.04,
+     "end": 80.36
+    },
+    {
+     "w": "And",
+     "start": 80.6,
+     "end": 80.9
+    },
+    {
+     "w": "only",
+     "start": 80.9,
+     "end": 81.2
+    },
+    {
+     "w": "download",
+     "start": 81.2,
+     "end": 81.66
+    },
+    {
+     "w": "it",
+     "start": 81.66,
+     "end": 81.78
+    },
+    {
+     "w": "from",
+     "start": 81.78,
+     "end": 82.0
+    },
+    {
+     "w": "GitHub:",
+     "start": 82.0,
+     "end": 82.54,
+     "syl": [
+      [
+       82.0,
+       82.22
+      ],
+      [
+       82.22,
+       82.54
+      ]
+     ]
+    },
+    {
+     "w": "fake",
+     "start": 82.78,
+     "end": 83.3
+    },
+    {
+     "w": "PS5",
+     "start": 83.3,
+     "end": 84.1,
+     "syl": [
+      [
+       83.3,
+       83.6
+      ],
+      [
+       83.6,
+       83.72
+      ],
+      [
+       83.72,
+       84.1
+      ]
+     ]
+    },
+    {
+     "w": "emulators",
+     "start": 84.1,
+     "end": 84.79
+    },
+    {
+     "w": "are",
+     "start": 84.79,
+     "end": 84.96
+    },
+    {
+     "w": "a",
+     "start": 84.96,
+     "end": 85.03
+    },
+    {
+     "w": "classic",
+     "start": 85.03,
+     "end": 85.54
+    },
+    {
+     "w": "malware",
+     "start": 85.54,
+     "end": 86.06
+    },
+    {
+     "w": "trap.",
+     "start": 86.06,
+     "end": 86.36
+    }
+   ]
+  },
+  {
+   "text": "That's today's tool. There's a new one every day.",
+   "start": 86.82,
+   "end": 89.35,
+   "words": [
+    {
+     "w": "That's",
+     "start": 86.82,
+     "end": 87.09
+    },
+    {
+     "w": "today's",
+     "start": 87.09,
+     "end": 87.49
+    },
+    {
+     "w": "tool.",
+     "start": 87.49,
+     "end": 87.88
+    },
+    {
+     "w": "There's",
+     "start": 88.08,
+     "end": 88.34
+    },
+    {
+     "w": "a",
+     "start": 88.34,
+     "end": 88.44
+    },
+    {
+     "w": "new",
+     "start": 88.44,
+     "end": 88.66
+    },
+    {
+     "w": "one",
+     "start": 88.66,
+     "end": 88.82
+    },
+    {
+     "w": "every",
+     "start": 88.82,
+     "end": 89.04
+    },
+    {
+     "w": "day.",
+     "start": 89.04,
+     "end": 89.35
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "PS5 Games on PC With No Emulator? How AnyPS5 Does It",
+  "description": "PS5 games on PC with no emulator: AnyPS5 is an open-source (GPL-2.0) tool that rewrites a PlayStation 5 game into a native Windows or Linux program, so the game runs as an ordinary process. So far, one game works. It's GitHub's top trending repository this week: 16,380 stars, 10,243 of them in the last 7 days.\n\nHow it works\n• The PS5's CPU is an AMD Zen 2: x86-64, the same instruction set as a PC, so the game's code can run natively (a --to-intel option rewrites the few AMD-only instructions for Intel CPUs).\n• What a PC lacks is Sony's system libraries (graphics, audio, controllers…). AnyPS5's relinker turns the game's executable into a Linux ELF or Windows PE program and links its calls to AnyPS5's own implementations of those libraries: 2,575 of the 3,038 functions it knows so far (85%).\n• GPU shaders written for the PS5's AMD graphics are recompiled to SPIR-V and drawn through Vulkan. Its shader recompiler covers all 1,166 GPU instructions it has met.\n\nWhere it stands (its compatibility list, 9 October 2026)\n• One tested game: Dreaming Sarah (2D platformer), in game and playable on Windows; Linux not yet tested.\n• 60 FPS on a GTX 1050 Ti with an i5-7500; 36 FPS on Intel HD Graphics 620 with an i5-7200.\n\nThe catch\nIt's early: one game, on Windows. It includes no games, keys, firmware or Sony libraries, so you need your own legally obtained game files (check the law where you live). Get it only from its GitHub page: fake \"PS5 emulator\" downloads are a classic malware trap.\n\nChapters\n0:00 One PS5 game, 16,000 stars\n0:10 Emulation vs. AnyPS5\n0:28 Sony's libraries, rebuilt\n0:44 Graphics, and the book analogy\n0:59 The one game that runs\n1:11 The catch, and a warning\n\nSources\nhttps://github.com/boykopovar/AnyPS5\nhttps://github.com/boykopovar/AnyPS5/blob/main/docs/dev/ARCHITECTURE.md\nhttps://github.com/boykopovar/AnyPS5/blob/main/docs/user/COMPATIBILITY.md\nhttps://boykopovar.github.io/AnyPS5/ (progress report)\n\nImages (paper cutouts, from Wikimedia Commons)\nPS5 and DualSense photo: Osh33m, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:PlayStation_5_and_DualSense.jpg\nPS5 motherboard: Fritzchens Fritz, CC0: https://commons.wikimedia.org/wiki/File:Sony_PlayStation_5_motherboard.png\nDualSense controller: Alex Cochrane, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Playstation_DualSense_Controller.png\nGTX 1050 Ti: ITEagle Europe (Sebastiaan Broekhoven), CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:MSI_GeForce_GTX_1050_Ti_4GT_OC_-_front_view.jpg\nHP Pavilion laptop: Aaron Patterson, CC BY 2.0: https://commons.wikimedia.org/wiki/File:HP_Pavilion_dv2000_laptop.jpg\nTux: Larry Ewing, Simon Budig, Garrett LeSage: https://commons.wikimedia.org/wiki/File:Tux.svg\n1876 printing press (Harper's Weekly) and Portrait of an old man reading (manner of Rembrandt): public domain.\nThe cutouts are cropped, keyed and given a border and shadow; the adaptations of CC BY-SA images are shared under CC BY-SA 4.0.\n\nNarration: AI voice (ElevenLabs \"Brian\", via vidIQ). Music: AI-generated, royalty-free (vidIQ). Animated in code. Not affiliated with Sony Interactive Entertainment or the AnyPS5 project.\n\nA new tool every day.\n\n#AnyPS5 #PS5 #PCGaming",
+  "tags": [
+    "AnyPS5",
+    "PS5 emulator",
+    "PS5 emulator for PC",
+    "PS5 games on PC",
+    "PS5 on PC",
+    "play PS5 games on PC",
+    "PS5 emulator PC",
+    "PC gaming",
+    "Linux gaming",
+    "emulation",
+    "open source",
+    "GitHub",
+    "Vulkan",
+    "SPIR-V",
+    "game porting",
+    "relinker"
+  ],
+  "youtube_url": "https://youtu.be/kCeu58HlppU",
+  "published": "2026-10-09T11:09:00+05:30"
+}

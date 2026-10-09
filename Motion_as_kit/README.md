@@ -11,6 +11,8 @@ Each video is an **episode**: one folder under [`episodes/`](episodes/) with its
 | [`2026-10-04-disktree-short`](episodes/2026-10-04-disktree-short/) | 1080×1920, 30 s | `pop` (yellow paper, black, hot pink) | [Short](https://youtube.com/shorts/vZ9y7XhO3pc) |
 | [`2026-10-04-voicestudio`](episodes/2026-10-04-voicestudio/) | 1920×1080, 90 s | `scope` (oscilloscope green on black, VU amber) | [video](https://youtu.be/2CW_zb6y_ps) |
 | [`2026-10-04-voicestudio-short`](episodes/2026-10-04-voicestudio-short/) | 1080×1920, 30 s | `riso` (risograph: cream stock, fluoro pink, riso blue) | [Short](https://youtube.com/shorts/rlxaVkBudiM) |
+| [`2026-10-09-anyps5`](episodes/2026-10-09-anyps5/) | 1920×1080, 90 s | `collage` (paper desk: photo cutouts, tape, red string, marker; ElevenLabs voice and music via vidIQ) | [video](https://youtu.be/kCeu58HlppU) |
+| [`2026-10-09-anyps5-short`](episodes/2026-10-09-anyps5-short/) | 1080×1920, 30 s | `glitch` (dark screen, RGB-split type, glitching photos) | [Short](https://youtube.com/shorts/1lL9B3y0eJQ) |
 
 ## An episode
 
@@ -27,7 +29,7 @@ episodes/<date>-<tool>/
   work/ out/        takes, logs, renders                                        (not in git)
 ```
 
-Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope` and `riso`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
+Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope`, `riso`, `collage` and `glitch`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
 
 ## Make one
 
@@ -47,6 +49,8 @@ ffmpeg -i episodes/$EPISODE/out/picture.mp4 -i episodes/$EPISODE/out/mix.wav -ma
 uv run --no-project --with numpy python analysis/check_video.py episodes/$EPISODE/out/final.mp4
 node app/scripts/render-node.mjs stills --only thumb --t <duration + 2>             # the thumbnail plate
 ```
+
+Narration can also be one ElevenLabs read (the AnyPS5 pair, through vidIQ): align the raw take with `align_vo.py`, keep its `data/lyrics.json` as `work/lyrics_raw.json`, then `analysis/edit_vo.py` cuts it to length like a dialogue edit (episode.json `edit`). A music bed goes in episode.json `music`; `sfx_mix.py` ducks it under the voice. `analysis/cutouts.py` turns the images listed in an episode's `img/cutouts.json` into paper cutouts with shadows for the collage plates (`app/src/scenes/_collage.ts`). `analysis/make_srt.py` writes the word timings as `publish/captions.en.srt` for YouTube Studio's subtitle upload.
 
 `analysis/make_short.py` turns a finished 16:9 video into a 1080×1920 reframe with captions. That is how the magpie Short was made; native Shorts are their own episodes now.
 

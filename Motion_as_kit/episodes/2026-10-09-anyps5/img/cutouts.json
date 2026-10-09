@@ -1,0 +1,10 @@
+{
+ "ps5": {"file": "ps5.jpg", "kind": "print", "max": 820, "border": 22, "cut": 1.8},
+ "dualsense": {"file": "dualsense.jpg", "kind": "sticker", "key_white": 9, "max": 760, "border": 14},
+ "gtx": {"file": "gtx1050ti.jpg", "kind": "print", "crop": [0.03, 0.25, 0.97, 0.77], "max": 900, "border": 20, "cut": 1.6},
+ "laptop": {"file": "laptop.jpg", "kind": "sticker", "key_white": 9, "max": 820, "border": 14},
+ "board": {"file": "motherboard.jpg", "kind": "sticker", "max": 900, "border": 14},
+ "press": {"file": "press.jpg", "kind": "clipping", "max": 880, "tear": 4},
+ "reader": {"file": "reader.jpg", "kind": "clipping", "crop": [0.02, 0.0, 0.98, 0.86], "max": 620, "tear": 4},
+ "tux": {"file": "tux.png", "kind": "sticker", "max": 520, "border": 16}
+}

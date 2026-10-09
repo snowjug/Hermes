@@ -1,0 +1,539 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "PS5 games on a PC, with no emulator.",
+   "start": 0.22,
+   "end": 2.97,
+   "words": [
+    {
+     "w": "PS5",
+     "start": 0.22,
+     "end": 0.82,
+     "syl": [
+      [
+       0.22,
+       0.44
+      ],
+      [
+       0.44,
+       0.54
+      ],
+      [
+       0.54,
+       0.82
+      ]
+     ]
+    },
+    {
+     "w": "games",
+     "start": 0.82,
+     "end": 1.14
+    },
+    {
+     "w": "on",
+     "start": 1.14,
+     "end": 1.22
+    },
+    {
+     "w": "a",
+     "start": 1.22,
+     "end": 1.3
+    },
+    {
+     "w": "PC,",
+     "start": 1.3,
+     "end": 1.82,
+     "syl": [
+      [
+       1.3,
+       1.5
+      ],
+      [
+       1.5,
+       1.82
+      ]
+     ]
+    },
+    {
+     "w": "with",
+     "start": 2.08,
+     "end": 2.28
+    },
+    {
+     "w": "no",
+     "start": 2.28,
+     "end": 2.5
+    },
+    {
+     "w": "emulator.",
+     "start": 2.5,
+     "end": 2.97
+    }
+   ]
+  },
+  {
+   "text": "This free tool rewrites the game itself into a Windows program.",
+   "start": 3.36,
+   "end": 6.35,
+   "words": [
+    {
+     "w": "This",
+     "start": 3.36,
+     "end": 3.54
+    },
+    {
+     "w": "free",
+     "start": 3.54,
+     "end": 3.78
+    },
+    {
+     "w": "tool",
+     "start": 3.78,
+     "end": 4.1
+    },
+    {
+     "w": "rewrites",
+     "start": 4.1,
+     "end": 4.54
+    },
+    {
+     "w": "the",
+     "start": 4.54,
+     "end": 4.64
+    },
+    {
+     "w": "game",
+     "start": 4.64,
+     "end": 4.82
+    },
+    {
+     "w": "itself",
+     "start": 4.82,
+     "end": 5.24
+    },
+    {
+     "w": "into",
+     "start": 5.24,
+     "end": 5.48
+    },
+    {
+     "w": "a",
+     "start": 5.48,
+     "end": 5.56
+    },
+    {
+     "w": "Windows",
+     "start": 5.56,
+     "end": 5.89
+    },
+    {
+     "w": "program.",
+     "start": 5.89,
+     "end": 6.35
+    }
+   ]
+  },
+  {
+   "text": "The PS5's processor already speaks your PC's language.",
+   "start": 6.74,
+   "end": 10.05,
+   "words": [
+    {
+     "w": "The",
+     "start": 6.74,
+     "end": 6.86
+    },
+    {
+     "w": "PS5's",
+     "start": 6.86,
+     "end": 7.5,
+     "syl": [
+      [
+       6.86,
+       7.04
+      ],
+      [
+       7.04,
+       7.12
+      ],
+      [
+       7.12,
+       7.5
+      ]
+     ]
+    },
+    {
+     "w": "processor",
+     "start": 7.5,
+     "end": 8.2
+    },
+    {
+     "w": "already",
+     "start": 8.2,
+     "end": 8.54
+    },
+    {
+     "w": "speaks",
+     "start": 8.54,
+     "end": 8.86
+    },
+    {
+     "w": "your",
+     "start": 8.86,
+     "end": 9.06
+    },
+    {
+     "w": "PC's",
+     "start": 9.06,
+     "end": 9.62,
+     "syl": [
+      [
+       9.06,
+       9.3
+      ],
+      [
+       9.3,
+       9.62
+      ]
+     ]
+    },
+    {
+     "w": "language.",
+     "start": 9.62,
+     "end": 10.05
+    }
+   ]
+  },
+  {
+   "text": "It just swaps in its own versions of Sony's system libraries.",
+   "start": 10.44,
+   "end": 13.9,
+   "words": [
+    {
+     "w": "It",
+     "start": 10.44,
+     "end": 10.54
+    },
+    {
+     "w": "just",
+     "start": 10.54,
+     "end": 10.72
+    },
+    {
+     "w": "swaps",
+     "start": 10.72,
+     "end": 11.12
+    },
+    {
+     "w": "in",
+     "start": 11.12,
+     "end": 11.24
+    },
+    {
+     "w": "its",
+     "start": 11.24,
+     "end": 11.46
+    },
+    {
+     "w": "own",
+     "start": 11.46,
+     "end": 11.64
+    },
+    {
+     "w": "versions",
+     "start": 11.64,
+     "end": 12.24
+    },
+    {
+     "w": "of",
+     "start": 12.24,
+     "end": 12.36
+    },
+    {
+     "w": "Sony's",
+     "start": 12.36,
+     "end": 12.85
+    },
+    {
+     "w": "system",
+     "start": 12.85,
+     "end": 13.3
+    },
+    {
+     "w": "libraries.",
+     "start": 13.3,
+     "end": 13.9
+    }
+   ]
+  },
+  {
+   "text": "One game works so far: 60 frames per second on a GTX 1050 Ti.",
+   "start": 14.3,
+   "end": 20.23,
+   "words": [
+    {
+     "w": "One",
+     "start": 14.3,
+     "end": 14.56
+    },
+    {
+     "w": "game",
+     "start": 14.56,
+     "end": 14.86
+    },
+    {
+     "w": "works",
+     "start": 14.86,
+     "end": 15.25
+    },
+    {
+     "w": "so",
+     "start": 15.25,
+     "end": 15.54
+    },
+    {
+     "w": "far:",
+     "start": 15.54,
+     "end": 15.88
+    },
+    {
+     "w": "60",
+     "start": 16.14,
+     "end": 16.58
+    },
+    {
+     "w": "frames",
+     "start": 16.58,
+     "end": 16.92
+    },
+    {
+     "w": "per",
+     "start": 16.92,
+     "end": 17.1
+    },
+    {
+     "w": "second",
+     "start": 17.1,
+     "end": 17.44
+    },
+    {
+     "w": "on",
+     "start": 17.55,
+     "end": 17.76
+    },
+    {
+     "w": "a",
+     "start": 17.76,
+     "end": 17.9
+    },
+    {
+     "w": "GTX",
+     "start": 17.9,
+     "end": 18.67,
+     "syl": [
+      [
+       17.9,
+       18.14
+      ],
+      [
+       18.14,
+       18.48
+      ],
+      [
+       18.48,
+       18.67
+      ]
+     ]
+    },
+    {
+     "w": "1050",
+     "start": 18.93,
+     "end": 19.72,
+     "syl": [
+      [
+       18.93,
+       19.28
+      ],
+      [
+       19.28,
+       19.72
+      ]
+     ]
+    },
+    {
+     "w": "Ti.",
+     "start": 19.72,
+     "end": 20.23,
+     "syl": [
+      [
+       19.72,
+       20.08
+      ],
+      [
+       20.08,
+       20.23
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "text": "16,000 GitHub stars in two months.",
+   "start": 20.62,
+   "end": 23.49,
+   "words": [
+    {
+     "w": "16,000",
+     "start": 20.62,
+     "end": 21.72,
+     "syl": [
+      [
+       20.62,
+       21.24
+      ],
+      [
+       21.24,
+       21.72
+      ]
+     ]
+    },
+    {
+     "w": "GitHub",
+     "start": 21.72,
+     "end": 22.2,
+     "syl": [
+      [
+       21.72,
+       21.96
+      ],
+      [
+       21.96,
+       22.2
+      ]
+     ]
+    },
+    {
+     "w": "stars",
+     "start": 22.2,
+     "end": 22.74
+    },
+    {
+     "w": "in",
+     "start": 22.74,
+     "end": 22.88
+    },
+    {
+     "w": "two",
+     "start": 22.88,
+     "end": 23.12
+    },
+    {
+     "w": "months.",
+     "start": 23.12,
+     "end": 23.49
+    }
+   ]
+  },
+  {
+   "text": "It's called AnyPS5. Bring your own games, and only download it from GitHub.",
+   "start": 23.88,
+   "end": 29.39,
+   "words": [
+    {
+     "w": "It's",
+     "start": 23.88,
+     "end": 24.04
+    },
+    {
+     "w": "called",
+     "start": 24.04,
+     "end": 24.38
+    },
+    {
+     "w": "AnyPS5.",
+     "start": 24.64,
+     "end": 26.08,
+     "syl": [
+      [
+       24.64,
+       25.0
+      ],
+      [
+       25.17,
+       25.48
+      ],
+      [
+       25.48,
+       25.62
+      ],
+      [
+       25.62,
+       26.08
+      ]
+     ]
+    },
+    {
+     "w": "Bring",
+     "start": 26.32,
+     "end": 26.52
+    },
+    {
+     "w": "your",
+     "start": 26.52,
+     "end": 26.68
+    },
+    {
+     "w": "own",
+     "start": 26.68,
+     "end": 26.84
+    },
+    {
+     "w": "games,",
+     "start": 26.84,
+     "end": 27.3
+    },
+    {
+     "w": "and",
+     "start": 27.57,
+     "end": 27.73
+    },
+    {
+     "w": "only",
+     "start": 27.73,
+     "end": 28.08
+    },
+    {
+     "w": "download",
+     "start": 28.08,
+     "end": 28.58
+    },
+    {
+     "w": "it",
+     "start": 28.58,
+     "end": 28.72
+    },
+    {
+     "w": "from",
+     "start": 28.72,
+     "end": 28.94
+    },
+    {
+     "w": "GitHub.",
+     "start": 28.94,
+     "end": 29.39,
+     "syl": [
+      [
+       28.94,
+       29.14
+      ],
+      [
+       29.14,
+       29.39
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -16,7 +16,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ep import EP  # noqa: E402
+from ep import EP, CONFIG  # noqa: E402
 SFX = ROOT / "audio" / "sfx"
 SR = 48000
 DUR = json.loads((EP / "data" / "audio.json").read_text(encoding="utf-8"))["duration"]
@@ -208,6 +208,20 @@ def main():
         sm[i:i + hop] = prev
     duck = 10 ** (-7 * np.clip(sm, 0, 1) / 20)
     mix = bus * duck[None, :] + vo[None, :]
+    # an optional music bed (episode.json "music": {"file", "db" below the voice's RMS, "duck" dB under speech})
+    mus = CONFIG.get("music")
+    if mus:
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(EP / "audio" / mus["file"]), "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+        m = np.frombuffer(raw, dtype=np.float32).reshape(-1, 2).T.copy()[:, :n]
+        m = np.pad(m, ((0, 0), (0, n - m.shape[1])))
+        vo_db = 20 * np.log10(np.sqrt((vo[np.abs(vo) > 1e-4] ** 2).mean()) + 1e-9)
+        m_db = 20 * np.log10(np.sqrt((m ** 2).mean()) + 1e-9)
+        g = 10 ** ((vo_db + mus.get("db", -17) - m_db) / 20)
+        fi, fo = int(mus.get("fade_in", 0.6) * SR), int(mus.get("fade_out", 1.8) * SR)
+        ramp = np.ones(n, np.float32); ramp[:fi] = np.linspace(0, 1, fi); ramp[n - fo:] = np.linspace(1, 0, fo)
+        mduck = 10 ** (-mus.get("duck", 8) * np.clip(sm, 0, 1) / 20)
+        mix = mix + m * (g * ramp * mduck)[None, :]
+        print(f"music {mus['file']}: {m_db:.1f} dB RMS, gain {20*np.log10(g):.1f} dB, ducked {mus.get('duck', 8)} dB under the voice")
     peak = np.abs(mix).max()
     if peak > 0.99:
         mix *= 0.99 / peak

@@ -1,0 +1,55 @@
+1
+00:00:00,220 --> 00:00:02,060
+PS5 games on a PC,
+
+2
+00:00:02,080 --> 00:00:03,220
+with no emulator.
+
+3
+00:00:03,360 --> 00:00:05,220
+This free tool rewrites the game itself
+
+4
+00:00:05,240 --> 00:00:06,600
+into a Windows program.
+
+5
+00:00:06,740 --> 00:00:09,040
+The PS5's processor already speaks your
+
+6
+00:00:09,060 --> 00:00:10,300
+PC's language.
+
+7
+00:00:10,440 --> 00:00:12,340
+It just swaps in its own versions of
+
+8
+00:00:12,360 --> 00:00:14,150
+Sony's system libraries.
+
+9
+00:00:14,300 --> 00:00:16,120
+One game works so far:
+
+10
+00:00:16,140 --> 00:00:20,480
+60 frames per second on a GTX 1050 Ti.
+
+11
+00:00:20,620 --> 00:00:23,740
+16,000 GitHub stars in two months.
+
+12
+00:00:23,880 --> 00:00:26,300
+It's called AnyPS5.
+
+13
+00:00:26,320 --> 00:00:27,550
+Bring your own games,
+
+14
+00:00:27,570 --> 00:00:29,640
+and only download it from GitHub.

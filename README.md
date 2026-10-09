@@ -1,12 +1,12 @@
 # Hermes
 
-**A YouTube channel that runs from a Windows laptop.** Every video explains one developer tool that is trending this week. The script is fact-checked against the tool's own pages, the voice is generated locally, the animation is written as code, and a browser robot uploads the result to YouTube Studio.
+**A YouTube channel that runs from a Windows laptop.** Every video explains one developer tool that is trending this week. The script is fact-checked against the tool's own pages, the narration is an AI voice cut to length like a dialogue edit, the animation is written as code, and a browser robot uploads the result to YouTube Studio.
 
 Channel: **[Tool Man (@tooladay)](https://www.youtube.com/@tooladay)**, one new tool every day.
 
-[![This Free ElevenLabs Alternative Runs on Your Laptop](Motion_as_kit/episodes/2026-10-04-voicestudio/publish/thumbnail.jpg)](https://youtu.be/2CW_zb6y_ps)
+[![PS5 Games on PC With No Emulator? How AnyPS5 Does It](Motion_as_kit/episodes/2026-10-09-anyps5/publish/thumbnail.jpg)](https://youtu.be/kCeu58HlppU)
 
-**Latest:** [This Free ElevenLabs Alternative Runs on Your Laptop](https://youtu.be/2CW_zb6y_ps) (1:30) · [the Short](https://youtube.com/shorts/rlxaVkBudiM) (0:30) · about [VoiceStudio](https://github.com/debpalash/VoiceStudio)
+**Latest:** [PS5 Games on PC With No Emulator? How AnyPS5 Does It](https://youtu.be/kCeu58HlppU) (1:30) · [the Short](https://youtube.com/shorts/1lL9B3y0eJQ) (0:30) · about [AnyPS5](https://github.com/boykopovar/AnyPS5)
 
 Each video has its own look. The 90-second videos and the 30-second vertical Shorts are written, voiced, animated and rendered separately; a Short is not a reformat of the video.
 
@@ -16,7 +16,7 @@ Each video has its own look. The 90-second videos and the 30-second vertical Sho
 
 | Folder | What it does | Built with |
 |---|---|---|
-| [`Motion_as_kit/`](Motion_as_kit/) | Makes the videos. Each video is an episode folder with its own script, voice, theme and TypeScript "plates", which draw every frame as a function of time, locked to the voiceover's word timings. Headless Chrome renders them with motion blur. | three.js / WebGL, Vite, Playwright, ffmpeg, Chatterbox, wav2vec2 |
+| [`Motion_as_kit/`](Motion_as_kit/) | Makes the videos. Each video is an episode folder with its own script, voice, theme and TypeScript "plates", which draw every frame as a function of time, locked to the voiceover's word timings. Headless Chrome renders them with motion blur. | three.js / WebGL, Vite, Playwright, ffmpeg, ElevenLabs (through vidIQ) or Chatterbox, wav2vec2 |
 | [`yt-automation/`](yt-automation/) | **ytauto** uploads the videos. It is a queue that fills in the title, description, tags, thumbnail and AI-content disclosure in YouTube Studio through a signed-in Chrome profile, then publishes or schedules. | Python, Playwright, SQLite |
 | [`tech-daily/`](tech-daily/) | **techdaily**, the earlier daily pipeline. It collects trending tools from GitHub, Hacker News, Product Hunt, Reddit and Google Trends, researches one, fact-checks a script and builds a HyperFrames video. | Python, Claude Code (`claude -p`), HyperFrames |
 
@@ -27,28 +27,33 @@ Each video has its own look. The 90-second videos and the 30-second vertical Sho
 ```mermaid
 flowchart LR
   A["Pick a trending tool<br/>GitHub · HN · Product Hunt"] --> B["Script<br/>every claim from the tool's<br/>README and website"]
-  B --> C["Voice<br/>Chatterbox, on the laptop<br/>each take checked by Whisper"]
+  B --> C["Voice<br/>one ElevenLabs read, cut to 90 s<br/>(or Chatterbox on the laptop)"]
   C --> D["Word timings<br/>wav2vec2 forced alignment"]
   D --> E["Plates<br/>one visual idea per line<br/>TypeScript + WebGL"]
+  P["Photos<br/>Wikimedia Commons, credited<br/>→ paper cutouts"] --> E
   E --> F["Render<br/>headless Chrome → ffmpeg<br/>4-sample motion blur"]
-  F --> G["Sound<br/>effects on visual events<br/>ducked, −14 LUFS"]
+  F --> G["Sound<br/>effects on visual events,<br/>music ducked under the voice, −14 LUFS"]
   G --> I["ytauto<br/>YouTube Studio upload"]
   B --> S["30-second Short<br/>own script, vertical plates,<br/>its own theme"]
   S --> I
 ```
 
 1. **Script.** A 90-second video is about 17 lines and 260 words: a hook, how the tool works, an honest catch, and the sign-off. A Short is about 80 words. Each script lives in its episode's `script.json` (for example [the disktree one](Motion_as_kit/episodes/2026-10-04-disktree/script.json)): `text` is what appears on screen, `say` is what the voice reads.
-2. **Voice.** [`tts_chatterbox.py`](Motion_as_kit/analysis/tts_chatterbox.py) records one take per sentence. faster-whisper listens back, and a take that doesn't match its sentence is recorded again.
+2. **Voice.** Since the AnyPS5 pair, the narration is one ElevenLabs read of the whole script, made through the vidIQ connector ("Brian" for the videos, "Eric" for the Shorts). A single read runs long (the AnyPS5 one came back at 106 seconds), so [`edit_vo.py`](Motion_as_kit/analysis/edit_vo.py) cuts it the way an editor cuts dialogue. It drops lines the episode doesn't need, evens out the gaps between lines, shortens long pauses inside them, and changes the tempo by a few percent to land on 90 seconds. Then it adds light broadcast EQ, compression and a de-esser. Earlier episodes used [`tts_chatterbox.py`](Motion_as_kit/analysis/tts_chatterbox.py) on the laptop: one take per sentence, each checked by faster-whisper and recorded again if it didn't match.
 3. **Timing.** [`align_vo.py`](Motion_as_kit/analysis/align_vo.py) force-aligns the script to the audio, so every word has a start and an end. Cuts land in the pause before a line, and each animation starts on the word it illustrates.
-4. **Plates.** Each line gets its own scene in the episode's `scenes/`, built on the shared toolkit in [`app/src/scenes/`](Motion_as_kit/app/src/scenes/). For example:
+4. **Photos.** When a real object helps (a console, a circuit board, a graphics card), its photo comes from Wikimedia Commons under a free licence and is credited in the description. [`cutouts.py`](Motion_as_kit/analysis/cutouts.py) keys out the background and turns each photo into a sticker, a print or a torn clipping, with its own shadow.
+5. **Plates.** Each line gets its own scene in the episode's `scenes/`, built on the shared toolkit in [`app/src/scenes/`](Motion_as_kit/app/src/scenes/). For example:
    - magpie: a plotter pen writing "married" in cursive, a gateway with packets flowing both ways, a travel-adapter analogy, an operator's switchboard;
    - disktree: a race against WizTree on a stopwatch, a treemap that grows box by box and dives into folders, amber hatching for reclaimable space, mark → review → delete with a rescan;
-   - the disktree Short: giant slammed words on yellow paper, comic-thick tiles, snap-zoom dives.
+   - the disktree Short: giant slammed words on yellow paper, comic-thick tiles, snap-zoom dives;
+   - AnyPS5: a paper collage on a desk. Photo cutouts drop in and land with a shadow, red string pins the PS5 to a laptop, a marker circles the chip and crosses out what isn't included, headlines are ransom letters, and the captions sit on torn paper strips ([`_collage.ts`](Motion_as_kit/app/src/scenes/_collage.ts));
+   - the AnyPS5 Short: a glitching screen with RGB-split type and photos that tear between frames.
 
-   Each episode picks a theme in `episode.json`: `signal` (ink and orange), `blueprint` (navy and cyan) or `pop` (yellow paper, black and pink).
-5. **Render.** [`render-node.mjs`](Motion_as_kit/app/scripts/render-node.mjs) renders in resumable 10-second parts and joins them without re-encoding.
-6. **Sound.** [`sfx_mix.py`](Motion_as_kit/analysis/sfx_mix.py) plays the episode's `sfx_cues.py`: every effect sits on something you see, ducked under the voice, mixed to −14 LUFS.
-7. **Upload.** `ytauto add … --visibility public` then `ytauto upload`.
+   Each episode picks a theme in `episode.json`: `signal` (ink and orange), `blueprint` (navy and cyan), `pop` (yellow paper, black and pink), `scope` (oscilloscope green), `riso` (risograph pink and blue), `collage` (paper, ink and red marker) or `glitch` (black, hot pink and cyan).
+6. **Render.** [`render-node.mjs`](Motion_as_kit/app/scripts/render-node.mjs) renders in resumable 10-second parts and joins them without re-encoding.
+7. **Sound.** [`sfx_mix.py`](Motion_as_kit/analysis/sfx_mix.py) plays the episode's `sfx_cues.py`: every effect sits on something you see. A royalty-free music bed, generated with vidIQ, dips whenever the voice speaks. The mix is −14 LUFS.
+8. **Captions.** [`make_srt.py`](Motion_as_kit/analysis/make_srt.py) writes the word timings as an SRT file, so the captions spell names and numbers the way the screen does.
+9. **Upload.** `ytauto add … --visibility public` then `ytauto upload`. The title puts the search phrase first, the first two lines of the description repeat it, and the description ends with three hashtags, plus #Shorts on a Short (following the [claude-youtube](https://github.com/AgriciDaniel/claude-youtube) SEO notes).
 
 ## Make one yourself
 
@@ -58,7 +63,8 @@ Requirements: Windows 10/11 or macOS, Node 24, Google Chrome, ffmpeg with libx26
 cd Motion_as_kit/app && npm install && cd ..
 export EPISODE=2026-10-04-disktree      # an episode folder in Motion_as_kit/episodes/
 
-# 1. write the episode's script.json, then make the voice
+# 1. write the episode's script.json, then make the voice: Chatterbox on the laptop,
+#    or one ElevenLabs read cut to length with analysis/edit_vo.py (see the Motion_as_kit README)
 python analysis/tts_chatterbox.py
 
 # 2. word timings and loudness envelopes
@@ -74,6 +80,7 @@ cd .. && uv run --no-project --with numpy python analysis/sfx_mix.py
 E=episodes/$EPISODE/out
 ffmpeg -i $E/picture.mp4 -i $E/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k $E/final.mp4
 uv run --no-project --with numpy python analysis/check_video.py $E/final.mp4
+python analysis/make_srt.py             # captions, in episodes/$EPISODE/publish/captions.en.srt
 
 # 5. upload
 ../yt-automation/.venv/Scripts/ytauto.exe add $E/final.mp4 --metadata episodes/$EPISODE/publish/metadata.json --thumbnail episodes/$EPISODE/publish/thumbnail.jpg --visibility public
@@ -85,16 +92,41 @@ The alignment model (`analysis/models/w2v2_base_960h_q.onnx`) and the sound-effe
 
 | Date | Video | Short | Tool |
 |---|---|---|---|
+| 9 Oct 2026 | [PS5 Games on PC With No Emulator? How AnyPS5 Does It](https://youtu.be/kCeu58HlppU) | [PS5 Games on PC, No Emulator](https://youtube.com/shorts/1lL9B3y0eJQ) | [AnyPS5](https://github.com/boykopovar/AnyPS5) · [video episode](Motion_as_kit/episodes/2026-10-09-anyps5/) · [Short episode](Motion_as_kit/episodes/2026-10-09-anyps5-short/) |
 | 4 Oct 2026 | [This Free ElevenLabs Alternative Runs on Your Laptop](https://youtu.be/2CW_zb6y_ps) | [This Free App Copies a Voice From a 10-Second Clip](https://youtube.com/shorts/rlxaVkBudiM) | [VoiceStudio](https://github.com/debpalash/VoiceStudio) · [video episode](Motion_as_kit/episodes/2026-10-04-voicestudio/) · [Short episode](Motion_as_kit/episodes/2026-10-04-voicestudio-short/) |
 | 4 Oct 2026 | [Shopify's Founder Built a Free Disk Cleaner: 4 Million Files in 3.4 Seconds](https://youtu.be/4MmSMJ2c2aQ) | [Your Disk Is Full. But Full of What?](https://youtube.com/shorts/vZ9y7XhO3pc) | [disktree](https://github.com/tobi/disktree) · [video episode](Motion_as_kit/episodes/2026-10-04-disktree/) · [Short episode](Motion_as_kit/episodes/2026-10-04-disktree-short/) |
 | 3 Oct 2026 | [Codex on DeepSeek, Claude Code on Kimi: How This Free 15 MB App Does It](https://youtu.be/TuOnUlJSWho) | [Short (reframed)](https://youtube.com/shorts/Y63pJ4viW14) | [magpie](https://github.com/yetone/magpie) · [episode](Motion_as_kit/episodes/2026-10-03-magpie/) |
+
+## How the videos are doing
+
+YouTube Analytics for the channel from its first upload (27 September) to 9 October 2026, read through the vidIQ connector. Analytics runs a day or two behind, so the AnyPS5 pair isn't in it yet.
+
+| Upload | Length | Views | Engaged views | Average watched | Of its length | Likes | Subscribers gained |
+|---|---|---:|---:|---:|---:|---:|---:|
+| [magpie](https://youtu.be/TuOnUlJSWho) | 1:26 | 60 | 38 | 0:43 | 51% | 2 | 0 |
+| [magpie Short](https://youtube.com/shorts/Y63pJ4viW14) (the video, reframed) | 1:26 | 358 | 140 | 0:42 | 50% | 12 | 2 |
+| [disktree](https://youtu.be/4MmSMJ2c2aQ) | 1:30 | 21 | 19 | 0:53 | 59% | 1 | 3 |
+| [disktree Short](https://youtube.com/shorts/vZ9y7XhO3pc) | 0:30 | 192 | 56 | 0:24 | 81% | 1 | 0 |
+| [VoiceStudio](https://youtu.be/2CW_zb6y_ps) | 1:30 | 13 | 10 | 0:15 | 17% | 0 | 0 |
+| [VoiceStudio Short](https://youtube.com/shorts/rlxaVkBudiM) | 0:30 | 251 | 62 | 0:36 | 121% | 9 | 1 |
+| [Solar system Short](https://youtube.com/shorts/bMI1PJDTPxk) (techdaily) | 0:31 | 76 | 27 | 0:11 | 38% | 3 | 1 |
+| [Laya](https://youtu.be/Yb5DsnWOCMk) (techdaily) | 3:18 | 14 | 11 | 1:12 | 37% | 0 | 0 |
+| **Channel** | | **985** | **363** | | | **28** | **7** |
+
+YouTube counts any playback as a view; engaged views is its stricter count of people who kept watching. In all: 235 minutes watched, 6 comments and 5 shares.
+
+What the numbers say so far:
+- **Shorts bring the audience.** They have 89% of the views (877 of 985).
+- **Native 30-second Shorts get watched to the end.** The VoiceStudio Short averages 121% of its length, so many viewers watch it more than once; the disktree Short averages 81%. The magpie Short, the full video reframed to vertical, holds 50%. That is why every Short since has its own script and plates.
+- **The 90-second videos get fewer views but more of each viewer's time.** disktree holds viewers longest (59%) and brought 3 of the channel's 7 new subscribers. VoiceStudio lost most viewers early, though at 13 views it is too soon to judge. The AnyPS5 video opens on its most surprising claim and puts something new on the desk every second or two (169 sound cues, each on a visual event).
 
 ## Lessons from running this on a laptop
 
 - **Bun can't drive Chrome on Windows.** Playwright's pipe and WebSocket connections both hang under Bun there. The renderer therefore runs on Node and sends frames to ffmpeg over HTTP, with 4 frames in flight.
 - **Laptops sleep in the middle of renders.** On battery, an idle Windows laptop drops into Modern Standby, which kills headless Chrome. Keep the machine awake while rendering. Renders are split into 10-second parts so an interrupted run resumes where it stopped.
-- **Rendering is slow on a laptop GPU, and twice as slow on battery.** On an Intel Iris Xe, 4-sample motion blur renders at about 1.2 frames per second on power, so a 90-second video takes roughly 40 minutes. The voice takes 25–45 minutes on the CPU. Keep the laptop plugged in.
+- **Rendering is slow on a laptop GPU, and twice as slow on battery.** On an Intel Iris Xe, 4-sample motion blur renders at about 1.2 frames per second on power, so a 90-second video takes roughly 40 minutes. The paper-collage plates are heavier (photo cutouts with soft shadows, a paper shader): the AnyPS5 video rendered at 0.8 frames per second plugged in and 0.5 on battery, 64 minutes in all. A Chatterbox voice takes 25–45 minutes on the CPU. Keep the laptop plugged in.
 - **Background jobs stop after 30 minutes.** Long steps are resumable: voice takes are cached, and renders resume at the next unfinished part.
+- **Don't edit a plate while its episode renders.** Vite reloads the page, and the render dies with "Failed to fetch". Render one episode at a time and leave its files alone until it finishes.
 - **Don't mux with `-shortest`.** With a WAV mix that ends a few milliseconds before the picture, ffmpeg cut the last four frames of a Short. The voice and the picture are the same length by construction, so the plain mux is right.
 - **Chatterbox needs `setuptools<80`.** Its audio watermarker still imports `pkg_resources`.
 - **Whisper mishears tech names.** It hears "Claude" as "cloud", "Codex" as "codecs" and numbers as digits. The voice check compares letters through a fix-up table, so good takes aren't thrown away.
@@ -120,6 +152,8 @@ The repository is public, so these stay on the laptop:
 - rendered media;
 - virtual environments, `node_modules` and model weights;
 - the starter kit's original scenes, voiceover and sound effects;
-- third-party screenshots used in a video (fetched from the tool's own repository).
+- third-party screenshots used in a video (fetched from the tool's own repository);
+- the photos behind the paper cutouts (each episode's `img/credits.json` lists the source, author and licence of every photo);
+- the voice and music audio (since the AnyPS5 pair; the word timings stay in each episode's `data/`).
 
 See [`.gitignore`](.gitignore).

@@ -1,0 +1,167 @@
+1
+00:00:00,330 --> 00:00:02,580
+This tool has one PlayStation 5 game
+
+2
+00:00:02,600 --> 00:00:03,710
+running on a PC.
+
+3
+00:00:03,730 --> 00:00:04,910
+Exactly one.
+
+4
+00:00:05,110 --> 00:00:06,130
+And in two months,
+
+5
+00:00:06,150 --> 00:00:08,950
+16,000 people starred it on GitHub.
+
+6
+00:00:09,170 --> 00:00:10,770
+Here's why that's a big deal.
+
+7
+00:00:10,990 --> 00:00:12,840
+Normally, that takes emulation:
+
+8
+00:00:12,860 --> 00:00:14,560
+software pretending to be the whole
+
+9
+00:00:14,580 --> 00:00:17,220
+console, translating every instruction
+
+10
+00:00:17,240 --> 00:00:18,170
+while you play.
+
+11
+00:00:18,390 --> 00:00:20,770
+AnyPS5 doesn't pretend.
+
+12
+00:00:20,980 --> 00:00:23,860
+Inside a PS5 is an AMD processor that
+
+13
+00:00:23,880 --> 00:00:25,540
+speaks your PC's language,
+
+14
+00:00:25,660 --> 00:00:28,030
+so the game's code can run as it is.
+
+15
+00:00:28,240 --> 00:00:30,720
+What's missing is Sony's system software:
+
+16
+00:00:30,740 --> 00:00:32,560
+the libraries every game calls for
+
+17
+00:00:32,580 --> 00:00:35,220
+graphics, sound and controllers.
+
+18
+00:00:35,430 --> 00:00:38,400
+So AnyPS5 rewrites the game into an
+
+19
+00:00:38,420 --> 00:00:40,560
+ordinary Windows or Linux program,
+
+20
+00:00:40,650 --> 00:00:42,800
+and reconnects those calls to its own
+
+21
+00:00:42,820 --> 00:00:44,770
+versions of Sony's libraries.
+
+22
+00:00:44,980 --> 00:00:47,170
+Graphics too: shaders written for the
+
+23
+00:00:47,190 --> 00:00:50,790
+PS5's AMD chip are recompiled for Vulkan,
+
+24
+00:00:50,810 --> 00:00:53,180
+so ordinary PC graphics cards can draw
+
+25
+00:00:53,200 --> 00:00:53,690
+them.
+
+26
+00:00:53,900 --> 00:00:56,490
+Emulation is an interpreter whispering
+
+27
+00:00:56,510 --> 00:00:58,920
+every line. This is translating the book
+
+28
+00:00:58,940 --> 00:00:59,530
+once.
+
+29
+00:00:59,740 --> 00:01:01,840
+The only game on its list so far is
+
+30
+00:01:01,860 --> 00:01:04,650
+Dreaming Sarah, a 2D platformer:
+
+31
+00:01:04,780 --> 00:01:08,520
+60 frames per second on a GTX 1050 Ti,
+
+32
+00:01:08,540 --> 00:01:11,200
+36 on a laptop's Intel graphics.
+
+33
+00:01:11,420 --> 00:01:13,290
+The catch: it's one game,
+
+34
+00:01:13,310 --> 00:01:15,520
+on Windows. Linux is still a question
+
+35
+00:01:15,540 --> 00:01:16,020
+mark.
+
+36
+00:01:16,230 --> 00:01:17,700
+It ships no games,
+
+37
+00:01:17,720 --> 00:01:20,580
+keys or firmware, so you need your own.
+
+38
+00:01:20,600 --> 00:01:22,760
+And only download it from GitHub:
+
+39
+00:01:22,780 --> 00:01:26,040
+fake PS5 emulators are a classic malware
+
+40
+00:01:26,060 --> 00:01:26,610
+trap.
+
+41
+00:01:26,820 --> 00:01:28,060
+That's today's tool.
+
+42
+00:01:28,080 --> 00:01:29,600
+There's a new one every day.

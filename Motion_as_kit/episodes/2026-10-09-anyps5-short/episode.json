@@ -1,0 +1,25 @@
+{
+ "fmt": "short",
+ "theme": "glitch",
+ "title": "AnyPS5 Short",
+ "voice": {
+  "engine": "elevenlabs via vidIQ",
+  "voice": "Eric (cjVigY5qzO86Huf0OWal)"
+ },
+ "edit": {
+  "line_gap": 0.3,
+  "inner_max": 0.28,
+  "lead": 0.2,
+  "tail": 0.6,
+  "target": 29.8,
+  "max_tempo": 1.05
+ },
+ "music": {
+  "file": "music_raw.wav",
+  "db": -15,
+  "duck": 6,
+  "fade_in": 0.2,
+  "fade_out": 1.2,
+  "source": "vidIQ AI music (royalty-free), the main video's track"
+ }
+}

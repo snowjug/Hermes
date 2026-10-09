@@ -1,0 +1,58 @@
+{
+ "motherboard": {
+  "file": "motherboard.jpg",
+  "title": "File:Sony PlayStation 5 motherboard.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Sony_PlayStation_5_motherboard.png",
+  "license": "CC0",
+  "artist": "Fritzchens Fritz from Berlin"
+ },
+ "ps5": {
+  "file": "ps5.jpg",
+  "title": "File:PlayStation 5 and DualSense.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:PlayStation_5_and_DualSense.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Osh33m"
+ },
+ "dualsense": {
+  "file": "dualsense.jpg",
+  "title": "File:Playstation DualSense Controller.png",
+  "page": "https://commons.wikimedia.org/wiki/File:Playstation_DualSense_Controller.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Alex Cochrane"
+ },
+ "gtx1050ti": {
+  "file": "gtx1050ti.jpg",
+  "title": "File:MSI GeForce GTX 1050 Ti 4GT OC - front view.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:MSI_GeForce_GTX_1050_Ti_4GT_OC_-_front_view.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "ITEagle Europe - Sebastiaan Broekhoven"
+ },
+ "tux": {
+  "file": "tux.png",
+  "title": "File:Tux.svg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tux.svg",
+  "license": "Attribution",
+  "artist": "Larry Ewing, Simon Budig, Garrett LeSage"
+ },
+ "press": {
+  "file": "press.jpg",
+  "title": "File:1876 printing press Harpers Weekly Dec23.png",
+  "page": "https://commons.wikimedia.org/wiki/File:1876_printing_press_Harpers_Weekly_Dec23.png",
+  "license": "Public domain",
+  "artist": "Harper's Weekly,"
+ },
+ "laptop": {
+  "file": "laptop.jpg",
+  "title": "File:HP Pavilion dv2000 laptop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:HP_Pavilion_dv2000_laptop.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Aaron Patterson from Redding CA"
+ },
+ "reader": {
+  "file": "reader.jpg",
+  "title": "File:Rembrandt - Portrait of an old man reading.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_an_old_man_reading.jpg",
+  "license": "Public domain",
+  "artist": "Manner of Rembrandt"
+ }
+}

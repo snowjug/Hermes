@@ -1,0 +1,27 @@
+{
+  "title": "AnyPS5 Short",
+  "notes": "Facts as in the main episode's script.json (checked 2026-10-09). Narration: ElevenLabs voice 'Eric' via vidIQ.",
+  "lines": [
+    {"text": "PS5 games on a PC, with no emulator.", "say": "PS5 games on a PC, with no emulator."},
+    {"text": "This free tool rewrites the game itself into a Windows program.", "say": "This free tool rewrites the game itself into a Windows program."},
+    {"text": "The PS5's processor already speaks your PC's language.", "say": "The PS5's processor already speaks your PC's language."},
+    {"text": "It just swaps in its own versions of Sony's system libraries.", "say": "It just swaps in its own versions of Sony's system libraries."},
+    {"text": "One game works so far: 60 frames per second on a GTX 1050 Ti.", "say": "One game works so far: sixty frames per second on a G.T.X. ten-fifty T.I."},
+    {"text": "16,000 GitHub stars in two months.", "say": "Sixteen thousand GitHub stars in two months."},
+    {"text": "It's called AnyPS5. Bring your own games, and only download it from GitHub.", "say": "It's called Any PS5. Bring your own games, and only download it from GitHub."}
+  ],
+  "spoken": {
+    "PS5": ["P", "S", "FIVE"],
+    "PS5's": ["P", "S", "FIVE'S"],
+    "PC,": ["P", "C"],
+    "PC's": ["P", "C'S"],
+    "AnyPS5.": ["ANY", "P", "S", "FIVE"],
+    "60": ["SIXTY"],
+    "GTX": ["G", "T", "X"],
+    "1050": ["TEN", "FIFTY"],
+    "Ti.": ["T", "I"],
+    "16,000": ["SIXTEEN", "THOUSAND"],
+    "GitHub": ["GIT", "HUB"],
+    "GitHub.": ["GIT", "HUB"]
+  }
+}

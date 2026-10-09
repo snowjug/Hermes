@@ -31,6 +31,16 @@ const THEMES = {
     ink: '#16130F', ink2: '#24201B', graphite: '#4A433B', ash: '#7D746A', bone: '#F4ECDC',
     signal: '#FF3EA5', ember: '#FF9ED0', blood: '#D2177C', acid: '#2A4BFF', halation: [1.0, 0.3, 0.7],
   },
+  // collage: a documentary desk: warm paper, black type, red marker, blue ballpoint (plates set `paper`)
+  collage: {
+    ink: '#1C1915', ink2: '#2C2721', graphite: '#665C52', ash: '#9C9183', bone: '#EAE0CC',
+    signal: '#D2302A', ember: '#F07A5C', blood: '#9A1C15', acid: '#2E5EA6', halation: [1.0, 0.45, 0.25],
+  },
+  // glitch: a dark screen with RGB-split type: off-white, hot red and cyan
+  glitch: {
+    ink: '#07070A', ink2: '#121218', graphite: '#3A3A48', ash: '#8A8A9A', bone: '#F4F3EE',
+    signal: '#FF2D55', ember: '#FF8FA6', blood: '#B3123A', acid: '#00E1FF', halation: [1.0, 0.2, 0.4],
+  },
 } as const;
 
 export type ThemeName = keyof typeof THEMES;
