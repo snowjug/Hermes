@@ -1,0 +1,59 @@
+1
+00:00:00,280 --> 00:00:02,180
+This free gym app shows the muscles you've
+
+2
+00:00:02,200 --> 00:00:03,080
+been skipping.
+
+3
+00:00:03,640 --> 00:00:04,460
+Pick a muscle:
+
+4
+00:00:04,640 --> 00:00:07,330
+over 5,600 exercises, each with a demo.
+
+5
+00:00:07,900 --> 00:00:09,490
+It fills in last time's weights,
+
+6
+00:00:09,570 --> 00:00:10,670
+runs your rest timer,
+
+7
+00:00:10,690 --> 00:00:12,200
+and catches new records.
+
+8
+00:00:12,770 --> 00:00:14,500
+It even does the plate math for your bar.
+
+9
+00:00:15,200 --> 00:00:17,750
+No subscription. No ads.
+
+10
+00:00:17,980 --> 00:00:19,020
+It runs on your own server,
+
+11
+00:00:19,040 --> 00:00:20,620
+or right on your Android phone.
+
+12
+00:00:21,200 --> 00:00:22,910
+It's called openGym.
+
+13
+00:00:23,070 --> 00:00:25,280
+Nearly 7,000 GitHub stars this week.
+
+14
+00:00:25,920 --> 00:00:27,320
+So be honest.
+
+15
+00:00:27,570 --> 00:00:29,120
+When did you last train legs?

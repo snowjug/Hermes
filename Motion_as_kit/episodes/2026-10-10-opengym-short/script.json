@@ -1,0 +1,96 @@
+{
+ "title": "openGym Short",
+ "notes": "Facts as in the main episode's script.json. The last line loops back to the first.",
+ "lines": [
+  {
+   "text": "This free gym app shows the muscles you've been skipping.",
+   "say": [
+    "This free gym app shows the muscles you've been skipping."
+   ]
+  },
+  {
+   "text": "Pick a muscle: over 5,600 exercises, each with a demo.",
+   "say": [
+    "Pick a muscle:",
+    "over fifty-six hundred exercises, each with a demo."
+   ]
+  },
+  {
+   "text": "It fills in last time's weights, runs your rest timer, and catches new records.",
+   "say": [
+    "It fills in last time's weights, runs your rest timer, and catches new records."
+   ]
+  },
+  {
+   "text": "It even does the plate math for your bar.",
+   "say": [
+    "It even does the plate math for your bar."
+   ]
+  },
+  {
+   "text": "No subscription. No ads. It runs on your own server, or right on your Android phone.",
+   "say": [
+    "No subscription.",
+    "No ads.",
+    "It runs on your own server, or right on your Android phone."
+   ]
+  },
+  {
+   "text": "It's called openGym. Nearly 7,000 GitHub stars this week.",
+   "say": [
+    "It's called Open Gym!",
+    "Nearly seven thousand GitHub stars this week."
+   ]
+  },
+  {
+   "text": "So be honest. When did you last train legs?",
+   "say": [
+    "So be honest.",
+    "When did you last train legs?"
+   ]
+  }
+ ],
+ "spoken": {
+  "openGym": [
+   "OPEN",
+   "GYM"
+  ],
+  "openGym.": [
+   "OPEN",
+   "GYM"
+  ],
+  "7,000": [
+   "SEVEN",
+   "THOUSAND"
+  ],
+  "5,600": [
+   "FIFTY",
+   "SIX",
+   "HUNDRED"
+  ],
+  "5,600,": [
+   "FIFTY",
+   "SIX",
+   "HUNDRED"
+  ],
+  "HTTPS": [
+   "H",
+   "T",
+   "T",
+   "P",
+   "S"
+  ],
+  "FitNotes?": [
+   "FIT",
+   "NOTES"
+  ],
+  "AI": [
+   "A",
+   "I"
+  ],
+  "GitHub": [
+   "GIT",
+   "HUB"
+  ]
+ }
+}

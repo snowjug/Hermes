@@ -1,0 +1,211 @@
+1
+00:00:00,370 --> 00:00:01,740
+Most gym apps keep your workouts on their
+
+2
+00:00:01,760 --> 00:00:02,820
+servers, and push you toward a
+
+3
+00:00:02,840 --> 00:00:03,660
+subscription.
+
+4
+00:00:04,150 --> 00:00:05,510
+openGym runs on yours.
+
+5
+00:00:05,620 --> 00:00:07,860
+And this week, it picked up nearly 7,000
+
+6
+00:00:07,880 --> 00:00:08,960
+GitHub stars.
+
+7
+00:00:09,450 --> 00:00:11,200
+One Docker command, and it's live on your
+
+8
+00:00:11,220 --> 00:00:12,730
+own machine. No ads,
+
+9
+00:00:12,750 --> 00:00:14,600
+no subscription, no telemetry.
+
+10
+00:00:15,080 --> 00:00:16,640
+Your whole training history sits in one
+
+11
+00:00:16,660 --> 00:00:18,080
+folder. Back it up,
+
+12
+00:00:18,100 --> 00:00:19,530
+and you've backed up everything.
+
+13
+00:00:20,010 --> 00:00:22,220
+Over 5,600 exercises, each with an
+
+14
+00:00:22,240 --> 00:00:24,340
+animated demo. Tap a muscle on the body
+
+15
+00:00:24,360 --> 00:00:25,520
+map to see what trains it.
+
+16
+00:00:25,740 --> 00:00:27,400
+Filter by the equipment you own.
+
+17
+00:00:27,890 --> 00:00:29,320
+In the gym, it fills in last time's
+
+18
+00:00:29,340 --> 00:00:30,820
+weights, runs your rest timer,
+
+19
+00:00:30,840 --> 00:00:32,580
+and catches new records as they happen.
+
+20
+00:00:33,370 --> 00:00:34,710
+It even does the plate math:
+
+21
+00:00:34,880 --> 00:00:35,690
+tell it your plates,
+
+22
+00:00:35,710 --> 00:00:37,350
+and it tells you what goes on the bar.
+
+23
+00:00:37,840 --> 00:00:39,120
+Then there's the muscle map:
+
+24
+00:00:39,240 --> 00:00:40,160
+where your volume went,
+
+25
+00:00:40,180 --> 00:00:41,270
+what's still recovering,
+
+26
+00:00:41,770 --> 00:00:43,460
+and what you've quietly stopped training.
+
+27
+00:00:43,570 --> 00:00:44,940
+Looking at you, legs.
+
+28
+00:00:45,400 --> 00:00:46,660
+Progress is built in.
+
+29
+00:00:46,780 --> 00:00:48,380
+Hit your reps, and the weight goes up.
+
+30
+00:00:48,590 --> 00:00:50,280
+Miss them, and it doesn't.
+
+31
+00:00:50,400 --> 00:00:52,490
+Stall, and it plans a deload.
+
+32
+00:00:52,960 --> 00:00:55,340
+Coming from Strong, Hevy or FitNotes?
+
+33
+00:00:55,440 --> 00:00:56,910
+It imports your history.
+
+34
+00:00:57,400 --> 00:00:58,740
+It signs you in with a passkey,
+
+35
+00:00:58,760 --> 00:01:00,200
+works offline, and keeps your phone and
+
+36
+00:01:00,220 --> 00:01:01,090
+laptop in sync.
+
+37
+00:01:01,290 --> 00:01:03,240
+Two devices editing at once merge field by
+
+38
+00:01:03,260 --> 00:01:03,850
+field.
+
+39
+00:01:04,320 --> 00:01:06,050
+There's even an optional AI coach.
+
+40
+00:01:06,280 --> 00:01:07,120
+It drafts your week,
+
+41
+00:01:07,140 --> 00:01:08,930
+but nothing changes until you approve it.
+
+42
+00:01:09,560 --> 00:01:11,680
+And a read-only MCP server lets an
+
+43
+00:01:11,700 --> 00:01:13,220
+assistant like Claude answer questions
+
+44
+00:01:13,240 --> 00:01:14,190
+about your training.
+
+45
+00:01:14,660 --> 00:01:17,840
+The catch: phone passkeys need HTTPS on a
+
+46
+00:01:17,860 --> 00:01:19,620
+domain. And on iPhone,
+
+47
+00:01:19,640 --> 00:01:20,280
+it's a web app,
+
+48
+00:01:20,300 --> 00:01:21,610
+not an App Store one.
+
+49
+00:01:22,100 --> 00:01:23,270
+No server at all?
+
+50
+00:01:23,380 --> 00:01:24,800
+The Android app runs entirely on the
+
+51
+00:01:24,820 --> 00:01:25,340
+phone.
+
+52
+00:01:25,830 --> 00:01:27,170
+That's today's tool.
+
+53
+00:01:27,260 --> 00:01:28,880
+There's a new one every day.

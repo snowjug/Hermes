@@ -1,0 +1,100 @@
+{
+ "BalticServers_data_center": {
+  "file": "BalticServers_data_center.jpg",
+  "title": "File:BalticServers data center.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "BalticServers.com"
+ },
+ "Competition_kettlebell_16_kilo": {
+  "file": "Competition_kettlebell_16_kilo.jpg",
+  "title": "File:Competition kettlebell 16 kilo.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Competition_kettlebell_16_kilo.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Knuckles"
+ },
+ "Kurzhanteln_2_x_15_kg_2v2": {
+  "file": "Kurzhanteln_2_x_15_kg_2v2.jpg",
+  "title": "File:Kurzhanteln 2 x 15 kg 2v2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Kurzhanteln_2_x_15_kg_2v2.jpg",
+  "license": "CC0",
+  "artist": "Singlespeedfahrer"
+ },
+ "Olympic_barbell_at_FIBO_2019_in_Cologne_": {
+  "file": "Olympic_barbell_at_FIBO_2019_in_Cologne_.jpg",
+  "title": "File:Olympic barbell at FIBO 2019 in Cologne, Germany (47952458387).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Olympic_barbell_at_FIBO_2019_in_Cologne,_Germany_(47952458387).jpg",
+  "license": "CC BY 2.0",
+  "artist": "dronepicr"
+ },
+ "Raspberry_Pi_4_Model_B_Top": {
+  "file": "Raspberry_Pi_4_Model_B_Top.jpg",
+  "title": "File:Raspberry Pi 4 Model B - Top.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_4_Model_B_-_Top.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Laserlicht"
+ },
+ "Skeleton_key_Yale_Towne_": {
+  "file": "Skeleton_key_Yale_Towne_.jpg",
+  "title": "File:Skeleton key (Yale & Towne).png",
+  "page": "https://commons.wikimedia.org/wiki/File:Skeleton_key_(Yale_%26_Towne).png",
+  "license": "CC BY-SA 4.0",
+  "artist": "noy-nac"
+ },
+ "Stoppuhr_hanhart": {
+  "file": "Stoppuhr_hanhart.jpg",
+  "title": "File:Stoppuhr hanhart.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Stoppuhr_hanhart.jpg",
+  "license": "Public domain",
+  "artist": "Stefan (Diskussion).\n\nOriginal uploader was StefanPohl at German Wikipedia"
+ },
+ "Vesalius_Fabrica_p181": {
+  "file": "Vesalius_Fabrica_p181.jpg",
+  "title": "File:Vesalius Fabrica p181.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Vesalius_Fabrica_p181.jpg",
+  "license": "Public domain",
+  "artist": ""
+ },
+ "laptop": {
+  "file": "laptop.jpg",
+  "title": "File:HP Pavilion dv2000 laptop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:HP_Pavilion_dv2000_laptop.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Aaron Patterson from Redding CA"
+ },
+ "shot_home": {
+  "file": "shot_home.png",
+  "title": "openGym screenshot (home)",
+  "page": "https://github.com/DuarteSantos8/openGym/blob/main/assets/screenshots/home.png",
+  "license": "AGPL-3.0 (openGym repository)",
+  "artist": "openGym (DuarteSantos8)"
+ },
+ "shot_library": {
+  "file": "shot_library.png",
+  "title": "openGym screenshot (library)",
+  "page": "https://github.com/DuarteSantos8/openGym/blob/main/assets/screenshots/library.png",
+  "license": "AGPL-3.0 (openGym repository)",
+  "artist": "openGym (DuarteSantos8)"
+ },
+ "shot_plan": {
+  "file": "shot_plan.png",
+  "title": "openGym screenshot (plan)",
+  "page": "https://github.com/DuarteSantos8/openGym/blob/main/assets/screenshots/plan.png",
+  "license": "AGPL-3.0 (openGym repository)",
+  "artist": "openGym (DuarteSantos8)"
+ },
+ "shot_stats": {
+  "file": "shot_stats.png",
+  "title": "openGym screenshot (stats)",
+  "page": "https://github.com/DuarteSantos8/openGym/blob/main/assets/screenshots/stats.png",
+  "license": "AGPL-3.0 (openGym repository)",
+  "artist": "openGym (DuarteSantos8)"
+ },
+ "shot_workout": {
+  "file": "shot_workout.png",
+  "title": "openGym screenshot (workout)",
+  "page": "https://github.com/DuarteSantos8/openGym/blob/main/assets/screenshots/workout.png",
+  "license": "AGPL-3.0 (openGym repository)",
+  "artist": "openGym (DuarteSantos8)"
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "title": "openGym: the free, self-hosted workout tracker",
+ "notes": "Facts checked 2026-10-10: github.com/DuarteSantos8/openGym (README: self-hosted, AGPL-3.0, docker compose up, no subscription/ads/telemetry, data in ./data, over 5,600 exercises with animated demos browsable by muscle on a body map, guided sessions with pre-filled weights, rest timer and PR detection, plate math, progression rules incl. deloads on stalls, muscle map in three modes, imports from FitNotes/Strong/Hevy, passkeys, offline, sync, optional AI coach you approve, HTTPS on a domain for phone passkeys, iPhone as a PWA, standalone Android app with no server; created 2026-07-18; 8,797 stars, +6,749 in the trending week on 2026-10-10). The narration is Chatterbox (MIT) on the laptop's CPU. Also: filter exercises by the equipment you own; two devices editing at once merge field by field; a read-only, local MCP server so an assistant like Claude Desktop can answer questions about your training history.",
+ "lines": [
+  {
+   "text": "Most gym apps keep your workouts on their servers, and push you toward a subscription.",
+   "say": [
+    "Most gym apps keep your workouts on their servers, and push you toward a subscription."
+   ]
+  },
+  {
+   "text": "openGym runs on yours. And this week, it picked up nearly 7,000 GitHub stars.",
+   "say": [
+    "Open Gym runs on yours.",
+    "And this week, it picked up nearly seven thousand GitHub stars."
+   ]
+  },
+  {
+   "text": "One Docker command, and it's live on your own machine. No ads, no subscription, no telemetry.",
+   "say": [
+    "One Docker command, and it's live on your own machine.",
+    "No ads, no subscription, no telemetry."
+   ]
+  },
+  {
+   "text": "Your whole training history sits in one folder. Back it up, and you've backed up everything.",
+   "say": [
+    "Your whole training history sits in one folder.",
+    "Back it up, and you've backed up everything."
+   ]
+  },
+  {
+   "text": "Over 5,600 exercises, each with an animated demo. Tap a muscle on the body map to see what trains it. Filter by the equipment you own.",
+   "say": [
+    "Over fifty-six hundred exercises, each with an animated demo.",
+    "Tap a muscle on the body map to see what trains it.",
+    "Filter by the equipment you own."
+   ]
+  },
+  {
+   "text": "In the gym, it fills in last time's weights, runs your rest timer, and catches new records as they happen.",
+   "say": [
+    "In the gym, it fills in last time's weights, runs your rest timer, and catches new records as they happen."
+   ]
+  },
+  {
+   "text": "It even does the plate math: tell it your plates, and it tells you what goes on the bar.",
+   "say": [
+    "It even does the plate math:",
+    "tell it your plates, and it tells you what goes on the bar."
+   ]
+  },
+  {
+   "text": "Then there's the muscle map: where your volume went, what's still recovering,",
+   "say": [
+    "Then there's the muscle map:",
+    "where your volume went, what's still recovering,"
+   ]
+  },
+  {
+   "text": "and what you've quietly stopped training. Looking at you, legs.",
+   "say": [
+    "and what you've quietly stopped training.",
+    "Looking at you, legs."
+   ]
+  },
+  {
+   "text": "Progress is built in. Hit your reps, and the weight goes up. Miss them, and it doesn't. Stall, and it plans a deload.",
+   "say": [
+    "Progress is built in.",
+    "Hit your reps, and the weight goes up.",
+    "Miss them, and it doesn't.",
+    "Stall, and it plans a deload."
+   ]
+  },
+  {
+   "text": "Coming from Strong, Hevy or FitNotes? It imports your history.",
+   "say": [
+    "Coming from Strong, Hevy or Fit Notes?",
+    "It imports your history."
+   ]
+  },
+  {
+   "text": "It signs you in with a passkey, works offline, and keeps your phone and laptop in sync. Two devices editing at once merge field by field.",
+   "say": [
+    "It signs you in with a passkey, works offline, and keeps your phone and laptop in sync.",
+    "Two devices editing at once merge field by field."
+   ]
+  },
+  {
+   "text": "There's even an optional AI coach. It drafts your week, but nothing changes until you approve it.",
+   "say": [
+    "There's even an optional AI coach.",
+    "It drafts your week, but nothing changes until you approve it."
+   ]
+  },
+  {
+   "text": "And a read-only MCP server lets an assistant like Claude answer questions about your training.",
+   "say": [
+    "And a read-only M C P server lets an assistant like Claude answer questions about your training."
+   ]
+  },
+  {
+   "text": "The catch: phone passkeys need HTTPS on a domain. And on iPhone, it's a web app, not an App Store one.",
+   "say": [
+    "The catch: phone passkeys need H T T P S on a domain.",
+    "And on iPhone, it's a web app, not an App Store one."
+   ]
+  },
+  {
+   "text": "No server at all? The Android app runs entirely on the phone.",
+   "say": [
+    "No server at all?",
+    "The Android app runs entirely on the phone."
+   ]
+  },
+  {
+   "text": "That's today's tool. There's a new one every day.",
+   "say": [
+    "That's today's tool.",
+    "There's a new one every day."
+   ]
+  }
+ ],
+ "spoken": {
+  "openGym": [
+   "OPEN",
+   "GYM"
+  ],
+  "openGym.": [
+   "OPEN",
+   "GYM"
+  ],
+  "7,000": [
+   "SEVEN",
+   "THOUSAND"
+  ],
+  "5,600": [
+   "FIFTY",
+   "SIX",
+   "HUNDRED"
+  ],
+  "5,600,": [
+   "FIFTY",
+   "SIX",
+   "HUNDRED"
+  ],
+  "HTTPS": [
+   "H",
+   "T",
+   "T",
+   "P",
+   "S"
+  ],
+  "FitNotes?": [
+   "FIT",
+   "NOTES"
+  ],
+  "AI": [
+   "A",
+   "I"
+  ],
+  "GitHub": [
+   "GIT",
+   "HUB"
+  ],
+  "MCP": [
+   "M",
+   "C",
+   "P"
+  ]
+ }
+}

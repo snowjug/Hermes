@@ -1,0 +1,24 @@
+{
+  "title": "This Free Workout Tracker Knows You Skipped Leg Day",
+  "description": "A free workout tracker app you run yourself: openGym is an open-source (AGPL-3.0), self-hosted gym and body-weight tracker. No subscription, no ads, no telemetry, and your data stays in one folder you own. It picked up 6,749 GitHub stars this week.\n\nWhat it does\n• Over 5,600 exercises with animated demos, browsable by muscle on a body map; filter by the equipment you own.\n• Guided workouts: last time's weights pre-filled, a rest timer, and new records spotted as they happen.\n• Plate math for barbell, EZ bar, trap bar and Smith machine, worked out from the plates you own.\n• A muscle map in three modes: where your volume went, what's still recovering, and what's gone untrained.\n• Progression rules (linear, Greyskull LP, double and triple progression); missed reps never add load, stalls trigger a deload.\n• Imports from Strong, Hevy and FitNotes; exports everything as one JSON file.\n• Passkey sign-in, works offline, syncs your phone and laptop (two devices editing at once merge field by field).\n• Optional extras: an AI coach that runs with your own provider key and changes nothing until you approve it, and a read-only MCP server so an assistant like Claude can answer questions about your training.\n\nHow to run it\nOne `docker compose up -d` on your own machine. Everything lives in ./data: back up that folder and you've backed up everything. Passkeys on a phone need HTTPS on a domain. On iPhone it's a web app (PWA); the Android app runs entirely on the phone, with no server.\n\nChapters\n0:00 Their servers vs. yours\n0:14 One folder, 5,600 exercises\n0:27 Workouts, plate math, muscle map\n0:45 Progression, imports and sync\n1:04 AI coach and MCP server\n1:14 The catch\n\nSources\nhttps://github.com/DuarteSantos8/openGym\nhttps://opengym.ch\n\nThe receipts, the plate-math example, the PR sticker and the chat bubbles are illustrations.\n\nImages (paper cutouts, from Wikimedia Commons)\nData centre: BalticServers.com, CC BY-SA 3.0: https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg\nKettlebell: Knuckles, CC BY-SA 3.0: https://commons.wikimedia.org/wiki/File:Competition_kettlebell_16_kilo.jpg\nDumbbells: Singlespeedfahrer, CC0: https://commons.wikimedia.org/wiki/File:Kurzhanteln_2_x_15_kg_2v2.jpg\nBarbell: dronepicr, CC BY 2.0: https://commons.wikimedia.org/wiki/File:Olympic_barbell_at_FIBO_2019_in_Cologne,_Germany_(47952458387).jpg\nRaspberry Pi 4: Laserlicht, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Raspberry_Pi_4_Model_B_-_Top.jpg\nOld key: noy-nac, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Skeleton_key_(Yale_%26_Towne).png\nStopwatch: Stefan Pohl, public domain: https://commons.wikimedia.org/wiki/File:Stoppuhr_hanhart.jpg\nMuscle man (Vesalius, De humani corporis fabrica, 1543): public domain: https://commons.wikimedia.org/wiki/File:Vesalius_Fabrica_p181.jpg\nLaptop: Aaron Patterson from Redding CA, CC BY 2.0: https://commons.wikimedia.org/wiki/File:HP_Pavilion_dv2000_laptop.jpg\nApp screenshots: the openGym repository (AGPL-3.0).\nThe cutouts are cropped and given a border and shadow; adaptations of CC BY-SA images are shared under the same licence.\n\nNarration: AI voice (Chatterbox, made on a laptop). Music: AI-generated, royalty-free (vidIQ). Animated in code. Not affiliated with openGym, Strong, Hevy or FitNotes.\n\nA new tool every day.\n\n#openGym #WorkoutTracker #SelfHosted",
+  "tags": [
+    "openGym",
+    "free workout tracker app",
+    "workout tracker",
+    "gym tracker app",
+    "self-hosted",
+    "self hosted apps",
+    "open source",
+    "Hevy alternative",
+    "Strong app alternative",
+    "FitNotes",
+    "fitness app",
+    "docker",
+    "passkeys",
+    "homelab",
+    "progressive overload",
+    "leg day"
+  ],
+  "youtube_url": "https://youtu.be/-uAf9tqI8aU",
+  "published": "2026-10-10T13:02:00+05:30"
+}

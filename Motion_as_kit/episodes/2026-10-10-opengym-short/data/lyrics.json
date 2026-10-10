@@ -1,0 +1,483 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "This free gym app shows the muscles you've been skipping.",
+   "start": 0.28,
+   "end": 2.83,
+   "words": [
+    {
+     "w": "This",
+     "start": 0.28,
+     "end": 0.57
+    },
+    {
+     "w": "free",
+     "start": 0.57,
+     "end": 0.84
+    },
+    {
+     "w": "gym",
+     "start": 0.84,
+     "end": 1.12
+    },
+    {
+     "w": "app",
+     "start": 1.12,
+     "end": 1.28
+    },
+    {
+     "w": "shows",
+     "start": 1.28,
+     "end": 1.55
+    },
+    {
+     "w": "the",
+     "start": 1.55,
+     "end": 1.68
+    },
+    {
+     "w": "muscles",
+     "start": 1.68,
+     "end": 2.02
+    },
+    {
+     "w": "you've",
+     "start": 2.02,
+     "end": 2.2
+    },
+    {
+     "w": "been",
+     "start": 2.2,
+     "end": 2.4
+    },
+    {
+     "w": "skipping.",
+     "start": 2.4,
+     "end": 2.83
+    }
+   ]
+  },
+  {
+   "text": "Pick a muscle: over 5,600 exercises, each with a demo.",
+   "start": 3.64,
+   "end": 7.08,
+   "words": [
+    {
+     "w": "Pick",
+     "start": 3.64,
+     "end": 3.8
+    },
+    {
+     "w": "a",
+     "start": 3.8,
+     "end": 3.88
+    },
+    {
+     "w": "muscle:",
+     "start": 3.88,
+     "end": 4.21
+    },
+    {
+     "w": "over",
+     "start": 4.64,
+     "end": 4.88
+    },
+    {
+     "w": "5,600",
+     "start": 4.88,
+     "end": 5.62,
+     "syl": [
+      [
+       4.88,
+       5.16
+      ],
+      [
+       5.16,
+       5.36
+      ],
+      [
+       5.36,
+       5.62
+      ]
+     ]
+    },
+    {
+     "w": "exercises,",
+     "start": 5.62,
+     "end": 6.35
+    },
+    {
+     "w": "each",
+     "start": 6.35,
+     "end": 6.52
+    },
+    {
+     "w": "with",
+     "start": 6.52,
+     "end": 6.68
+    },
+    {
+     "w": "a",
+     "start": 6.68,
+     "end": 6.74
+    },
+    {
+     "w": "demo.",
+     "start": 6.74,
+     "end": 7.08
+    }
+   ]
+  },
+  {
+   "text": "It fills in last time's weights, runs your rest timer, and catches new records.",
+   "start": 7.9,
+   "end": 11.95,
+   "words": [
+    {
+     "w": "It",
+     "start": 7.9,
+     "end": 8.06
+    },
+    {
+     "w": "fills",
+     "start": 8.06,
+     "end": 8.34
+    },
+    {
+     "w": "in",
+     "start": 8.34,
+     "end": 8.5
+    },
+    {
+     "w": "last",
+     "start": 8.5,
+     "end": 8.7
+    },
+    {
+     "w": "time's",
+     "start": 8.7,
+     "end": 8.98
+    },
+    {
+     "w": "weights,",
+     "start": 8.98,
+     "end": 9.24
+    },
+    {
+     "w": "runs",
+     "start": 9.57,
+     "end": 9.86
+    },
+    {
+     "w": "your",
+     "start": 9.86,
+     "end": 10.02
+    },
+    {
+     "w": "rest",
+     "start": 10.02,
+     "end": 10.22
+    },
+    {
+     "w": "timer,",
+     "start": 10.22,
+     "end": 10.55
+    },
+    {
+     "w": "and",
+     "start": 10.69,
+     "end": 10.94
+    },
+    {
+     "w": "catches",
+     "start": 10.94,
+     "end": 11.32
+    },
+    {
+     "w": "new",
+     "start": 11.32,
+     "end": 11.5
+    },
+    {
+     "w": "records.",
+     "start": 11.5,
+     "end": 11.95
+    }
+   ]
+  },
+  {
+   "text": "It even does the plate math for your bar.",
+   "start": 12.77,
+   "end": 14.25,
+   "words": [
+    {
+     "w": "It",
+     "start": 12.77,
+     "end": 12.84
+    },
+    {
+     "w": "even",
+     "start": 12.84,
+     "end": 13.02
+    },
+    {
+     "w": "does",
+     "start": 13.02,
+     "end": 13.14
+    },
+    {
+     "w": "the",
+     "start": 13.14,
+     "end": 13.24
+    },
+    {
+     "w": "plate",
+     "start": 13.24,
+     "end": 13.46
+    },
+    {
+     "w": "math",
+     "start": 13.46,
+     "end": 13.7
+    },
+    {
+     "w": "for",
+     "start": 13.7,
+     "end": 13.8
+    },
+    {
+     "w": "your",
+     "start": 13.8,
+     "end": 13.94
+    },
+    {
+     "w": "bar.",
+     "start": 13.94,
+     "end": 14.25
+    }
+   ]
+  },
+  {
+   "text": "No subscription. No ads. It runs on your own server, or right on your Android phone.",
+   "start": 15.2,
+   "end": 20.37,
+   "words": [
+    {
+     "w": "No",
+     "start": 15.2,
+     "end": 15.58
+    },
+    {
+     "w": "subscription.",
+     "start": 15.58,
+     "end": 16.31
+    },
+    {
+     "w": "No",
+     "start": 16.72,
+     "end": 17.2
+    },
+    {
+     "w": "ads.",
+     "start": 17.2,
+     "end": 17.5
+    },
+    {
+     "w": "It",
+     "start": 17.98,
+     "end": 18.1
+    },
+    {
+     "w": "runs",
+     "start": 18.1,
+     "end": 18.3
+    },
+    {
+     "w": "on",
+     "start": 18.3,
+     "end": 18.38
+    },
+    {
+     "w": "your",
+     "start": 18.38,
+     "end": 18.52
+    },
+    {
+     "w": "own",
+     "start": 18.52,
+     "end": 18.7
+    },
+    {
+     "w": "server,",
+     "start": 18.7,
+     "end": 19.04
+    },
+    {
+     "w": "or",
+     "start": 19.04,
+     "end": 19.26
+    },
+    {
+     "w": "right",
+     "start": 19.26,
+     "end": 19.44
+    },
+    {
+     "w": "on",
+     "start": 19.44,
+     "end": 19.5
+    },
+    {
+     "w": "your",
+     "start": 19.5,
+     "end": 19.68
+    },
+    {
+     "w": "Android",
+     "start": 19.68,
+     "end": 20.02
+    },
+    {
+     "w": "phone.",
+     "start": 20.02,
+     "end": 20.37
+    }
+   ]
+  },
+  {
+   "text": "It's called openGym. Nearly 7,000 GitHub stars this week.",
+   "start": 21.2,
+   "end": 25.03,
+   "words": [
+    {
+     "w": "It's",
+     "start": 21.2,
+     "end": 21.37
+    },
+    {
+     "w": "called",
+     "start": 21.37,
+     "end": 21.72
+    },
+    {
+     "w": "openGym.",
+     "start": 21.9,
+     "end": 22.66,
+     "syl": [
+      [
+       21.9,
+       22.3
+      ],
+      [
+       22.3,
+       22.66
+      ]
+     ]
+    },
+    {
+     "w": "Nearly",
+     "start": 23.07,
+     "end": 23.4
+    },
+    {
+     "w": "7,000",
+     "start": 23.4,
+     "end": 24.08,
+     "syl": [
+      [
+       23.4,
+       23.68
+      ],
+      [
+       23.68,
+       24.08
+      ]
+     ]
+    },
+    {
+     "w": "GitHub",
+     "start": 24.08,
+     "end": 24.4,
+     "syl": [
+      [
+       24.08,
+       24.24
+      ],
+      [
+       24.24,
+       24.4
+      ]
+     ]
+    },
+    {
+     "w": "stars",
+     "start": 24.4,
+     "end": 24.7
+    },
+    {
+     "w": "this",
+     "start": 24.7,
+     "end": 24.87
+    },
+    {
+     "w": "week.",
+     "start": 24.87,
+     "end": 25.03
+    }
+   ]
+  },
+  {
+   "text": "So be honest. When did you last train legs?",
+   "start": 25.92,
+   "end": 28.87,
+   "words": [
+    {
+     "w": "So",
+     "start": 25.92,
+     "end": 26.42
+    },
+    {
+     "w": "be",
+     "start": 26.42,
+     "end": 26.64
+    },
+    {
+     "w": "honest.",
+     "start": 26.64,
+     "end": 27.07
+    },
+    {
+     "w": "When",
+     "start": 27.57,
+     "end": 27.78
+    },
+    {
+     "w": "did",
+     "start": 27.78,
+     "end": 27.9
+    },
+    {
+     "w": "you",
+     "start": 27.9,
+     "end": 28.02
+    },
+    {
+     "w": "last",
+     "start": 28.02,
+     "end": 28.26
+    },
+    {
+     "w": "train",
+     "start": 28.26,
+     "end": 28.5
+    },
+    {
+     "w": "legs?",
+     "start": 28.5,
+     "end": 28.87
+    }
+   ]
+  }
+ ]
+}

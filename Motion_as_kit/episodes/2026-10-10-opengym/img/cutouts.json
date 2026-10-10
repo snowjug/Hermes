@@ -1,0 +1,136 @@
+{
+ "dc": {
+  "file": "BalticServers_data_center.jpg",
+  "kind": "print",
+  "max": 820,
+  "border": 20,
+  "cut": 1.6
+ },
+ "kettle": {
+  "file": "Competition_kettlebell_16_kilo.jpg",
+  "kind": "print",
+  "crop": [
+   0.1,
+   0.12,
+   0.9,
+   0.92
+  ],
+  "max": 640,
+  "border": 18,
+  "cut": 1.6
+ },
+ "dumbbells": {
+  "file": "Kurzhanteln_2_x_15_kg_2v2.jpg",
+  "kind": "print",
+  "max": 860,
+  "border": 20,
+  "cut": 1.6
+ },
+ "barbell": {
+  "file": "Olympic_barbell_at_FIBO_2019_in_Cologne_.jpg",
+  "kind": "print",
+  "max": 900,
+  "border": 20,
+  "cut": 1.6
+ },
+ "pi": {
+  "file": "Raspberry_Pi_4_Model_B_Top.jpg",
+  "kind": "sticker",
+  "key_white": 12,
+  "max": 760,
+  "border": 14
+ },
+ "key": {
+  "file": "Skeleton_key_Yale_Towne_.jpg",
+  "kind": "print",
+  "max": 700,
+  "border": 18,
+  "cut": 1.6
+ },
+ "watch": {
+  "file": "Stoppuhr_hanhart.jpg",
+  "kind": "print",
+  "max": 620,
+  "border": 18,
+  "cut": 1.6
+ },
+ "vesalius": {
+  "file": "Vesalius_Fabrica_p181.jpg",
+  "kind": "clipping",
+  "crop": [
+   0.04,
+   0.03,
+   0.96,
+   0.97
+  ],
+  "max": 900,
+  "tear": 4
+ },
+ "laptop": {
+  "file": "laptop.jpg",
+  "kind": "sticker",
+  "key_white": 9,
+  "max": 820,
+  "border": 14
+ },
+ "s_home": {
+  "file": "shot_home.png",
+  "kind": "print",
+  "max": 820,
+  "border": 12,
+  "cut": 1.0
+ },
+ "s_workout": {
+  "file": "shot_workout.png",
+  "kind": "print",
+  "max": 820,
+  "border": 12,
+  "cut": 1.0
+ },
+ "s_stats": {
+  "file": "shot_stats.png",
+  "kind": "print",
+  "max": 820,
+  "border": 12,
+  "cut": 1.0
+ },
+ "s_body": {
+  "file": "shot_stats.png",
+  "kind": "print",
+  "crop": [
+   0.0,
+   0.565,
+   1.0,
+   0.9
+  ],
+  "max": 760,
+  "border": 12,
+  "cut": 1.0
+ },
+ "s_plan": {
+  "file": "shot_plan.png",
+  "kind": "print",
+  "crop": [
+   0.0,
+   0.0,
+   1.0,
+   0.62
+  ],
+  "max": 760,
+  "border": 12,
+  "cut": 1.0
+ },
+ "s_library": {
+  "file": "shot_library.png",
+  "kind": "print",
+  "crop": [
+   0.0,
+   0.125,
+   1.0,
+   0.8
+  ],
+  "max": 760,
+  "border": 12,
+  "cut": 1.0
+ }
+}
