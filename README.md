@@ -17,7 +17,7 @@ Each video has its own look. The 90-second videos and the 30-second vertical Sho
 | Folder | What it does | Built with |
 |---|---|---|
 | [`Motion_as_kit/`](Motion_as_kit/) | Makes the videos. Each video is an episode folder with its own script, voice, theme and TypeScript "plates", which draw every frame as a function of time, locked to the voiceover's word timings. Headless Chrome renders them with motion blur. | three.js / WebGL, Vite, Playwright, ffmpeg, Chatterbox, wav2vec2 |
-| [`yt-automation/`](yt-automation/) | **ytauto** uploads the videos. It is a queue that fills in the title, description, tags, thumbnail and AI-content disclosure in YouTube Studio through a signed-in Chrome profile, then publishes or schedules. | Python, Playwright, SQLite |
+| [`yt-automation/`](yt-automation/) | **ytauto** uploads the videos. It is a queue that fills in the title, description, tags, thumbnail and AI-content disclosure in YouTube Studio through a signed-in Chrome profile, then publishes or schedules. Each Short also goes to [Instagram](https://www.instagram.com/tooladay/) as a Reel at the same time. | Python, Playwright, SQLite |
 | [`tech-daily/`](tech-daily/) | **techdaily**, the earlier daily pipeline. It collects trending tools from GitHub, Hacker News, Product Hunt, Reddit and Google Trends, researches one, fact-checks a script and builds a HyperFrames video. | Python, Claude Code (`claude -p`), HyperFrames |
 
 [Hermes Agent](https://github.com/NousResearch/hermes-agent) runs the schedule (`ytauto tick` every 10 minutes) and [Claude Code](https://www.anthropic.com/claude-code) does the writing and the coding.
@@ -34,6 +34,7 @@ flowchart LR
   E --> F["Render<br/>headless Chrome → ffmpeg<br/>4-sample motion blur"]
   F --> G["Sound<br/>effects on visual events,<br/>music ducked under the voice, −14 LUFS"]
   G --> I["ytauto<br/>YouTube Studio upload"]
+  I --> R["Instagram Reel<br/>the Short, at its publish time"]
   B --> S["30-second Short<br/>own script, vertical plates,<br/>its own theme"]
   S --> I
 ```

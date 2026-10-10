@@ -1,6 +1,6 @@
 # ytauto
 
-Copy a video into `inbox\` and ytauto transcribes it, writes the title, description and tags with Claude Code, and uploads it to YouTube at the time you chose, through a real Chrome window on your PC.
+Copy a video into `inbox\` and ytauto transcribes it, writes the title, description and tags with Claude Code, and uploads it to YouTube at the time you chose, through a real Chrome window on your PC. A Short can also go out on Instagram as a Reel at the same time.
 
 ## How the pieces fit
 
@@ -93,9 +93,38 @@ Custom thumbnails need a phone-verified channel (done on 2026-09-27). If verific
 
 You can also ask Claude Code or Hermes in plain words; both load the `youtube-automation` skill.
 
+## Post Shorts to Instagram as Reels
+
+Every Short is also posted to Instagram (`instagram.username` in `config.yaml`, @tooladay) as a Reel. Instagram's
+web composer has no scheduling, so the first tick after the publish time posts it through instagram.com, in the
+same Chrome profile as the YouTube uploads. The PC has to be on then; a Reel that misses its time posts at the
+next tick.
+
+Sign in once. A window opens on Instagram; log in, then close it:
+
+```bash
+yt-automation\.venv\Scripts\ytauto.exe ig-login
+```
+
+| Command | What it does |
+|---|---|
+| `ytauto add short.mp4 … --instagram` | Queues the Short for YouTube and Instagram |
+| `ytauto instagram job_id [--caption file.txt]` | Adds a Reel to a queued or uploaded job, posted at its publish time |
+| `ytauto instagram job_id --dry-run` | Goes through Instagram's composer and stops before Share (screenshot `ig-dry-run.png`) |
+| `ytauto instagram job_id --now` | Posts the Reel right away |
+
+The caption is saved as `work\job_id\instagram_caption.txt`, so you can edit it before the Reel posts. Without a
+caption file, ytauto builds one from the YouTube description:
+- links are dropped, since Instagram doesn't make them clickable;
+- #Shorts becomes #reels;
+- at most five hashtags are kept, which is Instagram's limit.
+
+Jobs added with `--altered-content` also get Instagram's AI label. A signed-out Instagram pauses Reels only (a
+`NEEDS_IG_LOGIN` file appears), never YouTube uploads.
+
 ## Fix a broken upload step
 
-YouTube Studio changes its page layout now and then. Every selector lives in `SEL` at the top of `ytauto/uploader.py`, with fallbacks. A failed step saves a screenshot named after the step, like `work\job_id\failed-title.png`. Fix the selector, then run `ytauto retry job_id`.
+YouTube Studio changes its page layout now and then. Every selector lives in `SEL` at the top of `ytauto/uploader.py`, with fallbacks. A failed step saves a screenshot named after the step, like `work\job_id\failed-title.png`. Fix the selector, then run `ytauto retry job_id`. Instagram's selectors live in `ytauto/instagram.py` (screenshots `failed-ig-*.png`); check a fix with `ytauto instagram job_id --dry-run`.
 
 ## Run the tests
 
@@ -103,10 +132,11 @@ YouTube Studio changes its page layout now and then. Every selector lives in `SE
 yt-automation\.venv\Scripts\python.exe -m pytest yt-automation\tests
 ```
 
-Set `YTAUTO_BROWSER_TESTS=1` to also drive the uploader in headless Chrome against `tests/fixtures/mock_studio.html`, a stand-in page that uses Studio's element names.
+Set `YTAUTO_BROWSER_TESTS=1` to also drive the uploader and the Reel poster in headless Chrome against `tests/fixtures/mock_studio.html` and `tests/fixtures/mock_instagram.html`. These stand-in pages use the sites' element names; the Instagram one also opens hashtag suggestions that Enter would pick, as the real site does.
 
 ## Limits and risks
 
 - **Terms of Service**: YouTube's terms restrict automated access. Many creators automate their own channel this way, but Google can still challenge or flag the account. The sanctioned route is the YouTube Data API, where videos from unaudited API projects stay private until Google audits the project.
 - **Subtitles**: ytauto saves `captions.srt` for every video but doesn't upload it. YouTube makes its own captions; upload the SRT in Studio when you want exact ones.
 - **Visible browser**: uploads run in a Chrome window on your desktop. Don't close it mid-upload.
+- **Instagram**: Instagram's terms also restrict automated access, and it may ask the account for a security check, which pauses Reels until you complete it in `ytauto ig-login`. The sanctioned route is the Instagram API, which needs a professional account linked through a Meta app. One Reel a day from your own signed-in browser is low volume, but the risk is not zero.

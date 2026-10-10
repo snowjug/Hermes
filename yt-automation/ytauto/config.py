@@ -58,6 +58,12 @@ DEFAULTS: dict[str, Any] = {
     },
     "retry": {"max_attempts": 3, "backoff_minutes": [10, 60, 240]},
     "notify": {"hermes_target": None},
+    "instagram": {
+        "username": None,
+        "base_url": "https://www.instagram.com/",
+        "ai_label": True,
+        "post_timeout_minutes": 15,
+    },
 }
 
 VALID_MODES = {"youtube_schedule", "at_slot"}
@@ -115,6 +121,10 @@ class Config:
     @property
     def notify(self) -> dict[str, Any]:
         return self.raw["notify"]
+
+    @property
+    def instagram(self) -> dict[str, Any]:
+        return self.raw["instagram"]
 
     def ensure_dirs(self) -> None:
         for name in ("inbox", "work", "logs", "browser_profile"):

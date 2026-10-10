@@ -6,6 +6,11 @@ Job lifecycle:
     (a ready job waits there while approved = 0)
     any stage -> failed   (after retry.max_attempts; `ytauto retry` puts it back)
     any stage -> cancelled
+
+A job can also be cross-posted to Instagram as a Reel (one row in `reels`, keyed by the job id):
+
+    pending -> posting -> done
+    pending -> failed     (after retry.max_attempts; `ytauto instagram <id>` puts it back)
 """
 
 from __future__ import annotations
@@ -43,6 +48,15 @@ CREATE TABLE IF NOT EXISTS events (
     ts      TEXT NOT NULL,
     status  TEXT NOT NULL,
     message TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS reels (
+    job_id          TEXT PRIMARY KEY,  -- the job whose video is posted
+    status          TEXT NOT NULL,     -- pending | posting | done | failed | cancelled
+    attempts        INTEGER NOT NULL DEFAULT 0,
+    next_attempt_at TEXT,              -- UTC ISO-8601; NULL = at the job's publish time
+    last_error      TEXT,
+    url             TEXT,
+    updated_at      TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_jobs_status ON jobs(status);
 CREATE INDEX IF NOT EXISTS idx_events_job ON events(job_id);
@@ -97,6 +111,27 @@ class Job:
             video_url=row["video_url"],
             created_at=from_iso(row["created_at"]),
             updated_at=from_iso(row["updated_at"]),
+        )
+
+
+@dataclass
+class Reel:
+    job_id: str
+    status: str
+    attempts: int
+    next_attempt_at: datetime | None
+    last_error: str | None
+    url: str | None
+
+    @classmethod
+    def from_row(cls, row: sqlite3.Row) -> "Reel":
+        return cls(
+            job_id=row["job_id"],
+            status=row["status"],
+            attempts=row["attempts"],
+            next_attempt_at=from_iso(row["next_attempt_at"]),
+            last_error=row["last_error"],
+            url=row["url"],
         )
 
 
@@ -187,3 +222,32 @@ class Store:
 
     def events(self, job_id: str) -> list[sqlite3.Row]:
         return self.conn.execute("SELECT * FROM events WHERE job_id = ? ORDER BY id", (job_id,)).fetchall()
+
+    # ---- Instagram reels -------------------------------------------------------------------
+
+    def reel(self, job_id: str) -> Reel | None:
+        row = self.conn.execute("SELECT * FROM reels WHERE job_id = ?", (job_id,)).fetchone()
+        return Reel.from_row(row) if row else None
+
+    def reels(self, statuses: tuple[str, ...]) -> list[Reel]:
+        marks = ",".join("?" * len(statuses))
+        rows = self.conn.execute(f"SELECT * FROM reels WHERE status IN ({marks})", statuses).fetchall()
+        return [Reel.from_row(r) for r in rows]
+
+    def set_reel(self, job_id: str, *, log: str | None = None, **fields: Any) -> Reel:
+        """Create or update the job's Reel row. Unset fields keep their value (or the column default)."""
+        if "next_attempt_at" in fields:
+            fields["next_attempt_at"] = to_iso(fields["next_attempt_at"])
+        fields["updated_at"] = to_iso(utcnow())
+        with self.tx() as c:
+            if self.reel(job_id) is None:
+                fields.setdefault("status", "pending")
+                cols = ", ".join(["job_id", *fields])
+                marks = ", ".join("?" * (len(fields) + 1))
+                c.execute(f"INSERT INTO reels ({cols}) VALUES ({marks})", (job_id, *fields.values()))
+            else:
+                sets = ", ".join(f"{k} = ?" for k in fields)
+                c.execute(f"UPDATE reels SET {sets} WHERE job_id = ?", (*fields.values(), job_id))
+        if log:
+            self.log(job_id, "instagram", log)
+        return self.reel(job_id)

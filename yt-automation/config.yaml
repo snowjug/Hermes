@@ -56,3 +56,9 @@ retry:
 
 notify:
   hermes_target: null              # e.g. "telegram" — sent with `hermes send`; null = off
+
+instagram:
+  username: tooladay               # Reels are posted to this account; sign in once with `ytauto ig-login`
+  base_url: https://www.instagram.com/
+  ai_label: true                   # label Reels made with an AI voice (jobs added with --altered-content)
+  post_timeout_minutes: 15

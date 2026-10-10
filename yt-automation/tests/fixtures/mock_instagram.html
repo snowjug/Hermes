@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mock Instagram</title>
+<style>
+  body { font-family: sans-serif; margin: 0; }
+  nav { position: fixed; left: 0; top: 0; bottom: 0; width: 200px; border-right: 1px solid #ddd; padding: 16px; }
+  [role=dialog] { position: fixed; left: 280px; top: 40px; width: 700px; min-height: 420px; background: #fff;
+                  border: 1px solid #999; padding: 12px; }
+  #info { left: 420px; top: 160px; width: 400px; min-height: 120px; z-index: 5; }
+  header { display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 6px; }
+  [role=button] { cursor: pointer; color: #0095f6; }
+  #suggest { position: absolute; left: 20px; top: 260px; width: 300px; border: 1px solid #333; background: #fff;
+             z-index: 3; }
+  .hidden { display: none !important; }
+  [contenteditable] { min-height: 160px; border: 1px solid #ccc; padding: 6px; }
+</style>
+</head>
+<body>
+<!-- A small stand-in for instagram.com's Create flow, for tests/test_instagram_mock.py. Results go to
+     localStorage.mockInstagramResult. Hashtag suggestions open while a #word is being typed, and Enter
+     picks the first one, as on the real site. -->
+<nav>
+  <a href="#" id="create"><svg aria-label="New post" width="24" height="24"><rect width="24" height="24"/></svg>
+    <span>Create</span></a>
+  <div role="menu" id="menu" class="hidden">
+    <a href="#" role="menuitem" id="post"><svg aria-label="Post" width="16" height="16"><rect width="16" height="16"/></svg>
+      <span>Post</span></a>
+  </div>
+</nav>
+
+<div role="dialog" id="composer" class="hidden">
+  <header><span></span><h1 id="step-title">Create new post</h1><div role="button" tabindex="0" id="next" class="hidden">Next</div></header>
+  <div id="pick">
+    <form enctype="multipart/form-data"><input type="file" accept="video/mp4,video/quicktime" id="file" style="display:none"></form>
+    <button type="button" onclick="document.getElementById('file').click()">Select from computer</button>
+  </div>
+  <div id="crop" class="hidden">
+    <button type="button" id="crop-btn"><svg aria-label="Select crop" width="16" height="16"><rect width="16" height="16"/></svg></button>
+    <div id="crop-menu" class="hidden"><span id="orig">Original</span> <span>1:1</span> <span>9:16</span></div>
+  </div>
+  <div id="edit" class="hidden"><p>Cover photo · Trim</p></div>
+  <div id="caption-step" class="hidden">
+    <div aria-label="Write a caption..." role="textbox" contenteditable="true" id="caption"></div>
+    <div id="suggest" class="hidden">#suggested</div>
+    <div><span id="adv">Advanced settings</span></div>
+    <div id="adv-body" class="hidden">
+      <label><span>Add AI label</span> <input type="checkbox" role="switch" id="ai"></label>
+    </div>
+  </div>
+  <div id="done" class="hidden"><img alt="Animated checkmark"><p>Your reel has been shared.</p></div>
+</div>
+
+<div role="dialog" id="info" class="hidden">
+  <h2>Video posts are now shared as reels</h2>
+  <button type="button" id="ok">OK</button>
+</div>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  const show = (id, on = true) => $(id).classList.toggle('hidden', !on);
+  const result = { crop: 'default', file: null, caption: null, ai: false, shared: false };
+  const save = () => localStorage.setItem('mockInstagramResult', JSON.stringify(result));
+  let step = 'pick';
+
+  $('create').onclick = (e) => { e.preventDefault(); show('menu'); };
+  $('post').onclick = (e) => { e.preventDefault(); show('menu', false); show('composer'); };
+  $('file').onchange = () => {
+    result.file = $('file').files[0].name;
+    show('pick', false); show('crop'); show('next'); $('step-title').textContent = 'Crop'; step = 'crop';
+    show('info');
+  };
+  $('ok').onclick = () => show('info', false);
+  $('crop-btn').onclick = () => show('crop-menu');
+  $('orig').onclick = () => { result.crop = 'original'; show('crop-menu', false); };
+  $('next').onclick = () => {
+    if (step === 'crop') { show('crop', false); show('edit'); $('step-title').textContent = 'Edit'; step = 'edit'; }
+    else if (step === 'edit') {
+      show('edit', false); show('caption-step'); $('step-title').textContent = 'Create new reel';
+      $('next').textContent = 'Share'; step = 'caption';
+    } else if (step === 'caption') {
+      result.caption = $('caption').innerText; result.ai = $('ai').checked;
+      show('caption-step', false); $('step-title').textContent = 'Sharing'; $('next').classList.add('hidden');
+      setTimeout(() => { $('step-title').textContent = 'Reel shared'; show('done'); result.shared = true; save(); }, 800);
+    }
+  };
+  $('adv').onclick = () => show('adv-body');
+  const editor = $('caption');
+  editor.addEventListener('input', () => show('suggest', /[#@][\w.]+$/.test(editor.innerText.replace(/\n$/, ''))));
+  editor.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !$('suggest').classList.contains('hidden')) {
+      e.preventDefault();
+      document.execCommand('insertText', false, 'suggested ');
+      show('suggest', false);
+    }
+  });
+</script>
+</body>
+</html>

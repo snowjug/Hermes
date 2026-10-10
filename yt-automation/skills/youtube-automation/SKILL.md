@@ -1,6 +1,6 @@
 ---
 name: youtube-automation
-description: Queue, schedule, inspect and fix automated YouTube uploads made by the local `ytauto` pipeline (transcribe with Whisper, write title/description/tags with Claude Code, upload through YouTube Studio in Chrome). Use when the user wants to post or schedule a YouTube video, change a video's publish time, title or description before it goes out, check what is scheduled, or find out why an upload failed.
+description: Queue, schedule, inspect and fix automated YouTube uploads made by the local `ytauto` pipeline (transcribe with Whisper, write title/description/tags with Claude Code, upload through YouTube Studio in Chrome), and cross-post Shorts to Instagram as Reels. Use when the user wants to post or schedule a YouTube video or an Instagram Reel, change a video's publish time, title or description before it goes out, check what is scheduled, or find out why an upload or a Reel failed.
 ---
 
 # YouTube automation (ytauto)
@@ -50,6 +50,28 @@ Job ids accept the short random suffix (`cb9d4d` for `20260927-cb9d4d`).
 transcription and describing), `--thumbnail thumb.jpg`, `--altered-content` (answers YouTube's
 "altered or synthetic content" question with Yes, needed for realistic AI narration), and `--hold`.
 
+## Instagram Reels
+
+Every YouTube Short also goes to Instagram (@tooladay) as a Reel, at the Short's publish time. Instagram's
+web composer cannot schedule, so the first tick after the slot posts it through instagram.com in the same
+Chrome profile. The PC must be on and signed in to Windows then; a late Reel posts at the next tick.
+
+| User wants | Do |
+|---|---|
+| Queue a Short for YouTube and Instagram | `ytauto add "<short.mp4>" --metadata ... --at "..." --instagram` |
+| Add Instagram to an already queued or uploaded job | `ytauto instagram <id> [--caption caption.txt]` |
+| Check the composer without posting | `ytauto instagram <id> --dry-run` (stops before Share; screenshot `ig-dry-run.png`) |
+| Post the Reel right now | `ytauto instagram <id> --now` |
+| Change the caption | edit `work\<id>\instagram_caption.txt` before the slot |
+
+The caption is built from metadata.json unless one is given: no links (they are not clickable on
+Instagram), #Shorts becomes #reels, at most five hashtags. Reels of jobs added with `--altered-content`
+get Instagram's AI label (`instagram.ai_label` in config.yaml). `ytauto status` shows each Reel's state.
+
+Signing in is the user's job: they run `ytauto ig-login`, log in to Instagram in the window that opens,
+and close it. A `NEEDS_IG_LOGIN` file means Reels are paused (YouTube uploads carry on). Never type or
+ask for their Instagram password, and never complete a security check for them.
+
 ## The daily tech-tool channel (tech-daily)
 
 Project: `C:\Users\HP\Desktop\Hermes\tech-daily`. CLI: `tech-daily\.venv\Scripts\python.exe -m techdaily`.
@@ -77,7 +99,11 @@ Episode files live in `tech-daily\episodes\<date>\` (plan, sources, factcheck, m
 - A failed Studio step saves `work\<id>\failed-<step>.png`. Look at it. If Studio's layout changed,
   fix the matching entry in `SEL` in `ytauto\uploader.py`, then `ytauto retry <id>`.
 - "previous upload was interrupted": check YouTube Studio for a leftover draft, have the user delete
-  it, then `ytauto retry <id>`, so the channel does not get a duplicate.
+  it, then `ytauto retry <id>`, so the channel does not get a duplicate. A failed upload that already
+  reached Studio can be finished with `ytauto upload <id> --resume-draft` instead of uploading again.
+- A failed Reel saves `work\<id>\failed-ig-<step>.png`. If Instagram's layout changed, fix `SEL` in
+  `ytauto\instagram.py` and check with `--dry-run`. "Reel posting was interrupted": look at the
+  profile first; only run `ytauto instagram <id> --now` if the Reel is not there.
 - Hermes not firing: `hermes cron status` must say the gateway is running (`hermes gateway install`).
 
 ## Rules
