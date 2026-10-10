@@ -51,6 +51,16 @@ const THEMES = {
     ink: '#0B1230', ink2: '#16204A', graphite: '#3A4A8C', ash: '#AFC0FF', bone: '#2448F0',
     signal: '#C6F432', ember: '#E4FF8A', blood: '#FF3D7F', acid: '#FFFFFF', halation: [0.6, 0.8, 1.0],
   },
+  // comic: a motion comic on newsprint: black ink, comic red, yellow, blue, green (plates set `paper`)
+  comic: {
+    ink: '#121212', ink2: '#1E1E1E', graphite: '#4A4A4A', ash: '#8C8C8C', bone: '#F6EEDC',
+    signal: '#E5322B', ember: '#FFD21F', blood: '#1F5FD1', acid: '#18A558', halation: [1.0, 0.6, 0.3],
+  },
+  // chat: a messaging screen: pale grey-blue, blue bubbles, white bubbles, a pink reaction (plates set `paper`)
+  chat: {
+    ink: '#0E1116', ink2: '#1B2028', graphite: '#5B6472', ash: '#9AA3B2', bone: '#E9EDF4',
+    signal: '#2F7CF6', ember: '#8FB8FF', blood: '#FF4D6D', acid: '#21C063', halation: [0.6, 0.8, 1.0],
+  },
 } as const;
 
 export type ThemeName = keyof typeof THEMES;

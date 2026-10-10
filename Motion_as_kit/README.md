@@ -15,6 +15,8 @@ Each video is an **episode**: one folder under [`episodes/`](episodes/) with its
 | [`2026-10-09-anyps5-short`](episodes/2026-10-09-anyps5-short/) | 1080×1920, 30 s | `glitch` (dark screen, RGB-split type, glitching photos) | [Short](https://youtube.com/shorts/1lL9B3y0eJQ) |
 | [`2026-10-10-opengym`](episodes/2026-10-10-opengym/) | 1920×1080, 90 s | `kraft` (garage-gym desk: kraft paper, photo cutouts, drawn body map and barbell; Chatterbox voice) | [video](https://youtu.be/-uAf9tqI8aU) |
 | [`2026-10-10-opengym-short`](episodes/2026-10-10-opengym-short/) | 1080×1920, 30 s | `court` (electric-blue court, chalk lines, giant chalk and lime type) | [Short](https://youtube.com/shorts/FRRxkiQ8wfM) |
+| [`2026-10-11-rea`](episodes/2026-10-11-rea/) | 1920×1080, 90 s | `comic` (motion comic: ink panels, halftone, onomatopoeia, a robot detective, lettered caption boxes) | [video](https://youtu.be/6ZxAIGAm9Qo) |
+| [`2026-10-11-rea-short`](episodes/2026-10-11-rea-short/) | 1080×1920, 30 s | `chat` (one continuous group chat: typing dots, word-by-word bubbles, photo messages) | [Short](https://youtube.com/shorts/UJ0Iwi7PSdk) |
 
 ## An episode
 
@@ -31,7 +33,7 @@ episodes/<date>-<tool>/
   work/ out/        takes, logs, renders                                        (not in git)
 ```
 
-Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope`, `riso`, `collage`, `glitch`, `kraft` and `court`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
+Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope`, `riso`, `collage`, `glitch`, `kraft`, `court`, `comic` and `chat`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
 
 ## Make one
 

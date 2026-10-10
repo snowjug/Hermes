@@ -1,0 +1,22 @@
+{
+ "fmt": "main",
+ "theme": "comic",
+ "title": "REA",
+ "voice": {
+  "engine": "chatterbox",
+  "exaggeration": 0.65,
+  "cfg": 0.4,
+  "line_gap": 0.52,
+  "sentence_gap": 0.26,
+  "lead": 0.3,
+  "tail": 0.95
+ },
+ "music": {
+  "file": "music_raw.wav",
+  "db": -16,
+  "duck": 9,
+  "fade_in": 0.5,
+  "fade_out": 2.0,
+  "source": "vidIQ AI music (royalty-free), the track made for the AnyPS5 video"
+ }
+}

@@ -4,9 +4,9 @@
 
 Channel: **[Tool Man (@tooladay)](https://www.youtube.com/@tooladay)**, one new tool every day.
 
-[![This Free Workout Tracker Knows You Skipped Leg Day](Motion_as_kit/episodes/2026-10-10-opengym/publish/thumbnail.jpg)](https://youtu.be/-uAf9tqI8aU)
+[![This Free AI Tool Reverse-Engineers Any App](Motion_as_kit/episodes/2026-10-11-rea/publish/thumbnail.jpg)](https://youtu.be/6ZxAIGAm9Qo)
 
-**Latest:** [This Free Workout Tracker Knows You Skipped Leg Day](https://youtu.be/-uAf9tqI8aU) (1:30) · [the Short](https://youtube.com/shorts/FRRxkiQ8wfM) (0:30) · about [openGym](https://github.com/DuarteSantos8/openGym)
+**Latest:** [This Free AI Tool Reverse-Engineers Any App](https://youtu.be/6ZxAIGAm9Qo) (1:30) · [the Short](https://youtube.com/shorts/UJ0Iwi7PSdk) (0:30) · about [REA](https://github.com/morluto/rea) (scheduled for 11 Oct, 18:00 IST)
 
 Each video has its own look. The 90-second videos and the 30-second vertical Shorts are written, voiced, animated and rendered separately; a Short is not a reformat of the video.
 
@@ -50,8 +50,10 @@ flowchart LR
    - the AnyPS5 Short: a glitching screen with RGB-split type and photos that tear between frames.
    - openGym: a garage-gym desk on kraft paper. A drawn body map lights up by training volume, turns orange where muscles are recovering and greys out the legs; plates slide onto a drawn barbell for the plate math; receipts get stamped SUBSCRIPTION;
    - the openGym Short: an electric-blue sports court with chalk lines, giant chalk-white and lime words slammed in on the beat, and every line paired with a picture that explains it.
+   - REA: a motion comic on newsprint. Ink-bordered panels land one by one while the camera travels across the page; Ben-Day halftone, speed lines, onomatopoeia (BOOM!, ZIP!, EXACT!), speech and thought balloons, and a robot detective in a fedora as the AI agent. The narration is lettered into yellow caption boxes, word by word;
+   - the REA Short: one continuous group chat. Tool Man's lines arrive as typing dots and then bubbles that letter in as they're spoken, the viewer reacts in blue bubbles, and the evidence arrives as photo messages.
 
-   Each episode picks a theme in `episode.json`: `signal` (ink and orange), `blueprint` (navy and cyan), `pop` (yellow paper, black and pink), `scope` (oscilloscope green), `riso` (risograph pink and blue), `collage` (paper, ink and red marker), `glitch` (black, hot pink and cyan), `kraft` (kraft paper, red marker, lime) or `court` (electric blue, chalk white, lime).
+   Each episode picks a theme in `episode.json`: `signal` (ink and orange), `blueprint` (navy and cyan), `pop` (yellow paper, black and pink), `scope` (oscilloscope green), `riso` (risograph pink and blue), `collage` (paper, ink and red marker), `glitch` (black, hot pink and cyan), `kraft` (kraft paper, red marker, lime), `court` (electric blue, chalk white, lime), `comic` (newsprint, ink, comic red and yellow) or `chat` (a messaging screen).
 6. **Render.** [`render-node.mjs`](Motion_as_kit/app/scripts/render-node.mjs) renders in resumable 10-second parts and joins them without re-encoding.
 7. **Sound.** [`sfx_mix.py`](Motion_as_kit/analysis/sfx_mix.py) plays the episode's `sfx_cues.py`: every effect sits on something you see. A royalty-free music bed, generated with vidIQ, dips whenever the voice speaks. The mix is −14 LUFS.
 8. **Captions.** [`make_srt.py`](Motion_as_kit/analysis/make_srt.py) writes the word timings as an SRT file, so the captions spell names and numbers the way the screen does.
@@ -94,6 +96,7 @@ The alignment model (`analysis/models/w2v2_base_960h_q.onnx`) and the sound-effe
 
 | Date | Video | Short | Tool |
 |---|---|---|---|
+| 11 Oct 2026 | [This Free AI Tool Reverse-Engineers Any App](https://youtu.be/6ZxAIGAm9Qo) | [This AI Takes Apart Any App](https://youtube.com/shorts/UJ0Iwi7PSdk) | [REA](https://github.com/morluto/rea) · [video episode](Motion_as_kit/episodes/2026-10-11-rea/) · [Short episode](Motion_as_kit/episodes/2026-10-11-rea-short/) |
 | 10 Oct 2026 | [This Free Workout Tracker Knows You Skipped Leg Day](https://youtu.be/-uAf9tqI8aU) | [This Free Gym App Knows You Skip Legs](https://youtube.com/shorts/FRRxkiQ8wfM) | [openGym](https://github.com/DuarteSantos8/openGym) · [video episode](Motion_as_kit/episodes/2026-10-10-opengym/) · [Short episode](Motion_as_kit/episodes/2026-10-10-opengym-short/) |
 | 9 Oct 2026 | [PS5 Games on PC With No Emulator? How AnyPS5 Does It](https://youtu.be/kCeu58HlppU) | [PS5 Games on PC, No Emulator](https://youtube.com/shorts/1lL9B3y0eJQ) | [AnyPS5](https://github.com/boykopovar/AnyPS5) · [video episode](Motion_as_kit/episodes/2026-10-09-anyps5/) · [Short episode](Motion_as_kit/episodes/2026-10-09-anyps5-short/) |
 | 4 Oct 2026 | [This Free ElevenLabs Alternative Runs on Your Laptop](https://youtu.be/2CW_zb6y_ps) | [This Free App Copies a Voice From a 10-Second Clip](https://youtube.com/shorts/rlxaVkBudiM) | [VoiceStudio](https://github.com/debpalash/VoiceStudio) · [video episode](Motion_as_kit/episodes/2026-10-04-voicestudio/) · [Short episode](Motion_as_kit/episodes/2026-10-04-voicestudio-short/) |

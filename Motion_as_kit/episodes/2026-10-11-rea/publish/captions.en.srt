@@ -1,0 +1,207 @@
+1
+00:00:00,330 --> 00:00:02,150
+You see a feature in someone else's app,
+
+2
+00:00:02,170 --> 00:00:02,900
+and you think:
+
+3
+00:00:03,090 --> 00:00:04,300
+how did they build that?
+
+4
+00:00:04,750 --> 00:00:06,640
+REA lets your AI agent find out,
+
+5
+00:00:06,660 --> 00:00:07,730
+without the source code.
+
+6
+00:00:08,160 --> 00:00:10,600
+It picked up 25,000 GitHub stars in a
+
+7
+00:00:10,620 --> 00:00:11,470
+single day.
+
+8
+00:00:11,860 --> 00:00:13,260
+REA is a free,
+
+9
+00:00:13,280 --> 00:00:15,170
+open-source MCP server.
+
+10
+00:00:15,280 --> 00:00:18,040
+Claude Code, Codex, Cursor or Gemini call
+
+11
+00:00:18,060 --> 00:00:18,970
+it like a toolbox.
+
+12
+00:00:19,240 --> 00:00:20,760
+The same tools work straight from your
+
+13
+00:00:20,780 --> 00:00:21,680
+terminal, too.
+
+14
+00:00:22,070 --> 00:00:23,560
+Point it at a native program,
+
+15
+00:00:23,580 --> 00:00:24,900
+and it pulls out the assembly,
+
+16
+00:00:24,920 --> 00:00:26,830
+pseudocode, strings and symbols,
+
+17
+00:00:26,980 --> 00:00:29,320
+with Ghidra, Hopper or IDA doing the heavy
+
+18
+00:00:29,340 --> 00:00:29,890
+lifting.
+
+19
+00:00:30,330 --> 00:00:32,160
+An Electron or JavaScript app?
+
+20
+00:00:32,350 --> 00:00:33,430
+It maps the modules,
+
+21
+00:00:33,450 --> 00:00:34,880
+the imports, and the messages passed
+
+22
+00:00:34,900 --> 00:00:36,060
+between processes.
+
+23
+00:00:36,570 --> 00:00:38,130
+It also reads websites,
+
+24
+00:00:38,150 --> 00:00:40,990
+.NET assemblies, Android APKs,
+
+25
+00:00:41,010 --> 00:00:42,170
+even firmware.
+
+26
+00:00:42,560 --> 00:00:44,560
+Every answer comes with its evidence:
+
+27
+00:00:44,680 --> 00:00:45,560
+the code it found,
+
+28
+00:00:45,580 --> 00:00:46,770
+and what it still doesn't know.
+
+29
+00:00:47,150 --> 00:00:48,980
+Then your agent can explain the feature,
+
+30
+00:00:49,000 --> 00:00:50,420
+or build a version of it for your own
+
+31
+00:00:50,440 --> 00:00:51,030
+project.
+
+32
+00:00:51,700 --> 00:00:52,630
+One real case:
+
+33
+00:00:52,650 --> 00:00:54,920
+the classic game DX-Ball.
+
+34
+00:00:55,040 --> 00:00:56,470
+It followed a sound into the code that
+
+35
+00:00:56,490 --> 00:00:57,630
+pans it left and right.
+
+36
+00:00:58,060 --> 00:01:00,960
+The rebuilt C code passes 3,205 tests
+
+37
+00:01:00,980 --> 00:01:03,080
+against the original, and compiles to the
+
+38
+00:01:03,100 --> 00:01:04,730
+same 63 bytes.
+
+39
+00:01:05,130 --> 00:01:06,800
+Another traces how Notion's clipboard
+
+40
+00:01:06,820 --> 00:01:07,940
+works, from the window,
+
+41
+00:01:07,960 --> 00:01:10,030
+through the bridge, into the main process.
+
+42
+00:01:10,420 --> 00:01:12,660
+Setup is a single npx command that backs
+
+43
+00:01:12,680 --> 00:01:14,150
+up your agent's config first,
+
+44
+00:01:14,180 --> 00:01:16,300
+and the analysis runs on your own machine.
+
+45
+00:01:16,690 --> 00:01:18,560
+The catch: deep native analysis needs
+
+46
+00:01:18,580 --> 00:01:20,880
+Ghidra, Hopper or IDA installed.
+
+47
+00:01:21,020 --> 00:01:22,680
+And your AI provider still sees the
+
+48
+00:01:22,700 --> 00:01:23,480
+results.
+
+49
+00:01:23,880 --> 00:01:25,600
+So only take apart software you're allowed
+
+50
+00:01:25,620 --> 00:01:26,140
+to.
+
+51
+00:01:26,520 --> 00:01:27,810
+That's today's tool.
+
+52
+00:01:27,930 --> 00:01:29,310
+There's a new one every day.

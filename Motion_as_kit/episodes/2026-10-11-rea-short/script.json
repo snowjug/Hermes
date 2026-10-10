@@ -1,0 +1,128 @@
+{
+ "title": "REA Short",
+ "notes": "Facts as in the main episode's script.json.",
+ "lines": [
+  {
+   "text": "This AI tool takes apart any app to show you how it works.",
+   "say": [
+    "This AI tool takes apart any app to show you how it works."
+   ]
+  },
+  {
+   "text": "Point your agent at a program. No source code needed.",
+   "say": [
+    "Point your agent at a program.",
+    "No source code needed."
+   ]
+  },
+  {
+   "text": "REA pulls out the assembly, the pseudocode, every string and symbol.",
+   "say": [
+    "R E A pulls out the assembly, the pseudocode, every string and symbol."
+   ]
+  },
+  {
+   "text": "It even rebuilt a sound routine from an old game, byte for byte.",
+   "say": [
+    "It even rebuilt a sound routine from an old game, byte for byte."
+   ]
+  },
+  {
+   "text": "Then your agent can build that feature for you.",
+   "say": [
+    "Then your agent can build that feature for you."
+   ]
+  },
+  {
+   "text": "It's called REA. 25,000 GitHub stars in one day.",
+   "say": [
+    "It's called R E A!",
+    "Twenty-five thousand GitHub stars in one day."
+   ]
+  },
+  {
+   "text": "Free, open source, and it runs on your machine.",
+   "say": [
+    "Free, open source, and it runs on your machine."
+   ]
+  }
+ ],
+ "spoken": {
+  "REA": [
+   "R",
+   "E",
+   "A"
+  ],
+  "REA.": [
+   "R",
+   "E",
+   "A"
+  ],
+  "AI": [
+   "A",
+   "I"
+  ],
+  "25,000": [
+   "TWENTY",
+   "FIVE",
+   "THOUSAND"
+  ],
+  "MCP": [
+   "M",
+   "C",
+   "P"
+  ],
+  "IDA": [
+   "I",
+   "D",
+   "A"
+  ],
+  "IDA.": [
+   "I",
+   "D",
+   "A"
+  ],
+  ".NET": [
+   "DOT",
+   "NET"
+  ],
+  "APKs,": [
+   "A",
+   "P",
+   "KS"
+  ],
+  "DX-Ball.": [
+   "D",
+   "X",
+   "BALL"
+  ],
+  "3,205": [
+   "THREE",
+   "THOUSAND",
+   "TWO",
+   "HUNDRED",
+   "AND",
+   "FIVE"
+  ],
+  "63": [
+   "SIXTY",
+   "THREE"
+  ],
+  "npx": [
+   "N",
+   "P",
+   "X"
+  ],
+  "GitHub": [
+   "GIT",
+   "HUB"
+  ],
+  "open-source": [
+   "OPEN",
+   "SOURCE"
+  ],
+  "C": [
+   "C"
+  ]
+ }
+}

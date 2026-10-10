@@ -1,0 +1,24 @@
+{
+  "title": "This Free AI Tool Reverse-Engineers Any App",
+  "description": "Reverse engineer any app with your AI agent: REA (Reverse Engineer Anything) is a free, open-source (MIT) MCP server that lets Claude Code, Codex, Cursor or Gemini inspect an app without its source code, explain how a feature works, show the evidence, and build a version for your own project. It picked up 25,784 GitHub stars in a single day.\n\nWhat it can analyze\n• Native binaries: pseudocode, assembly, strings, symbols, calls and references, through Ghidra, Hopper or IDA.\n• Electron and JavaScript apps: modules, imports, source maps, routes and IPC between processes.\n• Websites, .NET assemblies, Android APKs, firmware, saved network captures and more.\n• Every result comes with its evidence (the code it found, references) and its unknowns.\n\nReal cases from the project\n• DX-Ball: it followed a sound call into the helper that pans it left and right; the rebuilt C passes 3,205 tests against the original x86 and reproduces all 63 compiled function bytes.\n• Notion: it traced the clipboard from the renderer, through preload and IPC, into the main process.\n\nSetup\n`npx rea-agents setup` registers REA with your agent (with backups of your existing config). The same tools work from your terminal. Analysis runs locally.\n\nThe catch\nDeep native analysis needs Ghidra, Hopper or IDA installed, and your agent's AI provider still sees the tool results. Only reverse engineer software you're allowed to, and check the licence and the law where you live.\n\nChapters\n0:00 See a feature? Find out how\n0:11 An MCP toolbox for your agent\n0:21 What it can take apart\n0:42 Evidence, plus two real cases\n1:10 Setup and the catch\n\nSources\nhttps://github.com/morluto/rea\nhttps://rea.tools\n\nThe code shown in the panels is illustrative (a sketch of the kind of output REA returns), not REA's actual output.\nNarration: AI voice (Chatterbox, made on a laptop). Music: AI-generated, royalty-free (vidIQ). Drawn and animated in code. Not affiliated with REA, Notion or DX-Ball.\n\nA new tool every day.\n\n#ReverseEngineering #AI #OpenSource",
+  "tags": [
+    "REA",
+    "reverse engineering",
+    "reverse engineer",
+    "AI agent",
+    "MCP server",
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Ghidra",
+    "IDA",
+    "Hopper",
+    "Electron",
+    "decompiler",
+    "open source",
+    "developer tools",
+    "AI tools"
+  ],
+  "youtube_url": "https://youtu.be/6ZxAIGAm9Qo",
+  "published": "2026-10-11T18:00:00+05:30"
+}

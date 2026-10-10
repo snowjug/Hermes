@@ -1,0 +1,22 @@
+{
+ "fmt": "short",
+ "theme": "chat",
+ "title": "REA Short",
+ "voice": {
+  "engine": "chatterbox",
+  "exaggeration": 0.65,
+  "cfg": 0.4,
+  "line_gap": 1.12,
+  "sentence_gap": 0.35,
+  "lead": 0.25,
+  "tail": 1.35
+ },
+ "music": {
+  "file": "music_raw.wav",
+  "db": -15,
+  "duck": 6,
+  "fade_in": 0.2,
+  "fade_out": 1.2,
+  "source": "vidIQ AI music (royalty-free), the track made for the AnyPS5 video"
+ }
+}

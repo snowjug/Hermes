@@ -1,0 +1,55 @@
+1
+00:00:00,280 --> 00:00:02,160
+This AI tool takes apart any app to show
+
+2
+00:00:02,180 --> 00:00:03,240
+you how it works.
+
+3
+00:00:04,230 --> 00:00:05,660
+Point your agent at a program.
+
+4
+00:00:05,880 --> 00:00:07,180
+No source code needed.
+
+5
+00:00:08,300 --> 00:00:10,020
+REA pulls out the assembly,
+
+6
+00:00:10,040 --> 00:00:12,370
+the pseudocode, every string and symbol.
+
+7
+00:00:13,350 --> 00:00:14,880
+It even rebuilt a sound routine from an
+
+8
+00:00:14,900 --> 00:00:16,360
+old game, byte for byte.
+
+9
+00:00:17,460 --> 00:00:19,100
+Then your agent can build that feature for
+
+10
+00:00:19,120 --> 00:00:19,570
+you.
+
+11
+00:00:20,370 --> 00:00:22,220
+It's called REA.
+
+12
+00:00:22,440 --> 00:00:24,680
+25,000 GitHub stars in one day.
+
+13
+00:00:25,700 --> 00:00:27,580
+Free, open source, and it runs on your
+
+14
+00:00:27,600 --> 00:00:28,260
+machine.

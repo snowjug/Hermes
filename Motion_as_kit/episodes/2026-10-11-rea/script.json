@@ -1,0 +1,190 @@
+{
+ "title": "REA: reverse engineer anything with your AI agent",
+ "notes": "Facts checked 2026-10-10: github.com/morluto/rea (README: REA, Reverse Engineer Anything; MIT; one MCP server for reverse engineering binaries, applications and runtime behavior; inspects apps without source code, explains, shows evidence, builds a version; setup `npx rea-agents setup` supports Claude Code, Codex, Cursor, Gemini CLI, Grok Build; native analysis via Hopper, Ghidra or IDA (pseudocode, assembly, strings, symbols, calls, references); JavaScript/Electron (modules, imports, source maps, routes, IPC); websites; .NET; Android APKs; firmware; results include code, references and unknowns; analysis runs locally, the agent's model provider has its own data policy; showcases: DX-Ball sound-pan reconstruction passes 3,205 original-x86 cases and reproduces all 63 compiled function bytes; Notion clipboard traced through preload and IPC into the main process). GitHub trending (daily) on 2026-10-10: 25,784 stars today, 62,043 total. Narration: Chatterbox (MIT) on the laptop's CPU. Also: the same tools work from the terminal; setup makes backups of existing agent configuration.",
+ "lines": [
+  {
+   "text": "You see a feature in someone else's app, and you think: how did they build that?",
+   "say": [
+    "You see a feature in someone else's app, and you think:",
+    "how did they build that?"
+   ]
+  },
+  {
+   "text": "REA lets your AI agent find out, without the source code.",
+   "say": [
+    "R E A lets your AI agent find out, without the source code."
+   ]
+  },
+  {
+   "text": "It picked up 25,000 GitHub stars in a single day.",
+   "say": [
+    "It picked up twenty-five thousand GitHub stars in a single day."
+   ]
+  },
+  {
+   "text": "REA is a free, open-source MCP server. Claude Code, Codex, Cursor or Gemini call it like a toolbox. The same tools work straight from your terminal, too.",
+   "say": [
+    "R E A is a free, open-source M C P server.",
+    "Claude Code, Codex, Cursor or Gemini call it like a toolbox.",
+    "The same tools work straight from your terminal, too."
+   ]
+  },
+  {
+   "text": "Point it at a native program, and it pulls out the assembly, pseudocode, strings and symbols, with Ghidra, Hopper or IDA doing the heavy lifting.",
+   "say": [
+    "Point it at a native program, and it pulls out the assembly, pseudocode, strings and symbols,",
+    "with Ghidra, Hopper or I D A doing the heavy lifting."
+   ]
+  },
+  {
+   "text": "An Electron or JavaScript app? It maps the modules, the imports, and the messages passed between processes.",
+   "say": [
+    "An Electron or JavaScript app?",
+    "It maps the modules, the imports, and the messages passed between processes."
+   ]
+  },
+  {
+   "text": "It also reads websites, .NET assemblies, Android APKs, even firmware.",
+   "say": [
+    "It also reads websites, dot net assemblies, Android A P Ks, even firmware."
+   ]
+  },
+  {
+   "text": "Every answer comes with its evidence: the code it found, and what it still doesn't know.",
+   "say": [
+    "Every answer comes with its evidence:",
+    "the code it found, and what it still doesn't know."
+   ]
+  },
+  {
+   "text": "Then your agent can explain the feature, or build a version of it for your own project.",
+   "say": [
+    "Then your agent can explain the feature, or build a version of it for your own project."
+   ]
+  },
+  {
+   "text": "One real case: the classic game DX-Ball. It followed a sound into the code that pans it left and right.",
+   "say": [
+    "One real case: the classic game D X Ball.",
+    "It followed a sound into the code that pans it left and right."
+   ]
+  },
+  {
+   "text": "The rebuilt C code passes 3,205 tests against the original, and compiles to the same 63 bytes.",
+   "say": [
+    "The rebuilt C code passes three thousand two hundred and five tests against the original,",
+    "and compiles to the same sixty-three bytes."
+   ]
+  },
+  {
+   "text": "Another traces how Notion's clipboard works, from the window, through the bridge, into the main process.",
+   "say": [
+    "Another traces how Notion's clipboard works, from the window, through the bridge, into the main process."
+   ]
+  },
+  {
+   "text": "Setup is a single npx command that backs up your agent's config first, and the analysis runs on your own machine.",
+   "say": [
+    "Setup is a single N P X command that backs up your agent's config first, and the analysis runs on your own machine."
+   ]
+  },
+  {
+   "text": "The catch: deep native analysis needs Ghidra, Hopper or IDA installed. And your AI provider still sees the results.",
+   "say": [
+    "The catch: deep native analysis needs Ghidra, Hopper or I D A installed.",
+    "And your AI provider still sees the results."
+   ]
+  },
+  {
+   "text": "So only take apart software you're allowed to.",
+   "say": [
+    "So only take apart software you're allowed to."
+   ]
+  },
+  {
+   "text": "That's today's tool. There's a new one every day.",
+   "say": [
+    "That's today's tool.",
+    "There's a new one every day."
+   ]
+  }
+ ],
+ "spoken": {
+  "REA": [
+   "R",
+   "E",
+   "A"
+  ],
+  "REA.": [
+   "R",
+   "E",
+   "A"
+  ],
+  "AI": [
+   "A",
+   "I"
+  ],
+  "25,000": [
+   "TWENTY",
+   "FIVE",
+   "THOUSAND"
+  ],
+  "MCP": [
+   "M",
+   "C",
+   "P"
+  ],
+  "IDA": [
+   "I",
+   "D",
+   "A"
+  ],
+  "IDA.": [
+   "I",
+   "D",
+   "A"
+  ],
+  ".NET": [
+   "DOT",
+   "NET"
+  ],
+  "APKs,": [
+   "A",
+   "P",
+   "KS"
+  ],
+  "DX-Ball.": [
+   "D",
+   "X",
+   "BALL"
+  ],
+  "3,205": [
+   "THREE",
+   "THOUSAND",
+   "TWO",
+   "HUNDRED",
+   "AND",
+   "FIVE"
+  ],
+  "63": [
+   "SIXTY",
+   "THREE"
+  ],
+  "npx": [
+   "N",
+   "P",
+   "X"
+  ],
+  "GitHub": [
+   "GIT",
+   "HUB"
+  ],
+  "open-source": [
+   "OPEN",
+   "SOURCE"
+  ],
+  "C": [
+   "C"
+  ]
+ }
+}
