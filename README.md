@@ -4,9 +4,9 @@
 
 Channel: **[Tool Man (@tooladay)](https://www.youtube.com/@tooladay)**, one new tool every day.
 
-[![This Free AI Tool Reverse-Engineers Any App](Motion_as_kit/episodes/2026-10-11-rea/publish/thumbnail.jpg)](https://youtu.be/6ZxAIGAm9Qo)
+[![This Free AI Makes Your PowerPoint For You](Motion_as_kit/episodes/2026-10-12-pptmaster/publish/thumbnail.jpg)](https://youtu.be/Rz_2v0rOnyY)
 
-**Latest:** [This Free AI Tool Reverse-Engineers Any App](https://youtu.be/6ZxAIGAm9Qo) (1:30) · [the Short](https://youtube.com/shorts/UJ0Iwi7PSdk) (0:30) · about [REA](https://github.com/morluto/rea) (scheduled for 11 Oct, 18:00 IST)
+**Latest:** [This Free AI Makes Your PowerPoint For You](https://youtu.be/Rz_2v0rOnyY) (1:30) · [the Short](https://youtube.com/shorts/BolrB8fdkK0) (0:30) · about [PPT Master](https://github.com/hugohe3/ppt-master) (scheduled for 12 Oct, 19:00 IST)
 
 Each video has its own look. The 90-second videos and the 30-second vertical Shorts are written, voiced, animated and rendered separately; a Short is not a reformat of the video.
 
@@ -52,8 +52,10 @@ flowchart LR
    - the openGym Short: an electric-blue sports court with chalk lines, giant chalk-white and lime words slammed in on the beat, and every line paired with a picture that explains it.
    - REA: a motion comic on newsprint. Ink-bordered panels land one by one while the camera travels across the page; Ben-Day halftone, speed lines, onomatopoeia (BOOM!, ZIP!, EXACT!), speech and thought balloons, and a robot detective in a fedora as the AI agent. The narration is lettered into yellow caption boxes, word by word;
    - the REA Short: one continuous group chat. Tool Man's lines arrive as typing dots and then bubbles that letter in as they're spoken, the viewer reacts in blue bubbles, and the evidence arrives as photo messages.
+   - PPT Master: a keynote stage. A spotlight drifts over a deep-navy stage with light beams and bokeh; slides fly in from depth, a PDF bursts into a fan of finished slides, argument nodes flip into slides, and a PowerPoint editor lights up part by part ([`keynote.ts`](Motion_as_kit/episodes/2026-10-12-pptmaster/keynote.ts)). Captions are short phrases low on the screen, with the spoken word on an orange pill;
+   - the PPT Master Short: a 90s desktop meme in one continuous shot. Bevelled windows pop open on a teal desktop (a reminder, a progress bar, the finished deck, an agent chat, a "Go to sleep?" dialog with two Yes buttons) while a sticky note and the clock tick towards midnight. Meme captions in white with a black outline, the spoken word in yellow.
 
-   Each episode picks a theme in `episode.json`: `signal` (ink and orange), `blueprint` (navy and cyan), `pop` (yellow paper, black and pink), `scope` (oscilloscope green), `riso` (risograph pink and blue), `collage` (paper, ink and red marker), `glitch` (black, hot pink and cyan), `kraft` (kraft paper, red marker, lime), `court` (electric blue, chalk white, lime), `comic` (newsprint, ink, comic red and yellow) or `chat` (a messaging screen).
+   Each episode picks a theme in `episode.json`: `signal` (ink and orange), `blueprint` (navy and cyan), `pop` (yellow paper, black and pink), `scope` (oscilloscope green), `riso` (risograph pink and blue), `collage` (paper, ink and red marker), `glitch` (black, hot pink and cyan), `kraft` (kraft paper, red marker, lime), `court` (electric blue, chalk white, lime), `comic` (newsprint, ink, comic red and yellow), `chat` (a messaging screen), `keynote` (a navy keynote stage, orange and violet) or `retro` (a 90s teal desktop with grey windows).
 6. **Render.** [`render-node.mjs`](Motion_as_kit/app/scripts/render-node.mjs) renders in resumable 10-second parts and joins them without re-encoding.
 7. **Sound.** [`sfx_mix.py`](Motion_as_kit/analysis/sfx_mix.py) plays the episode's `sfx_cues.py`: every effect sits on something you see. A royalty-free music bed, generated with vidIQ, dips whenever the voice speaks. The mix is −14 LUFS.
 8. **Captions.** [`make_srt.py`](Motion_as_kit/analysis/make_srt.py) writes the word timings as an SRT file, so the captions spell names and numbers the way the screen does.
@@ -96,6 +98,7 @@ The alignment model (`analysis/models/w2v2_base_960h_q.onnx`) and the sound-effe
 
 | Date | Video | Short | Tool |
 |---|---|---|---|
+| 12 Oct 2026 | [This Free AI Makes Your PowerPoint For You](https://youtu.be/Rz_2v0rOnyY) | [POV: The Presentation Is Due Tomorrow](https://youtube.com/shorts/BolrB8fdkK0) | [PPT Master](https://github.com/hugohe3/ppt-master) · [video episode](Motion_as_kit/episodes/2026-10-12-pptmaster/) · [Short episode](Motion_as_kit/episodes/2026-10-12-pptmaster-short/) |
 | 11 Oct 2026 | [This Free AI Tool Reverse-Engineers Any App](https://youtu.be/6ZxAIGAm9Qo) | [This AI Takes Apart Any App](https://youtube.com/shorts/UJ0Iwi7PSdk) | [REA](https://github.com/morluto/rea) · [video episode](Motion_as_kit/episodes/2026-10-11-rea/) · [Short episode](Motion_as_kit/episodes/2026-10-11-rea-short/) |
 | 10 Oct 2026 | [This Free Workout Tracker Knows You Skipped Leg Day](https://youtu.be/-uAf9tqI8aU) | [This Free Gym App Knows You Skip Legs](https://youtube.com/shorts/FRRxkiQ8wfM) | [openGym](https://github.com/DuarteSantos8/openGym) · [video episode](Motion_as_kit/episodes/2026-10-10-opengym/) · [Short episode](Motion_as_kit/episodes/2026-10-10-opengym-short/) |
 | 9 Oct 2026 | [PS5 Games on PC With No Emulator? How AnyPS5 Does It](https://youtu.be/kCeu58HlppU) | [PS5 Games on PC, No Emulator](https://youtube.com/shorts/1lL9B3y0eJQ) | [AnyPS5](https://github.com/boykopovar/AnyPS5) · [video episode](Motion_as_kit/episodes/2026-10-09-anyps5/) · [Short episode](Motion_as_kit/episodes/2026-10-09-anyps5-short/) |
@@ -105,26 +108,28 @@ The alignment model (`analysis/models/w2v2_base_960h_q.onnx`) and the sound-effe
 
 ## How the videos are doing
 
-YouTube Analytics for the channel from its first upload (27 September) to 10 October 2026, read through the vidIQ connector. Analytics runs a day or two behind, so the AnyPS5 pair's row uses YouTube's public counters (10 October, 13:05 IST), and the openGym pair isn't counted yet.
+Two sources. **Public views** are YouTube's own counters, read on 10 October 2026 at 21:20 IST. The other columns are YouTube Analytics from the first upload (27 September) to 10 October, read through the vidIQ connector. Analytics runs a day or two behind, so it doesn't count the AnyPS5 or openGym pairs yet.
 
-| Upload | Length | Views | Engaged views | Average watched | Of its length | Likes | Subscribers gained |
-|---|---|---:|---:|---:|---:|---:|---:|
-| [AnyPS5](https://youtu.be/kCeu58HlppU) (public counter, after ~26 h) | 1:30 | **2,677** | | | | 4 | |
-| [AnyPS5 Short](https://youtube.com/shorts/1lL9B3y0eJQ) (public counter, after ~26 h) | 0:30 | **2,372** | | | | 32 | |
-| [magpie](https://youtu.be/TuOnUlJSWho) | 1:26 | 70 | 42 | 0:43 | 50% | 2 | 0 |
-| [magpie Short](https://youtube.com/shorts/Y63pJ4viW14) (the video, reframed) | 1:26 | 358 | 140 | 0:42 | 50% | 12 | 2 |
-| [disktree](https://youtu.be/4MmSMJ2c2aQ) | 1:30 | 21 | 19 | 0:53 | 59% | 1 | 3 |
-| [disktree Short](https://youtube.com/shorts/vZ9y7XhO3pc) | 0:30 | 190 | 56 | 0:24 | 81% | 1 | 0 |
-| [VoiceStudio](https://youtu.be/2CW_zb6y_ps) | 1:30 | 39 | 30 | 0:29 | 32% | 1 | 2 |
-| [VoiceStudio Short](https://youtube.com/shorts/rlxaVkBudiM) | 0:30 | 242 | 57 | 0:19 | 65% | 9 | 1 |
-| [Laya](https://youtu.be/Yb5DsnWOCMk) (techdaily) | 3:18 | 14 | 11 | 1:12 | 37% | 0 | 0 |
-| **Channel in Analytics** | | **934** | **355** | | | **26** | **8** |
+| Upload | Length | Public views | Views in Analytics | Engaged views | Average watched | Of its length | Likes | Subscribers gained |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| [openGym](https://youtu.be/-uAf9tqI8aU) (after 8 h) | 1:30 | 1 | | | | | 1 | |
+| [openGym Short](https://youtube.com/shorts/FRRxkiQ8wfM) (after 8 h) | 0:30 | **1,125** | | | | | 11 | |
+| [AnyPS5](https://youtu.be/kCeu58HlppU) | 1:30 | **3,735** | | | | | 6 | |
+| [AnyPS5 Short](https://youtube.com/shorts/1lL9B3y0eJQ) | 0:30 | **2,536** | | | | | 33 | |
+| [magpie](https://youtu.be/TuOnUlJSWho) | 1:26 | 101 | 70 | 42 | 0:43 | 50% | 3 | 0 |
+| [magpie Short](https://youtube.com/shorts/Y63pJ4viW14) (the video, reframed) | 1:26 | 361 | 358 | 140 | 0:42 | 50% | 12 | 2 |
+| [disktree](https://youtu.be/4MmSMJ2c2aQ) | 1:30 | 27 | 21 | 19 | 0:53 | 59% | 1 | 3 |
+| [disktree Short](https://youtube.com/shorts/vZ9y7XhO3pc) | 0:30 | 193 | 190 | 56 | 0:24 | 81% | 1 | 0 |
+| [VoiceStudio](https://youtu.be/2CW_zb6y_ps) | 1:30 | 66 | 39 | 30 | 0:29 | 32% | 1 | 2 |
+| [VoiceStudio Short](https://youtube.com/shorts/rlxaVkBudiM) | 0:30 | 247 | 242 | 57 | 0:19 | 65% | 11 | 1 |
+| [Laya](https://youtu.be/Yb5DsnWOCMk) (techdaily) | 3:18 | 14 | 14 | 11 | 1:12 | 37% | 0 | 0 |
+| **Channel** | | **8,406** | **934** | **355** | | | **80** | **8** |
 
-YouTube counts any playback as a view; engaged views is its stricter count of people who kept watching. In all, Analytics shows 223 minutes watched, 6 comments and 6 shares.
+YouTube counts any playback as a view; engaged views is its stricter count of people who kept watching. In all, Analytics shows 223 minutes watched, 6 comments and 6 shares. The REA pair (11 October) and the PPT Master pair (12 October) are scheduled and not public yet.
 
 What the numbers say so far:
-- **AnyPS5 broke out.** It was the top trending repository on GitHub that week, and the pair passed 5,000 views in about a day: more than five times everything before it combined. Its video is the first in the paper-collage style.
-- **Shorts bring the steady audience.** Before AnyPS5 they had 85% of the views (790 of 934).
+- **AnyPS5 broke out.** It was the top trending repository on GitHub that week, and the pair has 6,271 views: three times everything else on the channel combined. Its video is the first in the paper-collage style, and it is the only 90-second video so far that found an audience of its own.
+- **Shorts bring the steady audience.** The openGym Short passed 1,000 views in its first 8 hours, while its 90-second video had 1. Leaving AnyPS5 aside, the Shorts have 90% of the views (1,926 of 2,135), so every Short's description links to its video.
 - **Native 30-second Shorts hold viewers better than a reframed video.** The disktree Short keeps viewers for 81% of its length and the VoiceStudio Short 65%. The magpie Short, the full video reframed to vertical, holds 50%. That is why every Short since has its own script and plates.
 - **The 90-second videos get fewer views but more of each viewer's time.** disktree holds viewers longest (59%) and brought 3 of the channel's 8 new subscribers.
 
@@ -139,6 +144,7 @@ What the numbers say so far:
 - **Don't mux with `-shortest`.** With a WAV mix that ends a few milliseconds before the picture, ffmpeg cut the last four frames of a Short. The voice and the picture are the same length by construction, so the plain mux is right.
 - **Chatterbox needs `setuptools<80`.** Its audio watermarker still imports `pkg_resources`.
 - **Whisper mishears tech names.** It hears "Claude" as "cloud", "Codex" as "codecs" and numbers as digits. The voice check compares letters through a fix-up table, so good takes aren't thrown away.
+- **Studio's hashtag suggestions can block the next click.** A description that ends in a hashtag (#Shorts) can leave the suggestion list open over the title box, and Escape would close the whole upload dialog. ytauto types a space to end the hashtag, which closes the list. The failed attempt still leaves a private draft in Studio, so check for one before retrying.
 
 ## Credits
 
@@ -161,7 +167,7 @@ The repository is public, so these stay on the laptop:
 - rendered media;
 - virtual environments, `node_modules` and model weights;
 - the starter kit's original scenes, voiceover and sound effects;
-- third-party screenshots used in a video (fetched from the tool's own repository);
+- third-party screenshots used in a video (fetched from the tool's own repository) and example slides from a tool's own gallery (credited in the description);
 - the photos behind the paper cutouts (each episode's `img/credits.json` lists the source, author and licence of every photo);
 - the voice and music audio (since the AnyPS5 pair; the word timings stay in each episode's `data/`).
 

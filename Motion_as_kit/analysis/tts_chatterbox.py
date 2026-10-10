@@ -39,7 +39,8 @@ FIX = (("cloud", "claude"), ("clawed", "claude"), ("clod", "claude"), ("a.i.", "
        ("10 hours", "ten hours"), ("10 each", "ten each"), ("7 days", "seven days"), ("cosy", "cozy"),
        ("5,600", "fifty six hundred"), ("5600", "fifty six hundred"), ("7,000", "seven thousand"), ("7000", "seven thousand"), ("heavy", "hevy"),
        ("gidra", "ghidra"), ("guidra", "ghidra"), (".net", "dot net"), ("3,205", "three thousand two hundred and five"), ("63", "sixty three"),
-       ("25,000", "twenty five thousand"), ("codecs", "codex"), ("r.e.a.", "rea"), ("r e a", "rea"))
+       ("25,000", "twenty five thousand"), ("codecs", "codex"), ("r.e.a.", "rea"), ("r e a", "rea"),
+       ("59,000", "fifty nine thousand"), ("16:9", "sixteen by nine"), ("16 by 9", "sixteen by nine"), ("8 to 10", "eight to ten"), ("40-page", "forty page"), ("40 page", "forty page"))
 
 
 def letters(s: str) -> str:

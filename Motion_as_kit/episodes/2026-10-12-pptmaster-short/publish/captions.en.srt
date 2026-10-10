@@ -1,0 +1,55 @@
+1
+00:00:00,310 --> 00:00:02,550
+POV: your presentation is due tomorrow,
+
+2
+00:00:02,570 --> 00:00:03,550
+and you haven't started.
+
+3
+00:00:04,130 --> 00:00:06,920
+This free AI tool turns your PDF into a
+
+4
+00:00:06,940 --> 00:00:08,050
+real PowerPoint.
+
+5
+00:00:08,660 --> 00:00:10,400
+Not screenshots of slides:
+
+6
+00:00:10,570 --> 00:00:12,700
+real, editable slides, with charts,
+
+7
+00:00:12,720 --> 00:00:14,350
+tables and animations.
+
+8
+00:00:14,920 --> 00:00:16,710
+Your AI agent does the work.
+
+9
+00:00:17,120 --> 00:00:17,900
+You just type:
+
+10
+00:00:18,290 --> 00:00:19,790
+turn this into a PPT.
+
+11
+00:00:20,370 --> 00:00:22,240
+It's called PPT Master.
+
+12
+00:00:22,380 --> 00:00:24,300
+59,000 GitHub stars.
+
+13
+00:00:24,870 --> 00:00:26,180
+You'll still polish it.
+
+14
+00:00:26,340 --> 00:00:28,080
+But tonight, you sleep.

@@ -516,7 +516,14 @@ def upload(
                 _set_text(page, desc_box, meta["description"], multiline=True)
                 # Close the hashtag suggestion popup by focusing the title box. Never press Escape here:
                 # in the upload dialog, Escape closes the whole dialog.
-                title_box.click()
+                try:
+                    title_box.click(timeout=8_000)
+                except Exception:  # noqa: BLE001
+                    # A description that ends in a hashtag (#Shorts) can leave the suggestion list open over
+                    # the title box. A space ends the hashtag and closes the list.
+                    page.keyboard.type(" ")
+                    page.wait_for_timeout(800)
+                    title_box.click()
                 page.wait_for_timeout(500)
 
             if thumbnail is not None and Path(thumbnail).exists():

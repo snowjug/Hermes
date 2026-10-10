@@ -1,0 +1,179 @@
+1
+00:00:00,340 --> 00:00:02,140
+Your presentation is due tomorrow.
+
+2
+00:00:02,240 --> 00:00:03,730
+You have a forty-page PDF,
+
+3
+00:00:03,750 --> 00:00:05,000
+and zero slides.
+
+4
+00:00:05,640 --> 00:00:08,180
+This free tool turns that PDF into a real
+
+5
+00:00:08,200 --> 00:00:10,630
+PowerPoint. Not pictures of slides:
+
+6
+00:00:10,750 --> 00:00:12,110
+a deck you can actually edit.
+
+7
+00:00:12,850 --> 00:00:14,740
+It's called PPT Master,
+
+8
+00:00:14,760 --> 00:00:17,230
+and it has 59,000 GitHub stars.
+
+9
+00:00:17,890 --> 00:00:18,810
+It isn't an app.
+
+10
+00:00:19,010 --> 00:00:20,670
+It's a skill that your AI agent runs,
+
+11
+00:00:20,690 --> 00:00:22,450
+in Claude Code, Cursor or Codex.
+
+12
+00:00:23,450 --> 00:00:25,690
+You drop the PDF in a folder and type:
+
+13
+00:00:25,910 --> 00:00:27,750
+turn this into a PPT.
+
+14
+00:00:27,980 --> 00:00:29,680
+Or paste your notes straight into the
+
+15
+00:00:29,700 --> 00:00:30,130
+chat.
+
+16
+00:00:30,940 --> 00:00:32,910
+First, it agrees on a plan with you:
+
+17
+00:00:33,000 --> 00:00:34,630
+the template, sixteen by nine,
+
+18
+00:00:34,650 --> 00:00:36,030
+eight to ten pages.
+
+19
+00:00:36,670 --> 00:00:38,590
+Then it reasons the argument into shape,
+
+20
+00:00:38,610 --> 00:00:40,620
+and only then designs the slides.
+
+21
+00:00:41,260 --> 00:00:42,990
+What comes out is native PowerPoint:
+
+22
+00:00:43,010 --> 00:00:44,500
+slide masters, real shapes,
+
+23
+00:00:44,520 --> 00:00:46,150
+text boxes, charts and tables,
+
+24
+00:00:46,170 --> 00:00:47,170
+all editable.
+
+25
+00:00:47,830 --> 00:00:49,920
+Ask for it, and the charts become real
+
+26
+00:00:49,940 --> 00:00:52,520
+chart objects. Right-click, Edit Data,
+
+27
+00:00:52,540 --> 00:00:53,710
+and the numbers are there.
+
+28
+00:00:54,370 --> 00:00:55,680
+It can learn your company's template from
+
+29
+00:00:55,700 --> 00:00:57,800
+an old deck, or pour new content into one
+
+30
+00:00:57,820 --> 00:00:59,190
+without touching the design.
+
+31
+00:00:59,840 --> 00:01:01,230
+It even adds native transitions,
+
+32
+00:01:01,250 --> 00:01:03,290
+animations, and a voice-over narration.
+
+33
+00:01:03,940 --> 00:01:05,330
+Everything runs on your machine;
+
+34
+00:01:05,390 --> 00:01:07,090
+only the AI model calls go out.
+
+35
+00:01:07,330 --> 00:01:08,710
+The tool is free.
+
+36
+00:01:08,820 --> 00:01:10,010
+You pay for the model:
+
+37
+00:01:10,120 --> 00:01:12,850
+Claude, GPT, Gemini or Kimi.
+
+38
+00:01:13,540 --> 00:01:15,430
+The catch, in the author's own words:
+
+39
+00:01:15,530 --> 00:01:17,290
+it's a tool, not a wishing well.
+
+40
+00:01:17,390 --> 00:01:19,140
+A cheap model gives you a rough draft,
+
+41
+00:01:19,160 --> 00:01:20,620
+and you'll still polish it yourself.
+
+42
+00:01:21,410 --> 00:01:22,960
+It was built by a finance professional who
+
+43
+00:01:22,980 --> 00:01:25,050
+was tired of AI slides he couldn't edit.
+
+44
+00:01:25,700 --> 00:01:27,090
+That's today's tool.
+
+45
+00:01:27,180 --> 00:01:28,510
+There's a new one every day.

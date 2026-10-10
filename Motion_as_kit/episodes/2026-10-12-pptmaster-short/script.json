@@ -1,0 +1,92 @@
+{
+ "title": "PPT Master Short",
+ "notes": "Facts as in the main episode's script.json.",
+ "lines": [
+  {
+   "text": "POV: your presentation is due tomorrow, and you haven't started.",
+   "say": [
+    "P O V: your presentation is due tomorrow, and you haven't started."
+   ]
+  },
+  {
+   "text": "This free AI tool turns your PDF into a real PowerPoint.",
+   "say": [
+    "This free A I tool turns your P D F into a real PowerPoint."
+   ]
+  },
+  {
+   "text": "Not screenshots of slides: real, editable slides, with charts, tables and animations.",
+   "say": [
+    "Not screenshots of slides:",
+    "real, editable slides, with charts, tables and animations."
+   ]
+  },
+  {
+   "text": "Your AI agent does the work. You just type: turn this into a PPT.",
+   "say": [
+    "Your A I agent does the work.",
+    "You just type:",
+    "turn this into a P P T."
+   ]
+  },
+  {
+   "text": "It's called PPT Master. 59,000 GitHub stars.",
+   "say": [
+    "It's called P P T Master.",
+    "fifty-nine thousand GitHub stars."
+   ]
+  },
+  {
+   "text": "You'll still polish it. But tonight, you sleep.",
+   "say": [
+    "You'll still polish it.",
+    "But tonight, you sleep."
+   ]
+  }
+ ],
+ "spoken": {
+  "PDF,": [
+   "P",
+   "D",
+   "F"
+  ],
+  "PDF": [
+   "P",
+   "D",
+   "F"
+  ],
+  "PPT": [
+   "P",
+   "P",
+   "T"
+  ],
+  "PPT.": [
+   "P",
+   "P",
+   "T"
+  ],
+  "59,000": [
+   "FIFTY",
+   "NINE",
+   "THOUSAND"
+  ],
+  "AI": [
+   "A",
+   "I"
+  ],
+  "GPT,": [
+   "G",
+   "P",
+   "T"
+  ],
+  "GitHub": [
+   "GIT",
+   "HUB"
+  ],
+  "POV:": [
+   "P",
+   "O",
+   "V"
+  ]
+ }
+}

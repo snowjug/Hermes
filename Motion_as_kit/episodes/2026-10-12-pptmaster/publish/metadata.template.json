@@ -1,0 +1,40 @@
+{
+  "title": "This Free AI Makes Your PowerPoint For You",
+  "description": "A free AI PowerPoint maker that builds a real, editable deck from your PDF: PPT Master is an open-source (MIT) skill your AI agent runs (Claude Code, Cursor, Codex and others). You get native PowerPoint, not pictures of slides. 59,000+ GitHub stars.\n\nHow it works\n• Put your PDF, DOCX or notes in a folder and tell your agent: \"turn this into a PPT\" (or paste the text into the chat).\n• It confirms a design spec with you first (template, 16:9, page count), reasons the argument into shape, then designs.\n• Output is a natively editable .pptx: slide masters, native shapes, text boxes, charts and tables. Ask for --native-charts-and-tables and the charts are real PowerPoint chart objects with Edit Data.\n• It can distil your brand template from reference decks, fill an existing .pptx with new content while keeping its design, and add native transitions, animations and narration.\n\nCost and privacy\nThe tool is free and open source; you pay only for the AI model you plug in (Claude, GPT, Gemini, Kimi...). Apart from the model calls, the pipeline runs on your machine.\n\nThe catch\nIn the author's own words, \"this is a tool, not a wishing well\": quality depends on the model, cheaper models give rougher drafts, and you'll still polish the result. Windows needs a few extra setup steps.\n\nChapters\n{chapters}\n\nSources\nhttps://github.com/hugohe3/ppt-master\nExample decks shown (pixel-art atlas, \"Attention Is All You Need\"): the PPT Master examples gallery, https://hugohe3.github.io/ppt-master-examples/\n\nNarration: AI voice (Chatterbox, made on a laptop). Music: AI-generated, royalty-free (vidIQ). Animated in code. Not affiliated with PPT Master or Microsoft. PowerPoint is a trademark of Microsoft.\n\nA new tool every day.\n\n#PowerPoint #AI #PPTMaster",
+  "tags": [
+    "PPT Master",
+    "AI PowerPoint",
+    "AI PPT maker",
+    "free AI PowerPoint maker",
+    "PDF to PPT",
+    "AI presentation maker",
+    "PowerPoint",
+    "Claude Code",
+    "Cursor",
+    "Codex",
+    "AI agent",
+    "open source",
+    "presentation",
+    "slides",
+    "students",
+    "productivity"
+  ],
+  "chapters": [
+    [
+      null,
+      "Due tomorrow, zero slides"
+    ],
+    [
+      "It isn't an app",
+      "A skill for your AI agent"
+    ],
+    [
+      "What comes out",
+      "Native, editable PowerPoint"
+    ],
+    [
+      "Everything runs",
+      "Cost, privacy and the catch"
+    ]
+  ]
+}

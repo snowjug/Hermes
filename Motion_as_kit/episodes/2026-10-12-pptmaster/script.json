@@ -1,0 +1,155 @@
+{
+ "title": "PPT Master: AI that makes a real PowerPoint",
+ "notes": "Facts checked 2026-10-10: github.com/hugohe3/ppt-master (README: AI generates native PowerPoint from any document; MIT; 59,115 stars; a skill that runs in any agent-capable tool (Claude Code recommended; Cursor, Codex, Copilot...); 'Please turn the following into a PPT'; the AI first confirms the design spec (template, PPT 16:9, 8-10 pages); reasons the argument into shape first, then designs; output is natively editable DrawingML .pptx with slide masters, native shapes, charts and tables (editable shapes by default, --native-charts-and-tables for data-backed Chart/Table objects with Edit Data); distils templates from references; fills an existing .pptx preserving its design; adds native transitions, animations and narration; free and open source, the only cost is the AI model; data stays local apart from model calls; Claude, GPT, Gemini, Kimi; 'This is a tool, not a wishing well'; cheaper models need more polishing; built by Hugo He, a finance professional who wanted AI slides to stay editable). Narration: Chatterbox (MIT) on the laptop's CPU.",
+ "lines": [
+  {
+   "text": "Your presentation is due tomorrow. You have a forty-page PDF, and zero slides.",
+   "say": [
+    "Your presentation is due tomorrow.",
+    "You have a forty-page P D F, and zero slides."
+   ]
+  },
+  {
+   "text": "This free tool turns that PDF into a real PowerPoint. Not pictures of slides: a deck you can actually edit.",
+   "say": [
+    "This free tool turns that P D F into a real PowerPoint.",
+    "Not pictures of slides:",
+    "a deck you can actually edit."
+   ]
+  },
+  {
+   "text": "It's called PPT Master, and it has 59,000 GitHub stars.",
+   "say": [
+    "It's called P P T Master, and it has fifty-nine thousand GitHub stars."
+   ]
+  },
+  {
+   "text": "It isn't an app. It's a skill that your AI agent runs, in Claude Code, Cursor or Codex.",
+   "say": [
+    "It isn't an app.",
+    "It's a skill that your A I agent runs, in Claude Code, Cursor or Codex."
+   ]
+  },
+  {
+   "text": "You drop the PDF in a folder and type: turn this into a PPT. Or paste your notes straight into the chat.",
+   "say": [
+    "You drop the P D F in a folder and type:",
+    "turn this into a P P T.",
+    "Or paste your notes straight into the chat."
+   ]
+  },
+  {
+   "text": "First, it agrees on a plan with you: the template, sixteen by nine, eight to ten pages.",
+   "say": [
+    "First, it agrees on a plan with you:",
+    "the template, sixteen by nine, eight to ten pages."
+   ]
+  },
+  {
+   "text": "Then it reasons the argument into shape, and only then designs the slides.",
+   "say": [
+    "Then it reasons the argument into shape, and only then designs the slides."
+   ]
+  },
+  {
+   "text": "What comes out is native PowerPoint: slide masters, real shapes, text boxes, charts and tables, all editable.",
+   "say": [
+    "What comes out is native PowerPoint: slide masters, real shapes, text boxes, charts and tables, all editable."
+   ]
+  },
+  {
+   "text": "Ask for it, and the charts become real chart objects. Right-click, Edit Data, and the numbers are there.",
+   "say": [
+    "Ask for it, and the charts become real chart objects.",
+    "Right-click, Edit Data, and the numbers are there."
+   ]
+  },
+  {
+   "text": "It can learn your company's template from an old deck, or pour new content into one without touching the design.",
+   "say": [
+    "It can learn your company's template from an old deck, or pour new content into one without touching the design."
+   ]
+  },
+  {
+   "text": "It even adds native transitions, animations, and a voice-over narration.",
+   "say": [
+    "It even adds native transitions, animations, and a voice-over narration."
+   ]
+  },
+  {
+   "text": "Everything runs on your machine; only the AI model calls go out. The tool is free. You pay for the model: Claude, GPT, Gemini or Kimi.",
+   "say": [
+    "Everything runs on your machine; only the A I model calls go out.",
+    "The tool is free.",
+    "You pay for the model:",
+    "Claude, G P T, Gemini or Kimi."
+   ]
+  },
+  {
+   "text": "The catch, in the author's own words: it's a tool, not a wishing well. A cheap model gives you a rough draft, and you'll still polish it yourself.",
+   "say": [
+    "The catch, in the author's own words:",
+    "it's a tool, not a wishing well.",
+    "A cheap model gives you a rough draft, and you'll still polish it yourself."
+   ]
+  },
+  {
+   "text": "It was built by a finance professional who was tired of AI slides he couldn't edit.",
+   "say": [
+    "It was built by a finance professional who was tired of A I slides he couldn't edit."
+   ]
+  },
+  {
+   "text": "That's today's tool. There's a new one every day.",
+   "say": [
+    "That's today's tool.",
+    "There's a new one every day."
+   ]
+  }
+ ],
+ "spoken": {
+  "PDF,": [
+   "P",
+   "D",
+   "F"
+  ],
+  "PDF": [
+   "P",
+   "D",
+   "F"
+  ],
+  "PPT": [
+   "P",
+   "P",
+   "T"
+  ],
+  "PPT.": [
+   "P",
+   "P",
+   "T"
+  ],
+  "59,000": [
+   "FIFTY",
+   "NINE",
+   "THOUSAND"
+  ],
+  "AI": [
+   "A",
+   "I"
+  ],
+  "GPT,": [
+   "G",
+   "P",
+   "T"
+  ],
+  "GitHub": [
+   "GIT",
+   "HUB"
+  ],
+  "POV:": [
+   "P",
+   "O",
+   "V"
+  ]
+ }
+}

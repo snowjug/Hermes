@@ -1,0 +1,1533 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "Your presentation is due tomorrow. You have a forty-page PDF, and zero slides.",
+   "start": 0.34,
+   "end": 4.75,
+   "words": [
+    {
+     "w": "Your",
+     "start": 0.34,
+     "end": 0.48
+    },
+    {
+     "w": "presentation",
+     "start": 0.48,
+     "end": 1.12
+    },
+    {
+     "w": "is",
+     "start": 1.12,
+     "end": 1.22
+    },
+    {
+     "w": "due",
+     "start": 1.22,
+     "end": 1.44
+    },
+    {
+     "w": "tomorrow.",
+     "start": 1.44,
+     "end": 1.89
+    },
+    {
+     "w": "You",
+     "start": 2.24,
+     "end": 2.38
+    },
+    {
+     "w": "have",
+     "start": 2.38,
+     "end": 2.58
+    },
+    {
+     "w": "a",
+     "start": 2.58,
+     "end": 2.64
+    },
+    {
+     "w": "forty-page",
+     "start": 2.64,
+     "end": 3.2
+    },
+    {
+     "w": "PDF,",
+     "start": 3.2,
+     "end": 3.61,
+     "syl": [
+      [
+       3.2,
+       3.32
+      ],
+      [
+       3.32,
+       3.56
+      ],
+      [
+       3.56,
+       3.61
+      ]
+     ]
+    },
+    {
+     "w": "and",
+     "start": 3.75,
+     "end": 4.0
+    },
+    {
+     "w": "zero",
+     "start": 4.0,
+     "end": 4.3
+    },
+    {
+     "w": "slides.",
+     "start": 4.3,
+     "end": 4.75
+    }
+   ]
+  },
+  {
+   "text": "This free tool turns that PDF into a real PowerPoint. Not pictures of slides: a deck you can actually edit.",
+   "start": 5.64,
+   "end": 11.86,
+   "words": [
+    {
+     "w": "This",
+     "start": 5.64,
+     "end": 5.86
+    },
+    {
+     "w": "free",
+     "start": 5.86,
+     "end": 6.1
+    },
+    {
+     "w": "tool",
+     "start": 6.1,
+     "end": 6.44
+    },
+    {
+     "w": "turns",
+     "start": 6.44,
+     "end": 6.7
+    },
+    {
+     "w": "that",
+     "start": 6.7,
+     "end": 6.95
+    },
+    {
+     "w": "PDF",
+     "start": 6.95,
+     "end": 7.55,
+     "syl": [
+      [
+       6.95,
+       7.12
+      ],
+      [
+       7.12,
+       7.42
+      ],
+      [
+       7.42,
+       7.55
+      ]
+     ]
+    },
+    {
+     "w": "into",
+     "start": 7.55,
+     "end": 7.82
+    },
+    {
+     "w": "a",
+     "start": 7.82,
+     "end": 7.92
+    },
+    {
+     "w": "real",
+     "start": 7.92,
+     "end": 8.2
+    },
+    {
+     "w": "PowerPoint.",
+     "start": 8.2,
+     "end": 8.7
+    },
+    {
+     "w": "Not",
+     "start": 9.18,
+     "end": 9.44
+    },
+    {
+     "w": "pictures",
+     "start": 9.44,
+     "end": 9.78
+    },
+    {
+     "w": "of",
+     "start": 9.78,
+     "end": 9.88
+    },
+    {
+     "w": "slides:",
+     "start": 9.88,
+     "end": 10.38
+    },
+    {
+     "w": "a",
+     "start": 10.75,
+     "end": 10.84
+    },
+    {
+     "w": "deck",
+     "start": 10.84,
+     "end": 11.0
+    },
+    {
+     "w": "you",
+     "start": 11.0,
+     "end": 11.08
+    },
+    {
+     "w": "can",
+     "start": 11.08,
+     "end": 11.26
+    },
+    {
+     "w": "actually",
+     "start": 11.26,
+     "end": 11.68
+    },
+    {
+     "w": "edit.",
+     "start": 11.68,
+     "end": 11.86
+    }
+   ]
+  },
+  {
+   "text": "It's called PPT Master, and it has 59,000 GitHub stars.",
+   "start": 12.85,
+   "end": 16.98,
+   "words": [
+    {
+     "w": "It's",
+     "start": 12.85,
+     "end": 13.05
+    },
+    {
+     "w": "called",
+     "start": 13.05,
+     "end": 13.42
+    },
+    {
+     "w": "PPT",
+     "start": 13.42,
+     "end": 14.14,
+     "syl": [
+      [
+       13.42,
+       13.7
+      ],
+      [
+       13.7,
+       13.94
+      ],
+      [
+       13.94,
+       14.14
+      ]
+     ]
+    },
+    {
+     "w": "Master,",
+     "start": 14.14,
+     "end": 14.64
+    },
+    {
+     "w": "and",
+     "start": 14.76,
+     "end": 15.04
+    },
+    {
+     "w": "it",
+     "start": 15.04,
+     "end": 15.12
+    },
+    {
+     "w": "has",
+     "start": 15.12,
+     "end": 15.32
+    },
+    {
+     "w": "59,000",
+     "start": 15.32,
+     "end": 16.18,
+     "syl": [
+      [
+       15.32,
+       15.6
+      ],
+      [
+       15.6,
+       15.78
+      ],
+      [
+       15.78,
+       16.18
+      ]
+     ]
+    },
+    {
+     "w": "GitHub",
+     "start": 16.18,
+     "end": 16.5,
+     "syl": [
+      [
+       16.18,
+       16.34
+      ],
+      [
+       16.34,
+       16.5
+      ]
+     ]
+    },
+    {
+     "w": "stars.",
+     "start": 16.5,
+     "end": 16.98
+    }
+   ]
+  },
+  {
+   "text": "It isn't an app. It's a skill that your AI agent runs, in Claude Code, Cursor or Codex.",
+   "start": 17.89,
+   "end": 22.2,
+   "words": [
+    {
+     "w": "It",
+     "start": 17.89,
+     "end": 18.04
+    },
+    {
+     "w": "isn't",
+     "start": 18.04,
+     "end": 18.28
+    },
+    {
+     "w": "an",
+     "start": 18.28,
+     "end": 18.44
+    },
+    {
+     "w": "app.",
+     "start": 18.44,
+     "end": 18.56
+    },
+    {
+     "w": "It's",
+     "start": 19.01,
+     "end": 19.16
+    },
+    {
+     "w": "a",
+     "start": 19.16,
+     "end": 19.22
+    },
+    {
+     "w": "skill",
+     "start": 19.22,
+     "end": 19.44
+    },
+    {
+     "w": "that",
+     "start": 19.44,
+     "end": 19.54
+    },
+    {
+     "w": "your",
+     "start": 19.54,
+     "end": 19.72
+    },
+    {
+     "w": "AI",
+     "start": 19.72,
+     "end": 20.02,
+     "syl": [
+      [
+       19.72,
+       19.88
+      ],
+      [
+       19.88,
+       20.02
+      ]
+     ]
+    },
+    {
+     "w": "agent",
+     "start": 20.02,
+     "end": 20.24
+    },
+    {
+     "w": "runs,",
+     "start": 20.24,
+     "end": 20.69
+    },
+    {
+     "w": "in",
+     "start": 20.69,
+     "end": 20.82
+    },
+    {
+     "w": "Claude",
+     "start": 20.82,
+     "end": 21.08
+    },
+    {
+     "w": "Code,",
+     "start": 21.08,
+     "end": 21.33
+    },
+    {
+     "w": "Cursor",
+     "start": 21.45,
+     "end": 21.76
+    },
+    {
+     "w": "or",
+     "start": 21.76,
+     "end": 21.88
+    },
+    {
+     "w": "Codex.",
+     "start": 21.88,
+     "end": 22.2
+    }
+   ]
+  },
+  {
+   "text": "You drop the PDF in a folder and type: turn this into a PPT. Or paste your notes straight into the chat.",
+   "start": 23.45,
+   "end": 29.88,
+   "words": [
+    {
+     "w": "You",
+     "start": 23.45,
+     "end": 23.62
+    },
+    {
+     "w": "drop",
+     "start": 23.62,
+     "end": 23.85
+    },
+    {
+     "w": "the",
+     "start": 23.85,
+     "end": 23.97
+    },
+    {
+     "w": "PDF",
+     "start": 23.97,
+     "end": 24.52,
+     "syl": [
+      [
+       23.97,
+       24.1
+      ],
+      [
+       24.1,
+       24.38
+      ],
+      [
+       24.38,
+       24.52
+      ]
+     ]
+    },
+    {
+     "w": "in",
+     "start": 24.52,
+     "end": 24.62
+    },
+    {
+     "w": "a",
+     "start": 24.62,
+     "end": 24.69
+    },
+    {
+     "w": "folder",
+     "start": 24.69,
+     "end": 25.08
+    },
+    {
+     "w": "and",
+     "start": 25.08,
+     "end": 25.2
+    },
+    {
+     "w": "type:",
+     "start": 25.2,
+     "end": 25.44
+    },
+    {
+     "w": "turn",
+     "start": 25.91,
+     "end": 26.16
+    },
+    {
+     "w": "this",
+     "start": 26.16,
+     "end": 26.36
+    },
+    {
+     "w": "into",
+     "start": 26.36,
+     "end": 26.66
+    },
+    {
+     "w": "a",
+     "start": 26.66,
+     "end": 26.82
+    },
+    {
+     "w": "PPT.",
+     "start": 26.82,
+     "end": 27.5,
+     "syl": [
+      [
+       26.82,
+       27.0
+      ],
+      [
+       27.0,
+       27.18
+      ],
+      [
+       27.18,
+       27.5
+      ]
+     ]
+    },
+    {
+     "w": "Or",
+     "start": 27.98,
+     "end": 28.32
+    },
+    {
+     "w": "paste",
+     "start": 28.32,
+     "end": 28.56
+    },
+    {
+     "w": "your",
+     "start": 28.56,
+     "end": 28.7
+    },
+    {
+     "w": "notes",
+     "start": 28.7,
+     "end": 29.0
+    },
+    {
+     "w": "straight",
+     "start": 29.0,
+     "end": 29.38
+    },
+    {
+     "w": "into",
+     "start": 29.38,
+     "end": 29.6
+    },
+    {
+     "w": "the",
+     "start": 29.6,
+     "end": 29.7
+    },
+    {
+     "w": "chat.",
+     "start": 29.7,
+     "end": 29.88
+    }
+   ]
+  },
+  {
+   "text": "First, it agrees on a plan with you: the template, sixteen by nine, eight to ten pages.",
+   "start": 30.94,
+   "end": 35.78,
+   "words": [
+    {
+     "w": "First,",
+     "start": 30.94,
+     "end": 31.34
+    },
+    {
+     "w": "it",
+     "start": 31.34,
+     "end": 31.48
+    },
+    {
+     "w": "agrees",
+     "start": 31.48,
+     "end": 31.76
+    },
+    {
+     "w": "on",
+     "start": 31.76,
+     "end": 31.86
+    },
+    {
+     "w": "a",
+     "start": 31.86,
+     "end": 31.92
+    },
+    {
+     "w": "plan",
+     "start": 31.92,
+     "end": 32.12
+    },
+    {
+     "w": "with",
+     "start": 32.12,
+     "end": 32.3
+    },
+    {
+     "w": "you:",
+     "start": 32.3,
+     "end": 32.66
+    },
+    {
+     "w": "the",
+     "start": 33.0,
+     "end": 33.12
+    },
+    {
+     "w": "template,",
+     "start": 33.12,
+     "end": 33.5
+    },
+    {
+     "w": "sixteen",
+     "start": 33.63,
+     "end": 34.02
+    },
+    {
+     "w": "by",
+     "start": 34.02,
+     "end": 34.18
+    },
+    {
+     "w": "nine,",
+     "start": 34.18,
+     "end": 34.65
+    },
+    {
+     "w": "eight",
+     "start": 34.65,
+     "end": 34.8
+    },
+    {
+     "w": "to",
+     "start": 34.9,
+     "end": 35.02
+    },
+    {
+     "w": "ten",
+     "start": 35.02,
+     "end": 35.26
+    },
+    {
+     "w": "pages.",
+     "start": 35.26,
+     "end": 35.78
+    }
+   ]
+  },
+  {
+   "text": "Then it reasons the argument into shape, and only then designs the slides.",
+   "start": 36.67,
+   "end": 40.37,
+   "words": [
+    {
+     "w": "Then",
+     "start": 36.67,
+     "end": 37.1
+    },
+    {
+     "w": "it",
+     "start": 37.1,
+     "end": 37.2
+    },
+    {
+     "w": "reasons",
+     "start": 37.2,
+     "end": 37.52
+    },
+    {
+     "w": "the",
+     "start": 37.52,
+     "end": 37.66
+    },
+    {
+     "w": "argument",
+     "start": 37.66,
+     "end": 38.0
+    },
+    {
+     "w": "into",
+     "start": 38.0,
+     "end": 38.18
+    },
+    {
+     "w": "shape,",
+     "start": 38.18,
+     "end": 38.46
+    },
+    {
+     "w": "and",
+     "start": 38.61,
+     "end": 38.82
+    },
+    {
+     "w": "only",
+     "start": 38.82,
+     "end": 39.04
+    },
+    {
+     "w": "then",
+     "start": 39.04,
+     "end": 39.26
+    },
+    {
+     "w": "designs",
+     "start": 39.26,
+     "end": 39.73
+    },
+    {
+     "w": "the",
+     "start": 39.73,
+     "end": 39.84
+    },
+    {
+     "w": "slides.",
+     "start": 39.84,
+     "end": 40.37
+    }
+   ]
+  },
+  {
+   "text": "What comes out is native PowerPoint: slide masters, real shapes, text boxes, charts and tables, all editable.",
+   "start": 41.26,
+   "end": 46.92,
+   "words": [
+    {
+     "w": "What",
+     "start": 41.26,
+     "end": 41.44
+    },
+    {
+     "w": "comes",
+     "start": 41.44,
+     "end": 41.7
+    },
+    {
+     "w": "out",
+     "start": 41.7,
+     "end": 41.85
+    },
+    {
+     "w": "is",
+     "start": 41.85,
+     "end": 42.04
+    },
+    {
+     "w": "native",
+     "start": 42.04,
+     "end": 42.3
+    },
+    {
+     "w": "PowerPoint:",
+     "start": 42.3,
+     "end": 42.87
+    },
+    {
+     "w": "slide",
+     "start": 43.01,
+     "end": 43.32
+    },
+    {
+     "w": "masters,",
+     "start": 43.32,
+     "end": 43.88
+    },
+    {
+     "w": "real",
+     "start": 43.88,
+     "end": 44.12
+    },
+    {
+     "w": "shapes,",
+     "start": 44.12,
+     "end": 44.52
+    },
+    {
+     "w": "text",
+     "start": 44.52,
+     "end": 44.78
+    },
+    {
+     "w": "boxes,",
+     "start": 44.78,
+     "end": 45.25
+    },
+    {
+     "w": "charts",
+     "start": 45.25,
+     "end": 45.54
+    },
+    {
+     "w": "and",
+     "start": 45.54,
+     "end": 45.68
+    },
+    {
+     "w": "tables,",
+     "start": 45.68,
+     "end": 46.08
+    },
+    {
+     "w": "all",
+     "start": 46.17,
+     "end": 46.46
+    },
+    {
+     "w": "editable.",
+     "start": 46.46,
+     "end": 46.92
+    }
+   ]
+  },
+  {
+   "text": "Ask for it, and the charts become real chart objects. Right-click, Edit Data, and the numbers are there.",
+   "start": 47.83,
+   "end": 53.46,
+   "words": [
+    {
+     "w": "Ask",
+     "start": 47.83,
+     "end": 48.12
+    },
+    {
+     "w": "for",
+     "start": 48.12,
+     "end": 48.32
+    },
+    {
+     "w": "it,",
+     "start": 48.32,
+     "end": 48.4
+    },
+    {
+     "w": "and",
+     "start": 48.56,
+     "end": 48.66
+    },
+    {
+     "w": "the",
+     "start": 48.66,
+     "end": 48.76
+    },
+    {
+     "w": "charts",
+     "start": 48.76,
+     "end": 49.06
+    },
+    {
+     "w": "become",
+     "start": 49.06,
+     "end": 49.51
+    },
+    {
+     "w": "real",
+     "start": 49.51,
+     "end": 49.94
+    },
+    {
+     "w": "chart",
+     "start": 49.94,
+     "end": 50.28
+    },
+    {
+     "w": "objects.",
+     "start": 50.28,
+     "end": 50.76
+    },
+    {
+     "w": "Right-click,",
+     "start": 51.12,
+     "end": 51.52
+    },
+    {
+     "w": "Edit",
+     "start": 51.78,
+     "end": 52.02
+    },
+    {
+     "w": "Data,",
+     "start": 52.02,
+     "end": 52.39
+    },
+    {
+     "w": "and",
+     "start": 52.54,
+     "end": 52.64
+    },
+    {
+     "w": "the",
+     "start": 52.64,
+     "end": 52.78
+    },
+    {
+     "w": "numbers",
+     "start": 52.78,
+     "end": 53.06
+    },
+    {
+     "w": "are",
+     "start": 53.06,
+     "end": 53.16
+    },
+    {
+     "w": "there.",
+     "start": 53.16,
+     "end": 53.46
+    }
+   ]
+  },
+  {
+   "text": "It can learn your company's template from an old deck, or pour new content into one without touching the design.",
+   "start": 54.37,
+   "end": 58.94,
+   "words": [
+    {
+     "w": "It",
+     "start": 54.37,
+     "end": 54.46
+    },
+    {
+     "w": "can",
+     "start": 54.46,
+     "end": 54.58
+    },
+    {
+     "w": "learn",
+     "start": 54.58,
+     "end": 54.76
+    },
+    {
+     "w": "your",
+     "start": 54.76,
+     "end": 54.88
+    },
+    {
+     "w": "company's",
+     "start": 54.88,
+     "end": 55.22
+    },
+    {
+     "w": "template",
+     "start": 55.22,
+     "end": 55.56
+    },
+    {
+     "w": "from",
+     "start": 55.56,
+     "end": 55.7
+    },
+    {
+     "w": "an",
+     "start": 55.7,
+     "end": 55.82
+    },
+    {
+     "w": "old",
+     "start": 55.82,
+     "end": 56.0
+    },
+    {
+     "w": "deck,",
+     "start": 56.0,
+     "end": 56.18
+    },
+    {
+     "w": "or",
+     "start": 56.54,
+     "end": 56.7
+    },
+    {
+     "w": "pour",
+     "start": 56.7,
+     "end": 56.9
+    },
+    {
+     "w": "new",
+     "start": 56.9,
+     "end": 57.04
+    },
+    {
+     "w": "content",
+     "start": 57.04,
+     "end": 57.44
+    },
+    {
+     "w": "into",
+     "start": 57.44,
+     "end": 57.72
+    },
+    {
+     "w": "one",
+     "start": 57.72,
+     "end": 57.82
+    },
+    {
+     "w": "without",
+     "start": 57.82,
+     "end": 58.08
+    },
+    {
+     "w": "touching",
+     "start": 58.08,
+     "end": 58.36
+    },
+    {
+     "w": "the",
+     "start": 58.36,
+     "end": 58.46
+    },
+    {
+     "w": "design.",
+     "start": 58.46,
+     "end": 58.94
+    }
+   ]
+  },
+  {
+   "text": "It even adds native transitions, animations, and a voice-over narration.",
+   "start": 59.84,
+   "end": 63.04,
+   "words": [
+    {
+     "w": "It",
+     "start": 59.84,
+     "end": 59.94
+    },
+    {
+     "w": "even",
+     "start": 59.94,
+     "end": 60.16
+    },
+    {
+     "w": "adds",
+     "start": 60.16,
+     "end": 60.36
+    },
+    {
+     "w": "native",
+     "start": 60.36,
+     "end": 60.6
+    },
+    {
+     "w": "transitions,",
+     "start": 60.6,
+     "end": 61.16
+    },
+    {
+     "w": "animations,",
+     "start": 61.25,
+     "end": 61.94
+    },
+    {
+     "w": "and",
+     "start": 61.94,
+     "end": 62.08
+    },
+    {
+     "w": "a",
+     "start": 62.08,
+     "end": 62.14
+    },
+    {
+     "w": "voice-over",
+     "start": 62.14,
+     "end": 62.54
+    },
+    {
+     "w": "narration.",
+     "start": 62.54,
+     "end": 63.04
+    }
+   ]
+  },
+  {
+   "text": "Everything runs on your machine; only the AI model calls go out. The tool is free. You pay for the model: Claude, GPT, Gemini or Kimi.",
+   "start": 63.94,
+   "end": 72.6,
+   "words": [
+    {
+     "w": "Everything",
+     "start": 63.94,
+     "end": 64.28
+    },
+    {
+     "w": "runs",
+     "start": 64.28,
+     "end": 64.5
+    },
+    {
+     "w": "on",
+     "start": 64.5,
+     "end": 64.56
+    },
+    {
+     "w": "your",
+     "start": 64.56,
+     "end": 64.7
+    },
+    {
+     "w": "machine;",
+     "start": 64.7,
+     "end": 65.08
+    },
+    {
+     "w": "only",
+     "start": 65.39,
+     "end": 65.62
+    },
+    {
+     "w": "the",
+     "start": 65.62,
+     "end": 65.8
+    },
+    {
+     "w": "AI",
+     "start": 65.8,
+     "end": 66.1,
+     "syl": [
+      [
+       65.8,
+       65.98
+      ],
+      [
+       65.98,
+       66.1
+      ]
+     ]
+    },
+    {
+     "w": "model",
+     "start": 66.1,
+     "end": 66.32
+    },
+    {
+     "w": "calls",
+     "start": 66.32,
+     "end": 66.58
+    },
+    {
+     "w": "go",
+     "start": 66.58,
+     "end": 66.76
+    },
+    {
+     "w": "out.",
+     "start": 66.76,
+     "end": 66.84
+    },
+    {
+     "w": "The",
+     "start": 67.33,
+     "end": 67.46
+    },
+    {
+     "w": "tool",
+     "start": 67.46,
+     "end": 67.83
+    },
+    {
+     "w": "is",
+     "start": 67.83,
+     "end": 68.04
+    },
+    {
+     "w": "free.",
+     "start": 68.04,
+     "end": 68.46
+    },
+    {
+     "w": "You",
+     "start": 68.82,
+     "end": 69.0
+    },
+    {
+     "w": "pay",
+     "start": 69.0,
+     "end": 69.16
+    },
+    {
+     "w": "for",
+     "start": 69.16,
+     "end": 69.28
+    },
+    {
+     "w": "the",
+     "start": 69.28,
+     "end": 69.4
+    },
+    {
+     "w": "model:",
+     "start": 69.4,
+     "end": 69.76
+    },
+    {
+     "w": "Claude,",
+     "start": 70.12,
+     "end": 70.57
+    },
+    {
+     "w": "GPT,",
+     "start": 70.68,
+     "end": 71.43,
+     "syl": [
+      [
+       70.68,
+       70.82
+      ],
+      [
+       70.82,
+       71.03
+      ],
+      [
+       71.03,
+       71.43
+      ]
+     ]
+    },
+    {
+     "w": "Gemini",
+     "start": 71.6,
+     "end": 72.12
+    },
+    {
+     "w": "or",
+     "start": 72.12,
+     "end": 72.29
+    },
+    {
+     "w": "Kimi.",
+     "start": 72.29,
+     "end": 72.6
+    }
+   ]
+  },
+  {
+   "text": "The catch, in the author's own words: it's a tool, not a wishing well. A cheap model gives you a rough draft, and you'll still polish it yourself.",
+   "start": 73.54,
+   "end": 80.37,
+   "words": [
+    {
+     "w": "The",
+     "start": 73.54,
+     "end": 73.66
+    },
+    {
+     "w": "catch,",
+     "start": 73.66,
+     "end": 74.08
+    },
+    {
+     "w": "in",
+     "start": 74.21,
+     "end": 74.3
+    },
+    {
+     "w": "the",
+     "start": 74.3,
+     "end": 74.44
+    },
+    {
+     "w": "author's",
+     "start": 74.44,
+     "end": 74.74
+    },
+    {
+     "w": "own",
+     "start": 74.74,
+     "end": 74.88
+    },
+    {
+     "w": "words:",
+     "start": 74.88,
+     "end": 75.18
+    },
+    {
+     "w": "it's",
+     "start": 75.53,
+     "end": 75.68
+    },
+    {
+     "w": "a",
+     "start": 75.68,
+     "end": 75.76
+    },
+    {
+     "w": "tool,",
+     "start": 75.76,
+     "end": 76.17
+    },
+    {
+     "w": "not",
+     "start": 76.26,
+     "end": 76.44
+    },
+    {
+     "w": "a",
+     "start": 76.44,
+     "end": 76.5
+    },
+    {
+     "w": "wishing",
+     "start": 76.5,
+     "end": 76.78
+    },
+    {
+     "w": "well.",
+     "start": 76.78,
+     "end": 77.04
+    },
+    {
+     "w": "A",
+     "start": 77.39,
+     "end": 77.52
+    },
+    {
+     "w": "cheap",
+     "start": 77.52,
+     "end": 77.8
+    },
+    {
+     "w": "model",
+     "start": 77.8,
+     "end": 78.1
+    },
+    {
+     "w": "gives",
+     "start": 78.1,
+     "end": 78.26
+    },
+    {
+     "w": "you",
+     "start": 78.26,
+     "end": 78.4
+    },
+    {
+     "w": "a",
+     "start": 78.4,
+     "end": 78.48
+    },
+    {
+     "w": "rough",
+     "start": 78.48,
+     "end": 78.7
+    },
+    {
+     "w": "draft,",
+     "start": 78.7,
+     "end": 78.96
+    },
+    {
+     "w": "and",
+     "start": 79.16,
+     "end": 79.24
+    },
+    {
+     "w": "you'll",
+     "start": 79.24,
+     "end": 79.44
+    },
+    {
+     "w": "still",
+     "start": 79.44,
+     "end": 79.64
+    },
+    {
+     "w": "polish",
+     "start": 79.64,
+     "end": 79.96
+    },
+    {
+     "w": "it",
+     "start": 79.96,
+     "end": 80.04
+    },
+    {
+     "w": "yourself.",
+     "start": 80.04,
+     "end": 80.37
+    }
+   ]
+  },
+  {
+   "text": "It was built by a finance professional who was tired of AI slides he couldn't edit.",
+   "start": 81.41,
+   "end": 84.8,
+   "words": [
+    {
+     "w": "It",
+     "start": 81.41,
+     "end": 81.5
+    },
+    {
+     "w": "was",
+     "start": 81.5,
+     "end": 81.62
+    },
+    {
+     "w": "built",
+     "start": 81.62,
+     "end": 81.83
+    },
+    {
+     "w": "by",
+     "start": 81.83,
+     "end": 81.98
+    },
+    {
+     "w": "a",
+     "start": 81.98,
+     "end": 82.04
+    },
+    {
+     "w": "finance",
+     "start": 82.04,
+     "end": 82.42
+    },
+    {
+     "w": "professional",
+     "start": 82.42,
+     "end": 82.86
+    },
+    {
+     "w": "who",
+     "start": 82.86,
+     "end": 82.98
+    },
+    {
+     "w": "was",
+     "start": 82.98,
+     "end": 83.1
+    },
+    {
+     "w": "tired",
+     "start": 83.1,
+     "end": 83.4
+    },
+    {
+     "w": "of",
+     "start": 83.4,
+     "end": 83.56
+    },
+    {
+     "w": "AI",
+     "start": 83.56,
+     "end": 83.96,
+     "syl": [
+      [
+       83.56,
+       83.82
+      ],
+      [
+       83.82,
+       83.96
+      ]
+     ]
+    },
+    {
+     "w": "slides",
+     "start": 83.96,
+     "end": 84.24
+    },
+    {
+     "w": "he",
+     "start": 84.24,
+     "end": 84.32
+    },
+    {
+     "w": "couldn't",
+     "start": 84.32,
+     "end": 84.62
+    },
+    {
+     "w": "edit.",
+     "start": 84.62,
+     "end": 84.8
+    }
+   ]
+  },
+  {
+   "text": "That's today's tool. There's a new one every day.",
+   "start": 85.7,
+   "end": 88.26,
+   "words": [
+    {
+     "w": "That's",
+     "start": 85.7,
+     "end": 86.06
+    },
+    {
+     "w": "today's",
+     "start": 86.06,
+     "end": 86.46
+    },
+    {
+     "w": "tool.",
+     "start": 86.46,
+     "end": 86.84
+    },
+    {
+     "w": "There's",
+     "start": 87.18,
+     "end": 87.38
+    },
+    {
+     "w": "a",
+     "start": 87.38,
+     "end": 87.46
+    },
+    {
+     "w": "new",
+     "start": 87.46,
+     "end": 87.66
+    },
+    {
+     "w": "one",
+     "start": 87.66,
+     "end": 87.8
+    },
+    {
+     "w": "every",
+     "start": 87.8,
+     "end": 88.0
+    },
+    {
+     "w": "day.",
+     "start": 88.0,
+     "end": 88.26
+    }
+   ]
+  }
+ ]
+}

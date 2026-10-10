@@ -61,6 +61,16 @@ const THEMES = {
     ink: '#0E1116', ink2: '#1B2028', graphite: '#5B6472', ash: '#9AA3B2', bone: '#E9EDF4',
     signal: '#2F7CF6', ember: '#8FB8FF', blood: '#FF4D6D', acid: '#21C063', halation: [0.6, 0.8, 1.0],
   },
+  // keynote: a dark keynote stage: deep navy, white type, presentation orange, violet and teal (plates set `paper` for the stage shader)
+  keynote: {
+    ink: '#070914', ink2: '#12162B', graphite: '#3B4372', ash: '#A3ABD1', bone: '#0B0F24',
+    signal: '#FF5B3A', ember: '#FFB37A', blood: '#7B5CFF', acid: '#2ED3C0', halation: [1.0, 0.55, 0.4],
+  },
+  // retro: a 90s desktop: teal wallpaper, grey bevelled windows, navy title bars (plates set `paper`)
+  retro: {
+    ink: '#000000', ink2: '#1A1A1A', graphite: '#808080', ash: '#C0C0C0', bone: '#008080',
+    signal: '#000080', ember: '#FFFF00', blood: '#FF0000', acid: '#00C000', halation: [0.5, 0.9, 0.9],
+  },
 } as const;
 
 export type ThemeName = keyof typeof THEMES;

@@ -1,0 +1,457 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "POV: your presentation is due tomorrow, and you haven't started.",
+   "start": 0.31,
+   "end": 3.3,
+   "words": [
+    {
+     "w": "POV:",
+     "start": 0.31,
+     "end": 0.97,
+     "syl": [
+      [
+       0.31,
+       0.58
+      ],
+      [
+       0.58,
+       0.68
+      ],
+      [
+       0.68,
+       0.97
+      ]
+     ]
+    },
+    {
+     "w": "your",
+     "start": 1.12,
+     "end": 1.26
+    },
+    {
+     "w": "presentation",
+     "start": 1.26,
+     "end": 1.86
+    },
+    {
+     "w": "is",
+     "start": 1.86,
+     "end": 1.96
+    },
+    {
+     "w": "due",
+     "start": 1.96,
+     "end": 2.12
+    },
+    {
+     "w": "tomorrow,",
+     "start": 2.12,
+     "end": 2.57
+    },
+    {
+     "w": "and",
+     "start": 2.57,
+     "end": 2.68
+    },
+    {
+     "w": "you",
+     "start": 2.68,
+     "end": 2.78
+    },
+    {
+     "w": "haven't",
+     "start": 2.78,
+     "end": 3.0
+    },
+    {
+     "w": "started.",
+     "start": 3.0,
+     "end": 3.3
+    }
+   ]
+  },
+  {
+   "text": "This free AI tool turns your PDF into a real PowerPoint.",
+   "start": 4.13,
+   "end": 7.8,
+   "words": [
+    {
+     "w": "This",
+     "start": 4.13,
+     "end": 4.44
+    },
+    {
+     "w": "free",
+     "start": 4.44,
+     "end": 4.76
+    },
+    {
+     "w": "AI",
+     "start": 4.76,
+     "end": 5.24,
+     "syl": [
+      [
+       4.76,
+       5.08
+      ],
+      [
+       5.08,
+       5.24
+      ]
+     ]
+    },
+    {
+     "w": "tool",
+     "start": 5.24,
+     "end": 5.56
+    },
+    {
+     "w": "turns",
+     "start": 5.56,
+     "end": 5.82
+    },
+    {
+     "w": "your",
+     "start": 5.82,
+     "end": 5.98
+    },
+    {
+     "w": "PDF",
+     "start": 5.98,
+     "end": 6.59,
+     "syl": [
+      [
+       5.98,
+       6.14
+      ],
+      [
+       6.14,
+       6.42
+      ],
+      [
+       6.42,
+       6.59
+      ]
+     ]
+    },
+    {
+     "w": "into",
+     "start": 6.59,
+     "end": 6.84
+    },
+    {
+     "w": "a",
+     "start": 6.84,
+     "end": 6.94
+    },
+    {
+     "w": "real",
+     "start": 6.94,
+     "end": 7.22
+    },
+    {
+     "w": "PowerPoint.",
+     "start": 7.22,
+     "end": 7.8
+    }
+   ]
+  },
+  {
+   "text": "Not screenshots of slides: real, editable slides, with charts, tables and animations.",
+   "start": 8.66,
+   "end": 14.1,
+   "words": [
+    {
+     "w": "Not",
+     "start": 8.66,
+     "end": 9.06
+    },
+    {
+     "w": "screenshots",
+     "start": 9.06,
+     "end": 9.58
+    },
+    {
+     "w": "of",
+     "start": 9.58,
+     "end": 9.68
+    },
+    {
+     "w": "slides:",
+     "start": 9.68,
+     "end": 10.15
+    },
+    {
+     "w": "real,",
+     "start": 10.57,
+     "end": 11.06
+    },
+    {
+     "w": "editable",
+     "start": 11.06,
+     "end": 11.5
+    },
+    {
+     "w": "slides,",
+     "start": 11.5,
+     "end": 12.04
+    },
+    {
+     "w": "with",
+     "start": 12.04,
+     "end": 12.22
+    },
+    {
+     "w": "charts,",
+     "start": 12.22,
+     "end": 12.52
+    },
+    {
+     "w": "tables",
+     "start": 12.72,
+     "end": 13.19
+    },
+    {
+     "w": "and",
+     "start": 13.19,
+     "end": 13.37
+    },
+    {
+     "w": "animations.",
+     "start": 13.37,
+     "end": 14.1
+    }
+   ]
+  },
+  {
+   "text": "Your AI agent does the work. You just type: turn this into a PPT.",
+   "start": 14.92,
+   "end": 19.54,
+   "words": [
+    {
+     "w": "Your",
+     "start": 14.92,
+     "end": 15.26
+    },
+    {
+     "w": "AI",
+     "start": 15.26,
+     "end": 15.64,
+     "syl": [
+      [
+       15.26,
+       15.48
+      ],
+      [
+       15.48,
+       15.64
+      ]
+     ]
+    },
+    {
+     "w": "agent",
+     "start": 15.64,
+     "end": 16.0
+    },
+    {
+     "w": "does",
+     "start": 16.0,
+     "end": 16.18
+    },
+    {
+     "w": "the",
+     "start": 16.18,
+     "end": 16.3
+    },
+    {
+     "w": "work.",
+     "start": 16.3,
+     "end": 16.46
+    },
+    {
+     "w": "You",
+     "start": 17.12,
+     "end": 17.26
+    },
+    {
+     "w": "just",
+     "start": 17.26,
+     "end": 17.41
+    },
+    {
+     "w": "type:",
+     "start": 17.41,
+     "end": 17.65
+    },
+    {
+     "w": "turn",
+     "start": 18.29,
+     "end": 18.48
+    },
+    {
+     "w": "this",
+     "start": 18.48,
+     "end": 18.66
+    },
+    {
+     "w": "into",
+     "start": 18.66,
+     "end": 18.9
+    },
+    {
+     "w": "a",
+     "start": 18.9,
+     "end": 19.0
+    },
+    {
+     "w": "PPT.",
+     "start": 19.0,
+     "end": 19.54,
+     "syl": [
+      [
+       19.0,
+       19.14
+      ],
+      [
+       19.14,
+       19.27
+      ],
+      [
+       19.27,
+       19.54
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "text": "It's called PPT Master. 59,000 GitHub stars.",
+   "start": 20.37,
+   "end": 24.05,
+   "words": [
+    {
+     "w": "It's",
+     "start": 20.37,
+     "end": 20.56
+    },
+    {
+     "w": "called",
+     "start": 20.56,
+     "end": 20.96
+    },
+    {
+     "w": "PPT",
+     "start": 20.96,
+     "end": 21.5,
+     "syl": [
+      [
+       20.96,
+       21.14
+      ],
+      [
+       21.14,
+       21.32
+      ],
+      [
+       21.32,
+       21.5
+      ]
+     ]
+    },
+    {
+     "w": "Master.",
+     "start": 21.5,
+     "end": 21.99
+    },
+    {
+     "w": "59,000",
+     "start": 22.38,
+     "end": 23.26,
+     "syl": [
+      [
+       22.38,
+       22.68
+      ],
+      [
+       22.68,
+       22.88
+      ],
+      [
+       22.88,
+       23.26
+      ]
+     ]
+    },
+    {
+     "w": "GitHub",
+     "start": 23.26,
+     "end": 23.62,
+     "syl": [
+      [
+       23.26,
+       23.42
+      ],
+      [
+       23.42,
+       23.62
+      ]
+     ]
+    },
+    {
+     "w": "stars.",
+     "start": 23.62,
+     "end": 24.05
+    }
+   ]
+  },
+  {
+   "text": "You'll still polish it. But tonight, you sleep.",
+   "start": 24.87,
+   "end": 27.83,
+   "words": [
+    {
+     "w": "You'll",
+     "start": 24.87,
+     "end": 25.1
+    },
+    {
+     "w": "still",
+     "start": 25.1,
+     "end": 25.4
+    },
+    {
+     "w": "polish",
+     "start": 25.4,
+     "end": 25.82
+    },
+    {
+     "w": "it.",
+     "start": 25.82,
+     "end": 25.93
+    },
+    {
+     "w": "But",
+     "start": 26.34,
+     "end": 26.5
+    },
+    {
+     "w": "tonight,",
+     "start": 26.5,
+     "end": 26.89
+    },
+    {
+     "w": "you",
+     "start": 27.15,
+     "end": 27.54
+    },
+    {
+     "w": "sleep.",
+     "start": 27.54,
+     "end": 27.83
+    }
+   ]
+  }
+ ]
+}
