@@ -1,0 +1,25 @@
+{
+ "fmt": "main",
+ "theme": "swiss",
+ "title": "Jev",
+ "voice": {
+  "engine": "elevenlabs",
+  "voice_id": "iP95p4xoKVk53GoZ742B",
+  "voice_name": "Chris (ElevenLabs premade)",
+  "model": "eleven_v4",
+  "stability": 0.45,
+  "similarity": 0.8,
+  "style": 0.3,
+  "line_gap": 0.48,
+  "lead": 0.3,
+  "tail": 1.6
+ },
+ "music": {
+  "file": "music_raw.wav",
+  "db": -16,
+  "duck": 9,
+  "fade_in": 0.5,
+  "fade_out": 2.0,
+  "source": "vidIQ AI music (royalty-free), the track made for the AnyPS5 video"
+ }
+}

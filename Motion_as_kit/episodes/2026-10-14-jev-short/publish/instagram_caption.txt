@@ -1,0 +1,10 @@
+POV: you found an AI that only answers multiple choice.
+
+Jev, from TypeSafe, can't chat and can't write. Give it options and it picks one in about a tenth of a second, with how sure it is. Its makers say it's 444x cheaper than a typical AI model.
+
+Developers already use it to sort emails and to guard AI agents.
+
+The full 90-second breakdown is on our YouTube channel, Tool Man. A new tool every day.
+Voice: ElevenLabs.
+
+#AI #Jev #TypeSafe #tech #reels

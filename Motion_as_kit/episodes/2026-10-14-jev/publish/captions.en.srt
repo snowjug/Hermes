@@ -1,0 +1,155 @@
+1
+00:00:00,330 --> 00:00:02,420
+Every AI you know talks.
+
+2
+00:00:02,860 --> 00:00:04,710
+Ask it anything, and it writes you a
+
+3
+00:00:04,730 --> 00:00:05,360
+paragraph.
+
+4
+00:00:05,900 --> 00:00:07,320
+This one can't chat.
+
+5
+00:00:07,690 --> 00:00:09,120
+It won't even write code.
+
+6
+00:00:09,540 --> 00:00:12,250
+It's called Jev, from a San Francisco lab
+
+7
+00:00:12,270 --> 00:00:14,860
+called TypeSafe, and it's gone viral.
+
+8
+00:00:15,250 --> 00:00:17,170
+Jev only makes decisions.
+
+9
+00:00:17,700 --> 00:00:19,340
+Give it the facts and a question,
+
+10
+00:00:19,410 --> 00:00:21,130
+and it answers with a probability.
+
+11
+00:00:21,540 --> 00:00:23,490
+Pick an option, give a score,
+
+12
+00:00:23,510 --> 00:00:24,730
+or say yes or no,
+
+13
+00:00:24,750 --> 00:00:25,910
+and how sure it is.
+
+14
+00:00:26,430 --> 00:00:27,530
+An email comes in:
+
+15
+00:00:27,870 --> 00:00:29,840
+billing, technical or account?
+
+16
+00:00:30,150 --> 00:00:32,500
+Jev picks one, with its confidence.
+
+17
+00:00:32,840 --> 00:00:35,230
+If it's sure, your software acts.
+
+18
+00:00:35,430 --> 00:00:37,210
+If not, a person takes over.
+
+19
+00:00:37,730 --> 00:00:40,020
+TypeSafe calls it a System One model,
+
+20
+00:00:40,290 --> 00:00:42,880
+named after fast, gut-feeling thinking.
+
+21
+00:00:43,220 --> 00:00:44,850
+By TypeSafe's own test,
+
+22
+00:00:45,000 --> 00:00:48,760
+it's 193 times faster than a typical LLM,
+
+23
+00:00:48,780 --> 00:00:51,850
+and 444 times cheaper.
+
+24
+00:00:52,320 --> 00:00:55,450
+Input costs 42 dollars per billion tokens.
+
+25
+00:00:55,850 --> 00:00:57,340
+The answers are free.
+
+26
+00:00:57,690 --> 00:00:59,720
+Developers use it to route tickets and
+
+27
+00:00:59,740 --> 00:01:01,050
+police AI agents.
+
+28
+00:01:01,550 --> 00:01:03,380
+Someone even made it play Doom.
+
+29
+00:01:03,800 --> 00:01:06,470
+The catch: it only answers what you ask,
+
+30
+00:01:06,700 --> 00:01:08,120
+from the options you give,
+
+31
+00:01:08,420 --> 00:01:09,860
+and it can still be wrong.
+
+32
+00:01:10,310 --> 00:01:11,310
+And it's closed:
+
+33
+00:01:11,800 --> 00:01:14,340
+API only, and those numbers are the
+
+34
+00:01:14,360 --> 00:01:15,260
+company's own.
+
+35
+00:01:15,690 --> 00:01:17,820
+Still, the idea is big.
+
+36
+00:01:18,260 --> 00:01:20,190
+An AI that doesn't talk.
+
+37
+00:01:20,500 --> 00:01:21,550
+It just decides.
+
+38
+00:01:22,090 --> 00:01:23,350
+That's today's tool.
+
+39
+00:01:23,590 --> 00:01:26,140
+Subscribe, there's a new one every day.

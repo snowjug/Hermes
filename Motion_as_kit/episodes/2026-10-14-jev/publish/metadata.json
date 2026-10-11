@@ -1,0 +1,22 @@
+{
+  "title": "Jev AI Explained: Why This Viral Model Refuses to Talk",
+  "description": "Jev AI explained: Jev, from the San Francisco lab TypeSafe, is a \"System One\" AI model that doesn't chat, write or explain. It only makes decisions, with probabilities.\n\nHow it works\n• You give it a state (text or JSON) and typed questions. It answers with calibrated probabilities instead of text.\n• Three question types: Choice (pick one option), Score (a value on a scale) and Noul (yes or no, and how sure).\n• The confidence decides when your software acts on its own and when a person takes over.\n• The name comes from System 1 in Daniel Kahneman's Thinking, Fast and Slow: fast, intuitive judgment.\n\nSpeed and price (TypeSafe's own claims)\n• 193.6x faster and 444.6x cheaper than LLMs on TypeSafe's System One workflow test (0.114 s and $0.000081 against 8.566 s and $0.013880).\n• $42 per billion input tokens; output tokens are free.\n\nSeen in the wild\nRouting support tickets, guarding what AI agents may run, and even a Doom demo (reported by The Register).\n\nThe catch\nIt only answers the questions you ask, from the options you give, and it can still be wrong: its calibration holds across many answers, not every single one. It's closed (API only, no weights), and the speed and cost figures come from the company, not an independent benchmark.\n\nChapters\n0:00 The AI that can't chat\n0:15 How Jev decides\n0:43 Speed, price and uses\n1:03 The catch\n\nSources\nhttps://typesafe.ai\nhttps://docs.typesafe.ai/concepts/system-one\nhttps://www.theregister.com/ai-and-ml/2026/09/28/jev-is-rapidly-rising-to-challenge-the-llm-for-enterprise-ai-supremacy/5299260\n\nNarration: AI voice from ElevenLabs (elevenlabs.io), voice \"Chris\". Music: AI-generated, royalty-free (vidIQ). Animated in code; example values on screen (like 0.88) are illustrative. Not affiliated with TypeSafe.\n\nA new tool every day. Subscribe so you don't miss tomorrow's.\n\n#AI #Jev #TypeSafe",
+  "tags": [
+    "Jev",
+    "Jev AI",
+    "TypeSafe",
+    "TypeSafe AI",
+    "System One model",
+    "AI model",
+    "decision AI",
+    "LLM",
+    "AI agents",
+    "classification",
+    "AI news",
+    "new AI model",
+    "Kahneman",
+    "System 1"
+  ],
+  "youtube_url": "https://youtu.be/LFBzu2XimsE",
+  "published": "2026-10-14T18:55:00+05:30"
+}

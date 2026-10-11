@@ -1,0 +1,101 @@
+{
+ "title": "Jev: the AI model that can't chat",
+ "notes": "Facts checked 2026-10-11. typesafe.ai: Jev is 'our first System One Model' (early access); '193.6x Faster, 444.6x Cheaper' on TypeSafe's own System One workflow comparison (0.114 s and $0.000081 against 8.566 s and $0.013880 for LLMs); '$42' per billion input tokens; 'Made in SF'; 'an AI lab'. docs.typesafe.ai/concepts/system-one: Jev evaluates a state (text, JSON) and typed questions and returns typed answers with probabilities, not text; it does not write replies, produce code or explain its reasoning; primitives Choice (one option of a set, e.g. billing / technical / account), Score (a value on a scale) and Noul (yes or no as a probability); confidence helps decide when to act and when to escalate to a person; the name comes from Kahneman's System 1 (fast, intuitive judgment); calibration 'does not guarantee that an individual answer is correct'. Output tokens are free; billed on input. The Register (2026-09-28): went viral; uses include classification and routing, guardrails for AI agents (which Unix commands an agent may run), and playing Doom; it cannot answer outside the options it is given; back-end proprietary. Weights not released; available through TypeSafe's API, OpenRouter, Cloudflare. Voice: ElevenLabs (Chris, eleven_v4).",
+ "lines": [
+  {
+   "text": "Every AI you know talks. Ask it anything, and it writes you a paragraph.",
+   "say": [
+    "Every A I you know talks.",
+    "Ask it anything, and it writes you a paragraph."
+   ]
+  },
+  {
+   "text": "This one can't chat. It won't even write code.",
+   "say": [
+    "This one can't chat. It won't even write code."
+   ]
+  },
+  {
+   "text": "It's called Jev, from a San Francisco lab called TypeSafe, and it's gone viral.",
+   "say": [
+    "It's called Jev, from a San Francisco lab called TypeSafe, and it's gone viral."
+   ]
+  },
+  {
+   "text": "Jev only makes decisions. Give it the facts and a question, and it answers with a probability.",
+   "say": [
+    "Jev only makes decisions. Give it the facts and a question, and it answers with a probability."
+   ]
+  },
+  {
+   "text": "Pick an option, give a score, or say yes or no, and how sure it is.",
+   "say": [
+    "Pick an option, give a score, or say yes or no, and how sure it is."
+   ]
+  },
+  {
+   "text": "An email comes in: billing, technical or account? Jev picks one, with its confidence.",
+   "say": [
+    "An email comes in: billing, technical or account? Jev picks one, with its confidence."
+   ]
+  },
+  {
+   "text": "If it's sure, your software acts. If not, a person takes over.",
+   "say": [
+    "If it's sure, your software acts. If not, a person takes over."
+   ]
+  },
+  {
+   "text": "TypeSafe calls it a System One model, named after fast, gut-feeling thinking.",
+   "say": [
+    "TypeSafe calls it a System One model, named after fast, gut-feeling thinking."
+   ]
+  },
+  {
+   "text": "By TypeSafe's own test, it's 193 times faster than a typical LLM, and 444 times cheaper.",
+   "say": [
+    "By TypeSafe's own test, it's a hundred and ninety-three times faster than a typical L L M, and four hundred and forty-four times cheaper."
+   ]
+  },
+  {
+   "text": "Input costs 42 dollars per billion tokens. The answers are free.",
+   "say": [
+    "Input costs forty-two dollars per billion tokens.",
+    "The answers are free."
+   ]
+  },
+  {
+   "text": "Developers use it to route tickets and police AI agents. Someone even made it play Doom.",
+   "say": [
+    "Developers use it to route tickets and police A I agents.",
+    "Someone even made it play Doom."
+   ]
+  },
+  {
+   "text": "The catch: it only answers what you ask, from the options you give, and it can still be wrong.",
+   "say": [
+    "The catch: it only answers what you ask, from the options you give, and it can still be wrong."
+   ]
+  },
+  {
+   "text": "And it's closed: API only, and those numbers are the company's own.",
+   "say": [
+    "And it's closed: A P I only, and those numbers are the company's own."
+   ]
+  },
+  {
+   "text": "Still, the idea is big. An AI that doesn't talk. It just decides.",
+   "say": [
+    "Still, the idea is big.",
+    "An A I that doesn't talk.",
+    "It just decides."
+   ]
+  },
+  {
+   "text": "That's today's tool. Subscribe, there's a new one every day.",
+   "say": [
+    "That's today's tool. Subscribe, there's a new one every day."
+   ]
+  }
+ ]
+}

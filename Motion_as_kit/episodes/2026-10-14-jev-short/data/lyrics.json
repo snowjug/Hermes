@@ -1,0 +1,397 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "POV: you found an AI that only answers multiple choice.",
+   "start": 0.23,
+   "end": 4.72,
+   "words": [
+    {
+     "w": "POV:",
+     "start": 0.23,
+     "end": 1.05
+    },
+    {
+     "w": "you",
+     "start": 1.7,
+     "end": 1.88
+    },
+    {
+     "w": "found",
+     "start": 1.88,
+     "end": 2.12
+    },
+    {
+     "w": "an",
+     "start": 2.12,
+     "end": 2.21
+    },
+    {
+     "w": "AI",
+     "start": 2.21,
+     "end": 2.66
+    },
+    {
+     "w": "that",
+     "start": 2.66,
+     "end": 2.78
+    },
+    {
+     "w": "only",
+     "start": 2.92,
+     "end": 3.23
+    },
+    {
+     "w": "answers",
+     "start": 3.23,
+     "end": 3.7
+    },
+    {
+     "w": "multiple",
+     "start": 3.7,
+     "end": 4.2
+    },
+    {
+     "w": "choice.",
+     "start": 4.2,
+     "end": 4.72
+    }
+   ]
+  },
+  {
+   "text": "It's called Jev. Give it options, and it picks one in a blink, with how sure it is.",
+   "start": 5.11,
+   "end": 9.99,
+   "words": [
+    {
+     "w": "It's",
+     "start": 5.11,
+     "end": 5.28
+    },
+    {
+     "w": "called",
+     "start": 5.28,
+     "end": 5.64
+    },
+    {
+     "w": "Jev.",
+     "start": 5.64,
+     "end": 5.94
+    },
+    {
+     "w": "Give",
+     "start": 6.65,
+     "end": 6.84
+    },
+    {
+     "w": "it",
+     "start": 6.84,
+     "end": 6.98
+    },
+    {
+     "w": "options,",
+     "start": 6.98,
+     "end": 7.46
+    },
+    {
+     "w": "and",
+     "start": 7.59,
+     "end": 7.7
+    },
+    {
+     "w": "it",
+     "start": 7.7,
+     "end": 7.84
+    },
+    {
+     "w": "picks",
+     "start": 7.84,
+     "end": 8.14
+    },
+    {
+     "w": "one",
+     "start": 8.14,
+     "end": 8.28
+    },
+    {
+     "w": "in",
+     "start": 8.28,
+     "end": 8.38
+    },
+    {
+     "w": "a",
+     "start": 8.38,
+     "end": 8.52
+    },
+    {
+     "w": "blink,",
+     "start": 8.52,
+     "end": 8.8
+    },
+    {
+     "w": "with",
+     "start": 9.18,
+     "end": 9.34
+    },
+    {
+     "w": "how",
+     "start": 9.34,
+     "end": 9.62
+    },
+    {
+     "w": "sure",
+     "start": 9.62,
+     "end": 9.84
+    },
+    {
+     "w": "it",
+     "start": 9.84,
+     "end": 9.92
+    },
+    {
+     "w": "is.",
+     "start": 9.92,
+     "end": 9.99
+    }
+   ]
+  },
+  {
+   "text": "It can't chat. It doesn't write. It just decides.",
+   "start": 10.59,
+   "end": 14.0,
+   "words": [
+    {
+     "w": "It",
+     "start": 10.59,
+     "end": 10.72
+    },
+    {
+     "w": "can't",
+     "start": 10.72,
+     "end": 11.01
+    },
+    {
+     "w": "chat.",
+     "start": 11.01,
+     "end": 11.41
+    },
+    {
+     "w": "It",
+     "start": 11.78,
+     "end": 12.0
+    },
+    {
+     "w": "doesn't",
+     "start": 12.0,
+     "end": 12.34
+    },
+    {
+     "w": "write.",
+     "start": 12.34,
+     "end": 12.6
+    },
+    {
+     "w": "It",
+     "start": 13.1,
+     "end": 13.21
+    },
+    {
+     "w": "just",
+     "start": 13.21,
+     "end": 13.48
+    },
+    {
+     "w": "decides.",
+     "start": 13.48,
+     "end": 14.0
+    }
+   ]
+  },
+  {
+   "text": "Its makers say it's 444 times cheaper than a typical AI model.",
+   "start": 14.64,
+   "end": 19.66,
+   "words": [
+    {
+     "w": "Its",
+     "start": 14.64,
+     "end": 14.88
+    },
+    {
+     "w": "makers",
+     "start": 14.88,
+     "end": 15.28
+    },
+    {
+     "w": "say",
+     "start": 15.28,
+     "end": 15.59
+    },
+    {
+     "w": "it's",
+     "start": 15.59,
+     "end": 15.82
+    },
+    {
+     "w": "444",
+     "start": 15.82,
+     "end": 17.25
+    },
+    {
+     "w": "times",
+     "start": 17.25,
+     "end": 17.64
+    },
+    {
+     "w": "cheaper",
+     "start": 17.64,
+     "end": 18.19
+    },
+    {
+     "w": "than",
+     "start": 18.19,
+     "end": 18.4
+    },
+    {
+     "w": "a",
+     "start": 18.4,
+     "end": 18.51
+    },
+    {
+     "w": "typical",
+     "start": 18.51,
+     "end": 19.0
+    },
+    {
+     "w": "AI",
+     "start": 19.0,
+     "end": 19.38
+    },
+    {
+     "w": "model.",
+     "start": 19.38,
+     "end": 19.66
+    }
+   ]
+  },
+  {
+   "text": "Developers already use it to sort emails and to guard AI agents.",
+   "start": 20.12,
+   "end": 23.97,
+   "words": [
+    {
+     "w": "Developers",
+     "start": 20.12,
+     "end": 20.75
+    },
+    {
+     "w": "already",
+     "start": 20.75,
+     "end": 21.26
+    },
+    {
+     "w": "use",
+     "start": 21.26,
+     "end": 21.46
+    },
+    {
+     "w": "it",
+     "start": 21.46,
+     "end": 21.53
+    },
+    {
+     "w": "to",
+     "start": 21.53,
+     "end": 21.72
+    },
+    {
+     "w": "sort",
+     "start": 21.72,
+     "end": 21.96
+    },
+    {
+     "w": "emails",
+     "start": 21.96,
+     "end": 22.62
+    },
+    {
+     "w": "and",
+     "start": 22.62,
+     "end": 22.82
+    },
+    {
+     "w": "to",
+     "start": 22.82,
+     "end": 22.98
+    },
+    {
+     "w": "guard",
+     "start": 22.98,
+     "end": 23.32
+    },
+    {
+     "w": "AI",
+     "start": 23.32,
+     "end": 23.62
+    },
+    {
+     "w": "agents.",
+     "start": 23.62,
+     "end": 23.97
+    }
+   ]
+  },
+  {
+   "text": "Final answer? Subscribe for a new tool every day.",
+   "start": 24.66,
+   "end": 28.0,
+   "words": [
+    {
+     "w": "Final",
+     "start": 24.66,
+     "end": 25.02
+    },
+    {
+     "w": "answer?",
+     "start": 25.02,
+     "end": 25.37
+    },
+    {
+     "w": "Subscribe",
+     "start": 25.8,
+     "end": 26.44
+    },
+    {
+     "w": "for",
+     "start": 26.44,
+     "end": 26.62
+    },
+    {
+     "w": "a",
+     "start": 26.62,
+     "end": 26.72
+    },
+    {
+     "w": "new",
+     "start": 26.72,
+     "end": 26.95
+    },
+    {
+     "w": "tool",
+     "start": 26.95,
+     "end": 27.41
+    },
+    {
+     "w": "every",
+     "start": 27.41,
+     "end": 27.78
+    },
+    {
+     "w": "day.",
+     "start": 27.78,
+     "end": 28.0
+    }
+   ]
+  }
+ ]
+}

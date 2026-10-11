@@ -44,7 +44,9 @@ FIX = (("cloud", "claude"), ("clawed", "claude"), ("clod", "claude"), ("a.i.", "
        ("19,000", "nineteen thousand"), ("19000", "nineteen thousand"), ("40mm", "forty millimeters"), ("40 mm", "forty millimeters"),
        ("40 millimeters", "forty millimeters"), ("40 to 60", "forty to sixty"), ("3mf", "three m f"), ("3 mf", "three m f"), ("3d", "three d"),
        ("3-d", "three d"), ("bamboo", "bambu"), ("groq", "grok"), ("grock", "grok"), ("text to cat", "text to cad"), ("15 degrees", "fifteen degrees"),
-       ("windows 11", "windows eleven"), ("gcode", "g code"), ("g-code", "g code"), ("pov", "p o v"), ("p.o.v.", "p o v"))
+       ("windows 11", "windows eleven"), ("gcode", "g code"), ("g-code", "g code"), ("pov", "p o v"), ("p.o.v.", "p o v"),
+       ("jeff", "jev"), ("jiv", "jev"), ("jav", "jev"), ("j.e.v.", "jev"), ("193", "a hundred and ninety three"),
+       ("444", "four hundred and forty four"), ("$42", "forty two dollars"), ("42 dollars", "forty two dollars"), ("type safe", "typesafe"))
 
 
 def letters(s: str) -> str:

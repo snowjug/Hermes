@@ -21,6 +21,8 @@ Each video is an **episode**: one folder under [`episodes/`](episodes/) with its
 | [`2026-10-12-pptmaster-short`](episodes/2026-10-12-pptmaster-short/) | 1080×1920, 30 s | `retro` (a 90s desktop meme: bevelled windows, a progress bar, a two-Yes shut-down dialog, outlined meme captions) | [Short](https://youtube.com/shorts/BolrB8fdkK0) |
 | [`2026-10-11-texttocad`](episodes/2026-10-11-texttocad/) | 1920×1080, 90 s | `viewport` (a CAD viewport: real 3D parts that print, resize and orbit; selection-box captions) | [video](https://youtu.be/V49xrALL4AE) |
 | [`2026-10-11-texttocad-short`](episodes/2026-10-11-texttocad-short/) | 1080×1920, 30 s | `manual` (an assembly manual: swiping pages, line-art parts, highlighter captions) | [Short](https://youtube.com/shorts/c1-7FowoDKs) · [Reel](https://www.instagram.com/tooladay/reel/DeV3bUVpMLg/) |
+| [`2026-10-14-jev`](episodes/2026-10-14-jev/) | 1920×1080, 88 s | `swiss` (editorial kinetic type, the red decision dot, slab wipes, an ElevenLabs voice) | [video](https://youtu.be/LFBzu2XimsE) |
+| [`2026-10-14-jev-short`](episodes/2026-10-14-jev-short/) | 1080×1920, 30 s | `quiz` (a quiz show in six rounds, gold answer panels, the subscribe graphic) | [Short](https://youtube.com/shorts/9HMcW7TLq10) |
 
 ## An episode
 
@@ -37,7 +39,7 @@ episodes/<date>-<tool>/
   work/ out/        takes, logs, renders                                        (not in git)
 ```
 
-Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope`, `riso`, `collage`, `glitch`, `kraft`, `court`, `comic`, `chat`, `keynote`, `retro`, `viewport` and `manual`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
+Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope`, `riso`, `collage`, `glitch`, `kraft`, `court`, `comic`, `chat`, `keynote`, `retro`, `viewport`, `manual`, `swiss` and `quiz`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
 
 ## Make one
 

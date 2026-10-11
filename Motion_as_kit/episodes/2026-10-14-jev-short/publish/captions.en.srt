@@ -1,0 +1,55 @@
+1
+00:00:00,230 --> 00:00:03,680
+POV: you found an AI that only answers
+
+2
+00:00:03,700 --> 00:00:04,970
+multiple choice.
+
+3
+00:00:05,110 --> 00:00:06,190
+It's called Jev.
+
+4
+00:00:06,650 --> 00:00:08,500
+Give it options, and it picks one in a
+
+5
+00:00:08,520 --> 00:00:10,240
+blink, with how sure it is.
+
+6
+00:00:10,590 --> 00:00:11,660
+It can't chat.
+
+7
+00:00:11,780 --> 00:00:12,850
+It doesn't write.
+
+8
+00:00:13,100 --> 00:00:14,250
+It just decides.
+
+9
+00:00:14,640 --> 00:00:18,380
+Its makers say it's 444 times cheaper than
+
+10
+00:00:18,400 --> 00:00:19,910
+a typical AI model.
+
+11
+00:00:20,120 --> 00:00:22,600
+Developers already use it to sort emails
+
+12
+00:00:22,620 --> 00:00:24,220
+and to guard AI agents.
+
+13
+00:00:24,660 --> 00:00:27,390
+Final answer? Subscribe for a new tool
+
+14
+00:00:27,410 --> 00:00:28,250
+every day.

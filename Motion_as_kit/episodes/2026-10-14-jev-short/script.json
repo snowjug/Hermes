@@ -1,0 +1,42 @@
+{
+ "title": "Jev Short",
+ "notes": "Facts as in the main episode's script.json.",
+ "lines": [
+  {
+   "text": "POV: you found an AI that only answers multiple choice.",
+   "say": [
+    "P O V: you found an A I that only answers multiple choice."
+   ]
+  },
+  {
+   "text": "It's called Jev. Give it options, and it picks one in a blink, with how sure it is.",
+   "say": [
+    "It's called Jev. Give it options, and it picks one in a blink, with how sure it is."
+   ]
+  },
+  {
+   "text": "It can't chat. It doesn't write. It just decides.",
+   "say": [
+    "It can't chat. It doesn't write. It just decides."
+   ]
+  },
+  {
+   "text": "Its makers say it's 444 times cheaper than a typical AI model.",
+   "say": [
+    "Its makers say it's four hundred and forty-four times cheaper than a typical A I model."
+   ]
+  },
+  {
+   "text": "Developers already use it to sort emails and to guard AI agents.",
+   "say": [
+    "Developers already use it to sort emails and to guard A I agents."
+   ]
+  },
+  {
+   "text": "Final answer? Subscribe for a new tool every day.",
+   "say": [
+    "Final answer? Subscribe for a new tool every day."
+   ]
+  }
+ ]
+}

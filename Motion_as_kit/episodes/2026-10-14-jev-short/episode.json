@@ -1,0 +1,25 @@
+{
+ "fmt": "short",
+ "theme": "quiz",
+ "title": "Jev Short",
+ "voice": {
+  "engine": "elevenlabs",
+  "voice_id": "iP95p4xoKVk53GoZ742B",
+  "voice_name": "Chris (ElevenLabs premade)",
+  "model": "eleven_v4",
+  "stability": 0.45,
+  "similarity": 0.8,
+  "style": 0.4,
+  "line_gap": 0.28,
+  "lead": 0.2,
+  "tail": 1.6
+ },
+ "music": {
+  "file": "music_raw.wav",
+  "db": -15,
+  "duck": 6,
+  "fade_in": 0.2,
+  "fade_out": 1.2,
+  "source": "vidIQ AI music (royalty-free), the track made for the AnyPS5 video"
+ }
+}
