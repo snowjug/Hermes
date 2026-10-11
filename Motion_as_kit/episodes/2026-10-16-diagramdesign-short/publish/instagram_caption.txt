@@ -1,0 +1,10 @@
+POV: you asked your AI for a diagram, and got spaghetti.
+
+Diagram Design is a free, open-source skill for AI coding agents. Same diagram, redrawn: one accent colour, hairline lines, zero shadows. 44 diagram types, in your brand's colours, as one HTML file.
+
+It has over 49,000 GitHub stars.
+
+The full 2-minute breakdown is on our YouTube channel, Tool Man. A new tool every day.
+Voice: ElevenLabs.
+
+#DiagramDesign #AItools #ClaudeCode #opensource #reels

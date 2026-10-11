@@ -24,6 +24,8 @@ SCRIPT = EP / "script.json"
 WORK = EP / "work" / "vo_el"
 VOICE = CONFIG.get("voice", {})
 LEAD, LINE_GAP, TAIL = (VOICE.get(k, d) for k, d in (("lead", 0.3), ("line_gap", 0.35), ("tail", 0.9)))
+# voice.tempo > 1 speeds every take up without changing its pitch (ffmpeg atempo), at join time only
+TEMPO = float(VOICE.get("tempo", 1.0))
 SR = 44100
 
 
@@ -117,7 +119,13 @@ def main() -> int:
     # join: lead-in, lines, pauses, tail
     chunks, manifest, t = [np.zeros(int(LEAD * SR), np.float32)], [], LEAD
     for idx, (li, text, _, _, f) in enumerate(jobs):
-        a, _ = sf.read(str(f), dtype="float32")
+        if abs(TEMPO - 1.0) > 1e-3:
+            sped = WORK / "_tempo.wav"
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(f), "-af", f"atempo={TEMPO}", "-ar", str(SR), str(sped)], check=True)
+            a, _ = sf.read(str(sped), dtype="float32")
+            sped.unlink(missing_ok=True)
+        else:
+            a, _ = sf.read(str(f), dtype="float32")
         chunks.append(a)
         manifest.append({"line": li + 1, "text": text, "start": round(t, 3), "end": round(t + len(a) / SR, 3)})
         t += len(a) / SR

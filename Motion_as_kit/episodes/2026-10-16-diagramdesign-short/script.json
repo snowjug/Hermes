@@ -1,0 +1,42 @@
+{
+ "title": "Diagram Design Short",
+ "notes": "Facts checked 2026-10-11. github.com/cathrynlavery/diagram-design (created 2026-04-16): 49.4k stars, 3.1k forks, MIT; 'Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.'; the agent picks a type, states its plan, writes one .html file; no build step, no JavaScript, no external images; one accent colour for 1-2 focal elements; 1px hairlines, no shadows, radius <= 10px; every coordinate divisible by 4; Instrument Serif / Geist / Geist Mono; variants minimal light, minimal dark, full editorial; 'The highest-quality move is usually deletion.'; brand onboarding from a URL (palette + fonts, WCAG AA 4.5:1 check, fidelity receipt); redraws draw.io, Mermaid, Excalidraw with a ledger of merged/collapsed/dropped; exports SVG, PNG (2x); install: npx skills add cathrynlavery/diagram-design; caveats from the README: quality depends on the model, the same prompt can lay out differently, output is not an editable source, Mermaid fits docs in Git that change often.",
+ "lines": [
+  {
+   "text": "POV: you asked your AI for a diagram.",
+   "say": [
+    "P O V: you asked your A I for a diagram."
+   ]
+  },
+  {
+   "text": "It gave you spaghetti.",
+   "say": [
+    "It gave you spaghetti."
+   ]
+  },
+  {
+   "text": "Now add one free skill, and ask again.",
+   "say": [
+    "Now add one free skill, and ask again."
+   ]
+  },
+  {
+   "text": "One accent colour, hairline lines, zero shadows, and 44 diagram types in your brand's colours.",
+   "say": [
+    "One accent colour, hairline lines, zero shadows, and forty-four diagram types in your brand's colours."
+   ]
+  },
+  {
+   "text": "It's called Diagram Design, with over 49,000 GitHub stars.",
+   "say": [
+    "It's called Diagram Design, with over forty-nine thousand GitHub stars."
+   ]
+  },
+  {
+   "text": "Your AI just hired a designer. Subscribe for a new tool every day.",
+   "say": [
+    "Your A I just hired a designer. Subscribe for a new tool every day."
+   ]
+  }
+ ]
+}

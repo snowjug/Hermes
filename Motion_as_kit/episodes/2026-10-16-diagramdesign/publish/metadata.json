@@ -1,0 +1,23 @@
+{
+  "title": "AI Diagrams Are Ugly. This Free Skill Fixes Them",
+  "description": "AI diagrams usually come out as spaghetti: boxes everywhere, arrows crossing arrows, five colours at once. Diagram Design is a free, open-source skill for AI coding agents that draws them the way a design studio would, and it has over 49,000 GitHub stars.\n\nHow it works\n• Install it once (npx skills add cathrynlavery/diagram-design), then ask your agent: \"draw an architecture diagram of my app\".\n• The agent picks one of 44 diagram types, tells you its plan, and writes a single self-contained HTML + SVG file: no build step, no JavaScript.\n• The trick is restraint: one accent colour for the one thing that matters, 1px hairline borders, no shadows, and every coordinate on a 4px grid. In its README's words: \"The highest-quality move is usually deletion.\"\n\nWhat else it does\n• 44 types, from architecture, flowcharts and timelines to Sankeys, Wardley maps and exploded axonometric views.\n• Redraws old draw.io, Mermaid and Excalidraw files, with a ledger of what it merged, collapsed or dropped.\n• Brand onboarding: give it your website and it pulls your palette and fonts, and checks text contrast (WCAG AA).\n• Works with Claude Code, Codex, GitHub Copilot, Cursor and other agent-skill hosts; exports SVG or PNG.\n\nThe catch\nOutput quality depends on the model, the same prompt can lay out differently between runs, and you get a finished picture, not an editable canvas. For diagrams that live in Git and change often, the README itself says Mermaid is the better fit.\n\nChapters\n0:00 The spaghetti problem\n0:19 What Diagram Design is\n0:31 How it works\n0:47 The trick: subtract\n1:06 44 types, old files, your brand\n1:38 The catch, and when to use Mermaid\n\nSources\nhttps://github.com/cathrynlavery/diagram-design\nhttps://cathrynlavery.github.io/diagram-design/\n\nNarration: AI voice from ElevenLabs (elevenlabs.io), voice \"Chris\". Music: AI-generated, royalty-free (vidIQ). Animated in code; the app diagram, the example site (yoursite.com) and the redraw receipt are illustrations. Not affiliated with Diagram Design or its author.\n\nA new tool every day. Subscribe so you don't miss tomorrow's.\n\n#DiagramDesign #ClaudeCode #AITools",
+  "tags": [
+    "Diagram Design",
+    "AI diagrams",
+    "Claude Code skills",
+    "agent skills",
+    "architecture diagram",
+    "diagram generator",
+    "Mermaid alternative",
+    "draw.io",
+    "Excalidraw",
+    "Codex",
+    "GitHub Copilot",
+    "Cursor",
+    "AI tools",
+    "software architecture",
+    "open source"
+  ],
+  "youtube_url": "https://youtu.be/9ayq4Xw5MFs",
+  "published": "2026-10-16T18:55:00+05:30"
+}

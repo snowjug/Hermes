@@ -1,0 +1,43 @@
+1
+00:00:00,230 --> 00:00:03,650
+POV: you asked your AI for a diagram.
+
+2
+00:00:03,970 --> 00:00:05,200
+It gave you spaghetti.
+
+3
+00:00:05,870 --> 00:00:07,640
+Now add one free skill,
+
+4
+00:00:07,660 --> 00:00:08,590
+and ask again.
+
+5
+00:00:08,810 --> 00:00:11,370
+One accent colour, hairline lines,
+
+6
+00:00:11,390 --> 00:00:14,600
+zero shadows, and 44 diagram types in your
+
+7
+00:00:14,620 --> 00:00:15,610
+brand's colours.
+
+8
+00:00:15,930 --> 00:00:17,540
+It's called Diagram Design,
+
+9
+00:00:17,620 --> 00:00:20,290
+with over 49,000 GitHub stars.
+
+10
+00:00:20,670 --> 00:00:22,910
+Your AI just hired a designer.
+
+11
+00:00:23,120 --> 00:00:25,440
+Subscribe for a new tool every day.

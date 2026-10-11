@@ -1,0 +1,247 @@
+1
+00:00:00,310 --> 00:00:01,900
+AI can write a whole app before your
+
+2
+00:00:01,920 --> 00:00:02,800
+coffee cools.
+
+3
+00:00:03,140 --> 00:00:05,030
+But ask it for one diagram,
+
+4
+00:00:05,050 --> 00:00:06,250
+and you get this.
+
+5
+00:00:06,440 --> 00:00:09,560
+Boxes everywhere. Arrows crossing arrows.
+
+6
+00:00:09,780 --> 00:00:11,560
+Five colours shouting at once.
+
+7
+00:00:11,930 --> 00:00:14,210
+Now watch the exact same diagram again.
+
+8
+00:00:14,500 --> 00:00:16,630
+Same boxes, same facts.
+
+9
+00:00:16,770 --> 00:00:18,420
+Except now it looks like a design studio
+
+10
+00:00:18,440 --> 00:00:19,010
+made it.
+
+11
+00:00:19,410 --> 00:00:21,070
+This is Diagram Design,
+
+12
+00:00:21,340 --> 00:00:23,820
+a free, open-source skill for AI coding
+
+13
+00:00:23,840 --> 00:00:26,830
+agents, with over 49,000 GitHub stars.
+
+14
+00:00:27,240 --> 00:00:29,220
+And its trick is one every good designer
+
+15
+00:00:29,240 --> 00:00:31,610
+knows, and almost no AI does.
+
+16
+00:00:31,970 --> 00:00:34,050
+Install it once, then just ask:
+
+17
+00:00:34,220 --> 00:00:36,300
+draw an architecture diagram of my app.
+
+18
+00:00:36,600 --> 00:00:39,300
+Your agent picks one of 44 diagram types,
+
+19
+00:00:39,320 --> 00:00:40,420
+tells you its plan,
+
+20
+00:00:40,440 --> 00:00:42,450
+and writes a single HTML file.
+
+21
+00:00:43,150 --> 00:00:45,190
+No build step, no JavaScript.
+
+22
+00:00:45,640 --> 00:00:47,420
+One file that opens anywhere.
+
+23
+00:00:47,730 --> 00:00:48,820
+Now, the trick:
+
+24
+00:00:49,130 --> 00:00:50,330
+it's not what it adds.
+
+25
+00:00:50,660 --> 00:00:52,350
+It's what it refuses to add.
+
+26
+00:00:52,820 --> 00:00:55,260
+One accent colour, saved for the one thing
+
+27
+00:00:55,280 --> 00:00:57,460
+that matters. Hairline borders.
+
+28
+00:00:57,900 --> 00:01:00,740
+Zero shadows. Everything snapped to a
+
+29
+00:01:00,760 --> 00:01:01,650
+4-pixel grid.
+
+30
+00:01:01,930 --> 00:01:03,470
+As its own rulebook says:
+
+31
+00:01:03,580 --> 00:01:05,740
+the highest-quality move is usually
+
+32
+00:01:05,760 --> 00:01:06,440
+deletion.
+
+33
+00:01:06,760 --> 00:01:08,680
+And it draws far more than boxes:
+
+34
+00:01:09,230 --> 00:01:12,300
+flowcharts, timelines, Sankeys, Wardley
+
+35
+00:01:12,320 --> 00:01:14,980
+maps, even exploded 3D views of a whole
+
+36
+00:01:15,000 --> 00:01:15,580
+stack.
+
+37
+00:01:15,900 --> 00:01:17,150
+Got an old diagram?
+
+38
+00:01:17,270 --> 00:01:18,850
+Hand it a draw.io,
+
+39
+00:01:18,870 --> 00:01:20,980
+Mermaid or Excalidraw file,
+
+40
+00:01:21,000 --> 00:01:22,110
+and it redraws it,
+
+41
+00:01:22,200 --> 00:01:23,800
+with a receipt of what it merged or
+
+42
+00:01:23,820 --> 00:01:24,350
+dropped.
+
+43
+00:01:24,640 --> 00:01:25,890
+Want your company's look?
+
+44
+00:01:26,150 --> 00:01:27,040
+Give it your website,
+
+45
+00:01:27,060 --> 00:01:28,900
+and it pulls your colours and fonts,
+
+46
+00:01:28,940 --> 00:01:30,760
+and checks the text stays readable.
+
+47
+00:01:31,030 --> 00:01:32,400
+It works in Claude Code,
+
+48
+00:01:32,420 --> 00:01:35,010
+Codex, Copilot, Cursor and more,
+
+49
+00:01:35,250 --> 00:01:38,080
+and exports SVG or PNG for slides and
+
+50
+00:01:38,100 --> 00:01:38,760
+docs.
+
+51
+00:01:38,980 --> 00:01:41,360
+The catch: it's only as good as the model
+
+52
+00:01:41,380 --> 00:01:43,520
+running it, the same prompt can lay out
+
+53
+00:01:43,540 --> 00:01:45,510
+differently, and you get a picture,
+
+54
+00:01:45,530 --> 00:01:47,270
+not an editable canvas.
+
+55
+00:01:47,440 --> 00:01:49,540
+If your diagrams live in Git and change
+
+56
+00:01:49,560 --> 00:01:51,310
+every week, stick with Mermaid.
+
+57
+00:01:51,620 --> 00:01:53,470
+But for the one diagram that has to
+
+58
+00:01:53,490 --> 00:01:55,320
+convince someone, this is it.
+
+59
+00:01:55,760 --> 00:01:57,820
+One command, and your next diagram looks
+
+60
+00:01:57,840 --> 00:01:59,270
+like you hired a designer.
+
+61
+00:01:59,530 --> 00:02:00,730
+That's today's tool.
+
+62
+00:02:00,870 --> 00:02:03,220
+Subscribe, there's a new one every day.

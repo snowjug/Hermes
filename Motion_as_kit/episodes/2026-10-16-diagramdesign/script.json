@@ -1,0 +1,138 @@
+{
+ "title": "Diagram Design: diagrams like a design studio",
+ "notes": "Facts checked 2026-10-11. github.com/cathrynlavery/diagram-design (created 2026-04-16): 49.4k stars, 3.1k forks, MIT; 'Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.'; the agent picks a type, states its plan, writes one .html file; no build step, no JavaScript, no external images; one accent colour for 1-2 focal elements; 1px hairlines, no shadows, radius <= 10px; every coordinate divisible by 4; Instrument Serif / Geist / Geist Mono; variants minimal light, minimal dark, full editorial; 'The highest-quality move is usually deletion.'; brand onboarding from a URL (palette + fonts, WCAG AA 4.5:1 check, fidelity receipt); redraws draw.io, Mermaid, Excalidraw with a ledger of merged/collapsed/dropped; exports SVG, PNG (2x); install: npx skills add cathrynlavery/diagram-design; caveats from the README: quality depends on the model, the same prompt can lay out differently, output is not an editable source, Mermaid fits docs in Git that change often.",
+ "lines": [
+  {
+   "text": "AI can write a whole app before your coffee cools.",
+   "say": [
+    "AI can write a whole app before your coffee cools."
+   ]
+  },
+  {
+   "text": "But ask it for one diagram, and you get this.",
+   "say": [
+    "But ask it for one diagram, and you get this."
+   ]
+  },
+  {
+   "text": "Boxes everywhere. Arrows crossing arrows. Five colours shouting at once.",
+   "say": [
+    "Boxes everywhere. Arrows crossing arrows. Five colours shouting at once."
+   ]
+  },
+  {
+   "text": "Now watch the exact same diagram again.",
+   "say": [
+    "Now watch the exact same diagram again."
+   ]
+  },
+  {
+   "text": "Same boxes, same facts. Except now it looks like a design studio made it.",
+   "say": [
+    "Same boxes, same facts. Except now it looks like a design studio made it."
+   ]
+  },
+  {
+   "text": "This is Diagram Design, a free, open-source skill for AI coding agents, with over 49,000 GitHub stars.",
+   "say": [
+    "This is Diagram Design, a free, open-source skill for A I coding agents, with over forty-nine thousand GitHub stars."
+   ]
+  },
+  {
+   "text": "And its trick is one every good designer knows, and almost no AI does.",
+   "say": [
+    "And its trick is one every good designer knows, and almost no A I does."
+   ]
+  },
+  {
+   "text": "Install it once, then just ask: draw an architecture diagram of my app.",
+   "say": [
+    "Install it once, then just ask: draw an architecture diagram of my app."
+   ]
+  },
+  {
+   "text": "Your agent picks one of 44 diagram types, tells you its plan, and writes a single HTML file.",
+   "say": [
+    "Your agent picks one of forty-four diagram types, tells you its plan, and writes a single H T M L file."
+   ]
+  },
+  {
+   "text": "No build step, no JavaScript. One file that opens anywhere.",
+   "say": [
+    "No build step, no JavaScript. One file that opens anywhere."
+   ]
+  },
+  {
+   "text": "Now, the trick: it's not what it adds. It's what it refuses to add.",
+   "say": [
+    "Now, the trick: it's not what it adds. It's what it refuses to add."
+   ]
+  },
+  {
+   "text": "One accent colour, saved for the one thing that matters. Hairline borders. Zero shadows. Everything snapped to a 4-pixel grid.",
+   "say": [
+    "One accent colour, saved for the one thing that matters. Hairline borders. Zero shadows. Everything snapped to a four-pixel grid."
+   ]
+  },
+  {
+   "text": "As its own rulebook says: the highest-quality move is usually deletion.",
+   "say": [
+    "As its own rulebook says: the highest-quality move is usually deletion."
+   ]
+  },
+  {
+   "text": "And it draws far more than boxes: flowcharts, timelines, Sankeys, Wardley maps, even exploded 3D views of a whole stack.",
+   "say": [
+    "And it draws far more than boxes: flowcharts, timelines, Sankeys, Wardley maps, even exploded three D views of a whole stack."
+   ]
+  },
+  {
+   "text": "Got an old diagram? Hand it a draw.io, Mermaid or Excalidraw file, and it redraws it, with a receipt of what it merged or dropped.",
+   "say": [
+    "Got an old diagram? Hand it a draw dot I O, Mermaid or Excalidraw file, and it redraws it, with a receipt of what it merged or dropped."
+   ]
+  },
+  {
+   "text": "Want your company's look? Give it your website, and it pulls your colours and fonts, and checks the text stays readable.",
+   "say": [
+    "Want your company's look? Give it your website, and it pulls your colours and fonts, and checks the text stays readable."
+   ]
+  },
+  {
+   "text": "It works in Claude Code, Codex, Copilot, Cursor and more, and exports SVG or PNG for slides and docs.",
+   "say": [
+    "It works in Claude Code, Codex, Copilot, Cursor and more, and exports S V G or P N G for slides and docs."
+   ]
+  },
+  {
+   "text": "The catch: it's only as good as the model running it, the same prompt can lay out differently, and you get a picture, not an editable canvas.",
+   "say": [
+    "The catch: it's only as good as the model running it, the same prompt can lay out differently, and you get a picture, not an editable canvas."
+   ]
+  },
+  {
+   "text": "If your diagrams live in Git and change every week, stick with Mermaid.",
+   "say": [
+    "If your diagrams live in Git and change every week, stick with Mermaid."
+   ]
+  },
+  {
+   "text": "But for the one diagram that has to convince someone, this is it.",
+   "say": [
+    "But for the one diagram that has to convince someone, this is it."
+   ]
+  },
+  {
+   "text": "One command, and your next diagram looks like you hired a designer.",
+   "say": [
+    "One command, and your next diagram looks like you hired a designer."
+   ]
+  },
+  {
+   "text": "That's today's tool. Subscribe, there's a new one every day.",
+   "say": [
+    "That's today's tool. Subscribe, there's a new one every day."
+   ]
+  }
+ ]
+}
