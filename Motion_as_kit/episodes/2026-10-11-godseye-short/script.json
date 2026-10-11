@@ -1,0 +1,36 @@
+{
+ "title": "God's Eye View Short",
+ "notes": "Facts checked 2026-10-11. github.com/bilawalsidhu/gods-eye-view (by Bilawal Sidhu and Sameh Khamis, Halfpixel; site maptheworld.ai; formerly WorldView): 50.9k stars, 10.3k forks, MIT; tagline 'A spy satellite simulator in your browser, except the data is real.'; '#1 on GitHub Trending, daily and weekly · August 2026'; layers: live flights 11,000+ aircraft (OpenSky, adsb.lol), military flights (adsb.lol), live vessels (AISStream, free key), satellites 838-object catalog (CelesTrak, SGP4), earthquakes last 24h (USGS), traffic simulated on OSM roads, CCTV ~3,900 public DOT/city cameras (Austin, Texas, California, London, Ontario, Finland...), active fires (NASA FIRMS, free key), rain radar, satellite clouds, lightning (NOAA nowCOAST), cyclones (NOAA NHC), wind (GFS/ECMWF); 17 of 20 layers have a keyless path; sensor styles CRT, NVG, FLIR/thermal, Noir, Snow; CesiumJS, Google Photorealistic 3D Tiles (Cesium ion free personal non-commercial; Google direct metered); voice via OpenAI Realtime API (metered key); runs locally: git clone, npm ci, npm run dev; disclaimer: data 'may be delayed, incomplete, modeled, inferred, or wrong', not for navigation or emergency response; traffic simulated, CCTV poses estimates; 'does not build features for named-person search, face recognition, or tracking individuals'.",
+ "lines": [
+  {
+   "text": "POV: you just turned your browser into a spy satellite.",
+   "say": [
+    "P O V: you just turned your browser into a spy satellite."
+   ]
+  },
+  {
+   "text": "11,000 live planes. 838 satellites. Ships, earthquakes, fires.",
+   "say": [
+    "Eleven thousand live planes. Eight hundred and thirty-eight satellites. Ships, earthquakes, fires."
+   ]
+  },
+  {
+   "text": "Nearly 4,000 public traffic cameras. Then flip it to night vision.",
+   "say": [
+    "Nearly four thousand public traffic cameras. Then flip it to night vision."
+   ]
+  },
+  {
+   "text": "It's called God's Eye View. It's free, it's open source, and the data is real.",
+   "say": [
+    "It's called God's Eye View. It's free, it's open source, and the data is real."
+   ]
+  },
+  {
+   "text": "Subscribe for a new tool every day.",
+   "say": [
+    "Subscribe for a new tool every day."
+   ]
+  }
+ ]
+}

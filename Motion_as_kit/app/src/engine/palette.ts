@@ -114,6 +114,16 @@ const THEMES = {
     ink: '#1E1E1E', ink2: '#2C2C2C', graphite: '#8C8C8C', ash: '#B9BEC7', bone: '#F2F2F2',
     signal: '#0D99FF', ember: '#7CC4FF', blood: '#FF6A45', acid: '#14B8A6', halation: [0.8, 0.9, 1.0],
   },
+  // sat: a spy-satellite sensor feed: a night globe, cyan HUD, sensor modes recolour per scene (plates set `paper`)
+  sat: {
+    ink: '#03070D', ink2: '#0A1420', graphite: '#1E3448', ash: '#7FA6C4', bone: '#03070D',
+    signal: '#3BE8FF', ember: '#B8F6FF', blood: '#FF3B30', acid: '#B4FF6E', halation: [0.4, 0.85, 1.0],
+  },
+  // dossier: a classified file on a desk: manila folders, typewritten pages, red stamps, satellite prints (plates set `paper`)
+  dossier: {
+    ink: '#1C1A17', ink2: '#2A2622', graphite: '#6E665B', ash: '#B9AE98', bone: '#E7D8B5',
+    signal: '#C8102E', ember: '#F2A900', blood: '#7A0A1C', acid: '#2E5EA6', halation: [1.0, 0.5, 0.4],
+  },
 } as const;
 
 export type ThemeName = keyof typeof THEMES;

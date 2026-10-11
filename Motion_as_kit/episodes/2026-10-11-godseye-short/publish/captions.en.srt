@@ -1,0 +1,43 @@
+1
+00:00:00,220 --> 00:00:03,300
+POV: you just turned your browser into a
+
+2
+00:00:03,320 --> 00:00:04,670
+spy satellite.
+
+3
+00:00:04,860 --> 00:00:06,730
+11,000 live planes.
+
+4
+00:00:07,300 --> 00:00:11,250
+838 satellites. Ships, earthquakes,
+
+5
+00:00:11,270 --> 00:00:11,990
+fires.
+
+6
+00:00:12,260 --> 00:00:14,840
+Nearly 4,000 public traffic cameras.
+
+7
+00:00:15,260 --> 00:00:17,000
+Then flip it to night vision.
+
+8
+00:00:17,210 --> 00:00:18,990
+It's called God's Eye View.
+
+9
+00:00:19,290 --> 00:00:21,230
+It's free, it's open source,
+
+10
+00:00:21,250 --> 00:00:22,620
+and the data is real.
+
+11
+00:00:22,850 --> 00:00:25,220
+Subscribe for a new tool every day.

@@ -1,0 +1,219 @@
+1
+00:00:00,270 --> 00:00:02,160
+This is every plane in the sky,
+
+2
+00:00:02,220 --> 00:00:03,800
+live, right now.
+
+3
+00:00:04,020 --> 00:00:05,670
+Every satellite overhead.
+
+4
+00:00:05,980 --> 00:00:07,310
+Every ship at sea.
+
+5
+00:00:07,550 --> 00:00:09,290
+And it all runs in your browser,
+
+6
+00:00:09,380 --> 00:00:10,160
+for free.
+
+7
+00:00:10,420 --> 00:00:12,080
+It's called God's Eye View,
+
+8
+00:00:12,230 --> 00:00:13,850
+and its tagline says it all:
+
+9
+00:00:14,060 --> 00:00:15,860
+a spy satellite simulator,
+
+10
+00:00:16,060 --> 00:00:17,570
+except the data is real.
+
+11
+00:00:17,900 --> 00:00:19,970
+It hit number one on GitHub Trending,
+
+12
+00:00:20,110 --> 00:00:22,320
+and it's past 50,000 stars.
+
+13
+00:00:22,690 --> 00:00:24,360
+Here's what you're actually looking at.
+
+14
+00:00:24,980 --> 00:00:27,760
+Over 11,000 live aircraft from public
+
+15
+00:00:27,780 --> 00:00:29,860
+flight trackers, with military flights on
+
+16
+00:00:29,880 --> 00:00:30,750
+their own layer.
+
+17
+00:00:31,550 --> 00:00:33,660
+Ships stream in from AIS,
+
+18
+00:00:33,760 --> 00:00:35,930
+the radio beacons vessels broadcast at
+
+19
+00:00:35,950 --> 00:00:36,500
+sea.
+
+20
+00:00:36,750 --> 00:00:40,140
+838 satellites, each one moving along its
+
+21
+00:00:40,160 --> 00:00:40,970
+real orbit.
+
+22
+00:00:41,270 --> 00:00:42,890
+Earthquakes from the last day.
+
+23
+00:00:43,210 --> 00:00:45,030
+Fires spotted from space.
+
+24
+00:00:45,430 --> 00:00:48,380
+Rain radar, lightning, cyclones and wind.
+
+25
+00:00:48,660 --> 00:00:50,480
+And then it gets a little unsettling.
+
+26
+00:00:50,910 --> 00:00:53,340
+Nearly 4,000 public traffic cameras,
+
+27
+00:00:53,640 --> 00:00:55,860
+from Texas to London to Finland,
+
+28
+00:00:56,060 --> 00:00:57,550
+pinned right onto the globe.
+
+29
+00:00:57,850 --> 00:00:59,110
+Now flip the sensor.
+
+30
+00:00:59,370 --> 00:01:01,040
+Night vision. Thermal.
+
+31
+00:01:01,310 --> 00:01:02,830
+An old CRT screen.
+
+32
+00:01:03,150 --> 00:01:04,980
+And your browser looks like a surveillance
+
+33
+00:01:05,000 --> 00:01:06,270
+feed from a spy movie.
+
+34
+00:01:06,630 --> 00:01:09,350
+Zoom in, and cities rise in 3D,
+
+35
+00:01:09,500 --> 00:01:11,490
+built from Google's photorealistic map
+
+36
+00:01:11,510 --> 00:01:12,030
+tiles.
+
+37
+00:01:12,410 --> 00:01:13,900
+Add an OpenAI key,
+
+38
+00:01:13,920 --> 00:01:16,450
+and you can even steer it with your voice.
+
+39
+00:01:16,520 --> 00:01:19,620
+17 of its 20 layers need no API key at
+
+40
+00:01:19,640 --> 00:01:21,600
+all. Clone it, run it,
+
+41
+00:01:21,620 --> 00:01:23,630
+and the planet opens in your browser.
+
+42
+00:01:23,900 --> 00:01:26,350
+The catch: its own warning says the data
+
+43
+00:01:26,370 --> 00:01:28,890
+can be delayed, incomplete or wrong,
+
+44
+00:01:29,080 --> 00:01:31,380
+so it's not for navigation or emergencies.
+
+45
+00:01:31,820 --> 00:01:34,120
+Traffic is simulated, camera angles are
+
+46
+00:01:34,140 --> 00:01:36,890
+estimates, and the 3D cities need a key.
+
+47
+00:01:37,540 --> 00:01:39,440
+And by design, it won't do face
+
+48
+00:01:39,460 --> 00:01:41,800
+recognition or track individual people.
+
+49
+00:01:42,030 --> 00:01:44,100
+All of this data was already public.
+
+50
+00:01:44,430 --> 00:01:46,240
+It's just never been this easy to see it
+
+51
+00:01:46,260 --> 00:01:47,150
+all at once.
+
+52
+00:01:47,890 --> 00:01:49,370
+That's God's Eye View.
+
+53
+00:01:49,640 --> 00:01:52,010
+Free, open source, and a little bit
+
+54
+00:01:52,030 --> 00:01:52,780
+terrifying.
+
+55
+00:01:53,050 --> 00:01:55,760
+Subscribe, there's a new tool every day.

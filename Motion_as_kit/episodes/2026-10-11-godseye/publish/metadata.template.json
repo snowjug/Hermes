@@ -1,0 +1,51 @@
+{
+  "title": "God's Eye View: A Spy Satellite in Your Browser",
+  "description": "God's Eye View turns your browser into a spy satellite, except the data is real: every plane in the sky, every satellite overhead and ships at sea on a live 3D globe. It's free and open source (MIT), it hit #1 on GitHub Trending, and it's past 50,000 stars.\n\nWhat's on the globe\n• 11,000+ live aircraft from public flight trackers (OpenSky, adsb.lol), with military flights on their own layer.\n• Ships from AIS, the radio beacons vessels broadcast (AISStream, free key).\n• An 838-satellite catalog from CelesTrak, each moved along its orbit with SGP4.\n• Earthquakes from the last 24 hours (USGS), active fires (NASA FIRMS), rain radar, lightning, cyclones and wind (NOAA).\n• About 3,900 public traffic cameras from city and transport departments (Texas, California, London, Ontario, Finland and more).\n• Sensor styles: night vision, FLIR thermal, CRT, Noir and Snow.\n• Photorealistic 3D cities from Google's map tiles (via Cesium), and voice control with your own OpenAI key.\n\nRun it\n17 of its 20 layers work without an API key. Clone the repo, npm ci, npm run dev, and open localhost:4173 (Node 24). There's also a one-click Pinokio launcher.\n\nThe catch\nIts own warning: the data may be delayed, incomplete, modeled, inferred or wrong, so it's not for navigation, emergencies or other safety-critical use. Traffic is simulated, camera poses are estimates, and the photorealistic 3D cities need a key (Cesium ion is free for personal use; Google's own key is metered). By design, it doesn't do face recognition or track individual people.\n\nChapters\n{chapters}\n\nSources\nhttps://github.com/bilawalsidhu/gods-eye-view\nhttps://maptheworld.ai\n\nNarration: AI voice from ElevenLabs (elevenlabs.io), voice \"Chris\". Music: AI-generated, royalty-free (vidIQ). Animated in code: the globe, flights, ships, camera feeds and city on screen are illustrations of the project's layers, not its live data or footage. Not affiliated with God's Eye View, Halfpixel or the data providers.\n\nA new tool every day. Subscribe so you don't miss tomorrow's.\n\n#GodsEyeView #OSINT #OpenSource",
+  "tags": [
+    "God's Eye View",
+    "gods eye view github",
+    "spy satellite simulator",
+    "live flight tracker",
+    "satellite tracker",
+    "ship tracker AIS",
+    "OSINT",
+    "3D globe",
+    "CesiumJS",
+    "Google 3D tiles",
+    "night vision",
+    "FLIR thermal",
+    "open source",
+    "GitHub trending",
+    "Bilawal Sidhu"
+  ],
+  "chapters": [
+    [
+      null,
+      "Every plane, live"
+    ],
+    [
+      "It's called God",
+      "What God's Eye View is"
+    ],
+    [
+      "Here's what you're",
+      "Flights, ships and satellites"
+    ],
+    [
+      "And then it gets",
+      "Cameras and sensor modes"
+    ],
+    [
+      "Zoom in, and cities",
+      "3D cities, voice and setup"
+    ],
+    [
+      "The catch",
+      "The catch"
+    ],
+    [
+      "All of this data",
+      "All at once"
+    ]
+  ]
+}

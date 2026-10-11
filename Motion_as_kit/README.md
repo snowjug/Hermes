@@ -27,6 +27,8 @@ Each video is an **episode**: one folder under [`episodes/`](episodes/) with its
 | [`2026-10-15-artcraft-short`](episodes/2026-10-15-artcraft-short/) | 1080×1920, 30 s | `sketchbook` (pencil line art, watercolour washes, hand lettering written stroke by stroke, page flips) | [Short](https://youtube.com/shorts/kvD4f2xYKiE) |
 | [`2026-10-16-diagramdesign`](episodes/2026-10-16-diagramdesign/) | 1920×1080, 125 s | `axon` (a drafting canvas, hairline nodes and self-routing edges, whip pans, the messy-to-clean morph) | [video](https://youtu.be/9ayq4Xw5MFs) |
 | [`2026-10-16-diagramdesign-short`](episodes/2026-10-16-diagramdesign-short/) | 1080×1920, 30 s | `artboard` (a design tool's canvas, multiplayer cursors, an inspector, selected-text captions) | [Short](https://youtube.com/shorts/uIPad3LHsp4) |
+| [`2026-10-11-godseye`](episodes/2026-10-11-godseye/) | 1920×1080, 117 s | `sat` (a spy-satellite feed: a city-light globe with flights, ships and orbits, sensor modes, decoding titles) | [video](https://youtu.be/YzoN6lRXSQA) |
+| [`2026-10-11-godseye-short`](episodes/2026-10-11-godseye-short/) | 1080×1920, 27 s | `dossier` (a classified file: folder, typed pages, satellite prints, redactions, stamps) | [Short](https://youtube.com/shorts/MoFSl1cbfkQ) |
 
 ## An episode
 
@@ -43,7 +45,7 @@ episodes/<date>-<tool>/
   work/ out/        takes, logs, renders                                        (not in git)
 ```
 
-Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope`, `riso`, `collage`, `glitch`, `kraft`, `court`, `comic`, `chat`, `keynote`, `retro`, `viewport`, `manual`, `swiss`, `quiz`, `cinema`, `sketchbook`, `axon` and `artboard`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
+Themes live in [`app/src/engine/palette.ts`](app/src/engine/palette.ts): `signal`, `blueprint`, `pop`, `scope`, `riso`, `collage`, `glitch`, `kraft`, `court`, `comic`, `chat`, `keynote`, `retro`, `viewport`, `manual`, `swiss`, `quiz`, `cinema`, `sketchbook`, `axon`, `artboard`, `sat` and `dossier`. Every theme fills the same slots (ink, ink2, graphite, ash, bone, signal, ember, blood, acid, halation), so a plate looks right in any of them. Plates with `paper = true` draw ink on the bone colour, which is how the `pop` Short gets its yellow paper.
 
 ## Make one
 

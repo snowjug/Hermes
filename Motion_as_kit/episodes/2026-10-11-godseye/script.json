@@ -1,0 +1,138 @@
+{
+ "title": "God's Eye View: a spy satellite in your browser",
+ "notes": "Facts checked 2026-10-11. github.com/bilawalsidhu/gods-eye-view (by Bilawal Sidhu and Sameh Khamis, Halfpixel; site maptheworld.ai; formerly WorldView): 50.9k stars, 10.3k forks, MIT; tagline 'A spy satellite simulator in your browser, except the data is real.'; '#1 on GitHub Trending, daily and weekly · August 2026'; layers: live flights 11,000+ aircraft (OpenSky, adsb.lol), military flights (adsb.lol), live vessels (AISStream, free key), satellites 838-object catalog (CelesTrak, SGP4), earthquakes last 24h (USGS), traffic simulated on OSM roads, CCTV ~3,900 public DOT/city cameras (Austin, Texas, California, London, Ontario, Finland...), active fires (NASA FIRMS, free key), rain radar, satellite clouds, lightning (NOAA nowCOAST), cyclones (NOAA NHC), wind (GFS/ECMWF); 17 of 20 layers have a keyless path; sensor styles CRT, NVG, FLIR/thermal, Noir, Snow; CesiumJS, Google Photorealistic 3D Tiles (Cesium ion free personal non-commercial; Google direct metered); voice via OpenAI Realtime API (metered key); runs locally: git clone, npm ci, npm run dev; disclaimer: data 'may be delayed, incomplete, modeled, inferred, or wrong', not for navigation or emergency response; traffic simulated, CCTV poses estimates; 'does not build features for named-person search, face recognition, or tracking individuals'.",
+ "lines": [
+  {
+   "text": "This is every plane in the sky, live, right now.",
+   "say": [
+    "This is every plane in the sky, live, right now."
+   ]
+  },
+  {
+   "text": "Every satellite overhead. Every ship at sea. And it all runs in your browser, for free.",
+   "say": [
+    "Every satellite overhead. Every ship at sea. And it all runs in your browser, for free."
+   ]
+  },
+  {
+   "text": "It's called God's Eye View, and its tagline says it all: a spy satellite simulator, except the data is real.",
+   "say": [
+    "It's called God's Eye View, and its tagline says it all: a spy satellite simulator, except the data is real."
+   ]
+  },
+  {
+   "text": "It hit number one on GitHub Trending, and it's past 50,000 stars.",
+   "say": [
+    "It hit number one on GitHub Trending, and it's past fifty thousand stars."
+   ]
+  },
+  {
+   "text": "Here's what you're actually looking at.",
+   "say": [
+    "Here's what you're actually looking at."
+   ]
+  },
+  {
+   "text": "Over 11,000 live aircraft from public flight trackers, with military flights on their own layer.",
+   "say": [
+    "Over eleven thousand live aircraft from public flight trackers, with military flights on their own layer."
+   ]
+  },
+  {
+   "text": "Ships stream in from AIS, the radio beacons vessels broadcast at sea.",
+   "say": [
+    "Ships stream in from A I S, the radio beacons vessels broadcast at sea."
+   ]
+  },
+  {
+   "text": "838 satellites, each one moving along its real orbit.",
+   "say": [
+    "Eight hundred and thirty-eight satellites, each one moving along its real orbit."
+   ]
+  },
+  {
+   "text": "Earthquakes from the last day. Fires spotted from space. Rain radar, lightning, cyclones and wind.",
+   "say": [
+    "Earthquakes from the last day. Fires spotted from space. Rain radar, lightning, cyclones and wind."
+   ]
+  },
+  {
+   "text": "And then it gets a little unsettling.",
+   "say": [
+    "And then it gets a little unsettling."
+   ]
+  },
+  {
+   "text": "Nearly 4,000 public traffic cameras, from Texas to London to Finland, pinned right onto the globe.",
+   "say": [
+    "Nearly four thousand public traffic cameras, from Texas to London to Finland, pinned right onto the globe."
+   ]
+  },
+  {
+   "text": "Now flip the sensor. Night vision. Thermal. An old CRT screen.",
+   "say": [
+    "Now flip the sensor. Night vision. Thermal. An old C R T screen."
+   ]
+  },
+  {
+   "text": "And your browser looks like a surveillance feed from a spy movie.",
+   "say": [
+    "And your browser looks like a surveillance feed from a spy movie."
+   ]
+  },
+  {
+   "text": "Zoom in, and cities rise in 3D, built from Google's photorealistic map tiles.",
+   "say": [
+    "Zoom in, and cities rise in 3D, built from Google's photorealistic map tiles."
+   ]
+  },
+  {
+   "text": "Add an OpenAI key, and you can even steer it with your voice.",
+   "say": [
+    "Add an OpenAI key, and you can even steer it with your voice."
+   ]
+  },
+  {
+   "text": "17 of its 20 layers need no API key at all. Clone it, run it, and the planet opens in your browser.",
+   "say": [
+    "Seventeen of its twenty layers need no A P I key at all. Clone it, run it, and the planet opens in your browser."
+   ]
+  },
+  {
+   "text": "The catch: its own warning says the data can be delayed, incomplete or wrong, so it's not for navigation or emergencies.",
+   "say": [
+    "The catch: its own warning says the data can be delayed, incomplete or wrong, so it's not for navigation or emergencies."
+   ]
+  },
+  {
+   "text": "Traffic is simulated, camera angles are estimates, and the 3D cities need a key.",
+   "say": [
+    "Traffic is simulated, camera angles are estimates, and the 3D cities need a key."
+   ]
+  },
+  {
+   "text": "And by design, it won't do face recognition or track individual people.",
+   "say": [
+    "And by design, it won't do face recognition or track individual people."
+   ]
+  },
+  {
+   "text": "All of this data was already public. It's just never been this easy to see it all at once.",
+   "say": [
+    "All of this data was already public. It's just never been this easy to see it all at once."
+   ]
+  },
+  {
+   "text": "That's God's Eye View. Free, open source, and a little bit terrifying.",
+   "say": [
+    "That's God's Eye View. Free, open source, and a little bit terrifying."
+   ]
+  },
+  {
+   "text": "Subscribe, there's a new tool every day.",
+   "say": [
+    "Subscribe, there's a new tool every day."
+   ]
+  }
+ ]
+}
