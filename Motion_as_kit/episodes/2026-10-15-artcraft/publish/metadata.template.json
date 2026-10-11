@@ -1,0 +1,43 @@
+{
+  "title": "ArtCraft: The Free Open-Source AI Film Studio",
+  "description": "ArtCraft is a free, open-source AI film studio: instead of typing a prompt and hoping, you build the scene first, like a film set, and only then generate. It picked up over 3,000 GitHub stars in a single day.\n\nHow it works\n• Its makers call it \"the IDE for artists\": one desktop app with a 2D canvas for composing and a 3D stage for blocking scenes.\n• Drop in a room, place your actors and pose them like mannequins, then put the virtual camera exactly where you want it and frame the shot.\n• Turn a picture into a 3D object you can rotate, and kitbash whole sets from asset kits.\n• Generate from that blocking: the posed mannequins guide where the characters stand. Keep the same room for every shot, so a whole sequence stays consistent.\n• Quick tools too: text-to-image, editing with a mask, and image-to-video.\n\nModels\nIt plugs into a long list of image, video and 3D models, including Midjourney, Sora 2, Grok Imagine and World Labs' Marble 3D worlds, plus Nano Banana Pro, GPT Image 1.5, Seedance 2.0, Kling and more.\n\nPrice and platforms\nThe app is free and open source. Generating isn't: bring your own subscriptions, or buy credits, from $8 a month billed yearly ($96 a year for the Basic plan, 1,000 credits a month). Builds for Windows and Mac; on Linux you build it from source.\n\nChapters\n{chapters}\n\nSources\nhttps://github.com/storytold/artcraft\nhttps://getartcraft.com\nhttps://getartcraft.com/pricing\n\nNarration: AI voice from ElevenLabs (elevenlabs.io), voice \"Chris\". Music: AI-generated, royalty-free (vidIQ). Animated in code; the painted shots on screen are illustrations of the idea, not ArtCraft output. Not affiliated with ArtCraft.\n\nA new tool every day. Subscribe so you don't miss tomorrow's.\n\n#ArtCraft #AIArt #AITools",
+  "tags": [
+    "ArtCraft",
+    "ArtCraft AI",
+    "AI film studio",
+    "AI image generator",
+    "AI video generator",
+    "open source AI",
+    "AI filmmaking",
+    "AI art tool",
+    "3D scene blocking",
+    "pose mannequins",
+    "kitbash",
+    "Midjourney",
+    "Sora 2",
+    "World Labs Marble",
+    "generative AI"
+  ],
+  "chapters": [
+    [
+      null,
+      "Prompting and praying"
+    ],
+    [
+      "It's called ArtCraft",
+      "What ArtCraft is"
+    ],
+    [
+      "Drop in a room",
+      "Pose the actors, place the camera"
+    ],
+    [
+      "Then you generate",
+      "Generate from your blocking"
+    ],
+    [
+      "It plugs into",
+      "Models, price and platforms"
+    ]
+  ]
+}

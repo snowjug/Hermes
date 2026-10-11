@@ -387,3 +387,82 @@ export function box(w: number, d: number, h: number, o: { at?: V3; col?: string;
 export function cyl(r: number, h: number, o: { at?: V3; col?: string; n?: number; hole?: number } = {}): Face[] {
   return xform(extrude(circle(r, o.n ?? 32), o.hole ? [circle(o.hole, o.n ?? 32)] : [], h, { col: o.col }), { at: o.at ?? [0, 0, 0] });
 }
+
+// ------------------------------------------------------------------ revolved solids and figures
+/**
+ * Revolve a profile of (radius, z) points, bottom to top, around Z with n segments. Smooth surfaces draw
+ * their silhouette only; profile corners sharper than 30 degrees draw as rings.
+ */
+export function lathe(prof: P2[], n = 16, o: { col?: string } = {}): Face[] {
+  const m = prof.length - 1;
+  const faces: Face[] = [];
+  const at = (k: number, i: number): V3 => { const a = (i / n) * Math.PI * 2, [r, z] = prof[k]!; return [r * Math.cos(a), r * Math.sin(a), z]; };
+  const sharpAt = (k: number) => {
+    if (k <= 0 || k >= m) return false;
+    const a = prof[k - 1]!, b = prof[k]!, c = prof[k + 1]!;
+    const d1 = [b[0] - a[0], b[1] - a[1]], d2 = [c[0] - b[0], c[1] - b[1]];
+    const l = Math.hypot(d1[0]!, d1[1]!) * Math.hypot(d2[0]!, d2[1]!) || 1;
+    return (d1[0]! * d2[0]! + d1[1]! * d2[1]!) / l < Math.cos(Math.PI / 6);
+  };
+  for (let i = 0; i < n; i++) {
+    for (let k = 0; k < m; k++) {
+      faces.push({
+        p: [at(k, i), at(k, i + 1), at(k + 1, i + 1), at(k + 1, i)],
+        sharp: [sharpAt(k), false, sharpAt(k + 1), false],
+        nb: [k > 0 ? i * m + k - 1 : -1, ((i + 1) % n) * m + k, k + 1 < m ? i * m + k + 1 : -1, ((i - 1 + n) % n) * m + k],
+        col: o.col,
+      });
+    }
+  }
+  return faces;
+}
+export function sphere(c: V3, r: number, o: { col?: string; n?: number } = {}): Face[] {
+  const prof: P2[] = Array.from({ length: 7 }, (_, k) => { const a = -Math.PI / 2 + (k / 6) * Math.PI; return [r * Math.cos(a), r * Math.sin(a)] as P2; });
+  return xform(lathe(prof, o.n ?? 14, o), { at: c });
+}
+/** A capsule (a rounded limb) from a to b. */
+export function capsule(a: V3, b: V3, r: number, o: { col?: string; n?: number } = {}): Face[] {
+  const d: V3 = [b[0] - a[0], b[1] - a[1], b[2] - a[2]];
+  const L = Math.hypot(d[0], d[1], d[2]) || 1e-3;
+  const prof: P2[] = [];
+  for (let k = 0; k <= 3; k++) { const ang = -Math.PI / 2 + (k / 3) * (Math.PI / 2); prof.push([r * Math.cos(ang), r * Math.sin(ang)]); }
+  for (let k = 0; k <= 3; k++) { const ang = (k / 3) * (Math.PI / 2); prof.push([r * Math.cos(ang), L + r * Math.sin(ang)]); }
+  return xform(lathe(prof, o.n ?? 10, o), { ry: Math.acos(Math.max(-1, Math.min(1, d[2] / L))), rz: Math.atan2(d[1], d[0]), at: a });
+}
+
+/** Joint positions of an artist's mannequin (cm, standing on z = 0, facing -Y). */
+export type Pose = Record<'head' | 'neck' | 'chest' | 'pelvis' | 'shL' | 'shR' | 'elL' | 'elR' | 'haL' | 'haR' | 'hipL' | 'hipR' | 'knL' | 'knR' | 'ftL' | 'ftR', V3>;
+export const POSES: Record<'stand' | 'point' | 'wave' | 'think' | 'walk' | 'reach', Pose> = {
+  stand: { head: [0, 0, 166], neck: [0, 0, 151], chest: [0, 0, 136], pelvis: [0, 0, 100], shL: [-19, 0, 145], shR: [19, 0, 145], elL: [-23, 2, 117], elR: [23, 2, 117], haL: [-24, 3, 91], haR: [24, 3, 91], hipL: [-10, 0, 95], hipR: [10, 0, 95], knL: [-11, -3, 51], knR: [11, -3, 51], ftL: [-12, 0, 7], ftR: [12, 0, 7] },
+  point: { head: [0, -2, 166], neck: [0, -1, 151], chest: [0, 0, 136], pelvis: [0, 0, 100], shL: [-19, 0, 145], shR: [19, -1, 146], elL: [-23, 2, 117], elR: [26, -22, 140], haL: [-24, 3, 91], haR: [30, -48, 146], hipL: [-10, 0, 95], hipR: [10, 0, 95], knL: [-12, -3, 51], knR: [13, -8, 51], ftL: [-13, 0, 7], ftR: [14, -12, 7] },
+  wave: { head: [0, 0, 166], neck: [0, 0, 151], chest: [0, 0, 136], pelvis: [0, 0, 100], shL: [-19, 0, 145], shR: [19, 0, 146], elL: [-23, 2, 117], elR: [36, 0, 160], haL: [-24, 3, 91], haR: [40, -4, 186], hipL: [-10, 0, 95], hipR: [10, 0, 95], knL: [-11, -3, 51], knR: [11, -3, 51], ftL: [-12, 0, 7], ftR: [12, 0, 7] },
+  think: { head: [0, -3, 165], neck: [0, -1, 150], chest: [0, 0, 136], pelvis: [0, 0, 100], shL: [-19, 0, 145], shR: [19, 0, 145], elL: [-14, -14, 122], elR: [18, -16, 122], haL: [10, -12, 126], haR: [4, -12, 152], hipL: [-10, 0, 95], hipR: [10, 0, 95], knL: [-11, -3, 51], knR: [11, -3, 51], ftL: [-12, 0, 7], ftR: [12, 0, 7] },
+  walk: { head: [0, -4, 165], neck: [0, -3, 150], chest: [0, -2, 136], pelvis: [0, 0, 100], shL: [-19, -2, 145], shR: [19, -2, 145], elL: [-22, 12, 118], elR: [22, -14, 118], haL: [-23, 22, 94], haR: [23, -26, 96], hipL: [-10, 0, 95], hipR: [10, 0, 95], knL: [-11, -18, 54], knR: [11, 10, 50], ftL: [-12, -26, 9], ftR: [12, 24, 12] },
+  reach: { head: [0, -6, 164], neck: [0, -4, 150], chest: [0, -2, 136], pelvis: [0, 0, 100], shL: [-19, -2, 145], shR: [19, -2, 145], elL: [-26, -20, 150], elR: [26, -20, 150], haL: [-24, -44, 168], haR: [24, -44, 168], hipL: [-10, 0, 95], hipR: [10, 0, 95], knL: [-11, -3, 51], knR: [11, -3, 51], ftL: [-12, 0, 7], ftR: [12, 0, 7] },
+};
+export function mixPose(a: Pose, b: Pose, k: number): Pose {
+  const out = {} as Pose;
+  (Object.keys(a) as (keyof Pose)[]).forEach((j) => { const p = a[j], q = b[j]; out[j] = [p[0] + (q[0] - p[0]) * k, p[1] + (q[1] - p[1]) * k, p[2] + (q[2] - p[2]) * k]; });
+  return out;
+}
+/** A wooden artist's mannequin in a pose. */
+export function mannequin(p: Pose, col = '#C9A27A', joint = '#8E6B4A'): Face[] {
+  const c = (a: V3, b: V3, r: number) => capsule(a, b, r, { col });
+  return join(
+    sphere(p.head, 11, { col }), c(p.neck, p.head, 4.5),
+    c(p.pelvis, p.chest, 13), c(p.shL, p.shR, 6.5), c(p.hipL, p.hipR, 8),
+    c(p.shL, p.elL, 5), c(p.elL, p.haL, 4.5), sphere(p.haL, 5.5, { col: joint, n: 10 }),
+    c(p.shR, p.elR, 5), c(p.elR, p.haR, 4.5), sphere(p.haR, 5.5, { col: joint, n: 10 }),
+    c(p.hipL, p.knL, 7), c(p.knL, p.ftL, 5.5), c(p.hipR, p.knR, 7), c(p.knR, p.ftR, 5.5),
+    c(p.ftL, [p.ftL[0], p.ftL[1] - 12, p.ftL[2] - 4], 4), c(p.ftR, [p.ftR[0], p.ftR[1] - 12, p.ftR[2] - 4], 4),
+    sphere(p.elL, 5.5, { col: joint, n: 10 }), sphere(p.elR, 5.5, { col: joint, n: 10 }), sphere(p.knL, 7, { col: joint, n: 10 }), sphere(p.knR, 7, { col: joint, n: 10 }),
+  );
+}
+/** A film camera on a tripod, lens pointing along -Y, the lens centre at (0, -34, 150). */
+export function cameraRig(col = '#2E3138', lens = '#15171B'): Face[] {
+  const body = box(26, 44, 28, { at: [0, 0, 136], col, r: 3 });
+  const lensF = xform(lathe([[0, 0], [8, 0], [8, 6], [10, 8], [10, 22], [9, 24], [0, 24]], 18, { col: lens }), { rx: Math.PI / 2, at: [0, -22, 150] });
+  const mag = xform(lathe([[0, -6], [10, -6], [10, 6], [0, 6]], 16, { col }), { ry: Math.PI / 2, at: [0, 8, 172] });
+  const legs = [0, 1, 2].map((i) => { const a = -Math.PI / 2 + (i / 3) * Math.PI * 2; return capsule([0, 0, 132], [44 * Math.cos(a), 44 * Math.sin(a), 0], 2.4, { col: '#4A4E57' }); });
+  return join(body, lensF, mag, ...legs, cyl(5, 10, { at: [0, 0, 126], col: '#4A4E57' }));
+}

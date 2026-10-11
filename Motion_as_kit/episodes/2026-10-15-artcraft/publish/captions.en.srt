@@ -1,0 +1,167 @@
+1
+00:00:00,300 --> 00:00:02,910
+Every AI image tool works the same way:
+
+2
+00:00:03,260 --> 00:00:04,290
+you type a prompt,
+
+3
+00:00:04,520 --> 00:00:05,410
+and you pray.
+
+4
+00:00:05,870 --> 00:00:08,050
+This one lets you build the scene first,
+
+5
+00:00:08,110 --> 00:00:09,080
+like a film set,
+
+6
+00:00:09,240 --> 00:00:10,800
+and only then generate.
+
+7
+00:00:11,240 --> 00:00:12,610
+It's called ArtCraft.
+
+8
+00:00:13,000 --> 00:00:14,800
+It's free, open source,
+
+9
+00:00:14,860 --> 00:00:16,900
+and it just picked up over three thousand
+
+10
+00:00:16,920 --> 00:00:18,880
+GitHub stars in a single day.
+
+11
+00:00:19,300 --> 00:00:22,150
+Its makers call it the IDE for artists:
+
+12
+00:00:22,640 --> 00:00:25,360
+one app where you compose in 2D and stage
+
+13
+00:00:25,380 --> 00:00:26,570
+scenes in 3D.
+
+14
+00:00:26,990 --> 00:00:28,160
+Drop in a room,
+
+15
+00:00:28,180 --> 00:00:30,260
+place your actors, and pose them like
+
+16
+00:00:30,280 --> 00:00:30,910
+mannequins.
+
+17
+00:00:31,490 --> 00:00:33,620
+Then put the camera exactly where you want
+
+18
+00:00:33,640 --> 00:00:35,080
+it, and frame the shot.
+
+19
+00:00:35,570 --> 00:00:38,020
+Turn any picture into a 3D object you can
+
+20
+00:00:38,040 --> 00:00:40,860
+rotate, and kitbash whole sets from asset
+
+21
+00:00:40,880 --> 00:00:41,500
+kits.
+
+22
+00:00:41,850 --> 00:00:43,740
+Then you generate, and your posed
+
+23
+00:00:43,760 --> 00:00:45,500
+mannequins guide where the characters
+
+24
+00:00:45,520 --> 00:00:46,080
+stand.
+
+25
+00:00:46,530 --> 00:00:48,550
+Keep the same room for every shot,
+
+26
+00:00:48,610 --> 00:00:50,730
+so a whole sequence stays consistent.
+
+27
+00:00:51,180 --> 00:00:52,720
+Want a quick idea instead?
+
+28
+00:00:52,880 --> 00:00:55,010
+Type a prompt, edit with a mask,
+
+29
+00:00:55,090 --> 00:00:56,970
+or turn a still into video.
+
+30
+00:00:57,400 --> 00:00:59,420
+It plugs into a long list of models,
+
+31
+00:00:59,540 --> 00:01:02,800
+including Midjourney, Sora, Grok and World
+
+32
+00:01:02,820 --> 00:01:04,270
+Labs' 3D worlds.
+
+33
+00:01:04,720 --> 00:01:05,750
+The app is free.
+
+34
+00:01:06,080 --> 00:01:08,180
+Generating isn't: bring your own
+
+35
+00:01:08,200 --> 00:01:10,400
+subscriptions, or buy credits,
+
+36
+00:01:10,540 --> 00:01:12,820
+from 8 dollars a month billed yearly.
+
+37
+00:01:13,330 --> 00:01:15,090
+It runs on Windows and Mac,
+
+38
+00:01:15,340 --> 00:01:17,330
+and on Linux if you build it yourself.
+
+39
+00:01:17,760 --> 00:01:19,560
+Stop prompting and praying.
+
+40
+00:01:19,780 --> 00:01:20,980
+Start directing.
+
+41
+00:01:21,400 --> 00:01:22,680
+That's today's tool.
+
+42
+00:01:23,010 --> 00:01:25,590
+Subscribe, there's a new one every day.

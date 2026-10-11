@@ -46,7 +46,9 @@ FIX = (("cloud", "claude"), ("clawed", "claude"), ("clod", "claude"), ("a.i.", "
        ("3-d", "three d"), ("bamboo", "bambu"), ("groq", "grok"), ("grock", "grok"), ("text to cat", "text to cad"), ("15 degrees", "fifteen degrees"),
        ("windows 11", "windows eleven"), ("gcode", "g code"), ("g-code", "g code"), ("pov", "p o v"), ("p.o.v.", "p o v"),
        ("jeff", "jev"), ("jiv", "jev"), ("jav", "jev"), ("j.e.v.", "jev"), ("193", "a hundred and ninety three"),
-       ("444", "four hundred and forty four"), ("$42", "forty two dollars"), ("42 dollars", "forty two dollars"), ("type safe", "typesafe"))
+       ("444", "four hundred and forty four"), ("$42", "forty two dollars"), ("42 dollars", "forty two dollars"), ("type safe", "typesafe"),
+       ("art craft", "artcraft"), ("3,000", "three thousand"), ("3000", "three thousand"), ("$8", "eight dollars"), ("8 dollars", "eight dollars"),
+       ("2d", "two d"), ("2-d", "two d"), ("i.d.e.", "ide"), ("kit bash", "kitbash"), ("world labs", "worldlabs"))
 
 
 def letters(s: str) -> str:

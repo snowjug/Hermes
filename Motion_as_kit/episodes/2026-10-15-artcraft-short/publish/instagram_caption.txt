@@ -1,0 +1,10 @@
+POV: you finally control what the AI draws.
+
+ArtCraft is a free, open-source AI film studio. You pose your characters and place the camera first, then generate, and the poses guide the picture. Same room for every shot, and any picture can become a 3D prop.
+
+It picked up over 3,000 GitHub stars in a single day.
+
+The full 90-second breakdown is on our YouTube channel, Tool Man. A new tool every day.
+Voice: ElevenLabs.
+
+#ArtCraft #AIArt #AItools #opensource #reels

@@ -1,0 +1,43 @@
+{
+ "title": "ArtCraft Short",
+ "notes": "Facts as in the main episode's script.json.",
+ "lines": [
+  {
+   "text": "POV: you finally control what the AI draws.",
+   "say": [
+    "P O V: you finally control what the A I draws."
+   ]
+  },
+  {
+   "text": "In ArtCraft, you pose your characters and place the camera first.",
+   "say": [
+    "In ArtCraft, you pose your characters and place the camera first."
+   ]
+  },
+  {
+   "text": "Then you generate, and the poses guide the picture.",
+   "say": [
+    "Then you generate, and the poses guide the picture."
+   ]
+  },
+  {
+   "text": "Same room, every shot. Turn any picture into a 3D prop.",
+   "say": [
+    "Same room, every shot.",
+    "Turn any picture into a three D prop."
+   ]
+  },
+  {
+   "text": "It's free and open source, with over three thousand stars in a day.",
+   "say": [
+    "It's free and open source, with over three thousand stars in a day."
+   ]
+  },
+  {
+   "text": "Stop prompting. Start directing. Subscribe for a new tool every day.",
+   "say": [
+    "Stop prompting. Start directing. Subscribe for a new tool every day."
+   ]
+  }
+ ]
+}

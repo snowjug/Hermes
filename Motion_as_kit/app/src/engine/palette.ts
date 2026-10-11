@@ -83,6 +83,37 @@ const THEMES = {
     ink: '#111111', ink2: '#2A2A2A', graphite: '#9A9A9A', ash: '#D6D6D6', bone: '#FAFAF7',
     signal: '#0058A3', ember: '#FFDA1A', blood: '#E4312B', acid: '#1E9E5A', halation: [0.9, 0.9, 1.0],
   },
+  // swiss: editorial motion design: warm paper, black grotesk, one vermilion accent (plates set `paper`)
+  swiss: {
+    ink: '#121212', ink2: '#2A2A2A', graphite: '#9A958C', ash: '#D9D3C7', bone: '#EFEBE3',
+    signal: '#F23A1D', ember: '#FFB23A', blood: '#121212', acid: '#2E7D5B', halation: [1.0, 0.7, 0.6],
+  },
+  // quiz: a TV quiz-show stage: indigo, gold panels, orange lock, green right (plates set `paper`)
+  quiz: {
+    ink: '#05030F', ink2: '#0B1640', graphite: '#22307A', ash: '#B7B3D8', bone: '#1A1046',
+    signal: '#FFC94A', ember: '#F28C18', blood: '#F23A1D', acid: '#2FBF71', halation: [1.0, 0.85, 0.5],
+  },
+  // cinema: a director's monitor on a film set: near-black stage, tungsten amber, REC red (plates set `paper`)
+  cinema: {
+    ink: '#0B0B0C', ink2: '#141416', graphite: '#2A2A2E', ash: '#9A9AA2', bone: '#101012',
+    signal: '#F5B342', ember: '#FFD08A', blood: '#FF3B30', acid: '#3E8E9A', halation: [1.0, 0.75, 0.45],
+  },
+  // sketchbook: an artist's sketchbook: cream paper, graphite pencil, watercolour washes (plates set `paper`)
+  sketchbook: {
+    ink: '#3A3A40', ink2: '#5A5A62', graphite: '#8A8A92', ash: '#C9C4B8', bone: '#F4EFE4',
+    signal: '#E06A4A', ember: '#F2B84B', blood: '#4A7FB5', acid: '#6BA368', halation: [1.0, 0.9, 0.8],
+  },
+  // axon: the skill's own minimal-dark diagrams: a dark drafting canvas, hairlines, one coral accent, a blue for
+  // requests (plates set `paper` for the canvas shader)
+  axon: {
+    ink: '#0B0E13', ink2: '#121720', graphite: '#283040', ash: '#8A94A6', bone: '#0B0E13',
+    signal: '#FF6A45', ember: '#FFB199', blood: '#5B8CFF', acid: '#E8EDF4', halation: [1.0, 0.5, 0.35],
+  },
+  // artboard: a design tool's light canvas: grey board, white frames, ink, selection blue, coral (plates set `paper`)
+  artboard: {
+    ink: '#1E1E1E', ink2: '#2C2C2C', graphite: '#8C8C8C', ash: '#B9BEC7', bone: '#F2F2F2',
+    signal: '#0D99FF', ember: '#7CC4FF', blood: '#FF6A45', acid: '#14B8A6', halation: [0.8, 0.9, 1.0],
+  },
 } as const;
 
 export type ThemeName = keyof typeof THEMES;

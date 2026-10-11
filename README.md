@@ -4,9 +4,9 @@
 
 Channel: **[Tool Man (@tooladay)](https://www.youtube.com/@tooladay)**, one new tool every day.
 
-[![Jev AI Explained: Why This Viral Model Refuses to Talk](Motion_as_kit/episodes/2026-10-14-jev/publish/thumbnail.jpg)](https://youtu.be/LFBzu2XimsE)
+[![ArtCraft: The Free Open-Source AI Film Studio](Motion_as_kit/episodes/2026-10-15-artcraft/publish/thumbnail.jpg)](https://youtu.be/SgS1dlVNm1s)
 
-**Latest:** [Jev AI Explained: Why This Viral Model Refuses to Talk](https://youtu.be/LFBzu2XimsE) (1:28) · [the Short](https://youtube.com/shorts/9HMcW7TLq10) (0:30), also as an Instagram Reel · about [Jev](https://typesafe.ai) (scheduled for 14 Oct, 18:55 IST)
+**Latest:** [ArtCraft: The Free Open-Source AI Film Studio](https://youtu.be/SgS1dlVNm1s) (1:29) · [the Short](https://youtube.com/shorts/kvD4f2xYKiE) (0:30), also as an Instagram Reel · about [ArtCraft](https://github.com/storytold/artcraft) (scheduled for 15 Oct, 18:55 IST)
 
 Each video has its own look. The 90-second videos and the 30-second vertical Shorts are written, voiced, animated and rendered separately; a Short is not a reformat of the video.
 
@@ -59,10 +59,12 @@ flowchart LR
    - the text-to-cad Short: a flat-pack assembly manual. Each line is a page that swipes in: numbered steps, line drawings of the same 3D parts, "1x FREE" parts-list callouts, a little person giving a thumbs up. The spoken word gets a yellow highlighter stroke.
    - Jev: Swiss editorial motion design. Warm paper with a faint 12-column grid, giant black grotesk type that rises out of masks word by word, and one vermilion accent. The motif carries the story: chat AIs are walls of grey text, and Jev is a single red dot that lands on an answer. Scenes cut behind red and black slabs, section counters and source footnotes sit in the corners like a magazine spread, and the captions run left-aligned with a red underline under the spoken word;
    - the Jev Short: a TV quiz show. A deep indigo stage with sweeping spotlights, gold hexagonal answer panels that lock orange and turn green, a price ladder up to 444×, lifelines, and a final question: "Will you subscribe?"
+   - ArtCraft: a film set seen through the director's monitor. A hazy dark stage under a key light, a viewfinder overlay (REC, timecode, lens, frame brackets), letterbox bars that close for the cinematic beats, and a clapperboard that rises and claps between acts. The 3D is grey-box blocking from [`_cad3d.ts`](Motion_as_kit/app/src/scenes/_cad3d.ts), which gained lathes, spheres, capsules, posable wooden mannequins and a camera on a tripod; the "generated" shots are painted from that same blocking, and the captions are serif subtitles;
+   - the ArtCraft Short: an artist's sketchbook. Cream cold-press paper under a wire spiral, a page per beat that flips up over the binding, pencil line art of the same mannequins and camera, watercolour washes that bloom out to a dried edge, and hand lettering written stroke by stroke by a pencil, using the engine's single-stroke fonts. The captions are hand-printed word by word as they are said.
 
    Every video and Short now ends with the channel's subscribe motion graphic ([`_subscribe.ts`](Motion_as_kit/app/src/scenes/_subscribe.ts)): the Tool Man card rises, a cursor clicks Subscribe and rings the bell. The videos also show a smaller version partway through.
 
-   Each episode picks a theme in `episode.json`: `signal` (ink and orange), `blueprint` (navy and cyan), `pop` (yellow paper, black and pink), `scope` (oscilloscope green), `riso` (risograph pink and blue), `collage` (paper, ink and red marker), `glitch` (black, hot pink and cyan), `kraft` (kraft paper, red marker, lime), `court` (electric blue, chalk white, lime), `comic` (newsprint, ink, comic red and yellow), `chat` (a messaging screen), `keynote` (a navy keynote stage, orange and violet), `retro` (a 90s teal desktop with grey windows), `viewport` (a CAD viewport: graphite, grid, printer orange), `manual` (an assembly manual: white paper, black lines, yellow), `swiss` (editorial: warm paper, black grotesk, vermilion) or `quiz` (a quiz-show stage: indigo, gold, orange and green).
+   Each episode picks a theme in `episode.json`: `signal` (ink and orange), `blueprint` (navy and cyan), `pop` (yellow paper, black and pink), `scope` (oscilloscope green), `riso` (risograph pink and blue), `collage` (paper, ink and red marker), `glitch` (black, hot pink and cyan), `kraft` (kraft paper, red marker, lime), `court` (electric blue, chalk white, lime), `comic` (newsprint, ink, comic red and yellow), `chat` (a messaging screen), `keynote` (a navy keynote stage, orange and violet), `retro` (a 90s teal desktop with grey windows), `viewport` (a CAD viewport: graphite, grid, printer orange), `manual` (an assembly manual: white paper, black lines, yellow), `swiss` (editorial: warm paper, black grotesk, vermilion), `quiz` (a quiz-show stage: indigo, gold, orange and green), `cinema` (a film set: a dark stage, tungsten amber, REC red) or `sketchbook` (cream paper, graphite, watercolour).
 6. **Render.** [`render-node.mjs`](Motion_as_kit/app/scripts/render-node.mjs) renders in resumable 10-second parts and joins them without re-encoding.
 7. **Sound.** [`sfx_mix.py`](Motion_as_kit/analysis/sfx_mix.py) plays the episode's `sfx_cues.py`: every effect sits on something you see. A royalty-free music bed, generated with vidIQ, dips whenever the voice speaks. The mix is −14 LUFS.
 8. **Captions.** [`make_srt.py`](Motion_as_kit/analysis/make_srt.py) writes the word timings as an SRT file, so the captions spell names and numbers the way the screen does.
@@ -105,6 +107,7 @@ The alignment model (`analysis/models/w2v2_base_960h_q.onnx`) and the sound-effe
 
 | Date | Video | Short | Tool |
 |---|---|---|---|
+| 15 Oct 2026 | [ArtCraft: The Free Open-Source AI Film Studio](https://youtu.be/SgS1dlVNm1s) | [POV: You Finally Control the AI](https://youtube.com/shorts/kvD4f2xYKiE) | [ArtCraft](https://github.com/storytold/artcraft) · [video episode](Motion_as_kit/episodes/2026-10-15-artcraft/) · [Short episode](Motion_as_kit/episodes/2026-10-15-artcraft-short/) |
 | 14 Oct 2026 | [Jev AI Explained: Why This Viral Model Refuses to Talk](https://youtu.be/LFBzu2XimsE) | [POV: An AI That Only Answers Multiple Choice](https://youtube.com/shorts/9HMcW7TLq10) | [Jev](https://typesafe.ai) · [video episode](Motion_as_kit/episodes/2026-10-14-jev/) · [Short episode](Motion_as_kit/episodes/2026-10-14-jev-short/) |
 | 12 Oct 2026 | [This Free AI Makes Your PowerPoint For You](https://youtu.be/Rz_2v0rOnyY) | [POV: The Presentation Is Due Tomorrow](https://youtube.com/shorts/BolrB8fdkK0) | [PPT Master](https://github.com/hugohe3/ppt-master) · [video episode](Motion_as_kit/episodes/2026-10-12-pptmaster/) · [Short episode](Motion_as_kit/episodes/2026-10-12-pptmaster-short/) |
 | 11 Oct 2026 | [Text to CAD: This Free AI Designs Real Parts You Can 3D Print](https://youtu.be/V49xrALL4AE) | [POV: Your AI Just Learned CAD](https://youtube.com/shorts/c1-7FowoDKs) · [Reel](https://www.instagram.com/tooladay/reel/DeV3bUVpMLg/) | [text-to-cad](https://github.com/earthtojake/text-to-cad) · [video episode](Motion_as_kit/episodes/2026-10-11-texttocad/) · [Short episode](Motion_as_kit/episodes/2026-10-11-texttocad-short/) |
@@ -117,28 +120,30 @@ The alignment model (`analysis/models/w2v2_base_960h_q.onnx`) and the sound-effe
 
 ## How the videos are doing
 
-Two sources. **Public views** are YouTube's own counters, read on 11 October 2026 at 10:21 IST. The other columns are YouTube Analytics from the first upload (27 September) to 10 October, read through the vidIQ connector. Analytics runs a day or two behind, so it doesn't count the AnyPS5 or openGym pairs yet.
+Two sources. **Public views** are YouTube's own counters, read on 11 October 2026 at 16:30 IST. The other columns are YouTube Analytics from the first upload (27 September) to 10 October, read through the vidIQ connector. Analytics runs a day or two behind, so it doesn't count the AnyPS5 or openGym pairs yet.
 
 | Upload | Length | Public views | Views in Analytics | Engaged views | Average watched | Of its length | Likes | Subscribers gained |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| [openGym](https://youtu.be/-uAf9tqI8aU) (after 21 h) | 1:30 | 9 | | | | | 2 | |
-| [openGym Short](https://youtube.com/shorts/FRRxkiQ8wfM) (after 21 h) | 0:30 | **1,203** | | | | | 15 | |
-| [AnyPS5](https://youtu.be/kCeu58HlppU) | 1:30 | **5,526** | | | | | 8 | |
-| [AnyPS5 Short](https://youtube.com/shorts/1lL9B3y0eJQ) | 0:30 | **3,012** | | | | | 38 | |
+| [text-to-cad](https://youtu.be/V49xrALL4AE) (after 6 h) | 1:30 | 8 | | | | | 1 | |
+| [text-to-cad Short](https://youtube.com/shorts/c1-7FowoDKs) (after 6 h) | 0:30 | 108 | | | | | 5 | |
+| [openGym](https://youtu.be/-uAf9tqI8aU) (after 27 h) | 1:30 | 9 | | | | | 2 | |
+| [openGym Short](https://youtube.com/shorts/FRRxkiQ8wfM) (after 27 h) | 0:30 | **1,209** | | | | | 15 | |
+| [AnyPS5](https://youtu.be/kCeu58HlppU) | 1:30 | **5,966** | | | | | 9 | |
+| [AnyPS5 Short](https://youtube.com/shorts/1lL9B3y0eJQ) | 0:30 | **3,065** | | | | | 39 | |
 | [magpie](https://youtu.be/TuOnUlJSWho) | 1:26 | 105 | 70 | 42 | 0:43 | 50% | 3 | 0 |
 | [magpie Short](https://youtube.com/shorts/Y63pJ4viW14) (the video, reframed) | 1:26 | 363 | 358 | 140 | 0:42 | 50% | 13 | 2 |
 | [disktree](https://youtu.be/4MmSMJ2c2aQ) | 1:30 | 29 | 21 | 19 | 0:53 | 59% | 1 | 3 |
 | [disktree Short](https://youtube.com/shorts/vZ9y7XhO3pc) | 0:30 | 195 | 190 | 56 | 0:24 | 81% | 3 | 0 |
-| [VoiceStudio](https://youtu.be/2CW_zb6y_ps) | 1:30 | 76 | 39 | 30 | 0:29 | 32% | 1 | 2 |
+| [VoiceStudio](https://youtu.be/2CW_zb6y_ps) | 1:30 | 80 | 39 | 30 | 0:29 | 32% | 1 | 2 |
 | [VoiceStudio Short](https://youtube.com/shorts/rlxaVkBudiM) | 0:30 | 249 | 242 | 57 | 0:19 | 65% | 12 | 1 |
 | [Laya](https://youtu.be/Yb5DsnWOCMk) (techdaily) | 3:18 | 15 | 14 | 11 | 1:12 | 37% | 0 | 0 |
-| **Channel** | | **10,782** | **934** | **355** | | | **96** | **8** |
+| **Channel** | | **11,401** | **934** | **355** | | | **104** | **8** |
 
-YouTube counts any playback as a view; engaged views is its stricter count of people who kept watching. In all, Analytics shows 223 minutes watched, 6 comments and 6 shares. The text-to-cad pair went up on 11 October; the REA pair (11 October, 18:00) and the PPT Master pair (12 October, 19:00) are scheduled.
+YouTube counts any playback as a view; engaged views is its stricter count of people who kept watching. In all, Analytics shows 223 minutes watched, 6 comments and 6 shares. The text-to-cad pair went up on 11 October at 10:20 IST; the REA pair (11 October, 18:00), the PPT Master pair (12 October, 19:00), the Jev pair (14 October, 18:55) and the ArtCraft pair (15 October, 18:55) are scheduled.
 
 What the numbers say so far:
-- **AnyPS5 broke out, and keeps going.** It was the top trending repository on GitHub that week, and the pair has 8,538 views: almost four times everything else on the channel combined. Its video is the first in the paper-collage style, and it is the only 90-second video so far that found an audience of its own.
-- **Shorts bring the steady audience.** The openGym Short passed 1,200 views in its first day, while its 90-second video had 9. Leaving AnyPS5 aside, the Shorts have 90% of the views (2,010 of 2,244), so every Short's description links to its video, and since 11 October each Short also goes to Instagram as a Reel.
+- **AnyPS5 broke out, and keeps going.** It was the top trending repository on GitHub that week, and the pair has 9,031 views: almost four times everything else on the channel combined. Its video is the first in the paper-collage style, and it is the only 90-second video so far that found an audience of its own.
+- **Shorts bring the steady audience.** The openGym Short passed 1,200 views in its first day, while its 90-second video had 9, and six hours in, the text-to-cad Short has 108 views to its video's 8. Leaving AnyPS5 aside, the Shorts have 90% of the views (2,124 of 2,370), so every Short's description links to its video, and since 11 October each Short also goes to Instagram as a Reel.
 - **Native 30-second Shorts hold viewers better than a reframed video.** The disktree Short keeps viewers for 81% of its length and the VoiceStudio Short 65%. The magpie Short, the full video reframed to vertical, holds 50%. That is why every Short since has its own script and plates.
 - **The 90-second videos get fewer views but more of each viewer's time.** disktree holds viewers longest (59%) and brought 3 of the channel's 8 new subscribers.
 

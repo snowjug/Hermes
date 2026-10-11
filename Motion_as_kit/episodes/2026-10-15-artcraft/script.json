@@ -1,0 +1,96 @@
+{
+ "title": "ArtCraft: the IDE for artists",
+ "notes": "Facts checked 2026-10-11. github.com/storytold/artcraft: 15.4k stars (3,222 that day), 2.5k forks, MIT or Apache-2.0; 'The IDE for artists'; 'the IDE for interactive AI image and video creation. Compose in 2D, stage scenes in 3D, and choose the models that fit your work. Turn prompting into crafting'; 'Build the scene before you generate it'; Image to Location (virtual actors in a consistent environment, multiple shots in the same room); 3D and 2D image compositing; Image to 3D Mesh (an object you can position, rotate and frame); Character Posing (pose characters and set your camera before generating); Scene Blocking with Kitbashing (3D asset kits); Character Identity Transfer (a posed mannequin guides placement and pose); background removal; mixed assets; text to image; prompted image editing; canvas editing with masks and inpainting; image to video; providers: ArtCraft (62-model catalog), Grok, Midjourney, Sora, World Labs (Marble worlds with Gaussian splats); planned Kling, Google, Runway, Luma; Windows and macOS releases, Linux by building from source. getartcraft.com: open-source studio; 'Free to start · No subscription'; /pricing: 'Free & open source · Subscriptions optional', 'bring your own compute and third-party subscriptions'; plans Basic $8/mo billed yearly ($96) for 1,000 credits, Pro $28, Max $48. Voice: ElevenLabs (Chris, eleven_v4).",
+ "lines": [
+  {
+   "text": "Every AI image tool works the same way: you type a prompt, and you pray.",
+   "say": [
+    "Every A I image tool works the same way: you type a prompt, and you pray."
+   ]
+  },
+  {
+   "text": "This one lets you build the scene first, like a film set, and only then generate.",
+   "say": [
+    "This one lets you build the scene first, like a film set, and only then generate."
+   ]
+  },
+  {
+   "text": "It's called ArtCraft. It's free, open source, and it just picked up over three thousand GitHub stars in a single day.",
+   "say": [
+    "It's called ArtCraft. It's free, open source, and it just picked up over three thousand GitHub stars in a single day."
+   ]
+  },
+  {
+   "text": "Its makers call it the IDE for artists: one app where you compose in 2D and stage scenes in 3D.",
+   "say": [
+    "Its makers call it the I D E for artists: one app where you compose in two D and stage scenes in three D."
+   ]
+  },
+  {
+   "text": "Drop in a room, place your actors, and pose them like mannequins.",
+   "say": [
+    "Drop in a room, place your actors, and pose them like mannequins."
+   ]
+  },
+  {
+   "text": "Then put the camera exactly where you want it, and frame the shot.",
+   "say": [
+    "Then put the camera exactly where you want it, and frame the shot."
+   ]
+  },
+  {
+   "text": "Turn any picture into a 3D object you can rotate, and kitbash whole sets from asset kits.",
+   "say": [
+    "Turn any picture into a three D object you can rotate, and kitbash whole sets from asset kits."
+   ]
+  },
+  {
+   "text": "Then you generate, and your posed mannequins guide where the characters stand.",
+   "say": [
+    "Then you generate, and your posed mannequins guide where the characters stand."
+   ]
+  },
+  {
+   "text": "Keep the same room for every shot, so a whole sequence stays consistent.",
+   "say": [
+    "Keep the same room for every shot, so a whole sequence stays consistent."
+   ]
+  },
+  {
+   "text": "Want a quick idea instead? Type a prompt, edit with a mask, or turn a still into video.",
+   "say": [
+    "Want a quick idea instead? Type a prompt, edit with a mask, or turn a still into video."
+   ]
+  },
+  {
+   "text": "It plugs into a long list of models, including Midjourney, Sora, Grok and World Labs' 3D worlds.",
+   "say": [
+    "It plugs into a long list of models, including Midjourney, Sora, Grok and World Labs' three D worlds."
+   ]
+  },
+  {
+   "text": "The app is free. Generating isn't: bring your own subscriptions, or buy credits, from 8 dollars a month billed yearly.",
+   "say": [
+    "The app is free. Generating isn't: bring your own subscriptions, or buy credits, from eight dollars a month, billed yearly."
+   ]
+  },
+  {
+   "text": "It runs on Windows and Mac, and on Linux if you build it yourself.",
+   "say": [
+    "It runs on Windows and Mac, and on Linux if you build it yourself."
+   ]
+  },
+  {
+   "text": "Stop prompting and praying. Start directing.",
+   "say": [
+    "Stop prompting and praying. Start directing."
+   ]
+  },
+  {
+   "text": "That's today's tool. Subscribe, there's a new one every day.",
+   "say": [
+    "That's today's tool. Subscribe, there's a new one every day."
+   ]
+  }
+ ]
+}

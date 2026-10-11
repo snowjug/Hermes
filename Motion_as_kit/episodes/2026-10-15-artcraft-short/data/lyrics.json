@@ -1,0 +1,362 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "POV: you finally control what the AI draws.",
+   "start": 0.23,
+   "end": 4.14,
+   "words": [
+    {
+     "w": "POV:",
+     "start": 0.23,
+     "end": 1.07
+    },
+    {
+     "w": "you",
+     "start": 1.76,
+     "end": 2.02
+    },
+    {
+     "w": "finally",
+     "start": 2.02,
+     "end": 2.43
+    },
+    {
+     "w": "control",
+     "start": 2.43,
+     "end": 3.06
+    },
+    {
+     "w": "what",
+     "start": 3.06,
+     "end": 3.2
+    },
+    {
+     "w": "the",
+     "start": 3.2,
+     "end": 3.37
+    },
+    {
+     "w": "AI",
+     "start": 3.37,
+     "end": 3.78
+    },
+    {
+     "w": "draws.",
+     "start": 3.78,
+     "end": 4.14
+    }
+   ]
+  },
+  {
+   "text": "In ArtCraft, you pose your characters and place the camera first.",
+   "start": 4.86,
+   "end": 8.28,
+   "words": [
+    {
+     "w": "In",
+     "start": 4.86,
+     "end": 5.08
+    },
+    {
+     "w": "ArtCraft,",
+     "start": 5.08,
+     "end": 5.57
+    },
+    {
+     "w": "you",
+     "start": 5.8,
+     "end": 6.0
+    },
+    {
+     "w": "pose",
+     "start": 6.0,
+     "end": 6.32
+    },
+    {
+     "w": "your",
+     "start": 6.32,
+     "end": 6.45
+    },
+    {
+     "w": "characters",
+     "start": 6.45,
+     "end": 7.04
+    },
+    {
+     "w": "and",
+     "start": 7.04,
+     "end": 7.23
+    },
+    {
+     "w": "place",
+     "start": 7.23,
+     "end": 7.53
+    },
+    {
+     "w": "the",
+     "start": 7.53,
+     "end": 7.63
+    },
+    {
+     "w": "camera",
+     "start": 7.63,
+     "end": 8.08
+    },
+    {
+     "w": "first.",
+     "start": 8.08,
+     "end": 8.28
+    }
+   ]
+  },
+  {
+   "text": "Then you generate, and the poses guide the picture.",
+   "start": 9.04,
+   "end": 11.89,
+   "words": [
+    {
+     "w": "Then",
+     "start": 9.04,
+     "end": 9.28
+    },
+    {
+     "w": "you",
+     "start": 9.28,
+     "end": 9.48
+    },
+    {
+     "w": "generate,",
+     "start": 9.48,
+     "end": 9.84
+    },
+    {
+     "w": "and",
+     "start": 10.23,
+     "end": 10.36
+    },
+    {
+     "w": "the",
+     "start": 10.36,
+     "end": 10.49
+    },
+    {
+     "w": "poses",
+     "start": 10.49,
+     "end": 11.1
+    },
+    {
+     "w": "guide",
+     "start": 11.1,
+     "end": 11.4
+    },
+    {
+     "w": "the",
+     "start": 11.4,
+     "end": 11.52
+    },
+    {
+     "w": "picture.",
+     "start": 11.52,
+     "end": 11.89
+    }
+   ]
+  },
+  {
+   "text": "Same room, every shot. Turn any picture into a 3D prop.",
+   "start": 12.43,
+   "end": 16.8,
+   "words": [
+    {
+     "w": "Same",
+     "start": 12.43,
+     "end": 12.8
+    },
+    {
+     "w": "room,",
+     "start": 12.8,
+     "end": 13.17
+    },
+    {
+     "w": "every",
+     "start": 13.4,
+     "end": 13.82
+    },
+    {
+     "w": "shot.",
+     "start": 13.82,
+     "end": 14.07
+    },
+    {
+     "w": "Turn",
+     "start": 14.63,
+     "end": 14.96
+    },
+    {
+     "w": "any",
+     "start": 14.96,
+     "end": 15.25
+    },
+    {
+     "w": "picture",
+     "start": 15.25,
+     "end": 15.68
+    },
+    {
+     "w": "into",
+     "start": 15.68,
+     "end": 15.92
+    },
+    {
+     "w": "a",
+     "start": 15.92,
+     "end": 16.3
+    },
+    {
+     "w": "3D",
+     "start": 16.3,
+     "end": 16.49
+    },
+    {
+     "w": "prop.",
+     "start": 16.49,
+     "end": 16.8
+    }
+   ]
+  },
+  {
+   "text": "It's free and open source, with over three thousand stars in a day.",
+   "start": 17.29,
+   "end": 21.23,
+   "words": [
+    {
+     "w": "It's",
+     "start": 17.29,
+     "end": 17.56
+    },
+    {
+     "w": "free",
+     "start": 17.56,
+     "end": 17.82
+    },
+    {
+     "w": "and",
+     "start": 17.82,
+     "end": 17.94
+    },
+    {
+     "w": "open",
+     "start": 17.94,
+     "end": 18.32
+    },
+    {
+     "w": "source,",
+     "start": 18.32,
+     "end": 18.6
+    },
+    {
+     "w": "with",
+     "start": 18.94,
+     "end": 19.12
+    },
+    {
+     "w": "over",
+     "start": 19.12,
+     "end": 19.38
+    },
+    {
+     "w": "three",
+     "start": 19.48,
+     "end": 19.71
+    },
+    {
+     "w": "thousand",
+     "start": 19.82,
+     "end": 20.36
+    },
+    {
+     "w": "stars",
+     "start": 20.36,
+     "end": 20.8
+    },
+    {
+     "w": "in",
+     "start": 20.8,
+     "end": 20.9
+    },
+    {
+     "w": "a",
+     "start": 20.9,
+     "end": 20.98
+    },
+    {
+     "w": "day.",
+     "start": 20.98,
+     "end": 21.23
+    }
+   ]
+  },
+  {
+   "text": "Stop prompting. Start directing. Subscribe for a new tool every day.",
+   "start": 21.78,
+   "end": 26.49,
+   "words": [
+    {
+     "w": "Stop",
+     "start": 21.78,
+     "end": 22.09
+    },
+    {
+     "w": "prompting.",
+     "start": 22.19,
+     "end": 22.71
+    },
+    {
+     "w": "Start",
+     "start": 23.08,
+     "end": 23.47
+    },
+    {
+     "w": "directing.",
+     "start": 23.47,
+     "end": 23.94
+    },
+    {
+     "w": "Subscribe",
+     "start": 24.41,
+     "end": 25.04
+    },
+    {
+     "w": "for",
+     "start": 25.04,
+     "end": 25.2
+    },
+    {
+     "w": "a",
+     "start": 25.2,
+     "end": 25.32
+    },
+    {
+     "w": "new",
+     "start": 25.32,
+     "end": 25.53
+    },
+    {
+     "w": "tool",
+     "start": 25.53,
+     "end": 25.89
+    },
+    {
+     "w": "every",
+     "start": 25.99,
+     "end": 26.34
+    },
+    {
+     "w": "day.",
+     "start": 26.34,
+     "end": 26.49
+    }
+   ]
+  }
+ ]
+}
