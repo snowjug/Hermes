@@ -71,6 +71,18 @@ const THEMES = {
     ink: '#000000', ink2: '#1A1A1A', graphite: '#808080', ash: '#C0C0C0', bone: '#008080',
     signal: '#000080', ember: '#FFFF00', blood: '#FF0000', acid: '#00C000', halation: [0.5, 0.9, 0.9],
   },
+  // viewport: a CAD app's 3D viewport: graphite gradient, a perspective grid, shaded parts with dark edges,
+  // printer orange, selection blue, check green (plates set `paper` for the viewport shader)
+  viewport: {
+    ink: '#0D1117', ink2: '#161C25', graphite: '#2B3442', ash: '#8E9AAD', bone: '#141A23',
+    signal: '#FF7A1A', ember: '#FFC24B', blood: '#3D8BFF', acid: '#36D399', halation: [1.0, 0.6, 0.3],
+  },
+  // manual: a flat-pack assembly manual: white paper, black line drawings, numbered steps, a yellow and blue
+  // accent (plates set `paper`)
+  manual: {
+    ink: '#111111', ink2: '#2A2A2A', graphite: '#9A9A9A', ash: '#D6D6D6', bone: '#FAFAF7',
+    signal: '#0058A3', ember: '#FFDA1A', blood: '#E4312B', acid: '#1E9E5A', halation: [0.9, 0.9, 1.0],
+  },
 } as const;
 
 export type ThemeName = keyof typeof THEMES;

@@ -1,0 +1,9 @@
+POV: your AI just learned CAD.
+
+Type one sentence ("a phone stand, tilted 15 degrees, with a slot for the cable") and your AI agent writes the code, builds a real 3D model, checks that it will print, slices it and can send it to a Bambu Lab printer.
+
+text-to-cad is free and open source, with 19,000+ stars on GitHub. Works with Claude Code, Codex, Cursor, Gemini and Grok.
+
+The full 90-second breakdown is on our YouTube channel, Tool Man. A new tool every day.
+
+#3dprinting #CAD #AI #opensource #reels

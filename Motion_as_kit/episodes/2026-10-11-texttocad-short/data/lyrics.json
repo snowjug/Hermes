@@ -1,0 +1,434 @@
+{
+ "source": "align_vo.py (wav2vec2-base-960h CTC)",
+ "lines": [
+  {
+   "text": "POV: your AI just learned CAD.",
+   "start": 0.29,
+   "end": 2.22,
+   "words": [
+    {
+     "w": "POV:",
+     "start": 0.29,
+     "end": 0.84
+    },
+    {
+     "w": "your",
+     "start": 0.84,
+     "end": 1.1
+    },
+    {
+     "w": "AI",
+     "start": 1.1,
+     "end": 1.5
+    },
+    {
+     "w": "just",
+     "start": 1.5,
+     "end": 1.64
+    },
+    {
+     "w": "learned",
+     "start": 1.64,
+     "end": 1.93
+    },
+    {
+     "w": "CAD.",
+     "start": 1.93,
+     "end": 2.22
+    }
+   ]
+  },
+  {
+   "text": "Type one sentence: a phone stand, tilted 15 degrees, with a slot for the cable.",
+   "start": 2.94,
+   "end": 7.16,
+   "words": [
+    {
+     "w": "Type",
+     "start": 2.94,
+     "end": 3.22
+    },
+    {
+     "w": "one",
+     "start": 3.23,
+     "end": 3.44
+    },
+    {
+     "w": "sentence:",
+     "start": 3.44,
+     "end": 3.87
+    },
+    {
+     "w": "a",
+     "start": 4.29,
+     "end": 4.36
+    },
+    {
+     "w": "phone",
+     "start": 4.36,
+     "end": 4.6
+    },
+    {
+     "w": "stand,",
+     "start": 4.6,
+     "end": 4.94
+    },
+    {
+     "w": "tilted",
+     "start": 5.08,
+     "end": 5.52
+    },
+    {
+     "w": "15",
+     "start": 5.52,
+     "end": 5.7
+    },
+    {
+     "w": "degrees,",
+     "start": 5.7,
+     "end": 6.2
+    },
+    {
+     "w": "with",
+     "start": 6.2,
+     "end": 6.34
+    },
+    {
+     "w": "a",
+     "start": 6.34,
+     "end": 6.4
+    },
+    {
+     "w": "slot",
+     "start": 6.4,
+     "end": 6.68
+    },
+    {
+     "w": "for",
+     "start": 6.68,
+     "end": 6.76
+    },
+    {
+     "w": "the",
+     "start": 6.76,
+     "end": 6.84
+    },
+    {
+     "w": "cable.",
+     "start": 6.84,
+     "end": 7.16
+    }
+   ]
+  },
+  {
+   "text": "It writes the code, builds a real 3D model, and checks that it will actually print.",
+   "start": 7.89,
+   "end": 11.82,
+   "words": [
+    {
+     "w": "It",
+     "start": 7.89,
+     "end": 8.06
+    },
+    {
+     "w": "writes",
+     "start": 8.06,
+     "end": 8.32
+    },
+    {
+     "w": "the",
+     "start": 8.32,
+     "end": 8.46
+    },
+    {
+     "w": "code,",
+     "start": 8.46,
+     "end": 8.79
+    },
+    {
+     "w": "builds",
+     "start": 8.97,
+     "end": 9.32
+    },
+    {
+     "w": "a",
+     "start": 9.32,
+     "end": 9.42
+    },
+    {
+     "w": "real",
+     "start": 9.42,
+     "end": 9.8
+    },
+    {
+     "w": "3D",
+     "start": 9.8,
+     "end": 9.98
+    },
+    {
+     "w": "model,",
+     "start": 9.98,
+     "end": 10.32
+    },
+    {
+     "w": "and",
+     "start": 10.53,
+     "end": 10.66
+    },
+    {
+     "w": "checks",
+     "start": 10.66,
+     "end": 10.86
+    },
+    {
+     "w": "that",
+     "start": 10.86,
+     "end": 10.98
+    },
+    {
+     "w": "it",
+     "start": 10.98,
+     "end": 11.04
+    },
+    {
+     "w": "will",
+     "start": 11.04,
+     "end": 11.2
+    },
+    {
+     "w": "actually",
+     "start": 11.2,
+     "end": 11.58
+    },
+    {
+     "w": "print.",
+     "start": 11.58,
+     "end": 11.82
+    }
+   ]
+  },
+  {
+   "text": "Then it slices it, and can send it straight to a Bambu Lab printer.",
+   "start": 12.62,
+   "end": 15.6,
+   "words": [
+    {
+     "w": "Then",
+     "start": 12.62,
+     "end": 13.0
+    },
+    {
+     "w": "it",
+     "start": 13.0,
+     "end": 13.1
+    },
+    {
+     "w": "slices",
+     "start": 13.1,
+     "end": 13.5
+    },
+    {
+     "w": "it,",
+     "start": 13.5,
+     "end": 13.55
+    },
+    {
+     "w": "and",
+     "start": 13.67,
+     "end": 13.78
+    },
+    {
+     "w": "can",
+     "start": 13.78,
+     "end": 13.94
+    },
+    {
+     "w": "send",
+     "start": 13.94,
+     "end": 14.12
+    },
+    {
+     "w": "it",
+     "start": 14.12,
+     "end": 14.24
+    },
+    {
+     "w": "straight",
+     "start": 14.24,
+     "end": 14.52
+    },
+    {
+     "w": "to",
+     "start": 14.52,
+     "end": 14.66
+    },
+    {
+     "w": "a",
+     "start": 14.66,
+     "end": 14.74
+    },
+    {
+     "w": "Bambu",
+     "start": 14.74,
+     "end": 15.08
+    },
+    {
+     "w": "Lab",
+     "start": 15.08,
+     "end": 15.32
+    },
+    {
+     "w": "printer.",
+     "start": 15.32,
+     "end": 15.6
+    }
+   ]
+  },
+  {
+   "text": "It's called text-to-cad. Free, open source, 19,000 GitHub stars.",
+   "start": 16.41,
+   "end": 20.93,
+   "words": [
+    {
+     "w": "It's",
+     "start": 16.41,
+     "end": 16.58
+    },
+    {
+     "w": "called",
+     "start": 16.58,
+     "end": 16.93
+    },
+    {
+     "w": "text-to-cad.",
+     "start": 17.04,
+     "end": 18.0
+    },
+    {
+     "w": "Free,",
+     "start": 18.44,
+     "end": 18.77
+    },
+    {
+     "w": "open",
+     "start": 18.77,
+     "end": 19.06
+    },
+    {
+     "w": "source,",
+     "start": 19.06,
+     "end": 19.18
+    },
+    {
+     "w": "19,000",
+     "start": 19.2,
+     "end": 20.08
+    },
+    {
+     "w": "GitHub",
+     "start": 20.12,
+     "end": 20.52
+    },
+    {
+     "w": "stars.",
+     "start": 20.52,
+     "end": 20.93
+    }
+   ]
+  },
+  {
+   "text": "It works with Claude Code, Codex, Cursor, Gemini and Grok.",
+   "start": 21.66,
+   "end": 25.06,
+   "words": [
+    {
+     "w": "It",
+     "start": 21.66,
+     "end": 21.82
+    },
+    {
+     "w": "works",
+     "start": 21.82,
+     "end": 22.06
+    },
+    {
+     "w": "with",
+     "start": 22.06,
+     "end": 22.21
+    },
+    {
+     "w": "Claude",
+     "start": 22.21,
+     "end": 22.49
+    },
+    {
+     "w": "Code,",
+     "start": 22.49,
+     "end": 22.84
+    },
+    {
+     "w": "Codex,",
+     "start": 22.99,
+     "end": 23.3
+    },
+    {
+     "w": "Cursor,",
+     "start": 23.6,
+     "end": 24.03
+    },
+    {
+     "w": "Gemini",
+     "start": 24.13,
+     "end": 24.7
+    },
+    {
+     "w": "and",
+     "start": 24.7,
+     "end": 24.84
+    },
+    {
+     "w": "Grok.",
+     "start": 24.84,
+     "end": 25.06
+    }
+   ]
+  },
+  {
+   "text": "Step one: ask. Step two: print.",
+   "start": 25.9,
+   "end": 28.4,
+   "words": [
+    {
+     "w": "Step",
+     "start": 25.9,
+     "end": 26.13
+    },
+    {
+     "w": "one:",
+     "start": 26.13,
+     "end": 26.43
+    },
+    {
+     "w": "ask.",
+     "start": 26.7,
+     "end": 26.89
+    },
+    {
+     "w": "Step",
+     "start": 27.35,
+     "end": 27.65
+    },
+    {
+     "w": "two:",
+     "start": 27.65,
+     "end": 27.91
+    },
+    {
+     "w": "print.",
+     "start": 28.09,
+     "end": 28.4
+    }
+   ]
+  }
+ ]
+}

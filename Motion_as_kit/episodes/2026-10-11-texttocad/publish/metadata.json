@@ -1,0 +1,23 @@
+{
+  "title": "Text to CAD: This Free AI Designs Real Parts You Can 3D Print",
+  "description": "Text to CAD, free and open source: text-to-cad is a plugin that lets your AI agent (Claude Code, Codex, Cursor, Gemini, Grok) design real 3D parts you can print. 19,000+ GitHub stars.\n\nHow it works\n• Install it by telling your agent: \"Install text-to-cad from https://github.com/earthtojake/text-to-cad\".\n• Ask for a part in plain words, or from a photo or a sketch. The agent writes a short Python (build123d) script: the script is the model, and every size is a number you can change and run again.\n• It exports STEP for engineering software, and STL, 3MF or GLB for printing and viewing. You can orbit the model right in the chat.\n• It finds off-the-shelf parts (screws, bearings, motors), checks printability (thin walls, overhangs, supports), draws dimensioned engineering drawings as a PDF, slices to G-code with OrcaSlicer, and can send prints to Bambu Lab printers.\n• It also writes robot description files (URDF, SRDF, SDF) and reviews parts for CNC machining, sheet metal and injection molding.\n\nThe catch\nBy default it sends usage stats and crash reports (never your files, paths or prompts); turn that off with: uvx cadgen telemetry off. On Windows 11, Smart App Control blocks its CAD kernel (OCP). Turning Smart App Control off can only be undone by reinstalling Windows, so running it under WSL is the safer route.\n\nChapters\n0:00 Type a sentence, get a part\n0:17 Install it and ask\n0:40 Files, checks and printing\n1:10 The catch\n\nSources\nhttps://github.com/earthtojake/text-to-cad\nhttps://www.texttocad.dev\n\nNarration: AI voice (Chatterbox, made on a laptop). Music: AI-generated, royalty-free (vidIQ). Animated in code: the parts are drawn by our own little renderer, and the code on screen is illustrative. Not affiliated with text-to-cad, Bambu Lab or the makers of the agents shown.\n\nA new tool every day.\n\n#CAD #3DPrinting #AI",
+  "tags": [
+    "text to CAD",
+    "text-to-cad",
+    "AI CAD",
+    "AI 3D model generator",
+    "AI for 3D printing",
+    "3D printing",
+    "CAD",
+    "Claude Code",
+    "Codex",
+    "build123d",
+    "STEP file",
+    "STL",
+    "Bambu Lab",
+    "open source",
+    "engineering"
+  ],
+  "youtube_url": "https://youtu.be/V49xrALL4AE",
+  "published": "2026-10-11T10:20:00+05:30"
+}

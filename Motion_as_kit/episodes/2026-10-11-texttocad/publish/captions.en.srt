@@ -1,0 +1,187 @@
+1
+00:00:00,330 --> 00:00:02,800
+Type one sentence, and your AI designs a
+
+2
+00:00:02,820 --> 00:00:04,980
+real part you can 3D print.
+
+3
+00:00:05,200 --> 00:00:06,360
+You don't need to know CAD.
+
+4
+00:00:06,750 --> 00:00:08,670
+It's called text-to-cad:
+
+5
+00:00:08,740 --> 00:00:11,040
+free, open source, and 19,000 stars on
+
+6
+00:00:11,060 --> 00:00:11,700
+GitHub.
+
+7
+00:00:12,090 --> 00:00:13,220
+It isn't a website.
+
+8
+00:00:13,420 --> 00:00:14,900
+It's a plugin for your AI agent:
+
+9
+00:00:14,920 --> 00:00:16,600
+Claude Code, Codex, Cursor,
+
+10
+00:00:16,620 --> 00:00:17,610
+Gemini or Grok.
+
+11
+00:00:18,120 --> 00:00:19,830
+You don't even install it yourself.
+
+12
+00:00:20,050 --> 00:00:21,050
+You tell your agent:
+
+13
+00:00:21,070 --> 00:00:23,380
+install text-to-cad, and paste the link.
+
+14
+00:00:23,840 --> 00:00:25,150
+Then you just ask:
+
+15
+00:00:25,310 --> 00:00:26,420
+a wall bracket for a shelf,
+
+16
+00:00:26,440 --> 00:00:28,840
+40 mm wide, with two screw holes.
+
+17
+00:00:29,230 --> 00:00:31,030
+Your agent writes a short Python script,
+
+18
+00:00:31,050 --> 00:00:32,370
+and that script is the part.
+
+19
+00:00:32,580 --> 00:00:34,390
+You can spin it around right in the chat.
+
+20
+00:00:34,870 --> 00:00:36,220
+Every size is a number.
+
+21
+00:00:36,330 --> 00:00:37,990
+Change the width from 40 to 60,
+
+22
+00:00:38,030 --> 00:00:40,200
+run it again, and the whole part updates.
+
+23
+00:00:40,590 --> 00:00:42,150
+Out comes a real CAD file:
+
+24
+00:00:42,280 --> 00:00:43,930
+STEP for engineering software,
+
+25
+00:00:43,950 --> 00:00:47,000
+or STL and 3MF for your 3D printer.
+
+26
+00:00:47,410 --> 00:00:49,530
+It also works from a photo or a sketch,
+
+27
+00:00:49,640 --> 00:00:50,740
+and pulls real screws,
+
+28
+00:00:50,760 --> 00:00:52,990
+bearings and motors from a parts library.
+
+29
+00:00:53,390 --> 00:00:55,340
+Before you print, it checks the design:
+
+30
+00:00:55,550 --> 00:00:56,690
+walls too thin to print,
+
+31
+00:00:56,710 --> 00:00:58,230
+and overhangs that need support.
+
+32
+00:00:58,710 --> 00:01:00,970
+It draws dimensioned engineering drawings,
+
+33
+00:01:01,070 --> 00:01:02,600
+slices the model into G-code,
+
+34
+00:01:02,620 --> 00:01:04,440
+and can send it to a Bambu Lab printer.
+
+35
+00:01:04,830 --> 00:01:06,400
+It even writes the files that describe a
+
+36
+00:01:06,420 --> 00:01:09,660
+robot, and reviews parts for CNC machining
+
+37
+00:01:09,680 --> 00:01:10,690
+and sheet metal.
+
+38
+00:01:11,140 --> 00:01:12,760
+The catch: by default it sends usage
+
+39
+00:01:12,780 --> 00:01:14,830
+stats, never your files or prompts.
+
+40
+00:01:14,940 --> 00:01:16,570
+One command turns that off.
+
+41
+00:01:17,100 --> 00:01:18,270
+And on Windows 11,
+
+42
+00:01:18,300 --> 00:01:19,900
+Smart App Control can block its CAD
+
+43
+00:01:19,920 --> 00:01:21,660
+engine. Turning that off is one-way,
+
+44
+00:01:21,680 --> 00:01:23,570
+so WSL is the safer route.
+
+45
+00:01:24,030 --> 00:01:25,670
+Your AI just learned CAD.
+
+46
+00:01:25,780 --> 00:01:27,050
+That's today's tool.
+
+47
+00:01:27,150 --> 00:01:28,910
+There's a new one every day.

@@ -40,7 +40,11 @@ FIX = (("cloud", "claude"), ("clawed", "claude"), ("clod", "claude"), ("a.i.", "
        ("5,600", "fifty six hundred"), ("5600", "fifty six hundred"), ("7,000", "seven thousand"), ("7000", "seven thousand"), ("heavy", "hevy"),
        ("gidra", "ghidra"), ("guidra", "ghidra"), (".net", "dot net"), ("3,205", "three thousand two hundred and five"), ("63", "sixty three"),
        ("25,000", "twenty five thousand"), ("codecs", "codex"), ("r.e.a.", "rea"), ("r e a", "rea"),
-       ("59,000", "fifty nine thousand"), ("16:9", "sixteen by nine"), ("16 by 9", "sixteen by nine"), ("8 to 10", "eight to ten"), ("40-page", "forty page"), ("40 page", "forty page"))
+       ("59,000", "fifty nine thousand"), ("16:9", "sixteen by nine"), ("16 by 9", "sixteen by nine"), ("8 to 10", "eight to ten"), ("40-page", "forty page"), ("40 page", "forty page"),
+       ("19,000", "nineteen thousand"), ("19000", "nineteen thousand"), ("40mm", "forty millimeters"), ("40 mm", "forty millimeters"),
+       ("40 millimeters", "forty millimeters"), ("40 to 60", "forty to sixty"), ("3mf", "three m f"), ("3 mf", "three m f"), ("3d", "three d"),
+       ("3-d", "three d"), ("bamboo", "bambu"), ("groq", "grok"), ("grock", "grok"), ("text to cat", "text to cad"), ("15 degrees", "fifteen degrees"),
+       ("windows 11", "windows eleven"), ("gcode", "g code"), ("g-code", "g code"), ("pov", "p o v"), ("p.o.v.", "p o v"))
 
 
 def letters(s: str) -> str:

@@ -1,0 +1,63 @@
+1
+00:00:00,290 --> 00:00:02,470
+POV: your AI just learned CAD.
+
+2
+00:00:02,940 --> 00:00:04,120
+Type one sentence:
+
+3
+00:00:04,290 --> 00:00:06,180
+a phone stand, tilted 15 degrees,
+
+4
+00:00:06,200 --> 00:00:07,410
+with a slot for the cable.
+
+5
+00:00:07,890 --> 00:00:08,950
+It writes the code,
+
+6
+00:00:08,970 --> 00:00:10,510
+builds a real 3D model,
+
+7
+00:00:10,530 --> 00:00:12,070
+and checks that it will actually print.
+
+8
+00:00:12,620 --> 00:00:13,650
+Then it slices it,
+
+9
+00:00:13,670 --> 00:00:15,300
+and can send it straight to a Bambu Lab
+
+10
+00:00:15,320 --> 00:00:15,850
+printer.
+
+11
+00:00:16,410 --> 00:00:18,250
+It's called text-to-cad.
+
+12
+00:00:18,440 --> 00:00:21,180
+Free, open source, 19,000 GitHub stars.
+
+13
+00:00:21,660 --> 00:00:22,970
+It works with Claude Code,
+
+14
+00:00:22,990 --> 00:00:25,310
+Codex, Cursor, Gemini and Grok.
+
+15
+00:00:25,900 --> 00:00:27,140
+Step one: ask.
+
+16
+00:00:27,350 --> 00:00:28,650
+Step two: print.

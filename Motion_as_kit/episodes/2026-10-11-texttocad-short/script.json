@@ -1,0 +1,51 @@
+{
+ "title": "text-to-cad Short",
+ "notes": "Facts as in the main episode's script.json.",
+ "lines": [
+  {
+   "text": "POV: your AI just learned CAD.",
+   "say": [
+    "P O V: your A I just learned CAD."
+   ]
+  },
+  {
+   "text": "Type one sentence: a phone stand, tilted 15 degrees, with a slot for the cable.",
+   "say": [
+    "Type one sentence:",
+    "a phone stand, tilted fifteen degrees, with a slot for the cable."
+   ]
+  },
+  {
+   "text": "It writes the code, builds a real 3D model, and checks that it will actually print.",
+   "say": [
+    "It writes the code, builds a real three D model, and checks that it will actually print."
+   ]
+  },
+  {
+   "text": "Then it slices it, and can send it straight to a Bambu Lab printer.",
+   "say": [
+    "Then it slices it, and can send it straight to a Bambu Lab printer."
+   ]
+  },
+  {
+   "text": "It's called text-to-cad. Free, open source, 19,000 GitHub stars.",
+   "say": [
+    "It's called text to CAD.",
+    "Free, open source, nineteen thousand GitHub stars."
+   ]
+  },
+  {
+   "text": "It works with Claude Code, Codex, Cursor, Gemini and Grok.",
+   "say": [
+    "It works with Claude Code, Codex, Cursor, Gemini and Grok."
+   ]
+  },
+  {
+   "text": "Step one: ask. Step two: print.",
+   "say": [
+    "Step one: ask.",
+    "Step two: print."
+   ]
+  }
+ ]
+}

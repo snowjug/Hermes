@@ -1,0 +1,112 @@
+{
+ "title": "text-to-cad: your AI designs real parts",
+ "notes": "Facts checked 2026-10-11: github.com/earthtojake/text-to-cad (MIT; 19.0k stars, 1.9k forks; 2,369 stars that week) and texttocad.dev ('Give your agent CAD superpowers. 100% open source and free.'). A plugin and skills for agents (Claude Code, Codex, Cursor, Gemini, Grok); install by sending your agent 'Install text-to-cad from https://github.com/earthtojake/text-to-cad'. Generates 3D models as STEP, GLB, STL or 3MF; a model is a plain Python (build123d) script with explicit dimensions, edited and re-run to regenerate its outputs; CAD viewer cards you can orbit in the chat (Claude Desktop and Code) or a CAD Viewer link. Skills: CAD from plain-language or image requests; step.parts (screws, bearings, motors, connectors); Engineering Drawing (dimensioned PDF); DXF; URDF, SRDF, SDF (robot description, simulation); SendCutSend; DfAM Check (wall thickness, overhangs, support volume, build orientation); DFM (sheet metal, CNC machining, injection molding); G-code (OrcaSlicer); Bambu Labs (Bambu Connect or Bambu Studio). Telemetry is on by default (usage stats and crash reports tagged with a random ID, never files, paths or prompts; off with uvx cadgen telemetry off). Windows 11 Smart App Control blocks the unsigned OCP kernel module; once turned off it can only be turned back on by reinstalling Windows; WSL is the alternative. Narration: Chatterbox (MIT) on the laptop's CPU.",
+ "lines": [
+  {
+   "text": "Type one sentence, and your AI designs a real part you can 3D print. You don't need to know CAD.",
+   "say": [
+    "Type one sentence, and your A I designs a real part you can three D print.",
+    "You don't need to know CAD."
+   ]
+  },
+  {
+   "text": "It's called text-to-cad: free, open source, and 19,000 stars on GitHub.",
+   "say": [
+    "It's called text to CAD:",
+    "free, open source, and nineteen thousand stars on GitHub."
+   ]
+  },
+  {
+   "text": "It isn't a website. It's a plugin for your AI agent: Claude Code, Codex, Cursor, Gemini or Grok.",
+   "say": [
+    "It isn't a website.",
+    "It's a plugin for your A I agent: Claude Code, Codex, Cursor, Gemini or Grok."
+   ]
+  },
+  {
+   "text": "You don't even install it yourself. You tell your agent: install text-to-cad, and paste the link.",
+   "say": [
+    "You don't even install it yourself.",
+    "You tell your agent: install text to CAD, and paste the link."
+   ]
+  },
+  {
+   "text": "Then you just ask: a wall bracket for a shelf, 40 mm wide, with two screw holes.",
+   "say": [
+    "Then you just ask:",
+    "a wall bracket for a shelf, forty millimeters wide, with two screw holes."
+   ]
+  },
+  {
+   "text": "Your agent writes a short Python script, and that script is the part. You can spin it around right in the chat.",
+   "say": [
+    "Your agent writes a short Python script, and that script is the part.",
+    "You can spin it around right in the chat."
+   ]
+  },
+  {
+   "text": "Every size is a number. Change the width from 40 to 60, run it again, and the whole part updates.",
+   "say": [
+    "Every size is a number.",
+    "Change the width from forty to sixty, run it again, and the whole part updates."
+   ]
+  },
+  {
+   "text": "Out comes a real CAD file: STEP for engineering software, or STL and 3MF for your 3D printer.",
+   "say": [
+    "Out comes a real CAD file:",
+    "STEP for engineering software, or S T L and three M F for your three D printer."
+   ]
+  },
+  {
+   "text": "It also works from a photo or a sketch, and pulls real screws, bearings and motors from a parts library.",
+   "say": [
+    "It also works from a photo or a sketch,",
+    "and pulls real screws, bearings and motors from a parts library."
+   ]
+  },
+  {
+   "text": "Before you print, it checks the design: walls too thin to print, and overhangs that need support.",
+   "say": [
+    "Before you print, it checks the design:",
+    "walls too thin to print, and overhangs that need support."
+   ]
+  },
+  {
+   "text": "It draws dimensioned engineering drawings, slices the model into G-code, and can send it to a Bambu Lab printer.",
+   "say": [
+    "It draws dimensioned engineering drawings,",
+    "slices the model into G code, and can send it to a Bambu Lab printer."
+   ]
+  },
+  {
+   "text": "It even writes the files that describe a robot, and reviews parts for CNC machining and sheet metal.",
+   "say": [
+    "It even writes the files that describe a robot,",
+    "and reviews parts for C N C machining and sheet metal."
+   ]
+  },
+  {
+   "text": "The catch: by default it sends usage stats, never your files or prompts. One command turns that off.",
+   "say": [
+    "The catch: by default it sends usage stats, never your files or prompts.",
+    "One command turns that off."
+   ]
+  },
+  {
+   "text": "And on Windows 11, Smart App Control can block its CAD engine. Turning that off is one-way, so WSL is the safer route.",
+   "say": [
+    "And on Windows eleven, Smart App Control can block its CAD engine.",
+    "Turning that off is one way, so W S L is the safer route."
+   ]
+  },
+  {
+   "text": "Your AI just learned CAD. That's today's tool. There's a new one every day.",
+   "say": [
+    "Your A I just learned CAD.",
+    "That's today's tool.",
+    "There's a new one every day."
+   ]
+  }
+ ]
+}
